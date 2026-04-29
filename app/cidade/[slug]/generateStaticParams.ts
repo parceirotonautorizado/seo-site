@@ -1,14 +1,8 @@
-const bairros = {
-  curitiba: ["centro", "agua-verde"],
-  londrina: ["centro"],
-  maringa: ["zona-7"]
-};
-
-for (const cidade of Object.keys(bairros) as (keyof typeof bairros)[]) {
-  for (const bairro of bairros[cidade]) {
+Object.entries(bairros).forEach(([cidade, listaBairros]) => {
+  listaBairros.forEach((bairro) => {
     paths.push({
       slug: cidade,
-      bairro: bairro,
+      bairro,
     });
-  }
-}
+  });
+});
