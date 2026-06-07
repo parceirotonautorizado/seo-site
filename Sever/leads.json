@@ -1,0 +1,34 @@
+[
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "produto": "Maquininhas",
+    "tipoVenda": "Crédito Parcelado",
+    "parcelas": "12x",
+    "vendasMensais": "Até R$ 3 mil",
+    "recebimento": "Na hora",
+    "bandeiras": "Elo e Amex",
+    "taxa": "23.68%",
+    "valorRecebido": 4505.1696,
+    "amount": 5903,
+    "dispositivo": "Mac",
+    "url": "http://localhost:3000/",
+    "createdAt": "2026-05-14T01:49:42.568Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "produto": "Maquininhas",
+    "tipoVenda": "Crédito Parcelado",
+    "parcelas": "12x",
+    "vendasMensais": "Até R$ 3 mil",
+    "recebimento": "Na hora",
+    "bandeiras": "Elo e Amex",
+    "taxa": "23.68%",
+    "valorRecebido": 7632,
+    "amount": 10000,
+    "dispositivo": "Mac",
+    "url": "http://localhost:3000/",
+    "createdAt": "2026-05-14T01:51:41.805Z"
+  }
+]

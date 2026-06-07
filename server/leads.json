@@ -1,0 +1,166 @@
+[
+  {
+    "cidade": "teste",
+    "bairro": "centro",
+    "amount": 100,
+    "url": "teste",
+    "userAgent": "teste",
+    "createdAt": "2026-05-05T16:23:27.427Z"
+  },
+  {
+    "amount": 100,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-06T16:19:05.107Z"
+  },
+  {
+    "amount": 738,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-06T16:59:00.855Z"
+  },
+  {
+    "amount": 1843,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-06T17:47:00.088Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 4180,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-07T22:36:02.814Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 5000,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-07T22:36:50.525Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 2323,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-07T22:37:10.862Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 1119,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-07T22:37:27.771Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 2105,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-07T22:47:40.384Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 3041,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-07T22:48:31.943Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 100,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-08T00:39:58.359Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 4831,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-08T00:47:30.375Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 1053,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-08T00:50:39.443Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 1053,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-08T00:50:41.758Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 2814,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-08T00:53:49.039Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 2814,
+    "url": "http://localhost:3000/#simulador",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "createdAt": "2026-05-08T00:53:50.509Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 3159,
+    "url": "http://localhost:3000/#simulador",
+    "createdAt": "2026-05-13T20:19:11.829Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 3159,
+    "url": "http://localhost:3000/#simulador",
+    "createdAt": "2026-05-13T20:19:12.951Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 6793,
+    "url": "http://localhost:3000/#simulador",
+    "createdAt": "2026-05-13T20:25:48.918Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 6853,
+    "url": "http://localhost:3000/#simulador",
+    "createdAt": "2026-05-13T23:09:46.782Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 6853,
+    "url": "http://localhost:3000/#simulador",
+    "createdAt": "2026-05-13T23:09:49.461Z"
+  },
+  {
+    "cidade": "Curitiba",
+    "bairro": "Centro",
+    "amount": 10000,
+    "url": "http://localhost:3000/#simulador",
+    "createdAt": "2026-05-13T23:11:04.976Z"
+  }
+]

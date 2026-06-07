@@ -1,0 +1,202 @@
+[
+  {
+    "nome": "Curitiba",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Capital do Paraná e principal centro econômico do estado, reconhecida pela inovação, infraestrutura urbana e forte atividade empresarial.",
+    "economia": "comércio, tecnologia, indústria, serviços e logística"
+  },
+  {
+    "nome": "Londrina",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Um dos maiores polos urbanos do Sul do Brasil, com destaque para educação, saúde, comércio e desenvolvimento regional.",
+    "economia": "agronegócio, saúde, educação, comércio e serviços"
+  },
+  {
+    "nome": "Maringá",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Importante centro econômico do Norte do Paraná, conhecida pelo planejamento urbano, qualidade de vida e ambiente favorável aos negócios.",
+    "economia": "serviços, tecnologia, agronegócio, comércio e construção civil"
+  },
+  {
+    "nome": "Cascavel",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Principal polo econômico do Oeste Paranaense, com forte atuação do agronegócio e da logística regional.",
+    "economia": "agronegócio, logística, comércio, indústria e serviços"
+  },
+  {
+    "nome": "Foz do Iguaçu",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Cidade de destaque internacional na tríplice fronteira, conhecida pelo turismo e pela integração comercial com países vizinhos.",
+    "economia": "turismo, comércio, hotelaria, serviços e logística"
+  },
+  {
+    "nome": "Ponta Grossa",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Importante centro industrial e logístico dos Campos Gerais, com localização estratégica para distribuição de mercadorias.",
+    "economia": "indústria, logística, comércio, agronegócio e serviços"
+  },
+  {
+    "nome": "São José dos Pinhais",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Município da região metropolitana de Curitiba com forte presença industrial e grande relevância para a economia estadual.",
+    "economia": "indústria automotiva, logística, comércio e serviços"
+  },
+  {
+    "nome": "Colombo",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Uma das maiores cidades da região metropolitana de Curitiba, com economia diversificada e forte crescimento urbano.",
+    "economia": "comércio, serviços, indústria e construção civil"
+  },
+  {
+    "nome": "Araucária",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Cidade industrial de destaque nacional, sede de importantes operações ligadas ao setor energético e petroquímico.",
+    "economia": "indústria, energia, logística e serviços"
+  },
+  {
+    "nome": "Toledo",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "Referência econômica do Oeste do Paraná, com destaque para a agroindústria e o desenvolvimento empresarial regional.",
+    "economia": "agroindústria, agronegócio, comércio e serviços"
+  },
+  {
+    "nome": "Guarapuava",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Paranaguá",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Apucarana",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Campo Mourão",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Arapongas",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Pinhais",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Almirante Tamandaré",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Umuarama",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Cambé",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  },
+  {
+    "nome": "Fazenda Rio Grande",
+    "slug": "",
+    "codigo_ibge": "",
+    "estado": "",
+    "regiao": "",
+    "populacao": "",
+    "descricao": "",
+    "economia": ""
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "saas-maquininha-backend",
+  "version": "1.0.0",
+  "description": "API SaaS de simulação de taxas de maquininhas",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "saas",
+    "api",
+    "maquininha",
+    "taxas",
+    "simulador"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
