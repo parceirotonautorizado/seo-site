@@ -2,9 +2,9 @@
   {
     "nome": "Abatiá",
     "slug": "abatia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100103",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -12,9 +12,9 @@
   {
     "nome": "Adrianópolis",
     "slug": "adrianopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100202",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -22,9 +22,9 @@
   {
     "nome": "Agudos do Sul",
     "slug": "agudos-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100301",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -32,9 +32,9 @@
   {
     "nome": "Almirante Tamandaré",
     "slug": "almirante-tamandare",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100400",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -42,9 +42,9 @@
   {
     "nome": "Altamira do Paraná",
     "slug": "altamira-do-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100459",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -52,9 +52,9 @@
   {
     "nome": "Altônia",
     "slug": "altonia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100509",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -62,9 +62,9 @@
   {
     "nome": "Alto Paraná",
     "slug": "alto-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100608",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -72,9 +72,9 @@
   {
     "nome": "Alto Piquiri",
     "slug": "alto-piquiri",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100707",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -82,9 +82,9 @@
   {
     "nome": "Alvorada do Sul",
     "slug": "alvorada-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100806",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -92,9 +92,9 @@
   {
     "nome": "Amaporã",
     "slug": "amapora",
-    "codigo_ibge": "",
+    "codigo_ibge": "4100905",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -102,9 +102,9 @@
   {
     "nome": "Ampére",
     "slug": "ampere",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101002",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -112,9 +112,9 @@
   {
     "nome": "Anahy",
     "slug": "anahy",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101051",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -122,9 +122,9 @@
   {
     "nome": "Andirá",
     "slug": "andira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101101",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -132,9 +132,9 @@
   {
     "nome": "Ângulo",
     "slug": "angulo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101150",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -142,9 +142,9 @@
   {
     "nome": "Antonina",
     "slug": "antonina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101200",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranaguá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -152,9 +152,9 @@
   {
     "nome": "Antônio Olinto",
     "slug": "antonio-olinto",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101309",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -162,9 +162,9 @@
   {
     "nome": "Apucarana",
     "slug": "apucarana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101408",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -172,9 +172,9 @@
   {
     "nome": "Arapongas",
     "slug": "arapongas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101507",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -182,9 +182,9 @@
   {
     "nome": "Arapoti",
     "slug": "arapoti",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101606",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -192,9 +192,9 @@
   {
     "nome": "Arapuã",
     "slug": "arapua",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101655",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -202,9 +202,9 @@
   {
     "nome": "Araruna",
     "slug": "araruna",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101705",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -212,9 +212,9 @@
   {
     "nome": "Araucária",
     "slug": "araucaria",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101804",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -222,9 +222,9 @@
   {
     "nome": "Ariranha do Ivaí",
     "slug": "ariranha-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101853",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -232,9 +232,9 @@
   {
     "nome": "Assaí",
     "slug": "assai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4101903",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -242,9 +242,9 @@
   {
     "nome": "Assis Chateaubriand",
     "slug": "assis-chateaubriand",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102000",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -252,9 +252,9 @@
   {
     "nome": "Astorga",
     "slug": "astorga",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102109",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -262,9 +262,9 @@
   {
     "nome": "Atalaia",
     "slug": "atalaia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102208",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -272,9 +272,9 @@
   {
     "nome": "Balsa Nova",
     "slug": "balsa-nova",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102307",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -282,9 +282,9 @@
   {
     "nome": "Bandeirantes",
     "slug": "bandeirantes",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102406",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -292,9 +292,9 @@
   {
     "nome": "Barbosa Ferraz",
     "slug": "barbosa-ferraz",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102505",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -302,9 +302,9 @@
   {
     "nome": "Barracão",
     "slug": "barracao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102604",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -312,9 +312,9 @@
   {
     "nome": "Barra do Jacaré",
     "slug": "barra-do-jacare",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102703",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -322,9 +322,9 @@
   {
     "nome": "Bela Vista da Caroba",
     "slug": "bela-vista-da-caroba",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102752",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -332,9 +332,9 @@
   {
     "nome": "Bela Vista do Paraíso",
     "slug": "bela-vista-do-paraiso",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102802",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -342,9 +342,9 @@
   {
     "nome": "Bituruna",
     "slug": "bituruna",
-    "codigo_ibge": "",
+    "codigo_ibge": "4102901",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -352,9 +352,9 @@
   {
     "nome": "Boa Esperança",
     "slug": "boa-esperanca",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103008",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -362,9 +362,9 @@
   {
     "nome": "Boa Esperança do Iguaçu",
     "slug": "boa-esperanca-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103024",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Dois Vizinhos",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -372,9 +372,9 @@
   {
     "nome": "Boa Ventura de São Roque",
     "slug": "boa-ventura-de-sao-roque",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103040",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pitanga",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -382,9 +382,9 @@
   {
     "nome": "Boa Vista da Aparecida",
     "slug": "boa-vista-da-aparecida",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103057",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -392,9 +392,9 @@
   {
     "nome": "Bocaiúva do Sul",
     "slug": "bocaiuva-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103107",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -402,9 +402,9 @@
   {
     "nome": "Bom Jesus do Sul",
     "slug": "bom-jesus-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103156",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -412,9 +412,9 @@
   {
     "nome": "Bom Sucesso",
     "slug": "bom-sucesso",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103206",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -422,9 +422,9 @@
   {
     "nome": "Bom Sucesso do Sul",
     "slug": "bom-sucesso-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103222",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -432,9 +432,9 @@
   {
     "nome": "Borrazópolis",
     "slug": "borrazopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103305",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -442,9 +442,9 @@
   {
     "nome": "Braganey",
     "slug": "braganey",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103354",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -452,9 +452,9 @@
   {
     "nome": "Brasilândia do Sul",
     "slug": "brasilandia-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103370",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -462,9 +462,9 @@
   {
     "nome": "Cafeara",
     "slug": "cafeara",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103404",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -472,9 +472,9 @@
   {
     "nome": "Cafelândia",
     "slug": "cafelandia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103453",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -482,9 +482,9 @@
   {
     "nome": "Cafezal do Sul",
     "slug": "cafezal-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103479",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -492,9 +492,9 @@
   {
     "nome": "Califórnia",
     "slug": "california",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103503",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -502,9 +502,9 @@
   {
     "nome": "Cambará",
     "slug": "cambara",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103602",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -512,9 +512,9 @@
   {
     "nome": "Cambé",
     "slug": "cambe",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103701",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -522,9 +522,9 @@
   {
     "nome": "Cambira",
     "slug": "cambira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103800",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -532,9 +532,9 @@
   {
     "nome": "Campina da Lagoa",
     "slug": "campina-da-lagoa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103909",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -542,9 +542,9 @@
   {
     "nome": "Campina do Simão",
     "slug": "campina-do-simao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4103958",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -552,9 +552,9 @@
   {
     "nome": "Campina Grande do Sul",
     "slug": "campina-grande-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104006",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -562,9 +562,9 @@
   {
     "nome": "Campo Bonito",
     "slug": "campo-bonito",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104055",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -572,9 +572,9 @@
   {
     "nome": "Campo do Tenente",
     "slug": "campo-do-tenente",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104105",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -582,9 +582,9 @@
   {
     "nome": "Campo Largo",
     "slug": "campo-largo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104204",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -592,9 +592,9 @@
   {
     "nome": "Campo Magro",
     "slug": "campo-magro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104253",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -602,9 +602,9 @@
   {
     "nome": "Campo Mourão",
     "slug": "campo-mourao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104303",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -612,9 +612,9 @@
   {
     "nome": "Cândido de Abreu",
     "slug": "candido-de-abreu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104402",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -622,9 +622,9 @@
   {
     "nome": "Candói",
     "slug": "candoi",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104428",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -632,9 +632,9 @@
   {
     "nome": "Cantagalo",
     "slug": "cantagalo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104451",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -642,9 +642,9 @@
   {
     "nome": "Capanema",
     "slug": "capanema",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104501",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -652,9 +652,9 @@
   {
     "nome": "Capitão Leônidas Marques",
     "slug": "capitao-leonidas-marques",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104600",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -662,9 +662,9 @@
   {
     "nome": "Carambeí",
     "slug": "carambei",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104659",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -672,9 +672,9 @@
   {
     "nome": "Carlópolis",
     "slug": "carlopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104709",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -682,9 +682,9 @@
   {
     "nome": "Cascavel",
     "slug": "cascavel",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104808",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -692,9 +692,9 @@
   {
     "nome": "Castro",
     "slug": "castro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4104907",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -702,9 +702,9 @@
   {
     "nome": "Catanduvas",
     "slug": "catanduvas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105003",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -712,9 +712,9 @@
   {
     "nome": "Centenário do Sul",
     "slug": "centenario-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105102",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -722,9 +722,9 @@
   {
     "nome": "Cerro Azul",
     "slug": "cerro-azul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105201",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -732,9 +732,9 @@
   {
     "nome": "Céu Azul",
     "slug": "ceu-azul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105300",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -742,9 +742,9 @@
   {
     "nome": "Chopinzinho",
     "slug": "chopinzinho",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105409",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -752,9 +752,9 @@
   {
     "nome": "Cianorte",
     "slug": "cianorte",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105508",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -762,9 +762,9 @@
   {
     "nome": "Cidade Gaúcha",
     "slug": "cidade-gaucha",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105607",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -772,9 +772,9 @@
   {
     "nome": "Clevelândia",
     "slug": "clevelandia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105706",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -782,9 +782,9 @@
   {
     "nome": "Colombo",
     "slug": "colombo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105805",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -792,9 +792,9 @@
   {
     "nome": "Colorado",
     "slug": "colorado",
-    "codigo_ibge": "",
+    "codigo_ibge": "4105904",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -802,9 +802,9 @@
   {
     "nome": "Congonhinhas",
     "slug": "congonhinhas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106001",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -812,9 +812,9 @@
   {
     "nome": "Conselheiro Mairinck",
     "slug": "conselheiro-mairinck",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106100",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ibaiti",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -822,9 +822,9 @@
   {
     "nome": "Contenda",
     "slug": "contenda",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106209",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -832,9 +832,9 @@
   {
     "nome": "Corbélia",
     "slug": "corbelia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106308",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -842,9 +842,9 @@
   {
     "nome": "Cornélio Procópio",
     "slug": "cornelio-procopio",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106407",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -852,9 +852,9 @@
   {
     "nome": "Coronel Domingos Soares",
     "slug": "coronel-domingos-soares",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106456",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -862,9 +862,9 @@
   {
     "nome": "Coronel Vivida",
     "slug": "coronel-vivida",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106506",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -872,9 +872,9 @@
   {
     "nome": "Corumbataí do Sul",
     "slug": "corumbatai-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106555",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -882,9 +882,9 @@
   {
     "nome": "Cruzeiro do Iguaçu",
     "slug": "cruzeiro-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106571",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Dois Vizinhos",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -892,9 +892,9 @@
   {
     "nome": "Cruzeiro do Oeste",
     "slug": "cruzeiro-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106605",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -902,9 +902,9 @@
   {
     "nome": "Cruzeiro do Sul",
     "slug": "cruzeiro-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106704",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -912,9 +912,9 @@
   {
     "nome": "Cruz Machado",
     "slug": "cruz-machado",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106803",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -922,9 +922,9 @@
   {
     "nome": "Cruzmaltina",
     "slug": "cruzmaltina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106852",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -932,9 +932,9 @@
   {
     "nome": "Curitiba",
     "slug": "curitiba",
-    "codigo_ibge": "",
+    "codigo_ibge": "4106902",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -942,9 +942,9 @@
   {
     "nome": "Curiúva",
     "slug": "curiuva",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107009",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Telêmaco Borba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -952,9 +952,9 @@
   {
     "nome": "Diamante do Norte",
     "slug": "diamante-do-norte",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107108",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -962,9 +962,9 @@
   {
     "nome": "Diamante do Sul",
     "slug": "diamante-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107124",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -972,9 +972,9 @@
   {
     "nome": "Diamante D'Oeste",
     "slug": "diamante-d-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107157",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -982,9 +982,9 @@
   {
     "nome": "Dois Vizinhos",
     "slug": "dois-vizinhos",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107207",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Dois Vizinhos",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -992,9 +992,9 @@
   {
     "nome": "Douradina",
     "slug": "douradina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107256",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1002,9 +1002,9 @@
   {
     "nome": "Doutor Camargo",
     "slug": "doutor-camargo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107306",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1012,9 +1012,9 @@
   {
     "nome": "Enéas Marques",
     "slug": "eneas-marques",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107405",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1022,9 +1022,9 @@
   {
     "nome": "Engenheiro Beltrão",
     "slug": "engenheiro-beltrao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107504",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1032,9 +1032,9 @@
   {
     "nome": "Esperança Nova",
     "slug": "esperanca-nova",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107520",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1042,9 +1042,9 @@
   {
     "nome": "Entre Rios do Oeste",
     "slug": "entre-rios-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107538",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Marechal Cândido Rondon",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1052,9 +1052,9 @@
   {
     "nome": "Espigão Alto do Iguaçu",
     "slug": "espigao-alto-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107546",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1062,9 +1062,9 @@
   {
     "nome": "Farol",
     "slug": "farol",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107553",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1072,9 +1072,9 @@
   {
     "nome": "Faxinal",
     "slug": "faxinal",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107603",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1082,9 +1082,9 @@
   {
     "nome": "Fazenda Rio Grande",
     "slug": "fazenda-rio-grande",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107652",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1092,9 +1092,9 @@
   {
     "nome": "Fênix",
     "slug": "fenix",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107702",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1102,9 +1102,9 @@
   {
     "nome": "Fernandes Pinheiro",
     "slug": "fernandes-pinheiro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107736",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Irati",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1112,9 +1112,9 @@
   {
     "nome": "Figueira",
     "slug": "figueira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107751",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ibaiti",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1122,9 +1122,9 @@
   {
     "nome": "Floraí",
     "slug": "florai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107801",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1132,9 +1132,9 @@
   {
     "nome": "Flor da Serra do Sul",
     "slug": "flor-da-serra-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107850",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1142,9 +1142,9 @@
   {
     "nome": "Floresta",
     "slug": "floresta",
-    "codigo_ibge": "",
+    "codigo_ibge": "4107900",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1152,9 +1152,9 @@
   {
     "nome": "Florestópolis",
     "slug": "florestopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108007",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1162,9 +1162,9 @@
   {
     "nome": "Flórida",
     "slug": "florida",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108106",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1172,9 +1172,9 @@
   {
     "nome": "Formosa do Oeste",
     "slug": "formosa-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108205",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1182,9 +1182,9 @@
   {
     "nome": "Foz do Iguaçu",
     "slug": "foz-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108304",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Foz do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1192,9 +1192,9 @@
   {
     "nome": "Francisco Alves",
     "slug": "francisco-alves",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108320",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1202,9 +1202,9 @@
   {
     "nome": "Francisco Beltrão",
     "slug": "francisco-beltrao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108403",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1212,9 +1212,9 @@
   {
     "nome": "Foz do Jordão",
     "slug": "foz-do-jordao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108452",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1222,9 +1222,9 @@
   {
     "nome": "General Carneiro",
     "slug": "general-carneiro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108502",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1232,9 +1232,9 @@
   {
     "nome": "Godoy Moreira",
     "slug": "godoy-moreira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108551",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1242,9 +1242,9 @@
   {
     "nome": "Goioerê",
     "slug": "goioere",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108601",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1252,9 +1252,9 @@
   {
     "nome": "Goioxim",
     "slug": "goioxim",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108650",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1262,9 +1262,9 @@
   {
     "nome": "Grandes Rios",
     "slug": "grandes-rios",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108700",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1272,9 +1272,9 @@
   {
     "nome": "Guaíra",
     "slug": "guaira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108809",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1282,9 +1282,9 @@
   {
     "nome": "Guairaçá",
     "slug": "guairaca",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108908",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1292,9 +1292,9 @@
   {
     "nome": "Guamiranga",
     "slug": "guamiranga",
-    "codigo_ibge": "",
+    "codigo_ibge": "4108957",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1302,9 +1302,9 @@
   {
     "nome": "Guapirama",
     "slug": "guapirama",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109005",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1312,9 +1312,9 @@
   {
     "nome": "Guaporema",
     "slug": "guaporema",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109104",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1322,9 +1322,9 @@
   {
     "nome": "Guaraci",
     "slug": "guaraci",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109203",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1332,9 +1332,9 @@
   {
     "nome": "Guaraniaçu",
     "slug": "guaraniacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109302",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1342,9 +1342,9 @@
   {
     "nome": "Guarapuava",
     "slug": "guarapuava",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109401",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1352,9 +1352,9 @@
   {
     "nome": "Guaraqueçaba",
     "slug": "guaraquecaba",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109500",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranaguá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1362,9 +1362,9 @@
   {
     "nome": "Guaratuba",
     "slug": "guaratuba",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109609",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranaguá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1372,9 +1372,9 @@
   {
     "nome": "Honório Serpa",
     "slug": "honorio-serpa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109658",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1382,9 +1382,9 @@
   {
     "nome": "Ibaiti",
     "slug": "ibaiti",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109708",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ibaiti",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1392,9 +1392,9 @@
   {
     "nome": "Ibema",
     "slug": "ibema",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109757",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1402,9 +1402,9 @@
   {
     "nome": "Ibiporã",
     "slug": "ibipora",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109807",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1412,9 +1412,9 @@
   {
     "nome": "Icaraíma",
     "slug": "icaraima",
-    "codigo_ibge": "",
+    "codigo_ibge": "4109906",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1422,9 +1422,9 @@
   {
     "nome": "Iguaraçu",
     "slug": "iguaracu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110003",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1432,9 +1432,9 @@
   {
     "nome": "Iguatu",
     "slug": "iguatu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110052",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1442,9 +1442,9 @@
   {
     "nome": "Imbaú",
     "slug": "imbau",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110078",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Telêmaco Borba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1452,9 +1452,9 @@
   {
     "nome": "Imbituva",
     "slug": "imbituva",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110102",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Irati",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1462,9 +1462,9 @@
   {
     "nome": "Inácio Martins",
     "slug": "inacio-martins",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110201",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1472,9 +1472,9 @@
   {
     "nome": "Inajá",
     "slug": "inaja",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110300",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1482,9 +1482,9 @@
   {
     "nome": "Indianópolis",
     "slug": "indianopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110409",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1492,9 +1492,9 @@
   {
     "nome": "Ipiranga",
     "slug": "ipiranga",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110508",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1502,9 +1502,9 @@
   {
     "nome": "Iporã",
     "slug": "ipora",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110607",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1512,9 +1512,9 @@
   {
     "nome": "Iracema do Oeste",
     "slug": "iracema-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110656",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1522,9 +1522,9 @@
   {
     "nome": "Irati",
     "slug": "irati",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110706",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Irati",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1532,9 +1532,9 @@
   {
     "nome": "Iretama",
     "slug": "iretama",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110805",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1542,9 +1542,9 @@
   {
     "nome": "Itaguajé",
     "slug": "itaguaje",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110904",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1552,9 +1552,9 @@
   {
     "nome": "Itaipulândia",
     "slug": "itaipulandia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4110953",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Foz do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1562,9 +1562,9 @@
   {
     "nome": "Itambaracá",
     "slug": "itambaraca",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111001",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1572,9 +1572,9 @@
   {
     "nome": "Itambé",
     "slug": "itambe",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111100",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1582,9 +1582,9 @@
   {
     "nome": "Itapejara d'Oeste",
     "slug": "itapejara-d-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111209",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1592,9 +1592,9 @@
   {
     "nome": "Itaperuçu",
     "slug": "itaperucu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111258",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1602,9 +1602,9 @@
   {
     "nome": "Itaúna do Sul",
     "slug": "itauna-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111308",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1612,9 +1612,9 @@
   {
     "nome": "Ivaí",
     "slug": "ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111407",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1622,9 +1622,9 @@
   {
     "nome": "Ivaiporã",
     "slug": "ivaipora",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111506",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1632,9 +1632,9 @@
   {
     "nome": "Ivaté",
     "slug": "ivate",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111555",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1642,9 +1642,9 @@
   {
     "nome": "Ivatuba",
     "slug": "ivatuba",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111605",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1652,9 +1652,9 @@
   {
     "nome": "Jaboti",
     "slug": "jaboti",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111704",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ibaiti",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1662,9 +1662,9 @@
   {
     "nome": "Jacarezinho",
     "slug": "jacarezinho",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111803",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1672,9 +1672,9 @@
   {
     "nome": "Jaguapitã",
     "slug": "jaguapita",
-    "codigo_ibge": "",
+    "codigo_ibge": "4111902",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1682,9 +1682,9 @@
   {
     "nome": "Jaguariaíva",
     "slug": "jaguariaiva",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112009",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1692,9 +1692,9 @@
   {
     "nome": "Jandaia do Sul",
     "slug": "jandaia-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112108",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1702,9 +1702,9 @@
   {
     "nome": "Janiópolis",
     "slug": "janiopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112207",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1712,9 +1712,9 @@
   {
     "nome": "Japira",
     "slug": "japira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112306",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ibaiti",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1722,9 +1722,9 @@
   {
     "nome": "Japurá",
     "slug": "japura",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112405",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1732,9 +1732,9 @@
   {
     "nome": "Jardim Alegre",
     "slug": "jardim-alegre",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112504",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1742,9 +1742,9 @@
   {
     "nome": "Jardim Olinda",
     "slug": "jardim-olinda",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112603",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1752,9 +1752,9 @@
   {
     "nome": "Jataizinho",
     "slug": "jataizinho",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112702",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1762,9 +1762,9 @@
   {
     "nome": "Jesuítas",
     "slug": "jesuitas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112751",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1772,9 +1772,9 @@
   {
     "nome": "Joaquim Távora",
     "slug": "joaquim-tavora",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112801",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1782,9 +1782,9 @@
   {
     "nome": "Jundiaí do Sul",
     "slug": "jundiai-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112900",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1792,9 +1792,9 @@
   {
     "nome": "Juranda",
     "slug": "juranda",
-    "codigo_ibge": "",
+    "codigo_ibge": "4112959",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1802,9 +1802,9 @@
   {
     "nome": "Jussara",
     "slug": "jussara",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113007",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1812,9 +1812,9 @@
   {
     "nome": "Kaloré",
     "slug": "kalore",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113106",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1822,9 +1822,9 @@
   {
     "nome": "Lapa",
     "slug": "lapa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113205",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1832,9 +1832,9 @@
   {
     "nome": "Laranjal",
     "slug": "laranjal",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113254",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pitanga",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1842,9 +1842,9 @@
   {
     "nome": "Laranjeiras do Sul",
     "slug": "laranjeiras-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113304",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1852,9 +1852,9 @@
   {
     "nome": "Leópolis",
     "slug": "leopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113403",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1862,9 +1862,9 @@
   {
     "nome": "Lidianópolis",
     "slug": "lidianopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113429",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1872,9 +1872,9 @@
   {
     "nome": "Lindoeste",
     "slug": "lindoeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113452",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1882,9 +1882,9 @@
   {
     "nome": "Loanda",
     "slug": "loanda",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113502",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Loanda",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1892,9 +1892,9 @@
   {
     "nome": "Lobato",
     "slug": "lobato",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113601",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1902,9 +1902,9 @@
   {
     "nome": "Londrina",
     "slug": "londrina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113700",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1912,9 +1912,9 @@
   {
     "nome": "Luiziana",
     "slug": "luiziana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113734",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1922,9 +1922,9 @@
   {
     "nome": "Lunardelli",
     "slug": "lunardelli",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113759",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1932,9 +1932,9 @@
   {
     "nome": "Lupionópolis",
     "slug": "lupionopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113809",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1942,9 +1942,9 @@
   {
     "nome": "Mallet",
     "slug": "mallet",
-    "codigo_ibge": "",
+    "codigo_ibge": "4113908",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Irati",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1952,9 +1952,9 @@
   {
     "nome": "Mamborê",
     "slug": "mambore",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114005",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1962,9 +1962,9 @@
   {
     "nome": "Mandaguaçu",
     "slug": "mandaguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114104",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1972,9 +1972,9 @@
   {
     "nome": "Mandaguari",
     "slug": "mandaguari",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114203",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1982,9 +1982,9 @@
   {
     "nome": "Mandirituba",
     "slug": "mandirituba",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114302",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -1992,9 +1992,9 @@
   {
     "nome": "Manfrinópolis",
     "slug": "manfrinopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114351",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2002,9 +2002,9 @@
   {
     "nome": "Mangueirinha",
     "slug": "mangueirinha",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114401",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2012,9 +2012,9 @@
   {
     "nome": "Manoel Ribas",
     "slug": "manoel-ribas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114500",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2022,9 +2022,9 @@
   {
     "nome": "Marechal Cândido Rondon",
     "slug": "marechal-candido-rondon",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114609",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Marechal Cândido Rondon",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2032,9 +2032,9 @@
   {
     "nome": "Maria Helena",
     "slug": "maria-helena",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114708",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2042,9 +2042,9 @@
   {
     "nome": "Marialva",
     "slug": "marialva",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114807",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2052,9 +2052,9 @@
   {
     "nome": "Marilândia do Sul",
     "slug": "marilandia-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4114906",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2062,9 +2062,9 @@
   {
     "nome": "Marilena",
     "slug": "marilena",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115002",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2072,9 +2072,9 @@
   {
     "nome": "Mariluz",
     "slug": "mariluz",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115101",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2082,9 +2082,9 @@
   {
     "nome": "Maringá",
     "slug": "maringa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115200",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2092,9 +2092,9 @@
   {
     "nome": "Mariópolis",
     "slug": "mariopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115309",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2102,9 +2102,9 @@
   {
     "nome": "Maripá",
     "slug": "maripa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115358",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2112,9 +2112,9 @@
   {
     "nome": "Marmeleiro",
     "slug": "marmeleiro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115408",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2122,9 +2122,9 @@
   {
     "nome": "Marquinho",
     "slug": "marquinho",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115457",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2132,9 +2132,9 @@
   {
     "nome": "Marumbi",
     "slug": "marumbi",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115507",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2142,9 +2142,9 @@
   {
     "nome": "Matelândia",
     "slug": "matelandia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115606",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2152,9 +2152,9 @@
   {
     "nome": "Matinhos",
     "slug": "matinhos",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115705",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranaguá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2162,9 +2162,9 @@
   {
     "nome": "Mato Rico",
     "slug": "mato-rico",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115739",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pitanga",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2172,9 +2172,9 @@
   {
     "nome": "Mauá da Serra",
     "slug": "maua-da-serra",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115754",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2182,9 +2182,9 @@
   {
     "nome": "Medianeira",
     "slug": "medianeira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115804",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Foz do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2192,9 +2192,9 @@
   {
     "nome": "Mercedes",
     "slug": "mercedes",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115853",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Marechal Cândido Rondon",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2202,9 +2202,9 @@
   {
     "nome": "Mirador",
     "slug": "mirador",
-    "codigo_ibge": "",
+    "codigo_ibge": "4115903",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2212,9 +2212,9 @@
   {
     "nome": "Miraselva",
     "slug": "miraselva",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116000",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2222,9 +2222,9 @@
   {
     "nome": "Missal",
     "slug": "missal",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116059",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Foz do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2232,9 +2232,9 @@
   {
     "nome": "Moreira Sales",
     "slug": "moreira-sales",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116109",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2242,9 +2242,9 @@
   {
     "nome": "Morretes",
     "slug": "morretes",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116208",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranaguá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2252,9 +2252,9 @@
   {
     "nome": "Munhoz de Melo",
     "slug": "munhoz-de-melo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116307",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2262,9 +2262,9 @@
   {
     "nome": "Nossa Senhora das Graças",
     "slug": "nossa-senhora-das-gracas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116406",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2272,9 +2272,9 @@
   {
     "nome": "Nova Aliança do Ivaí",
     "slug": "nova-alianca-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116505",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2282,9 +2282,9 @@
   {
     "nome": "Nova América da Colina",
     "slug": "nova-america-da-colina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116604",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2292,9 +2292,9 @@
   {
     "nome": "Nova Aurora",
     "slug": "nova-aurora",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116703",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2302,9 +2302,9 @@
   {
     "nome": "Nova Cantu",
     "slug": "nova-cantu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116802",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2312,9 +2312,9 @@
   {
     "nome": "Nova Esperança",
     "slug": "nova-esperanca",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116901",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2322,9 +2322,9 @@
   {
     "nome": "Nova Esperança do Sudoeste",
     "slug": "nova-esperanca-do-sudoeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4116950",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2332,9 +2332,9 @@
   {
     "nome": "Nova Fátima",
     "slug": "nova-fatima",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117008",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2342,9 +2342,9 @@
   {
     "nome": "Nova Laranjeiras",
     "slug": "nova-laranjeiras",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117057",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2352,9 +2352,9 @@
   {
     "nome": "Nova Londrina",
     "slug": "nova-londrina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117107",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2362,9 +2362,9 @@
   {
     "nome": "Nova Olímpia",
     "slug": "nova-olimpia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117206",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2372,9 +2372,9 @@
   {
     "nome": "Nova Santa Bárbara",
     "slug": "nova-santa-barbara",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117214",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2382,9 +2382,9 @@
   {
     "nome": "Nova Santa Rosa",
     "slug": "nova-santa-rosa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117222",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Marechal Cândido Rondon",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2392,9 +2392,9 @@
   {
     "nome": "Nova Prata do Iguaçu",
     "slug": "nova-prata-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117255",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Dois Vizinhos",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2402,9 +2402,9 @@
   {
     "nome": "Nova Tebas",
     "slug": "nova-tebas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117271",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pitanga",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2412,9 +2412,9 @@
   {
     "nome": "Novo Itacolomi",
     "slug": "novo-itacolomi",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117297",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2422,9 +2422,9 @@
   {
     "nome": "Ortigueira",
     "slug": "ortigueira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117305",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Telêmaco Borba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2432,9 +2432,9 @@
   {
     "nome": "Ourizona",
     "slug": "ourizona",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117404",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2442,9 +2442,9 @@
   {
     "nome": "Ouro Verde do Oeste",
     "slug": "ouro-verde-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117453",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2452,9 +2452,9 @@
   {
     "nome": "Paiçandu",
     "slug": "paicandu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117503",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2462,9 +2462,9 @@
   {
     "nome": "Palmas",
     "slug": "palmas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117602",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2472,9 +2472,9 @@
   {
     "nome": "Palmeira",
     "slug": "palmeira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117701",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2482,9 +2482,9 @@
   {
     "nome": "Palmital",
     "slug": "palmital",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117800",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pitanga",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2492,9 +2492,9 @@
   {
     "nome": "Palotina",
     "slug": "palotina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4117909",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2502,9 +2502,9 @@
   {
     "nome": "Paraíso do Norte",
     "slug": "paraiso-do-norte",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118006",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2512,9 +2512,9 @@
   {
     "nome": "Paranacity",
     "slug": "paranacity",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118105",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2522,9 +2522,9 @@
   {
     "nome": "Paranaguá",
     "slug": "paranagua",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118204",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranaguá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2532,9 +2532,9 @@
   {
     "nome": "Paranapoema",
     "slug": "paranapoema",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118303",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2542,9 +2542,9 @@
   {
     "nome": "Paranavaí",
     "slug": "paranavai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118402",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2552,9 +2552,9 @@
   {
     "nome": "Pato Bragado",
     "slug": "pato-bragado",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118451",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Marechal Cândido Rondon",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2562,9 +2562,9 @@
   {
     "nome": "Pato Branco",
     "slug": "pato-branco",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118501",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2572,9 +2572,9 @@
   {
     "nome": "Paula Freitas",
     "slug": "paula-freitas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118600",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2582,9 +2582,9 @@
   {
     "nome": "Paulo Frontin",
     "slug": "paulo-frontin",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118709",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2592,9 +2592,9 @@
   {
     "nome": "Peabiru",
     "slug": "peabiru",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118808",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2602,9 +2602,9 @@
   {
     "nome": "Perobal",
     "slug": "perobal",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118857",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2612,9 +2612,9 @@
   {
     "nome": "Pérola",
     "slug": "perola",
-    "codigo_ibge": "",
+    "codigo_ibge": "4118907",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2622,9 +2622,9 @@
   {
     "nome": "Pérola d'Oeste",
     "slug": "perola-d-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119004",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2632,9 +2632,9 @@
   {
     "nome": "Piên",
     "slug": "pien",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119103",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2642,9 +2642,9 @@
   {
     "nome": "Pinhais",
     "slug": "pinhais",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119152",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2652,9 +2652,9 @@
   {
     "nome": "Pinhalão",
     "slug": "pinhalao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119202",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ibaiti",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2662,9 +2662,9 @@
   {
     "nome": "Pinhal de São Bento",
     "slug": "pinhal-de-sao-bento",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119251",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2672,9 +2672,9 @@
   {
     "nome": "Pinhão",
     "slug": "pinhao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119301",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2682,9 +2682,9 @@
   {
     "nome": "Piraí do Sul",
     "slug": "pirai-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119400",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2692,9 +2692,9 @@
   {
     "nome": "Piraquara",
     "slug": "piraquara",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119509",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2702,9 +2702,9 @@
   {
     "nome": "Pitanga",
     "slug": "pitanga",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119608",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pitanga",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2712,9 +2712,9 @@
   {
     "nome": "Pitangueiras",
     "slug": "pitangueiras",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119657",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2722,9 +2722,9 @@
   {
     "nome": "Planaltina do Paraná",
     "slug": "planaltina-do-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119707",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2732,9 +2732,9 @@
   {
     "nome": "Planalto",
     "slug": "planalto",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119806",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2742,9 +2742,9 @@
   {
     "nome": "Ponta Grossa",
     "slug": "ponta-grossa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119905",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2752,9 +2752,9 @@
   {
     "nome": "Pontal do Paraná",
     "slug": "pontal-do-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4119954",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranaguá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2762,9 +2762,9 @@
   {
     "nome": "Porecatu",
     "slug": "porecatu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120002",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2772,9 +2772,9 @@
   {
     "nome": "Porto Amazonas",
     "slug": "porto-amazonas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120101",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2782,9 +2782,9 @@
   {
     "nome": "Porto Barreiro",
     "slug": "porto-barreiro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120150",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2792,9 +2792,9 @@
   {
     "nome": "Porto Rico",
     "slug": "porto-rico",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120200",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Loanda",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2802,9 +2802,9 @@
   {
     "nome": "Porto Vitória",
     "slug": "porto-vitoria",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120309",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2812,9 +2812,9 @@
   {
     "nome": "Prado Ferreira",
     "slug": "prado-ferreira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120333",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2822,9 +2822,9 @@
   {
     "nome": "Pranchita",
     "slug": "pranchita",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120358",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2832,9 +2832,9 @@
   {
     "nome": "Presidente Castelo Branco",
     "slug": "presidente-castelo-branco",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120408",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2842,9 +2842,9 @@
   {
     "nome": "Primeiro de Maio",
     "slug": "primeiro-de-maio",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120507",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2852,9 +2852,9 @@
   {
     "nome": "Prudentópolis",
     "slug": "prudentopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120606",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2862,9 +2862,9 @@
   {
     "nome": "Quarto Centenário",
     "slug": "quarto-centenario",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120655",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2872,9 +2872,9 @@
   {
     "nome": "Quatiguá",
     "slug": "quatigua",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120705",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2882,9 +2882,9 @@
   {
     "nome": "Quatro Barras",
     "slug": "quatro-barras",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120804",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2892,9 +2892,9 @@
   {
     "nome": "Quatro Pontes",
     "slug": "quatro-pontes",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120853",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Marechal Cândido Rondon",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2902,9 +2902,9 @@
   {
     "nome": "Quedas do Iguaçu",
     "slug": "quedas-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4120903",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2912,9 +2912,9 @@
   {
     "nome": "Querência do Norte",
     "slug": "querencia-do-norte",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121000",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Loanda",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2922,9 +2922,9 @@
   {
     "nome": "Quinta do Sol",
     "slug": "quinta-do-sol",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121109",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2932,9 +2932,9 @@
   {
     "nome": "Quitandinha",
     "slug": "quitandinha",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121208",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2942,9 +2942,9 @@
   {
     "nome": "Ramilândia",
     "slug": "ramilandia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121257",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2952,9 +2952,9 @@
   {
     "nome": "Rancho Alegre",
     "slug": "rancho-alegre",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121307",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2962,9 +2962,9 @@
   {
     "nome": "Rancho Alegre D'Oeste",
     "slug": "rancho-alegre-d-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121356",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2972,9 +2972,9 @@
   {
     "nome": "Realeza",
     "slug": "realeza",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121406",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2982,9 +2982,9 @@
   {
     "nome": "Rebouças",
     "slug": "reboucas",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121505",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Irati",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -2992,9 +2992,9 @@
   {
     "nome": "Renascença",
     "slug": "renascenca",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121604",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3002,9 +3002,9 @@
   {
     "nome": "Reserva",
     "slug": "reserva",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121703",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Telêmaco Borba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3012,9 +3012,9 @@
   {
     "nome": "Reserva do Iguaçu",
     "slug": "reserva-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121752",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3022,9 +3022,9 @@
   {
     "nome": "Ribeirão Claro",
     "slug": "ribeirao-claro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121802",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3032,9 +3032,9 @@
   {
     "nome": "Ribeirão do Pinhal",
     "slug": "ribeirao-do-pinhal",
-    "codigo_ibge": "",
+    "codigo_ibge": "4121901",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3042,9 +3042,9 @@
   {
     "nome": "Rio Azul",
     "slug": "rio-azul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122008",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Irati",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3052,9 +3052,9 @@
   {
     "nome": "Rio Bom",
     "slug": "rio-bom",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122107",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3062,9 +3062,9 @@
   {
     "nome": "Rio Bonito do Iguaçu",
     "slug": "rio-bonito-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122156",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3072,9 +3072,9 @@
   {
     "nome": "Rio Branco do Ivaí",
     "slug": "rio-branco-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122172",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3082,9 +3082,9 @@
   {
     "nome": "Rio Branco do Sul",
     "slug": "rio-branco-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122206",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3092,9 +3092,9 @@
   {
     "nome": "Rio Negro",
     "slug": "rio-negro",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122305",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3102,9 +3102,9 @@
   {
     "nome": "Rolândia",
     "slug": "rolandia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122404",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3112,9 +3112,9 @@
   {
     "nome": "Roncador",
     "slug": "roncador",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122503",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3122,9 +3122,9 @@
   {
     "nome": "Rondon",
     "slug": "rondon",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122602",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3132,9 +3132,9 @@
   {
     "nome": "Rosário do Ivaí",
     "slug": "rosario-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122651",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3142,9 +3142,9 @@
   {
     "nome": "Sabáudia",
     "slug": "sabaudia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122701",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3152,9 +3152,9 @@
   {
     "nome": "Salgado Filho",
     "slug": "salgado-filho",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122800",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3162,9 +3162,9 @@
   {
     "nome": "Salto do Itararé",
     "slug": "salto-do-itarare",
-    "codigo_ibge": "",
+    "codigo_ibge": "4122909",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3172,9 +3172,9 @@
   {
     "nome": "Salto do Lontra",
     "slug": "salto-do-lontra",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123006",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Dois Vizinhos",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3182,9 +3182,9 @@
   {
     "nome": "Santa Amélia",
     "slug": "santa-amelia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123105",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3192,9 +3192,9 @@
   {
     "nome": "Santa Cecília do Pavão",
     "slug": "santa-cecilia-do-pavao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123204",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3202,9 +3202,9 @@
   {
     "nome": "Santa Cruz de Monte Castelo",
     "slug": "santa-cruz-de-monte-castelo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123303",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Loanda",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3212,9 +3212,9 @@
   {
     "nome": "Santa Fé",
     "slug": "santa-fe",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123402",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3222,9 +3222,9 @@
   {
     "nome": "Santa Helena",
     "slug": "santa-helena",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123501",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3232,9 +3232,9 @@
   {
     "nome": "Santa Inês",
     "slug": "santa-ines",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123600",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3242,9 +3242,9 @@
   {
     "nome": "Santa Isabel do Ivaí",
     "slug": "santa-isabel-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123709",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Loanda",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3252,9 +3252,9 @@
   {
     "nome": "Santa Izabel do Oeste",
     "slug": "santa-izabel-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123808",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3262,9 +3262,9 @@
   {
     "nome": "Santa Lúcia",
     "slug": "santa-lucia",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123824",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3272,9 +3272,9 @@
   {
     "nome": "Santa Maria do Oeste",
     "slug": "santa-maria-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123857",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pitanga",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3282,9 +3282,9 @@
   {
     "nome": "Santa Mariana",
     "slug": "santa-mariana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123907",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3292,9 +3292,9 @@
   {
     "nome": "Santa Mônica",
     "slug": "santa-monica",
-    "codigo_ibge": "",
+    "codigo_ibge": "4123956",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Loanda",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3302,9 +3302,9 @@
   {
     "nome": "Santana do Itararé",
     "slug": "santana-do-itarare",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124004",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3312,9 +3312,9 @@
   {
     "nome": "Santa Tereza do Oeste",
     "slug": "santa-tereza-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124020",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3322,9 +3322,9 @@
   {
     "nome": "Santa Terezinha de Itaipu",
     "slug": "santa-terezinha-de-itaipu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124053",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Foz do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3332,9 +3332,9 @@
   {
     "nome": "Santo Antônio da Platina",
     "slug": "santo-antonio-da-platina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124103",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3342,9 +3342,9 @@
   {
     "nome": "Santo Antônio do Caiuá",
     "slug": "santo-antonio-do-caiua",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124202",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3352,9 +3352,9 @@
   {
     "nome": "Santo Antônio do Paraíso",
     "slug": "santo-antonio-do-paraiso",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124301",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3362,9 +3362,9 @@
   {
     "nome": "Santo Antônio do Sudoeste",
     "slug": "santo-antonio-do-sudoeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124400",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3372,9 +3372,9 @@
   {
     "nome": "Santo Inácio",
     "slug": "santo-inacio",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124509",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranacity - Colorado",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3382,9 +3382,9 @@
   {
     "nome": "São Carlos do Ivaí",
     "slug": "sao-carlos-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124608",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3392,9 +3392,9 @@
   {
     "nome": "São Jerônimo da Serra",
     "slug": "sao-jeronimo-da-serra",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124707",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3402,9 +3402,9 @@
   {
     "nome": "São João",
     "slug": "sao-joao",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124806",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3412,9 +3412,9 @@
   {
     "nome": "São João do Caiuá",
     "slug": "sao-joao-do-caiua",
-    "codigo_ibge": "",
+    "codigo_ibge": "4124905",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3422,9 +3422,9 @@
   {
     "nome": "São João do Ivaí",
     "slug": "sao-joao-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125001",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ivaiporã",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3432,9 +3432,9 @@
   {
     "nome": "São João do Triunfo",
     "slug": "sao-joao-do-triunfo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125100",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3442,9 +3442,9 @@
   {
     "nome": "São Jorge d'Oeste",
     "slug": "sao-jorge-d-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125209",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Dois Vizinhos",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3452,9 +3452,9 @@
   {
     "nome": "São Jorge do Ivaí",
     "slug": "sao-jorge-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125308",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3462,9 +3462,9 @@
   {
     "nome": "São Jorge do Patrocínio",
     "slug": "sao-jorge-do-patrocinio",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125357",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3472,9 +3472,9 @@
   {
     "nome": "São José da Boa Vista",
     "slug": "sao-jose-da-boa-vista",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125407",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3482,9 +3482,9 @@
   {
     "nome": "São José das Palmeiras",
     "slug": "sao-jose-das-palmeiras",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125456",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3492,9 +3492,9 @@
   {
     "nome": "São José dos Pinhais",
     "slug": "sao-jose-dos-pinhais",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125506",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3502,9 +3502,9 @@
   {
     "nome": "São Manoel do Paraná",
     "slug": "sao-manoel-do-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125555",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3512,9 +3512,9 @@
   {
     "nome": "São Mateus do Sul",
     "slug": "sao-mateus-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125605",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3522,9 +3522,9 @@
   {
     "nome": "São Miguel do Iguaçu",
     "slug": "sao-miguel-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125704",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Foz do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3532,9 +3532,9 @@
   {
     "nome": "São Pedro do Iguaçu",
     "slug": "sao-pedro-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125753",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3542,9 +3542,9 @@
   {
     "nome": "São Pedro do Ivaí",
     "slug": "sao-pedro-do-ivai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125803",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Apucarana",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3552,9 +3552,9 @@
   {
     "nome": "São Pedro do Paraná",
     "slug": "sao-pedro-do-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4125902",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Loanda",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3562,9 +3562,9 @@
   {
     "nome": "São Sebastião da Amoreira",
     "slug": "sao-sebastiao-da-amoreira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126009",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3572,9 +3572,9 @@
   {
     "nome": "São Tomé",
     "slug": "sao-tome",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126108",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3582,9 +3582,9 @@
   {
     "nome": "Sapopema",
     "slug": "sapopema",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126207",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3592,9 +3592,9 @@
   {
     "nome": "Sarandi",
     "slug": "sarandi",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126256",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3602,9 +3602,9 @@
   {
     "nome": "Saudade do Iguaçu",
     "slug": "saudade-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126272",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3612,9 +3612,9 @@
   {
     "nome": "Sengés",
     "slug": "senges",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126306",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Ponta Grossa",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3622,9 +3622,9 @@
   {
     "nome": "Serranópolis do Iguaçu",
     "slug": "serranopolis-do-iguacu",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126355",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Foz do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3632,9 +3632,9 @@
   {
     "nome": "Sertaneja",
     "slug": "sertaneja",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126405",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3642,9 +3642,9 @@
   {
     "nome": "Sertanópolis",
     "slug": "sertanopolis",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126504",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3652,9 +3652,9 @@
   {
     "nome": "Siqueira Campos",
     "slug": "siqueira-campos",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126603",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3662,9 +3662,9 @@
   {
     "nome": "Sulina",
     "slug": "sulina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126652",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3672,9 +3672,9 @@
   {
     "nome": "Tamarana",
     "slug": "tamarana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126678",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Londrina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3682,9 +3682,9 @@
   {
     "nome": "Tamboara",
     "slug": "tamboara",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126702",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3692,9 +3692,9 @@
   {
     "nome": "Tapejara",
     "slug": "tapejara",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126801",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3702,9 +3702,9 @@
   {
     "nome": "Tapira",
     "slug": "tapira",
-    "codigo_ibge": "",
+    "codigo_ibge": "4126900",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3712,9 +3712,9 @@
   {
     "nome": "Teixeira Soares",
     "slug": "teixeira-soares",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127007",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Irati",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3722,9 +3722,9 @@
   {
     "nome": "Telêmaco Borba",
     "slug": "telemaco-borba",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127106",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Telêmaco Borba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3732,9 +3732,9 @@
   {
     "nome": "Terra Boa",
     "slug": "terra-boa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127205",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3742,9 +3742,9 @@
   {
     "nome": "Terra Rica",
     "slug": "terra-rica",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127304",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Paranavaí",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3752,9 +3752,9 @@
   {
     "nome": "Terra Roxa",
     "slug": "terra-roxa",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127403",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3762,9 +3762,9 @@
   {
     "nome": "Tibagi",
     "slug": "tibagi",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127502",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Telêmaco Borba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3772,9 +3772,9 @@
   {
     "nome": "Tijucas do Sul",
     "slug": "tijucas-do-sul",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127601",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3782,9 +3782,9 @@
   {
     "nome": "Toledo",
     "slug": "toledo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127700",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3792,9 +3792,9 @@
   {
     "nome": "Tomazina",
     "slug": "tomazina",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127809",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3802,9 +3802,9 @@
   {
     "nome": "Três Barras do Paraná",
     "slug": "tres-barras-do-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127858",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3812,9 +3812,9 @@
   {
     "nome": "Tunas do Paraná",
     "slug": "tunas-do-parana",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127882",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3822,9 +3822,9 @@
   {
     "nome": "Tuneiras do Oeste",
     "slug": "tuneiras-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127908",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cianorte",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3832,9 +3832,9 @@
   {
     "nome": "Tupãssi",
     "slug": "tupassi",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127957",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Toledo",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3842,9 +3842,9 @@
   {
     "nome": "Turvo",
     "slug": "turvo",
-    "codigo_ibge": "",
+    "codigo_ibge": "4127965",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Guarapuava",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3852,9 +3852,9 @@
   {
     "nome": "Ubiratã",
     "slug": "ubirata",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128005",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Campo Mourão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3862,9 +3862,9 @@
   {
     "nome": "Umuarama",
     "slug": "umuarama",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128104",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3872,9 +3872,9 @@
   {
     "nome": "União da Vitória",
     "slug": "uniao-da-vitoria",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128203",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "União da Vitória",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3882,9 +3882,9 @@
   {
     "nome": "Uniflor",
     "slug": "uniflor",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128302",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Maringá",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3892,9 +3892,9 @@
   {
     "nome": "Uraí",
     "slug": "urai",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128401",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cornélio Procópio ¿ Bandeirantes",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3902,9 +3902,9 @@
   {
     "nome": "Wenceslau Braz",
     "slug": "wenceslau-braz",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128500",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Santo Antônio da Platina",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3912,9 +3912,9 @@
   {
     "nome": "Ventania",
     "slug": "ventania",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128534",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Telêmaco Borba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3922,9 +3922,9 @@
   {
     "nome": "Vera Cruz do Oeste",
     "slug": "vera-cruz-do-oeste",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128559",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Cascavel",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3932,9 +3932,9 @@
   {
     "nome": "Verê",
     "slug": "vere",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128609",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Francisco Beltrão",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3942,9 +3942,9 @@
   {
     "nome": "Alto Paraíso",
     "slug": "alto-paraiso",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128625",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3952,9 +3952,9 @@
   {
     "nome": "Doutor Ulysses",
     "slug": "doutor-ulysses",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128633",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Curitiba",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3962,9 +3962,9 @@
   {
     "nome": "Virmond",
     "slug": "virmond",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128658",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Laranjeiras do Sul - Quedas do Iguaçu",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3972,9 +3972,9 @@
   {
     "nome": "Vitorino",
     "slug": "vitorino",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128708",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Pato Branco",
     "populacao": "",
     "descricao": "",
     "economia": ""
@@ -3982,9 +3982,9 @@
   {
     "nome": "Xambrê",
     "slug": "xambre",
-    "codigo_ibge": "",
+    "codigo_ibge": "4128807",
     "estado": "PR",
-    "regiao": "",
+    "regiao": "Umuarama",
     "populacao": "",
     "descricao": "",
     "economia": ""
