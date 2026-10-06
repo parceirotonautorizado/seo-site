@@ -9,6 +9,7 @@ const MODELOS = [
     subtitulo: "Android com visor touch",
     badge: "MAIS VENDIDA",
     badgeColor: "#ff6b00",
+    imagem: "/t3-smart.webp",
     preco: "R$ 143,91",
     parcela: "12x de R$ 11,99",
     recursos: [
@@ -26,6 +27,7 @@ const MODELOS = [
     subtitulo: "Com bobina e impressão",
     badge: "CUSTO-BENEFÍCIO",
     badgeColor: "#009641",
+    imagem: "/t3.webp",
     preco: "R$ 81,00",
     parcela: "12x de R$ 6,75",
     recursos: [
@@ -43,6 +45,7 @@ const MODELOS = [
     subtitulo: "Bateria de longa duração",
     badge: "ECONÔMICA",
     badgeColor: "#0066cc",
+    imagem: "/t2.png",
     preco: "R$ 37,41",
     parcela: "12x de R$ 3,12",
     recursos: [
@@ -60,6 +63,7 @@ const MODELOS = [
     subtitulo: "Conexão via Bluetooth",
     badge: "ENTRADA",
     badgeColor: "#666",
+    imagem: "/t1.webp",
     preco: "R$ 16,80",
     parcela: "12x de R$ 1,40",
     recursos: [
@@ -88,6 +92,15 @@ export default function ModelosSection() {
           {MODELOS.map((m) => (
             <div key={m.id} className={`modelo-card ${m.destaque ? "modelo-destaque" : ""}`}>
               {m.destaque && <div className="destaque-faixa">★ Mais Vendida</div>}
+
+              <div className="modelo-img-wrap">
+                <img
+                  src={m.imagem}
+                  alt={`Maquininha Ton ${m.nome}`}
+                  className="modelo-img"
+                />
+              </div>
+
               <div className="modelo-top">
                 <span
                   className="modelo-badge"
@@ -179,6 +192,23 @@ export default function ModelosSection() {
           border: 2px solid transparent;
           position: relative;
           overflow: hidden;
+        }
+
+        .modelo-img-wrap {
+          background: #f4f5f4;
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 16px;
+          height: 180px;
+          margin-top: 20px;
+        }
+
+        .modelo-img {
+          max-height: 148px;
+          max-width: 100%;
+          object-fit: contain;
         }
 
         .modelo-destaque {

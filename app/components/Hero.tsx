@@ -26,6 +26,7 @@ export default function Hero({ cidade, bairro }: Props) {
       <div className="hero-overlay" />
 
       <div className="hero-inner">
+        <div className="hero-layout">
         <div className="hero-content">
           <span className="hero-badge">🏆 Parceiro Autorizado Ton</span>
 
@@ -57,6 +58,15 @@ export default function Hero({ cidade, bairro }: Props) {
           <p className="hero-nota">
             Frete grátis · Entrega rápida · Compra no site oficial da Ton
           </p>
+        </div>
+
+        <div className="hero-img-wrap">
+          <img
+            src="/maquininhas-todas.png"
+            alt="Maquininhas Ton T1, T2, T3 e T3 Smart"
+            className="hero-img"
+          />
+        </div>
         </div>
       </div>
 
@@ -91,11 +101,32 @@ export default function Hero({ cidade, bairro }: Props) {
           padding: 80px 20px;
         }
 
+        .hero-layout {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+        }
+
         .hero-content {
-          max-width: 640px;
+          flex: 1;
           display: flex;
           flex-direction: column;
           gap: 20px;
+        }
+
+        .hero-img-wrap {
+          flex-shrink: 0;
+          width: 380px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero-img {
+          width: 100%;
+          max-width: 380px;
+          object-fit: contain;
+          filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
         }
 
         .hero-badge {
@@ -193,6 +224,17 @@ export default function Hero({ cidade, bairro }: Props) {
             min-height: 480px;
           }
 
+          .hero-layout {
+            flex-direction: column-reverse;
+            gap: 24px;
+          }
+
+          .hero-img-wrap {
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+          }
+
           .hero-h1 {
             font-size: 32px;
           }
@@ -204,6 +246,12 @@ export default function Hero({ cidade, bairro }: Props) {
           .cta-primary, .cta-secondary {
             width: 100%;
             text-align: center;
+          }
+        }
+
+        @media (max-width: 520px) {
+          .hero-img-wrap {
+            display: none;
           }
         }
       `}</style>
