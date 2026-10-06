@@ -1,5 +1,5 @@
 export const CONFIG = {
-  whatsapp: "5541999999999",
+  whatsapp: "5545988195137",
 
   empresa: "Parceiro Ton",
 
