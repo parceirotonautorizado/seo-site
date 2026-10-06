@@ -1,20 +1,25 @@
 import type { Metadata } from "next"
 import Script from "next/script"
 
-import { Geist, Geist_Mono } from "next/font/google"
+import { Inter, Poppins } from "next/font/google"
 
 import "./globals.css"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
+import WhatsAppButton from "@/app/components/WhatsAppButton"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["600", "700", "800", "900"],
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -38,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
       <head>
 
@@ -92,6 +97,7 @@ src="https://www.googletagmanager.com/ns.html?id=GTM-WZRS8XND"
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
 
       </body>
     </html>
