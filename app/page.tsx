@@ -1,6 +1,6 @@
 import HeroSlider from "./components/HeroSlider"
 import TaxasDestaque from "./components/TaxasDestaque"
-import ModelosSection from "./components/ModelosSection"
+import ModelosCarousel from "./components/ModelosCarousel"
 import Diferenciais from "./components/Diferenciais"
 import Simulador from "./components/Simulador"
 import FaqSection from "./components/FaqSection"
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <HeroSlider />
       <TaxasDestaque />
-      <ModelosSection />
+      <ModelosCarousel />
       <Diferenciais />
       <section id="simulador">
         <Simulador cidade="Curitiba" bairro="Centro" />
