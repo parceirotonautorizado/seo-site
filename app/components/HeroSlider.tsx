@@ -48,6 +48,29 @@ const SLIDES = [
   },
 ]
 
+const TICKER_ITEMS = [
+  { type: "badge", text: "Novidade" },
+  { type: "text",  text: "PIX 0% de verdade" },
+  { type: "img",   src: "/t3-smart.webp" },
+  { type: "sep" },
+  { type: "badge", text: "Promoção" },
+  { type: "text",  text: "Taxa 0,57% no débito" },
+  { type: "img",   src: "/t3.webp" },
+  { type: "sep" },
+  { type: "badge", text: "Exclusivo" },
+  { type: "text",  text: "Sem aluguel mensal" },
+  { type: "img",   src: "/t2.png" },
+  { type: "sep" },
+  { type: "badge", text: "Garantia" },
+  { type: "text",  text: "Vitalícia em todos os modelos" },
+  { type: "img",   src: "/t1.webp" },
+  { type: "sep" },
+  { type: "badge", text: "Parceiro" },
+  { type: "text",  text: "Desconto exclusivo no link" },
+  { type: "img",   src: "/t3-smart.webp" },
+  { type: "sep" },
+] as const
+
 export default function HeroSlider() {
   const [atual, setAtual] = useState(0)
   const [transitioning, setTransitioning] = useState(false)
@@ -161,6 +184,32 @@ export default function HeroSlider() {
             aria-label={`Slide ${i + 1}`}
           />
         ))}
+      </div>
+
+      {/* ── TICKER ── */}
+      <div className="hs-ticker">
+        <div className="hs-ticker-track">
+          {[0, 1].map((copy) => (
+            <div key={copy} className="hs-ticker-inner" aria-hidden={copy === 1}>
+              {TICKER_ITEMS.map((item, i) => (
+                <span key={i} className="hs-ticker-item">
+                  {item.type === "badge" && (
+                    <span className="hs-ticker-badge">{item.text}</span>
+                  )}
+                  {item.type === "text" && (
+                    <span className="hs-ticker-text">{item.text}</span>
+                  )}
+                  {item.type === "img" && (
+                    <img src={item.src} alt="" width={32} height={32} className="hs-ticker-img" />
+                  )}
+                  {item.type === "sep" && (
+                    <span className="hs-ticker-sep">✦</span>
+                  )}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       <style jsx>{`
@@ -363,10 +412,84 @@ export default function HeroSlider() {
         .hs-arrow-l { left: 16px; }
         .hs-arrow-r { right: 16px; }
 
+        /* ── TICKER ── */
+        .hs-ticker {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 10;
+          background: rgba(0,0,0,0.45);
+          backdrop-filter: blur(6px);
+          overflow: hidden;
+          height: 44px;
+          display: flex;
+          align-items: center;
+        }
+
+        .hs-ticker-track {
+          display: flex;
+          width: max-content;
+          animation: hs-marquee 30s linear infinite;
+        }
+
+        .hs-ticker-track:hover {
+          animation-play-state: paused;
+        }
+
+        @keyframes hs-marquee {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
+        }
+
+        .hs-ticker-inner {
+          display: flex;
+          align-items: center;
+          gap: 0;
+          white-space: nowrap;
+        }
+
+        .hs-ticker-item {
+          display: inline-flex;
+          align-items: center;
+          padding: 0 14px;
+        }
+
+        .hs-ticker-badge {
+          background: rgba(136,255,0,0.2);
+          border: 1px solid rgba(136,255,0,0.5);
+          color: #88ff00;
+          font-size: 11px;
+          font-weight: 800;
+          padding: 3px 10px;
+          border-radius: 999px;
+          letter-spacing: 0.4px;
+          text-transform: uppercase;
+        }
+
+        .hs-ticker-text {
+          color: rgba(255,255,255,0.9);
+          font-size: 13px;
+          font-weight: 700;
+        }
+
+        .hs-ticker-img {
+          width: 28px;
+          height: 28px;
+          object-fit: contain;
+          filter: brightness(0) invert(1);
+          opacity: 0.75;
+        }
+
+        .hs-ticker-sep {
+          color: rgba(136,255,0,0.5);
+          font-size: 10px;
+        }
+
         /* ── DOTS ── */
         .hs-dots {
           position: absolute;
-          bottom: 22px;
+          bottom: 58px;
           left: 50%;
           transform: translateX(-50%);
           display: flex;
