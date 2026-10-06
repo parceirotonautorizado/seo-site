@@ -11,13 +11,12 @@ const SLIDES = [
     titulo: "Taxa de 0,57%\nno débito e crédito",
     subtitulo: "PIX 0% de verdade. Sem aluguel. Garantia vitalícia. Para CPF e CNPJ.",
     cta: "Pedir com Desconto",
-    ctaSecundario: "Simular Taxas",
     ctaLink: CONFIG.tonLink,
+    ctaSecundario: "Simular Taxas",
     ctaSecLink: "#simulador",
-    imagem: "/promo-t3smart.png",
-    imagemAlt: "Maquininha Ton T3 Smart",
-    imagemPos: "right",
-    bgImagem: null,
+    imgDireita: "/promo-t3smart.png",
+    imgAlt: "Promoção Ton T3 Smart — menor taxa do mercado",
+    bgImg: null as string | null,
   },
   {
     id: 2,
@@ -26,45 +25,43 @@ const SLIDES = [
     titulo: "Receba PIX\nsem pagar nada",
     subtitulo: "PIX 0% no período promocional. Débito 0,57%. Receba na mesma hora.",
     cta: "Pedir Maquininha",
-    ctaSecundario: "Ver Taxas",
     ctaLink: CONFIG.tonLink,
+    ctaSecundario: "Ver Taxas",
     ctaSecLink: "#taxas",
-    imagem: null,
-    imagemAlt: "",
-    imagemPos: "bg",
-    bgImagem: "/promo-pix.png",
+    imgDireita: null as string | null,
+    imgAlt: "",
+    bgImg: "/promo-pix.png",
   },
   {
     id: 3,
     bg: "#004d26",
     label: "4 modelos disponíveis",
-    titulo: "Escolha a maquininha\ncerta para o seu negócio",
-    subtitulo: "T1, T2, T3 ou T3 Smart. Todos com as menores taxas do mercado.",
+    titulo: "Escolha a maquininha\ncerta para você",
+    subtitulo: "T1, T2, T3 ou T3 Smart. Todos com desconto de parceiro.",
     cta: "Ver Modelos",
-    ctaSecundario: "Simular Taxas",
     ctaLink: "#modelos",
+    ctaSecundario: "Simular Taxas",
     ctaSecLink: "#simulador",
-    imagem: "/maquininhas-todas.png",
-    imagemAlt: "Todos os modelos Ton",
-    imagemPos: "right",
-    bgImagem: null,
+    imgDireita: "/maquininhas-todas.png",
+    imgAlt: "T1, T2, T3 e T3 Smart — todos os modelos Ton",
+    bgImg: null as string | null,
   },
 ]
 
 export default function HeroSlider() {
   const [atual, setAtual] = useState(0)
-  const [animando, setAnimando] = useState(false)
+  const [transitioning, setTransitioning] = useState(false)
 
   const irPara = useCallback(
     (idx: number) => {
-      if (animando) return
-      setAnimando(true)
+      if (transitioning) return
+      setTransitioning(true)
       setTimeout(() => {
         setAtual(idx)
-        setAnimando(false)
-      }, 300)
+        setTransitioning(false)
+      }, 280)
     },
-    [animando]
+    [transitioning]
   )
 
   const proximo = useCallback(() => {
@@ -80,298 +77,296 @@ export default function HeroSlider() {
     return () => clearInterval(t)
   }, [proximo])
 
-  const slide = SLIDES[atual]
+  const s = SLIDES[atual]
 
   return (
-    <section className="slider-section">
-      {/* FUNDO */}
-      <div
-        className="slider-bg"
-        style={{ background: slide.bg }}
-      />
-      {slide.bgImagem && (
-        <img
-          src={slide.bgImagem}
-          alt=""
-          aria-hidden="true"
-          className="slider-bg-img"
-        />
+    <section
+      className="hs"
+      style={{ background: s.bg }}
+    >
+      {/* ── FUNDO FULL-BLEED (slide PIX) ── */}
+      {s.bgImg && (
+        <img src={s.bgImg} alt="" aria-hidden="true" className="hs-bg-img" />
       )}
-      <div className="slider-overlay" />
 
-      {/* CONTEÚDO */}
-      <div className={`slider-inner ${animando ? "fade-out" : "fade-in"}`}>
-        <div className="slide-layout">
+      {/* ── IMAGEM À DIREITA (slides 1 e 3) ── */}
+      {s.imgDireita && (
+        <div className="hs-img-panel">
+          {/* gradiente que cobre a transição texto → imagem */}
+          <div className="hs-img-grad" style={{ background: `linear-gradient(to right, ${s.bg}, transparent)` }} />
+          <img
+            src={s.imgDireita}
+            alt={s.imgAlt}
+            className="hs-img"
+          />
+        </div>
+      )}
 
-          {/* TEXTO */}
-          <div className="slide-texto">
-            <span className="slide-label">{slide.label}</span>
+      {/* ── OVERLAY ESCURO (legibilidade) ── */}
+      <div className="hs-overlay" />
 
-            <h1 className="slide-h1">
-              {slide.titulo.split("\n").map((linha, i) => (
-                <span key={i}>
-                  {linha}
-                  {i < slide.titulo.split("\n").length - 1 && <br />}
-                </span>
-              ))}
-            </h1>
+      {/* ── CONTEÚDO ── */}
+      <div className={`hs-inner ${transitioning ? "hs-out" : "hs-in"}`}>
+        <div className="hs-content">
+          <span className="hs-label">{s.label}</span>
 
-            <p className="slide-sub">{slide.subtitulo}</p>
+          <h1 className="hs-h1">
+            {s.titulo.split("\n").map((l, i, arr) => (
+              <span key={i}>{l}{i < arr.length - 1 && <br />}</span>
+            ))}
+          </h1>
 
-            <div className="slide-pills">
-              <span className="pill">✓ Frete Grátis</span>
-              <span className="pill">✓ Sem Aluguel</span>
-              <span className="pill">✓ Garantia Vitalícia</span>
-            </div>
+          <p className="hs-sub">{s.subtitulo}</p>
 
-            <div className="slide-ctas">
-              <a
-                href={slide.ctaLink}
-                target={slide.ctaLink.startsWith("http") ? "_blank" : undefined}
-                rel={slide.ctaLink.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="slide-cta-primary"
-              >
-                {slide.cta} →
-              </a>
-              <a href={slide.ctaSecLink} className="slide-cta-secondary">
-                {slide.ctaSecundario}
-              </a>
-            </div>
+          <div className="hs-pills">
+            <span className="hs-pill">✓ Frete Grátis</span>
+            <span className="hs-pill">✓ Sem Aluguel</span>
+            <span className="hs-pill">✓ Garantia Vitalícia</span>
           </div>
 
-          {/* IMAGEM DO PRODUTO */}
-          {slide.imagem && slide.imagemPos === "right" && (
-            <div className="slide-img-wrap">
-              <img
-                src={slide.imagem}
-                alt={slide.imagemAlt}
-                className="slide-img"
-              />
-            </div>
-          )}
+          <div className="hs-ctas">
+            <a
+              href={s.ctaLink}
+              target={s.ctaLink.startsWith("http") ? "_blank" : undefined}
+              rel={s.ctaLink.startsWith("http") ? "noopener noreferrer" : undefined}
+              className="hs-btn-primary"
+            >
+              {s.cta} →
+            </a>
+            <a href={s.ctaSecLink} className="hs-btn-sec">
+              {s.ctaSecundario}
+            </a>
+          </div>
         </div>
+
+        {/* Imagem INLINE no mobile (abaixo do texto, sempre visível) */}
+        {s.imgDireita && (
+          <div className="hs-img-mobile">
+            <img src={s.imgDireita} alt={s.imgAlt} className="hs-img-mob-img" />
+          </div>
+        )}
       </div>
 
-      {/* SETAS */}
-      <button className="seta seta-left" onClick={anterior} aria-label="Anterior">
-        ‹
-      </button>
-      <button className="seta seta-right" onClick={proximo} aria-label="Próximo">
-        ›
-      </button>
+      {/* ── SETAS ── */}
+      <button className="hs-arrow hs-arrow-l" onClick={anterior} aria-label="Slide anterior">‹</button>
+      <button className="hs-arrow hs-arrow-r" onClick={proximo}  aria-label="Próximo slide">›</button>
 
-      {/* DOTS */}
-      <div className="dots">
+      {/* ── DOTS ── */}
+      <div className="hs-dots">
         {SLIDES.map((_, i) => (
           <button
             key={i}
-            className={`dot ${i === atual ? "dot-ativo" : ""}`}
             onClick={() => irPara(i)}
+            className={`hs-dot${i === atual ? " hs-dot-on" : ""}`}
             aria-label={`Slide ${i + 1}`}
           />
         ))}
       </div>
 
       <style jsx>{`
-        .slider-section {
+        /* ── BASE ── */
+        .hs {
           position: relative;
-          min-height: 560px;
-          overflow: hidden;
+          min-height: 580px;
           display: flex;
           align-items: center;
-        }
-
-        .slider-bg {
-          position: absolute;
-          inset: 0;
+          overflow: hidden;
           transition: background 0.5s ease;
         }
 
-        .slider-bg-img {
+        /* ── FUNDO (slide PIX) ── */
+        .hs-bg-img {
           position: absolute;
           inset: 0;
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: center;
+          object-position: center 30%;
+          z-index: 0;
         }
 
-        .slider-overlay {
+        /* ── IMAGEM LATERAL (slides 1 e 3) ── */
+        .hs-img-panel {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 52%;
+          z-index: 1;
+          overflow: hidden;
+        }
+
+        .hs-img-grad {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 180px;
+          z-index: 2;
+        }
+
+        .hs-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+
+        /* ── OVERLAY ── */
+        .hs-overlay {
           position: absolute;
           inset: 0;
-          background: rgba(0, 0, 0, 0.35);
+          background: linear-gradient(
+            100deg,
+            rgba(0,0,0,0.55) 0%,
+            rgba(0,0,0,0.25) 55%,
+            rgba(0,0,0,0.05) 100%
+          );
+          z-index: 2;
         }
 
-        .slider-inner {
+        /* ── INNER ── */
+        .hs-inner {
           position: relative;
+          z-index: 3;
           width: 100%;
           max-width: 1200px;
           margin: 0 auto;
-          padding: 80px 60px;
-          z-index: 2;
-          transition: opacity 0.3s ease;
+          padding: 80px 60px 100px;
+          transition: opacity 0.28s ease;
         }
 
-        .fade-in { opacity: 1; }
-        .fade-out { opacity: 0; }
+        .hs-in  { opacity: 1; }
+        .hs-out { opacity: 0; }
 
-        .slide-layout {
-          display: flex;
-          align-items: center;
-          gap: 60px;
-        }
-
-        .slide-texto {
-          flex: 1;
+        /* ── CONTEÚDO (só texto + pills + CTAs) ── */
+        .hs-content {
+          max-width: 560px;
           display: flex;
           flex-direction: column;
           gap: 18px;
         }
 
-        .slide-label {
+        .hs-label {
           display: inline-block;
-          background: rgba(136, 255, 0, 0.18);
-          border: 1px solid rgba(136, 255, 0, 0.45);
+          background: rgba(136,255,0,0.18);
+          border: 1px solid rgba(136,255,0,0.4);
           color: #88ff00;
           font-size: 13px;
           font-weight: 700;
-          padding: 6px 16px;
+          padding: 5px 14px;
           border-radius: 999px;
           width: fit-content;
           letter-spacing: 0.3px;
         }
 
-        .slide-h1 {
-          font-size: 52px;
+        .hs-h1 {
+          font-size: 54px;
           font-weight: 900;
-          color: #ffffff;
-          line-height: 1.1;
+          color: #fff;
+          line-height: 1.08;
           margin: 0;
         }
 
-        .slide-sub {
-          font-size: 18px;
-          color: rgba(255, 255, 255, 0.8);
+        .hs-sub {
+          font-size: 17px;
+          color: rgba(255,255,255,0.82);
           line-height: 1.6;
           margin: 0;
-          max-width: 520px;
         }
 
-        .slide-pills {
+        .hs-pills {
           display: flex;
           flex-wrap: wrap;
-          gap: 10px;
+          gap: 8px;
         }
 
-        .pill {
-          background: rgba(255, 255, 255, 0.12);
-          border: 1px solid rgba(255, 255, 255, 0.22);
+        .hs-pill {
+          background: rgba(255,255,255,0.1);
+          border: 1px solid rgba(255,255,255,0.2);
           color: #fff;
-          font-size: 13px;
+          font-size: 12px;
           font-weight: 600;
-          padding: 6px 14px;
+          padding: 5px 12px;
           border-radius: 999px;
         }
 
-        .slide-ctas {
+        .hs-ctas {
           display: flex;
-          gap: 14px;
+          gap: 12px;
           flex-wrap: wrap;
-          margin-top: 4px;
+          margin-top: 6px;
         }
 
-        .slide-cta-primary {
+        .hs-btn-primary {
           display: inline-block;
           background: #88ff00;
           color: #0a2a10;
           text-decoration: none;
-          padding: 16px 32px;
+          padding: 15px 30px;
           border-radius: 999px;
           font-size: 16px;
           font-weight: 800;
-          transition: transform 0.15s, background 0.2s;
           white-space: nowrap;
+          transition: background 0.2s, transform 0.15s;
         }
 
-        .slide-cta-primary:hover {
+        .hs-btn-primary:hover {
           background: #72dd00;
           transform: translateY(-2px);
         }
 
-        .slide-cta-secondary {
+        .hs-btn-sec {
           display: inline-flex;
           align-items: center;
           background: transparent;
-          border: 2px solid rgba(255, 255, 255, 0.45);
+          border: 2px solid rgba(255,255,255,0.45);
           color: #fff;
           text-decoration: none;
-          padding: 14px 28px;
+          padding: 13px 26px;
           border-radius: 999px;
           font-size: 16px;
           font-weight: 700;
-          transition: border-color 0.2s, background 0.2s;
           white-space: nowrap;
+          transition: border-color 0.2s, background 0.2s;
         }
 
-        .slide-cta-secondary:hover {
+        .hs-btn-sec:hover {
           border-color: #fff;
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(255,255,255,0.1);
         }
 
-        .slide-img-wrap {
-          flex-shrink: 0;
-          width: 400px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+        /* Imagem mobile: escondida no desktop */
+        .hs-img-mobile { display: none; }
 
-        .slide-img {
-          width: 100%;
-          max-width: 400px;
-          object-fit: contain;
-          filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.4));
-          animation: floatImg 4s ease-in-out infinite;
-        }
-
-        @keyframes floatImg {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-
-        /* SETAS */
-        .seta {
+        /* ── SETAS ── */
+        .hs-arrow {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          background: rgba(255, 255, 255, 0.15);
-          border: 1px solid rgba(255, 255, 255, 0.25);
+          z-index: 10;
+          background: rgba(255,255,255,0.14);
+          border: 1px solid rgba(255,255,255,0.28);
           color: #fff;
           width: 48px;
           height: 48px;
           border-radius: 50%;
           font-size: 28px;
-          line-height: 1;
           cursor: pointer;
-          z-index: 10;
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: background 0.2s;
           backdrop-filter: blur(4px);
+          transition: background 0.2s;
         }
+        .hs-arrow:hover { background: rgba(255,255,255,0.28); }
+        .hs-arrow-l { left: 16px; }
+        .hs-arrow-r { right: 16px; }
 
-        .seta:hover {
-          background: rgba(255, 255, 255, 0.3);
-        }
-
-        .seta-left { left: 20px; }
-        .seta-right { right: 20px; }
-
-        /* DOTS */
-        .dots {
+        /* ── DOTS ── */
+        .hs-dots {
           position: absolute;
-          bottom: 28px;
+          bottom: 22px;
           left: 50%;
           transform: translateX(-50%);
           display: flex;
@@ -379,73 +374,110 @@ export default function HeroSlider() {
           z-index: 10;
         }
 
-        .dot {
-          width: 10px;
-          height: 10px;
+        .hs-dot {
+          width: 9px;
+          height: 9px;
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.35);
+          background: rgba(255,255,255,0.35);
           border: none;
           cursor: pointer;
-          transition: background 0.3s, transform 0.3s;
           padding: 0;
+          transition: background 0.3s, transform 0.3s;
         }
 
-        .dot-ativo {
+        .hs-dot-on {
           background: #88ff00;
-          transform: scale(1.3);
+          transform: scale(1.35);
         }
 
-        /* RESPONSIVE */
+        /* ══════════════════════════════════════
+           RESPONSIVO
+        ══════════════════════════════════════ */
+
+        /* Tablet — 900px */
         @media (max-width: 900px) {
-          .slider-inner {
-            padding: 60px 24px;
+          .hs { min-height: auto; }
+
+          /* Painel da imagem vira faixa no topo */
+          .hs-img-panel {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 44%;
+            opacity: 0.55;
           }
 
-          .slide-layout {
-            flex-direction: column;
-            gap: 32px;
+          .hs-inner {
+            padding: 60px 24px 90px;
           }
 
-          .slide-img-wrap {
-            width: 100%;
-            max-width: 280px;
-            margin: 0 auto;
-          }
-
-          .slide-h1 {
-            font-size: 36px;
-          }
-
-          .slide-sub {
-            font-size: 16px;
-          }
-
-          .slider-section {
-            min-height: auto;
-          }
+          .hs-h1 { font-size: 38px; }
+          .hs-sub { font-size: 15px; }
         }
 
-        @media (max-width: 520px) {
-          .slide-img-wrap {
-            display: none;
+        /* Mobile grande — 680px */
+        @media (max-width: 680px) {
+          /* Esconde o painel lateral — mostra imagem inline abaixo do texto */
+          .hs-img-panel { display: none; }
+
+          .hs-img-mobile {
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
           }
 
-          .slide-h1 {
-            font-size: 30px;
+          .hs-img-mob-img {
+            max-height: 220px;
+            max-width: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 12px 24px rgba(0,0,0,0.45));
+            animation: floatY 3.5s ease-in-out infinite;
           }
 
-          .slide-cta-primary,
-          .slide-cta-secondary {
+          @keyframes floatY {
+            0%, 100% { transform: translateY(0); }
+            50%       { transform: translateY(-8px); }
+          }
+
+          .hs-inner {
+            padding: 48px 20px 80px;
+          }
+
+          .hs-h1 { font-size: 32px; }
+          .hs-content { max-width: 100%; }
+        }
+
+        /* Mobile médio — 480px */
+        @media (max-width: 480px) {
+          .hs-h1 { font-size: 28px; }
+
+          .hs-btn-primary,
+          .hs-btn-sec {
             width: 100%;
             text-align: center;
             justify-content: center;
           }
 
-          .seta {
-            width: 36px;
-            height: 36px;
+          .hs-arrow {
+            width: 38px;
+            height: 38px;
             font-size: 22px;
           }
+
+          .hs-arrow-l { left: 8px; }
+          .hs-arrow-r { right: 8px; }
+
+          .hs-img-mob-img { max-height: 180px; }
+        }
+
+        /* Mobile pequeno — 360px */
+        @media (max-width: 360px) {
+          .hs-h1 { font-size: 24px; }
+          .hs-sub { font-size: 14px; }
+          .hs-pill { font-size: 11px; }
+          .hs-btn-primary, .hs-btn-sec { font-size: 14px; padding: 12px 20px; }
+          .hs-img-mob-img { max-height: 140px; }
         }
       `}</style>
     </section>
