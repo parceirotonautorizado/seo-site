@@ -1,65 +1,212 @@
+"use client"
+
+import { CONFIG } from "@/lib/config"
+
 type Props = {
   cidade?: string
   bairro?: string
 }
 
-export default function Hero({
-  cidade,
-  bairro,
-}: Props) {
-
+export default function Hero({ cidade, bairro }: Props) {
   const titulo = bairro
-    ? `Maquininhas Ton no ${bairro}, ${cidade}`
-
+    ? `Maquininha Ton no ${bairro}, ${cidade}`
     : cidade
-    ? `Maquininhas Ton em ${cidade}`
-
-    : "Maquininhas Ton | Menores taxas do Brasil"
+    ? `Maquininha Ton em ${cidade}`
+    : "Maquininha Ton | Menores taxas do Paraná"
 
   const descricao = bairro
-
-    ? `Encontre as melhores maquininhas da Ton no 
-bairro ${bairro}, em ${cidade}. Compare taxas e 
-escolha a melhor opção para seu negócio.`
-
+    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. A melhor maquininha para negócios no ${bairro}, em ${cidade}.`
     : cidade
-
-    ? `Encontre as melhores maquininhas da Ton em 
-${cidade}. Compare taxas e escolha a ideal para 
-seu negócio.`
-
-    : "Compare taxas, simule economia e encontre a melhor maquininha Ton para o seu negócio."
+    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. Ideal para autônomos e empresas em ${cidade}.`
+    : "Taxa de 0,57% no débito, PIX grátis e sem aluguel. Aceita mais de 50 bandeiras. Para CPF e CNPJ."
 
   return (
     <section className="hero">
+      <img src="/hero.jpg" className="hero-bg" alt="" aria-hidden="true" />
+      <div className="hero-overlay" />
 
-      <img
-        src="/hero.jpg"
-        className="hero-background-img"
-      />
-
-      <div className="hero-overlay"></div>
-
-      <div className="container">
-
+      <div className="hero-inner">
         <div className="hero-content">
+          <span className="hero-badge">🏆 Parceiro Autorizado Ton</span>
 
-          <span className="hero-badge">
-            Menores taxas do Brasil
-          </span>
+          <h1 className="hero-h1">{titulo}</h1>
 
-          <h1 className="hero-titulo">
-            {titulo}
-          </h1>
+          <p className="hero-desc">{descricao}</p>
 
-          <p className="hero-descricao">
-            {descricao}
+          <div className="hero-pills">
+            <span className="pill">0,57% Débito</span>
+            <span className="pill">PIX Grátis</span>
+            <span className="pill">Sem Aluguel</span>
+            <span className="pill">Garantia Vitalícia</span>
+          </div>
+
+          <div className="hero-ctas">
+            <a
+              href={CONFIG.tonLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-primary"
+            >
+              Pedir com Desconto →
+            </a>
+            <a href="#simulador" className="cta-secondary">
+              Simular Taxas
+            </a>
+          </div>
+
+          <p className="hero-nota">
+            Frete grátis · Entrega rápida · Compra no site oficial da Ton
           </p>
-
         </div>
-
       </div>
 
+      <style jsx>{`
+        .hero {
+          position: relative;
+          min-height: 560px;
+          display: flex;
+          align-items: center;
+        }
+
+        .hero-bg {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .hero-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(0,80,30,0.92) 0%, rgba(0,40,15,0.85) 100%);
+        }
+
+        .hero-inner {
+          position: relative;
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 80px 20px;
+        }
+
+        .hero-content {
+          max-width: 640px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .hero-badge {
+          display: inline-block;
+          background: rgba(136, 255, 0, 0.15);
+          border: 1px solid rgba(136, 255, 0, 0.4);
+          color: #88ff00;
+          font-size: 13px;
+          font-weight: 700;
+          padding: 6px 16px;
+          border-radius: 999px;
+          width: fit-content;
+        }
+
+        .hero-h1 {
+          font-size: 48px;
+          font-weight: 900;
+          color: #fff;
+          line-height: 1.1;
+          margin: 0;
+        }
+
+        .hero-desc {
+          font-size: 18px;
+          color: rgba(255,255,255,0.85);
+          line-height: 1.6;
+          margin: 0;
+        }
+
+        .hero-pills {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+
+        .pill {
+          background: rgba(255,255,255,0.12);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: #fff;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 6px 14px;
+          border-radius: 999px;
+        }
+
+        .hero-ctas {
+          display: flex;
+          gap: 14px;
+          flex-wrap: wrap;
+        }
+
+        .cta-primary {
+          display: inline-block;
+          background: #88ff00;
+          color: #0a2a10;
+          text-decoration: none;
+          padding: 16px 32px;
+          border-radius: 999px;
+          font-size: 16px;
+          font-weight: 800;
+          transition: transform 0.15s, background 0.2s;
+        }
+
+        .cta-primary:hover {
+          background: #72dd00;
+          transform: translateY(-1px);
+        }
+
+        .cta-secondary {
+          display: inline-block;
+          background: transparent;
+          border: 2px solid rgba(255,255,255,0.5);
+          color: #fff;
+          text-decoration: none;
+          padding: 14px 28px;
+          border-radius: 999px;
+          font-size: 16px;
+          font-weight: 700;
+          transition: border-color 0.2s, background 0.2s;
+        }
+
+        .cta-secondary:hover {
+          border-color: #fff;
+          background: rgba(255,255,255,0.08);
+        }
+
+        .hero-nota {
+          font-size: 13px;
+          color: rgba(255,255,255,0.5);
+          margin: 0;
+        }
+
+        @media (max-width: 768px) {
+          .hero {
+            min-height: 480px;
+          }
+
+          .hero-h1 {
+            font-size: 32px;
+          }
+
+          .hero-desc {
+            font-size: 16px;
+          }
+
+          .cta-primary, .cta-secondary {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      `}</style>
     </section>
   )
 }

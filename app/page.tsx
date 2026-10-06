@@ -1,91 +1,46 @@
 import Hero from "./components/Hero"
+import TaxasDestaque from "./components/TaxasDestaque"
+import ModelosSection from "./components/ModelosSection"
+import Diferenciais from "./components/Diferenciais"
 import Simulador from "./components/Simulador"
-import LeadForm from "./components/LeadForm"
+import FaqSection from "./components/FaqSection"
 
 export default function Home() {
   return (
     <>
       <Hero cidade="Paraná" />
+      <TaxasDestaque />
+      <ModelosSection />
+      <Diferenciais />
 
-      <section
-        id="simulador"
-        style={{
-          padding: "80px 20px",
-          background: "#F7F7F7",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "900px",
-            margin: "0 auto",
-          }}
-        >
+      <section id="simulador" style={{ padding: "80px 20px", background: "#f4f5f4" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <h2
             style={{
-              fontSize: "32px",
-              fontWeight: "900",
+              fontSize: "36px",
+              fontWeight: 900,
               marginBottom: "10px",
               textAlign: "center",
+              color: "#1a1a1a",
             }}
           >
-            Simule quanto você pode economizar
+            Simule as taxas das suas vendas
           </h2>
-
           <p
             style={{
               textAlign: "center",
               color: "#666",
               marginBottom: "30px",
+              fontSize: "16px",
             }}
           >
-            Compare taxas e descubra quanto você pode 
-lucrar mais usando a Ton
+            Descubra exatamente quanto você vai receber por cada venda
           </p>
-
-          <Simulador
-            cidade="Curitiba"
-            bairro="Centro"
-          />
+          <Simulador cidade="Curitiba" bairro="Centro" />
         </div>
       </section>
 
-      <section
-        style={{
-          padding: "80px 20px",
-          background: "#ffffff",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "700px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              textAlign: "center",
-              fontSize: "32px",
-              fontWeight: "900",
-              marginBottom: "10px",
-            }}
-          >
-            Solicite uma proposta personalizada
-          </h2>
-
-          <p
-            style={{
-              textAlign: "center",
-              color: "#666",
-              marginBottom: "30px",
-            }}
-          >
-            Preencha os dados abaixo e nossa equipe 
-entrará em contato.
-          </p>
-
-          <LeadForm />
-        </div>
-      </section>
+      <FaqSection />
     </>
   )
 }

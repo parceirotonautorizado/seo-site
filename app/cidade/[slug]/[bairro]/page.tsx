@@ -4,8 +4,11 @@ import type { Metadata } from "next"
 import { bairros } from "@/bairros"
 import Hero from "@/app/components/Hero"
 import { gerarTexto } from "@/lib/seoText"
-import TapTonSection from "@/app/components/TapTonSection"
 import Breadcrumb from "@/app/components/Breadcrumb"
+import TaxasDestaque from "@/app/components/TaxasDestaque"
+import Simulador from "@/app/components/Simulador"
+import FaqSection from "@/app/components/FaqSection"
+import { CONFIG } from "@/lib/config"
 
 type Props = {
   params: Promise<{
@@ -70,10 +73,9 @@ export default async function BairroPage({ params }: Props) {
     <>
       <Hero cidade={cidadeFormatada} bairro={bairroFormatado} />
 
-      <Breadcrumb
-        cidade={cidadeFormatada}
-        bairro={bairroFormatado}
-      />
+      <Breadcrumb cidade={cidadeFormatada} bairro={bairroFormatado} />
+
+      <TaxasDestaque />
 
       <section
         style={{
@@ -82,17 +84,47 @@ export default async function BairroPage({ params }: Props) {
           margin: "0 auto",
         }}
       >
-        <h1 style={{ fontSize: "28px", marginBottom: "20px" }}>
+        <h1 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "20px", color: "#1a1a1a" }}>
           Maquininha Ton no {bairroFormatado} em {cidadeFormatada}
         </h1>
 
-        <p style={{ lineHeight: "1.8", color: "#555", marginBottom: "20px" }}>
+        <p style={{ lineHeight: "1.8", color: "#555", marginBottom: "28px", whiteSpace: "pre-line" }}>
           {texto}
         </p>
 
-        {/* O restante do conteúdo continua abaixo normalmente */}
-
+        <a
+          href={CONFIG.tonLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            background: "#009641",
+            color: "#fff",
+            textDecoration: "none",
+            padding: "16px 32px",
+            borderRadius: "999px",
+            fontSize: "16px",
+            fontWeight: 700,
+            marginBottom: "60px",
+          }}
+        >
+          Pedir Maquininha no {bairroFormatado} →
+        </a>
       </section>
+
+      <section id="simulador" style={{ padding: "60px 20px", background: "#f4f5f4" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "10px", textAlign: "center", color: "#1a1a1a" }}>
+            Simule as taxas no {bairroFormatado}
+          </h2>
+          <p style={{ textAlign: "center", color: "#666", marginBottom: "30px" }}>
+            Veja exatamente quanto você recebe por cada venda
+          </p>
+          <Simulador cidade={cidadeFormatada} bairro={bairroFormatado} />
+        </div>
+      </section>
+
+      <FaqSection />
     </>
   )
 }

@@ -3,5 +3,8 @@ export const CONFIG = {
 
   empresa: "Parceiro Ton",
 
-  dominio: "https://seu-dominio.com.br",
+  dominio: "https://www.maquininhadecartoes.com.br",
+
+  // Cole aqui o link de parceiro Ton (ex: https://ton.com.br/?parceiro=SEU_CODIGO)
+  tonLink: "https://ton.com.br/?parceiro=SEU_CODIGO_AQUI",
 }
