@@ -25,6 +25,35 @@ export default function Simulador({
   const [amount, setAmount] = useState(100)
   const [selInst, setSelInst] = useState(12)
   const [parcOpen, setParcOpen] = useState(false)
+  const [padOpen, setPadOpen] = useState(false)
+  const [padVal, setPadVal] = useState("")
+
+  function padPress(key: string) {
+    if (key === "⌫") {
+      setPadVal((v) => v.slice(0, -1))
+    } else if (key === "✓") {
+      const n = parseInt(padVal || "0", 10)
+      if (n > 0) setAmount(Math.min(n, 999999))
+      setPadOpen(false)
+    } else if (key === "C") {
+      setPadVal("")
+    } else {
+      setPadVal((v) => {
+        const next = v + key
+        if (parseInt(next, 10) > 999999) return v
+        return next.replace(/^0+/, "") || "0"
+      })
+    }
+  }
+
+  function openPad() {
+    setPadVal(String(amount))
+    setPadOpen(true)
+  }
+
+  const padDisplay = padVal
+    ? Number(padVal).toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 })
+    : "R$ 0"
 
   const currentPlan =
     PLANS?.[tier]?.[recv]?.[band]
@@ -407,22 +436,23 @@ if (typeof window !== "undefined") {
                   Valor da venda
                 </div>
 
-                <input
+                <button
                   className="amount-input"
-                  value={fM(amount)}
-                  readOnly
-                />
+                  onClick={openPad}
+                  title="Clique para digitar o valor"
+                >
+                  {fM(amount)}
+                  <span className="amount-edit-icon">✎</span>
+                </button>
 
                 <div className="slider-wrap">
                   <input
                     type="range"
                     min="1"
-                    max="10000"
+                    max="100000"
                     value={amount}
                     onChange={(e) =>
-                      setAmount(
-                        Number(e.target.value)
-                      )
+                      setAmount(Number(e.target.value))
                     }
                   />
                 </div>
@@ -600,6 +630,36 @@ if (typeof window !== "undefined") {
         </div>
       </div>
 
+      {/* TECLADO NUMÉRICO */}
+      {padOpen && (
+        <div className="pad-overlay" onClick={() => setPadOpen(false)}>
+          <div className="pad-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="pad-header">
+              <span className="pad-label">Valor da venda</span>
+              <button className="pad-close" onClick={() => setPadOpen(false)}>✕</button>
+            </div>
+
+            <div className="pad-display">{padDisplay}</div>
+
+            <div className="pad-grid">
+              {["1","2","3","4","5","6","7","8","9","C","0","⌫"].map((k) => (
+                <button
+                  key={k}
+                  className={`pad-key${k === "C" ? " pad-key-clear" : ""}${k === "⌫" ? " pad-key-back" : ""}`}
+                  onClick={() => padPress(k)}
+                >
+                  {k}
+                </button>
+              ))}
+            </div>
+
+            <button className="pad-confirm" onClick={() => padPress("✓")}>
+              Confirmar
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* CSS */}
       <style jsx>{`
         .calc-section {
@@ -727,9 +787,150 @@ if (typeof window !== "undefined") {
           width: 100%;
           padding: 18px;
           border-radius: 14px;
-          border: 1px solid #ddd;
+          border: 2px solid #ddd;
           font-size: 44px;
           font-weight: 900;
+          background: #fff;
+          cursor: pointer;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 8px;
+          transition: border-color 0.2s;
+          color: #1a1a1a;
+        }
+
+        .amount-input:hover {
+          border-color: #009641;
+        }
+
+        .amount-edit-icon {
+          font-size: 20px;
+          color: #009641;
+          opacity: 0.7;
+          flex-shrink: 0;
+        }
+
+        /* ── TECLADO NUMÉRICO ── */
+        .pad-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.55);
+          z-index: 1000;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+        }
+
+        .pad-modal {
+          background: #fff;
+          border-radius: 28px 28px 0 0;
+          padding: 24px 20px 32px;
+          width: 100%;
+          max-width: 420px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          animation: slideUp 0.22s ease;
+        }
+
+        @keyframes slideUp {
+          from { transform: translateY(100%); opacity: 0; }
+          to   { transform: translateY(0);    opacity: 1; }
+        }
+
+        .pad-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .pad-label {
+          font-size: 14px;
+          font-weight: 700;
+          color: #666;
+        }
+
+        .pad-close {
+          background: #f0f0f0;
+          border: none;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          font-size: 14px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #555;
+        }
+
+        .pad-display {
+          font-size: 48px;
+          font-weight: 900;
+          color: #1a1a1a;
+          text-align: center;
+          padding: 12px 0 4px;
+          letter-spacing: -1px;
+          min-height: 70px;
+        }
+
+        .pad-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+
+        .pad-key {
+          background: #f4f5f4;
+          border: none;
+          border-radius: 18px;
+          font-size: 28px;
+          font-weight: 700;
+          color: #1a1a1a;
+          height: 72px;
+          cursor: pointer;
+          transition: background 0.12s, transform 0.1s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .pad-key:active {
+          background: #e0e0e0;
+          transform: scale(0.94);
+        }
+
+        .pad-key-clear {
+          color: #e05a00;
+          background: #fff4ee;
+        }
+
+        .pad-key-clear:active {
+          background: #ffe0cc;
+        }
+
+        .pad-key-back {
+          color: #555;
+          font-size: 24px;
+        }
+
+        .pad-confirm {
+          background: #009641;
+          color: #fff;
+          border: none;
+          border-radius: 18px;
+          height: 68px;
+          font-size: 18px;
+          font-weight: 800;
+          cursor: pointer;
+          transition: background 0.2s;
+          letter-spacing: 0.3px;
+        }
+
+        .pad-confirm:hover {
+          background: #007a34;
         }
 
         .slider-wrap {
