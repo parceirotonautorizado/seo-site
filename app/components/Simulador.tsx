@@ -8,195 +8,11 @@ declare global {
 
 import { useEffect, useState } from "react"
 import { CONFIG } from "@/lib/config"
+import { VM, RECEBIMENTO, BANDEIRAS, PLANS, TAXAS_ULTIMA_VERIFICACAO } from "@/lib/taxas"
 
 type Props = {
   cidade?: string
   bairro?: string
-}
-
-const VM = [
-  { id: "promo", label: "Período Promocional" },
-  { id: "ate3", label: "Até R$ 3 mil" },
-  { id: "t3a6", label: "De R$ 3 mil a R$ 6 mil" },
-  { id: "t6a10", label: "De R$ 6 mil a R$ 10 mil" },
-  { id: "t10a30", label: "De R$ 10 mil a R$ 30 mil" },
-  { id: "t30p", label: "Acima de R$ 30 mil" },
-]
-
-const RECEBIMENTO = [
-  { id: "d1", label: "1 dia útil" },
-  { id: "d0", label: "Na hora" },
-]
-
-const BANDEIRAS = [
-  { id: "mv", label: "Mastercard e Visa" },
-  { id: "oa", label: "Elo e Amex" },
-]
-
-const PLANS: any = {
-  promo: {
-    d1: {
-      mv: {
-        pix: 0,
-        deb: 0.57,
-        cre: {
-          1: 0.57,
-          2: 3.97,
-          3: 3.97,
-          4: 4.97,
-          5: 5.97,
-          6: 6.97,
-          7: 7.97,
-          8: 7.97,
-          9: 7.97,
-          10: 7.97,
-          11: 7.97,
-          12: 7.97,
-        },
-      },
-
-      oa: {
-        pix: 0,
-        deb: 2.57,
-        cre: {
-          1: 4.34,
-          2: 7.02,
-          3: 7.58,
-          4: 8.38,
-          5: 9.38,
-          6: 10.38,
-          7: 10.98,
-          8: 11.38,
-          9: 12.38,
-          10: 12.88,
-          11: 13.74,
-          12: 13.78,
-        },
-      },
-    },
-
-    d0: {
-      mv: {
-        pix: 0,
-        deb: 0.57,
-        cre: {
-          1: 0.57,
-          2: 3.97,
-          3: 3.97,
-          4: 4.97,
-          5: 5.97,
-          6: 6.97,
-          7: 7.97,
-          8: 7.97,
-          9: 7.97,
-          10: 7.97,
-          11: 7.97,
-          12: 7.97,
-        },
-      },
-
-      oa: {
-        pix: 0,
-        deb: 2.57,
-        cre: {
-          1: 4.34,
-          2: 7.02,
-          3: 7.58,
-          4: 8.38,
-          5: 9.38,
-          6: 10.38,
-          7: 10.98,
-          8: 11.38,
-          9: 12.38,
-          10: 12.88,
-          11: 13.74,
-          12: 13.78,
-        },
-      },
-    },
-  },
-
-  ate3: {
-    d1: {
-      mv: {
-        pix: 0,
-        deb: 1.69,
-        cre: {
-          1: 3.86,
-          2: 9.86,
-          3: 11.24,
-          4: 12.59,
-          5: 13.92,
-          6: 15.22,
-          7: 16.5,
-          8: 17.76,
-          9: 18.99,
-          10: 20.19,
-          11: 20.39,
-          12: 20.39,
-        },
-      },
-
-      oa: {
-        pix: 0,
-        deb: 2.98,
-        cre: {
-          1: 5.15,
-          2: 11.3,
-          3: 12.68,
-          4: 14.03,
-          5: 15.36,
-          6: 16.66,
-          7: 17.94,
-          8: 19.2,
-          9: 20.43,
-          10: 21.78,
-          11: 22.64,
-          12: 22.68,
-        },
-      },
-    },
-
-    d0: {
-      mv: {
-        pix: 0,
-        deb: 1.98,
-        cre: {
-          1: 4.86,
-          2: 10.86,
-          3: 12.24,
-          4: 13.59,
-          5: 14.92,
-          6: 16.22,
-          7: 17.5,
-          8: 18.76,
-          9: 19.99,
-          10: 21.19,
-          11: 21.39,
-          12: 21.39,
-        },
-      },
-
-      oa: {
-        pix: 0,
-        deb: 3.27,
-        cre: {
-          1: 6.15,
-          2: 12.3,
-          3: 13.68,
-          4: 15.03,
-          5: 16.36,
-          6: 17.66,
-          7: 18.94,
-          8: 20.2,
-          9: 21.43,
-          10: 22.78,
-          11: 23.64,
-          12: 23.68,
-        },
-      },
-    },
-  },
 }
 
 export default function Simulador({
@@ -396,9 +212,7 @@ if (typeof window !== "undefined") {
   })
 }
     window.open(
-      `https://wa.me/5599999999999?text=${encodeURIComponent(
-        text
-      )}`,
+      `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`,
       "_blank"
     )
   }
@@ -772,8 +586,13 @@ if (typeof window !== "undefined") {
               </button>
 
               <p className="calc-note">
-                Taxas válidas para Visa,
-                Mastercard, Elo e Amex.
+                Taxas verificadas em {TAXAS_ULTIMA_VERIFICACAO} · Válidas para Visa, Mastercard, Elo e Amex.
+                Valores sujeitos a alteração pela Ton/Pagar.me.
+                Confirme as taxas atuais em{" "}
+                <a href="https://ton.com.br" target="_blank" rel="noopener noreferrer" className="calc-note-link">
+                  ton.com.br
+                </a>
+                {" "}antes de contratar. Somos um Parceiro Autorizado Ton, não a empresa Ton.
               </p>
 
             </div>
@@ -1001,6 +820,12 @@ if (typeof window !== "undefined") {
           color: #777;
           margin-top: 14px;
           text-align: center;
+          line-height: 1.6;
+        }
+
+        .calc-note-link {
+          color: #009641;
+          text-decoration: underline;
         }
 
         @media (max-width: 900px) {

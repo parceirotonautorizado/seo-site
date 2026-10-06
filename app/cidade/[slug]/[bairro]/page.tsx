@@ -6,6 +6,7 @@ import Hero from "@/app/components/Hero"
 import { gerarTexto } from "@/lib/seoText"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
+import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
 import { CONFIG } from "@/lib/config"
 
@@ -109,6 +110,10 @@ export default async function BairroPage({ params }: Props) {
         >
           Pedir Maquininha no {bairroFormatado} →
         </a>
+      </section>
+
+      <section id="simulador">
+        <Simulador cidade={cidadeFormatada} bairro={bairroFormatado} />
       </section>
 
       <FaqSection />

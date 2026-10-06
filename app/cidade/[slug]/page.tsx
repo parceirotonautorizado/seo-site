@@ -3,6 +3,7 @@ export const dynamic = "force-static"
 import type { Metadata } from "next"
 import Hero from "@/app/components/Hero"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
+import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
 import { CONFIG } from "@/lib/config"
 import cidades from "@/dados/cidades-pr.json"
@@ -93,6 +94,10 @@ export default async function CidadePage({ params }: Props) {
         >
           Pedir Maquininha em {cidade.nome} →
         </a>
+      </section>
+
+      <section id="simulador">
+        <Simulador cidade={cidade.nome} bairro="Centro" />
       </section>
 
       <FaqSection />
