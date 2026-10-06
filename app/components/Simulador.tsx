@@ -1,6 +1,13 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+declare global {
+  interface Window {
+    dataLayer: any[]
+  }
+}
+
+import { useEffect, useState } from "react"
+import { CONFIG } from "@/lib/config"
 
 type Props = {
   cidade?: string
@@ -274,9 +281,7 @@ const tipoVenda =
 
   async function handleLead() {
     try {
-      await fetch(
-        "http://localhost:3001/lead",
-        {
+      await fetch("/api/lead",{
           method: "POST",
           headers: {
             "Content-Type":
@@ -370,7 +375,26 @@ ${device}
 URL:
 ${pageUrl}
 `
+if (typeof window !== "undefined") {
+  window.dataLayer = window.dataLayer || []
 
+  window.dataLayer.push({
+    event: "lead_simulador_submit",
+
+    cidade,
+
+    bairro,
+
+    tipoVenda,
+
+    parcelas: `${selInst}x`,
+
+    vendasMensais:
+      vendasMensaisLabel,
+
+    valorVenda: amount,
+  })
+}
     window.open(
       `https://wa.me/5599999999999?text=${encodeURIComponent(
         text
@@ -425,77 +449,143 @@ ${pageUrl}
                 Maquininhas
               </div>
 
-              {/* VENDAS */}
-              <div className="select-row">
-                <div className="select-label">
-                  Vendas Mensais
-                </div>
+{/* VENDAS */}
+<div className="select-row">
 
-                <select
-                  className="select"
-                  value={tier}
-                  onChange={(e) =>
-                    setTier(e.target.value)
-                  }
-                >
-                  {VM.map((v) => (
-                    <option
-                      key={v.id}
-                      value={v.id}
-                    >
-                      {v.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
+  <div className="select-label">
+    Vendas Mensais
+  </div>
 
-              {/* RECEBIMENTO */}
-              <div className="select-row">
-                <div className="select-label">
-                  Recebimento
-                </div>
+  <select
+    className="select"
 
-                <select
-                  className="select"
-                  value={recv}
-                  onChange={(e) =>
-                    setRecv(e.target.value)
-                  }
-                >
-                  {RECEBIMENTO.map((v) => (
-                    <option
-                      key={v.id}
-                      value={v.id}
-                    >
-                      {v.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
+    value={tier}
 
-              {/* BANDEIRA */}
-              <div className="select-row">
-                <div className="select-label">
-                  Bandeiras
-                </div>
+    onChange={(e) => {
 
-                <select
-                  className="select"
-                  value={band}
-                  onChange={(e) =>
-                    setBand(e.target.value)
-                  }
-                >
-                  {BANDEIRAS.map((v) => (
-                    <option
-                      key={v.id}
-                      value={v.id}
-                    >
-                      {v.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
+      setTier(e.target.value)
+
+      window.dataLayer =
+        window.dataLayer || []
+
+      window.dataLayer.push({
+        event:
+          "simulador_vendas_mensais",
+
+        valor:
+          e.target.value,
+      })
+
+    }}
+  >
+
+    {VM.map((v) => (
+
+      <option
+        key={v.id}
+
+        value={v.id}
+      >
+        {v.label}
+      </option>
+
+    ))}
+
+  </select>
+
+</div>
+
+{/* RECEBIMENTO */}
+<div className="select-row">
+
+  <div className="select-label">
+    Recebimento
+  </div>
+
+  <select
+    className="select"
+
+    value={recv}
+
+    onChange={(e) => {
+
+      setRecv(e.target.value)
+
+      window.dataLayer =
+        window.dataLayer || []
+
+      window.dataLayer.push({
+        event:
+          "simulador_recebimento",
+
+        valor:
+          e.target.value,
+      })
+
+    }}
+  >
+
+    {RECEBIMENTO.map((v) => (
+
+      <option
+        key={v.id}
+
+        value={v.id}
+      >
+        {v.label}
+      </option>
+
+    ))}
+
+  </select>
+
+</div>
+
+{/* BANDEIRA */}
+<div className="select-row">
+
+  <div className="select-label">
+    Bandeiras
+  </div>
+
+  <select
+    className="select"
+
+    value={band}
+
+    onChange={(e) => {
+
+      setBand(e.target.value)
+
+      window.dataLayer =
+        window.dataLayer || []
+
+      window.dataLayer.push({
+        event:
+          "simulador_bandeiras",
+
+        valor:
+          e.target.value,
+      })
+
+    }}
+  >
+
+    {BANDEIRAS.map((v) => (
+
+      <option
+        key={v.id}
+
+        value={v.id}
+      >
+        {v.label}
+      </option>
+
+    ))}
+
+  </select>
+
+</div>
 
               {/* VALOR */}
               <div className="amount-section">
@@ -598,13 +688,17 @@ ${pageUrl}
               </div>
 
               {/* PARCELADO */}
-              <div
+             
+                <div
                 className="result-row clickable"
+              
                 onClick={() =>
                   setParcOpen(!parcOpen)
                 }
               >
+                
                 <div>
+
                   <div className="res-type">
                     Crédito {selInst}x
                   </div>
@@ -612,6 +706,7 @@ ${pageUrl}
                   <div className="res-rate">
                     {fR(selRate)}
                   </div>
+
                 </div>
 
                 <div className="res-right">
@@ -643,9 +738,23 @@ ${pageUrl}
                               ? "active"
                               : ""
                           }`}
-                          onClick={() =>
+                          onClick={() => {
+
                             setSelInst(n)
-                          }
+                          
+                            window.dataLayer =
+                              window.dataLayer || []
+                          
+                            window.dataLayer.push({
+                          
+                              event:
+                                "simulador_parcelas",
+                          
+                              parcelas: n,
+                          
+                            })
+                          
+                          }}
                         >
                           {n}x
                         </button>
