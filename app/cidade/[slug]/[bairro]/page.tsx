@@ -6,7 +6,6 @@ import Hero from "@/app/components/Hero"
 import { gerarTexto } from "@/lib/seoText"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
-import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
 import { CONFIG } from "@/lib/config"
 
@@ -110,18 +109,6 @@ export default async function BairroPage({ params }: Props) {
         >
           Pedir Maquininha no {bairroFormatado} →
         </a>
-      </section>
-
-      <section id="simulador" style={{ padding: "60px 20px", background: "#f4f5f4" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "10px", textAlign: "center", color: "#1a1a1a" }}>
-            Simule as taxas no {bairroFormatado}
-          </h2>
-          <p style={{ textAlign: "center", color: "#666", marginBottom: "30px" }}>
-            Veja exatamente quanto você recebe por cada venda
-          </p>
-          <Simulador cidade={cidadeFormatada} bairro={bairroFormatado} />
-        </div>
       </section>
 
       <FaqSection />
