@@ -1,7 +1,12 @@
 export const dynamic = "force-static"
 
+import type { Metadata } from "next"
 import Hero from "@/app/components/Hero"
 import cidades from "@/dados/cidades-pr.json"
+
+type Props = {
+  params: Promise<{ slug: string }>
+}
 
 export async function generateStaticParams() {
   return cidades.map((cidade) => ({
@@ -9,8 +14,26 @@ export async function generateStaticParams() {
   }))
 }
 
-type Props = {
-  params: Promise<{ slug: string }>
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { slug } = await params
+
+  const cidade = cidades.find((c) => c.slug === slug)
+
+  if (!cidade) {
+    return {
+      title: "Cidade não encontrada",
+    }
+  }
+
+  return {
+    title: `Maquininhas Ton em ${cidade.nome} | Menores Taxas`,
+    description: `Compare taxas e escolha a melhor maquininha Ton em ${cidade.nome}. Pix, débito e crédito com taxas competitivas.`,
+    alternates: {
+      canonical: `https://www.maquininhadecartoes.com.br/cidade/${slug}`,
+    },
+  }
 }
 
 export default async function CidadePage({ params }: Props) {

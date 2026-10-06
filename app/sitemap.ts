@@ -1,20 +1,32 @@
 import { bairros } from "@/bairros"
+import cidades from "@/dados/cidades-pr.json"
 
 export default function sitemap() {
-  const baseUrl = "https://se-site-ruddy.vercel.app"
+  const baseUrl = "https://www.maquininhadecartoes.com.br"
+  const lastModified = new Date()
 
   const urls = []
 
-  for (const cidade of bairros) {
+  urls.push({
+    url: baseUrl,
+    lastModified,
+    priority: 1.0,
+  })
+
+  for (const cidade of cidades) {
     urls.push({
       url: `${baseUrl}/cidade/${cidade.slug}`,
-      lastModified: new Date(),
+      lastModified,
+      priority: 0.8,
     })
+  }
 
+  for (const cidade of bairros) {
     for (const bairro of cidade.bairros) {
       urls.push({
         url: `${baseUrl}/cidade/${cidade.slug}/${bairro.slug}`,
-        lastModified: new Date(),
+        lastModified,
+        priority: 0.6,
       })
     }
   }
