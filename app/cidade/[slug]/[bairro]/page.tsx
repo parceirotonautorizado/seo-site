@@ -1,6 +1,10 @@
 export const dynamic = "force-static"
+export const dynamicParams = false
 
 import type { Metadata } from "next"
+import { notFound } from "next/navigation"
+import cidades from "@/dados/cidades-pr.json"
+import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { bairros } from "@/bairros"
 import Hero from "@/app/components/Hero"
 import { gerarTexto } from "@/lib/seoText"
@@ -8,7 +12,7 @@ import Breadcrumb from "@/app/components/Breadcrumb"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
 import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
-import { CONFIG } from "@/lib/config"
+import { CONFIG, OG_BASE } from "@/lib/config"
 
 type Props = {
   params: Promise<{
@@ -32,31 +36,42 @@ export async function generateStaticParams() {
   return params
 }
 
+function buscar(slug: string, bairroSlug: string) {
+  const cidade = cidades.find((c) => c.slug === slug)
+  const bairro = bairros
+    .find((c) => c.slug === slug)
+    ?.bairros.find((b) => b.slug === bairroSlug)
+
+  if (!cidade || !bairro) {
+    notFound()
+  }
+
+  return { cidade: cidade.nome, bairro: bairro.nome }
+}
+
 export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { slug, bairro } = await params
 
-  const cidade = slug.replace(/-/g, " ")
-  const bairroNome = bairro.replace(/-/g, " ")
+  const nomes = buscar(slug, bairro)
+  const url = `${CONFIG.dominio}/cidade/${slug}/${bairro}`
+  const title = `Maquininha Ton no ${nomes.bairro} em ${nomes.cidade} | Menores Taxas`
+  const description = `Compare taxas, conheça vantagens e descubra a melhor maquininha Ton para negócios do ${nomes.bairro}, em ${nomes.cidade}.`
 
   return {
-    title: `Maquininha Ton no ${bairroNome} em ${cidade} | Menores Taxas`,
-
-    description: `Compare taxas, conheça vantagens e descubra a melhor maquininha Ton
-para negócios do ${bairroNome}, em ${cidade}.`,
+    title,
+    description,
 
     alternates: {
-      canonical: `https://www.maquininhadecartoes.com.br/cidade/${slug}/${bairro}`,
+      canonical: url,
     },
 
     openGraph: {
-      title: `Maquininha Ton no ${bairroNome} em ${cidade}`,
-
-      description: `Conheça as melhores opções de maquininhas Ton no ${bairroNome}, em
-${cidade}.`,
-
-      type: "website",
+      ...OG_BASE,
+      title: `Maquininha Ton no ${nomes.bairro} em ${nomes.cidade}`,
+      description,
+      url,
     },
   }
 }
@@ -64,16 +79,26 @@ ${cidade}.`,
 export default async function BairroPage({ params }: Props) {
   const { slug, bairro } = await params
 
-  const cidadeFormatada = slug.replace(/-/g, " ")
-  const bairroFormatado = bairro.replace(/-/g, " ")
+  const nomes = buscar(slug, bairro)
+  const cidadeFormatada = nomes.cidade
+  const bairroFormatado = nomes.bairro
 
   const texto = gerarTexto(cidadeFormatada, bairroFormatado)
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbLd([
+          { nome: "Início", path: "/" },
+          { nome: "Cidades", path: "/cidades" },
+          { nome: cidadeFormatada, path: `/cidade/${slug}` },
+          { nome: bairroFormatado, path: `/cidade/${slug}/${bairro}` },
+        ])}
+      />
+
       <Hero cidade={cidadeFormatada} bairro={bairroFormatado} />
 
-      <Breadcrumb cidade={cidadeFormatada} bairro={bairroFormatado} />
+      <Breadcrumb cidade={cidadeFormatada} cidadeSlug={slug} bairro={bairroFormatado} />
 
       <TaxasDestaque />
 
@@ -84,9 +109,9 @@ export default async function BairroPage({ params }: Props) {
           margin: "0 auto",
         }}
       >
-        <h1 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "20px", color: "#1a1a1a" }}>
-          Maquininha Ton no {bairroFormatado} em {cidadeFormatada}
-        </h1>
+        <h2 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "20px", color: "#1a1a1a" }}>
+          Aceitar cartão e Pix no {bairroFormatado}
+        </h2>
 
         <p style={{ lineHeight: "1.8", color: "#555", marginBottom: "28px", whiteSpace: "pre-line" }}>
           {texto}

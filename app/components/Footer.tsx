@@ -25,10 +25,10 @@ export default function Footer() {
           <div className="footer-col">
             <h4 className="footer-col-title">Maquininhas</h4>
             <ul>
-              <li><a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">T3 Smart Mega+</a></li>
-              <li><a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">T3 Mega+</a></li>
-              <li><a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">T2 Mega+</a></li>
-              <li><a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">T1 Mega+</a></li>
+              <li><a href={CONFIG.tonModelos.t3smart} target="_blank" rel="noopener noreferrer">T3 Smart Mega+</a></li>
+              <li><a href={CONFIG.tonModelos.t3} target="_blank" rel="noopener noreferrer">T3 Mega+</a></li>
+              <li><a href={CONFIG.tonModelos.t2} target="_blank" rel="noopener noreferrer">T2 Mega+</a></li>
+              <li><a href={CONFIG.tonModelos.t1} target="_blank" rel="noopener noreferrer">T1 Mega+</a></li>
             </ul>
           </div>
 
@@ -38,6 +38,7 @@ export default function Footer() {
               <li><a href="#taxas">Taxas e Planos</a></li>
               <li><a href="#faq">Perguntas Frequentes</a></li>
               <li><a href="#simulador">Simulador de Taxas</a></li>
+              <li><a href="/cidades">Cidades atendidas</a></li>
             </ul>
           </div>
 

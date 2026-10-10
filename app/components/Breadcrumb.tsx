@@ -1,9 +1,12 @@
 type Props = {
   cidade: string
+  cidadeSlug: string
   bairro?: string
 }
 
-export default function Breadcrumb({ cidade, bairro }: Props) {
+export default function Breadcrumb({ cidade, cidadeSlug, bairro }: Props) {
+  const link = { textDecoration: "none", color: "#00702f" }
+
   return (
     <nav
       aria-label="breadcrumb"
@@ -12,37 +15,33 @@ export default function Breadcrumb({ cidade, bairro }: Props) {
         margin: "20px auto",
         padding: "0 20px",
         fontSize: "14px",
-        color: "#666",
+        color: "#555",
       }}
     >
-      <a
-        href="/"
-        style={{
-          textDecoration: "none",
-          color: "#009900",
-        }}
-      >
-        Home
+      <a href="/" style={link}>
+        Início
       </a>
 
       <span> › </span>
 
-      <a
-        href={`/cidade/${cidade.toLowerCase().replace(/\s/g, "-")}`}
-        style={{
-          textDecoration: "none",
-          color: "#009900",
-        }}
-      >
-        {cidade}
+      <a href="/cidades" style={link}>
+        Cidades
       </a>
 
-      {bairro && (
+      <span> › </span>
+
+      {bairro ? (
         <>
+          <a href={`/cidade/${cidadeSlug}`} style={link}>
+            {cidade}
+          </a>
+
           <span> › </span>
 
           <span>{bairro}</span>
         </>
+      ) : (
+        <span>{cidade}</span>
       )}
     </nav>
   )

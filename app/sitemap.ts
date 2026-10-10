@@ -13,6 +13,12 @@ export default function sitemap() {
     priority: 1.0,
   })
 
+  urls.push({
+    url: `${baseUrl}/cidades`,
+    lastModified,
+    priority: 0.9,
+  })
+
   for (const cidade of cidades) {
     urls.push({
       url: `${baseUrl}/cidade/${cidade.slug}`,

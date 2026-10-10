@@ -7,6 +7,9 @@ import "./globals.css"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import WhatsAppButton from "@/app/components/WhatsAppButton"
+import StyledJsxRegistry from "@/app/registry"
+import { CONFIG, OG_BASE } from "@/lib/config"
+import { JsonLd } from "@/lib/jsonld"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,17 +25,59 @@ const poppins = Poppins({
   display: "swap",
 })
 
+const TITULO = "Maquininhas Ton Paraná | Menores Taxas"
+const DESCRICAO =
+  "Compare taxas, simule economia e encontre a melhor maquininha Ton para sua cidade no Paraná."
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.maquininhadecartoes.com.br"),
+  metadataBase: new URL(CONFIG.dominio),
   title: {
-    default: "Maquininhas Ton Paraná | Menores Taxas",
+    default: TITULO,
     template: "%s",
   },
-  description:
-    "Compare taxas, simule economia e encontre a melhor maquininha Ton para sua cidade no Paraná.",
+  description: DESCRICAO,
   alternates: {
-    canonical: "https://www.maquininhadecartoes.com.br/",
+    canonical: `${CONFIG.dominio}/`,
   },
+  openGraph: {
+    title: TITULO,
+    description: DESCRICAO,
+    url: `${CONFIG.dominio}/`,
+    ...OG_BASE,
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.jpg"],
+  },
+}
+
+const siteLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${CONFIG.dominio}/#organization`,
+      name: "Maquininhas Ton Paraná",
+      url: `${CONFIG.dominio}/`,
+      description:
+        "Parceiro autorizado Ton (programa Renda Extra). Divulga as maquininhas Ton no Paraná e indica para compra no site oficial.",
+      areaServed: { "@type": "State", name: "Paraná" },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        telephone: `+${CONFIG.whatsapp}`,
+        availableLanguage: "pt-BR",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${CONFIG.dominio}/#website`,
+      url: `${CONFIG.dominio}/`,
+      name: "Maquininhas Ton Paraná",
+      inLanguage: "pt-BR",
+      publisher: { "@id": `${CONFIG.dominio}/#organization` },
+    },
+  ],
 }
 
 export default function RootLayout({
@@ -47,29 +92,23 @@ export default function RootLayout({
     >
       <head>
 
-        <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-        >
+        {/* Tag Manager: carrega na primeira interação do visitante ou 8 s após o carregamento */}
+        <Script id="gtm-script" strategy="afterInteractive">
           {`
-            (function(w,d,s,l,i){
-              w[l]=w[l]||[];
-              w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});
-
-              var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),
-              dl=l!='dataLayer'
-              ?'&l='+l:'';
-
-              j.async=true;
-
-              j.src='https://www.googletagmanager.com/gtm.js?id=' +i+dl;
-
-              f.parentNode.insertBefore(j,f);
-
-            
-})(window,document,'script','dataLayer','GTM-WZRS8XND');
+            (function(w,d,i){
+              var ok=false, ev=['scroll','mousemove','touchstart','keydown','click'];
+              function go(){
+                if(ok) return; ok=true;
+                w.dataLayer=w.dataLayer||[];
+                w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+                var j=d.createElement('script'); j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i;
+                d.head.appendChild(j);
+              }
+              ev.forEach(function(e){ w.addEventListener(e,go,{once:true,passive:true}); });
+              if(d.readyState==='complete') setTimeout(go,8000);
+              else w.addEventListener('load',function(){ setTimeout(go,8000); });
+            })(window,document,'GTM-WZRS8XND');
           `}
         </Script>
 
@@ -92,12 +131,16 @@ src="https://www.googletagmanager.com/ns.html?id=GTM-WZRS8XND"
 
         </noscript>
 
-        <Navbar />
-        <main>
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppButton />
+        <JsonLd data={siteLd} />
+
+        <StyledJsxRegistry>
+          <Navbar />
+          <main>
+            {children}
+          </main>
+          <Footer />
+          <WhatsAppButton />
+        </StyledJsxRegistry>
 
       </body>
     </html>

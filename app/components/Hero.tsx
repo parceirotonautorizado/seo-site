@@ -22,7 +22,7 @@ export default function Hero({ cidade, bairro }: Props) {
 
   return (
     <section className="hero">
-      <img src="/hero.jpg" className="hero-bg" alt="" aria-hidden="true" />
+      <img src="/hero.webp" className="hero-bg" alt="" aria-hidden="true" width={1320} height={1000} fetchPriority="high" />
       <div className="hero-overlay" />
 
       <div className="hero-inner">
@@ -62,8 +62,10 @@ export default function Hero({ cidade, bairro }: Props) {
 
         <div className="hero-img-wrap">
           <img
-            src="/maquininhas-todas.png"
+            src="/maquininhas-todas.webp"
             alt="Maquininhas Ton T1, T2, T3 e T3 Smart"
+            width={476}
+            height={476}
             className="hero-img"
           />
         </div>

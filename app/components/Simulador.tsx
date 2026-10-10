@@ -275,13 +275,6 @@ if (typeof window !== "undefined") {
       <div className="main-card">
         <div className="card-body">
 
-          {/* MASCOTE */}
-          <div className="mascot-wrap">
-            <img
-              src="/mascote.webp"
-              alt="Mascote"
-            />
-          </div>
 
           <div className="left-panel">
 

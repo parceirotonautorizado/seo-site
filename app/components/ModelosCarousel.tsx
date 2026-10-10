@@ -9,7 +9,7 @@ const MODELOS = [
     nome: "T3 Smart",
     subtitulo: "Android com visor touchscreen, aceita VR e VA",
     badge: "Mais Vendida",
-    imagem: "/t3-smart.webp",
+    imagem: "/m-t3-smart.webp",
     preco: "R$ 143,91",
     parcela: "ou 12x de R$ 11,99",
     cta: "Pedir T3 Smart",
@@ -20,7 +20,7 @@ const MODELOS = [
     nome: "T3",
     subtitulo: "Com bobina, impressão de comprovante e chip 4G",
     badge: "Custo-Benefício",
-    imagem: "/t3.webp",
+    imagem: "/m-t3.webp",
     preco: "R$ 81,00",
     parcela: "ou 12x de R$ 6,75",
     cta: "Pedir T3",
@@ -31,7 +31,7 @@ const MODELOS = [
     nome: "T2",
     subtitulo: "Bateria de longa duração, Wi-Fi e chip 4G",
     badge: "Econômica",
-    imagem: "/t2.png",
+    imagem: "/m-t2.webp",
     preco: "R$ 37,41",
     parcela: "ou 12x de R$ 3,12",
     cta: "Pedir T2",
@@ -42,7 +42,7 @@ const MODELOS = [
     nome: "T1",
     subtitulo: "Compacta, conecta ao celular via Bluetooth",
     badge: "Entrada",
-    imagem: "/t1.webp",
+    imagem: "/m-t1.webp",
     preco: "R$ 16,80",
     parcela: "ou 12x de R$ 1,40",
     cta: "Pedir T1",
@@ -115,7 +115,7 @@ export default function ModelosCarousel() {
                 </div>
 
                 <a
-                  href={CONFIG.tonLink}
+                  href={CONFIG.tonModelos[m.id as keyof typeof CONFIG.tonModelos] ?? CONFIG.tonLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mc-cta"

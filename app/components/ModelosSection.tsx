@@ -9,7 +9,7 @@ const MODELOS = [
     subtitulo: "Android com visor touch",
     badge: "MAIS VENDIDA",
     badgeColor: "#ff6b00",
-    imagem: "/t3-smart.webp",
+    imagem: "/m-t3-smart.webp",
     preco: "R$ 143,91",
     parcela: "12x de R$ 11,99",
     recursos: [
@@ -27,7 +27,7 @@ const MODELOS = [
     subtitulo: "Com bobina e impressão",
     badge: "CUSTO-BENEFÍCIO",
     badgeColor: "#009641",
-    imagem: "/t3.webp",
+    imagem: "/m-t3.webp",
     preco: "R$ 81,00",
     parcela: "12x de R$ 6,75",
     recursos: [
@@ -45,7 +45,7 @@ const MODELOS = [
     subtitulo: "Bateria de longa duração",
     badge: "ECONÔMICA",
     badgeColor: "#0066cc",
-    imagem: "/t2.png",
+    imagem: "/m-t2.webp",
     preco: "R$ 37,41",
     parcela: "12x de R$ 3,12",
     recursos: [
@@ -63,7 +63,7 @@ const MODELOS = [
     subtitulo: "Conexão via Bluetooth",
     badge: "ENTRADA",
     badgeColor: "#666",
-    imagem: "/t1.webp",
+    imagem: "/m-t1.webp",
     preco: "R$ 16,80",
     parcela: "12x de R$ 1,40",
     recursos: [
@@ -313,21 +313,21 @@ export default function ModelosSection() {
         }
 
         .cta-primary {
-          background: #009641;
-          color: #fff;
+          background: #00D648;
+          color: #0a2200;
         }
 
         .cta-primary:hover {
-          background: #007a34;
+          background: #00bc3e;
         }
 
         .cta-secondary {
-          background: #f0f0f0;
-          color: #333;
+          background: #00D648;
+          color: #0a2200;
         }
 
         .cta-secondary:hover {
-          background: #e0e0e0;
+          background: #00bc3e;
         }
 
         .modelos-nota {
