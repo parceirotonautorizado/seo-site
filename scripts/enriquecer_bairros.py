@@ -18,7 +18,11 @@ def slug(nome):
 
 
 # Nome usado pelo IBGE -> slug usado no site
-APELIDOS = {"alto-da-rua-xv": "alto-da-xv", "cidade-industrial-de-curitiba": "cidade-industrial"}
+APELIDOS = {
+    "alto-da-rua-xv": "alto-da-xv",
+    "cidade-industrial-de-curitiba": "cidade-industrial",
+    "botiatuvinha": "butiatuvinha",
+}
 
 
 def main():

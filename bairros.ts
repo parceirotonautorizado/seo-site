@@ -16,6 +16,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
     slug: "curitiba",
     bairros: [
       {
+        slug: "abranches",
+        nome: "Abranches",
+        perfil: "turistico",
+        texto:
+          "O Abranches, na zona norte, abriga dois dos espaços de espetáculo mais conhecidos de Curitiba: a Ópera de Arame e a Pedreira Paulo Leminski. Em dia de show, milhares de pessoas chegam ao bairro de uma vez, e ambulantes, bares e estacionamentos vendem em poucas horas o que não vendem na semana. No restante do tempo, o comércio é de vizinhança.",
+      },
+      {
         slug: "agua-verde",
         nome: "Água Verde",
         perfil: "populoso",
@@ -49,6 +56,20 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
         perfil: "residencial",
         texto:
           "O Alto da XV fica a leste do Centro e é atravessado pela Rua XV de Novembro, já fora do calçadão. É um bairro residencial tradicional, com muitas clínicas, consultórios, cafés e restaurantes que atendem tanto moradores quanto quem trabalha na região.",
+      },
+      {
+        slug: "atuba",
+        nome: "Atuba",
+        perfil: "residencial",
+        texto:
+          "O Atuba fica na ponta nordeste de Curitiba, na divisa com Colombo e Pinhais, e é cortado pela antiga BR-116. Tem cerca de 20 mil moradores e um comércio voltado ao bairro, com mercados, oficinas, materiais de construção e lanchonetes, além de empresas de serviço instaladas perto da rodovia.",
+      },
+      {
+        slug: "augusta",
+        nome: "Augusta",
+        perfil: "residencial",
+        texto:
+          "A Augusta fica no oeste de Curitiba, perto da divisa com Campo Largo, e ainda tem muitas chácaras e áreas verdes. São pouco mais de 7 mil moradores. O comércio é pequeno e espalhado: mercearias, bares, materiais de construção e prestadores de serviço que atendem os próprios vizinhos.",
       },
       {
         slug: "bacacheri",
@@ -107,6 +128,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
           "O Boqueirão é um dos grandes bairros da zona sul, com mais de 65 mil moradores. A Avenida Marechal Floriano Peixoto, com a canaleta do ônibus expresso, e o terminal do bairro organizam o comércio: lojas de rua, concessionárias, oficinas, supermercados e muita alimentação rápida.",
       },
       {
+        slug: "butiatuvinha",
+        nome: "Butiatuvinha",
+        perfil: "residencial",
+        texto:
+          "Vizinha de Santa Felicidade, a Butiatuvinha mistura condomínios residenciais, chácaras e alguns restaurantes que aproveitam o movimento do polo gastronômico ao lado. O comércio do dia a dia é de bairro, com mercados, padarias e serviços.",
+      },
+      {
         slug: "cabral",
         nome: "Cabral",
         perfil: "alto-padrao",
@@ -114,11 +142,39 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
           "O Cabral fica na zona norte, junto ao terminal de ônibus que leva o nome do bairro. É uma área residencial de padrão médio e alto, com prédios e casas grandes. O comércio se concentra perto do terminal e da Avenida Paraná, com restaurantes, padarias, clínicas e escolas.",
       },
       {
+        slug: "cachoeira",
+        nome: "Cachoeira",
+        perfil: "residencial",
+        texto:
+          "A Cachoeira fica no norte de Curitiba, junto à divisa com Almirante Tamandaré. É um bairro residencial de cerca de 11 mil moradores, com comércio de vizinhança formado por mercados, padarias, farmácias e pequenos negócios familiares.",
+      },
+      {
         slug: "cajuru",
         nome: "Cajuru",
         perfil: "populoso",
         texto:
           "Com cerca de 90 mil moradores, o Cajuru é o terceiro bairro mais populoso de Curitiba. Fica na zona leste, na direção de Pinhais e São José dos Pinhais. A Avenida Presidente Affonso Camargo é a principal via comercial, e o comércio de rua é popular e muito variado.",
+      },
+      {
+        slug: "campina-do-siqueira",
+        nome: "Campina do Siqueira",
+        perfil: "residencial",
+        texto:
+          "A Campina do Siqueira fica a oeste do Bigorrilho e do Batel, onde começa a saída da cidade pela BR-277. O terminal de ônibus do bairro concentra o movimento, e em volta dele há lanchonetes, lojas e serviços. O restante é residencial, com prédios e casas de padrão médio.",
+      },
+      {
+        slug: "campo-comprido",
+        nome: "Campo Comprido",
+        perfil: "populoso",
+        texto:
+          "O Campo Comprido é um dos bairros que mais cresceram na zona oeste, com mais de 30 mil moradores. Tem terminal de ônibus, uma grande universidade particular e muitos condomínios novos. Estudantes e moradores sustentam restaurantes, lanchonetes, academias, mercados e serviços.",
+      },
+      {
+        slug: "campo-de-santana",
+        nome: "Campo de Santana",
+        perfil: "populoso",
+        texto:
+          "No extremo sul de Curitiba, o Campo de Santana passou de área rural a bairro de mais de 40 mil moradores em poucos anos, com a chegada de grandes conjuntos habitacionais. O comércio acompanha esse crescimento: mercados, farmácias, lojas e lanchonetes abertos por moradores para atender uma população que antes precisava ir a outros bairros.",
       },
       {
         slug: "capao-da-imbuia",
@@ -142,6 +198,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
           "A Cascatinha é um dos menores bairros de Curitiba, com pouco mais de 2 mil moradores. Fica no caminho de Santa Felicidade e é formada por casas e condomínios de alto padrão. Tem poucos estabelecimentos, na maior parte restaurantes e serviços voltados a quem passa pela Avenida Manoel Ribas.",
       },
       {
+        slug: "caximba",
+        nome: "Caximba",
+        perfil: "residencial",
+        texto:
+          "A Caximba fica no ponto mais ao sul de Curitiba e é conhecida por ter abrigado o antigo aterro sanitário da cidade, hoje desativado. O bairro tem pouco mais de 7 mil moradores e comércio simples, de pequenos mercados, bares e serviços mantidos por quem mora ali.",
+      },
+      {
         slug: "centro",
         nome: "Centro",
         perfil: "central",
@@ -163,11 +226,11 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
           "A Cidade Industrial de Curitiba, a CIC, é o maior bairro da cidade em população, com mais de 170 mil moradores. Além das grandes fábricas, tem dezenas de vilas residenciais com comércio próprio. Restaurantes de almoço, lanchonetes, mercados e oficinas atendem tanto os trabalhadores das indústrias quanto as famílias que moram no bairro.",
       },
       {
-        slug: "fazendinha",
-        nome: "Fazendinha",
+        slug: "cristo-rei",
+        nome: "Cristo Rei",
         perfil: "residencial",
         texto:
-          "A Fazendinha fica entre o Portão e a Cidade Industrial e tem um terminal de ônibus que organiza o movimento do bairro. O comércio é popular, com supermercados, padarias, farmácias, lojas de roupa e serviços automotivos, e atende principalmente os moradores.",
+          "O Cristo Rei fica a leste do Centro e é formado principalmente por prédios residenciais. A presença de um grande hospital no bairro movimenta farmácias, lanchonetes, restaurantes e estacionamentos. O restante do comércio é de vizinhança, com padarias, mercados e salões.",
       },
       {
         slug: "fanny",
@@ -175,6 +238,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
         perfil: "residencial",
         texto:
           "O Fanny é um bairro pequeno da zona sul, próximo da Linha Verde. É predominantemente residencial, com comércio de vizinhança e algumas empresas de serviço e pequenas indústrias instaladas perto da antiga rodovia.",
+      },
+      {
+        slug: "fazendinha",
+        nome: "Fazendinha",
+        perfil: "residencial",
+        texto:
+          "A Fazendinha fica entre o Portão e a Cidade Industrial e tem um terminal de ônibus que organiza o movimento do bairro. O comércio é popular, com supermercados, padarias, farmácias, lojas de roupa e serviços automotivos, e atende principalmente os moradores.",
       },
       {
         slug: "ganchinho",
@@ -189,6 +259,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
         perfil: "residencial",
         texto:
           "O Guabirotuba fica entre o Jardim das Américas e o Prado Velho, na saída para o aeroporto. É um bairro residencial de classe média, com comércio ao longo da Avenida Senador Salgado Filho: mercados, padarias, oficinas e restaurantes.",
+      },
+      {
+        slug: "guaira",
+        nome: "Guaíra",
+        perfil: "residencial",
+        texto:
+          "O Guaíra fica ao sul do Centro e é atravessado pela Avenida Presidente Kennedy, que concentra lojas, concessionárias, restaurantes e serviços. Com quase 15 mil moradores, o bairro tem também comércio de vizinhança nas ruas internas.",
       },
       {
         slug: "hauer",
@@ -231,6 +308,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
         perfil: "alto-padrao",
         texto:
           "Vizinho do Centro Cívico, o Juvevê é um bairro residencial de padrão médio e alto, com muitos prédios. Bares, restaurantes e cafés dividem as ruas com clínicas, pet shops e pequenos mercados.",
+      },
+      {
+        slug: "lamenha-pequena",
+        nome: "Lamenha Pequena",
+        perfil: "residencial",
+        texto:
+          "A Lamenha Pequena é um dos bairros menos povoados de Curitiba, com pouco mais de mil moradores, na divisa com Almirante Tamandaré. Predominam chácaras e áreas verdes. Quase não há comércio no bairro, e quem vende ali costuma ser prestador de serviço ou produtor que atende a domicílio.",
       },
       {
         slug: "lindoia",
@@ -296,11 +380,25 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
           "O Portão é um dos bairros comerciais mais fortes fora do Centro. A Avenida República Argentina, o terminal de ônibus e dois shoppings, o Palladium e o Ventura, atraem gente de toda a zona sul. Há de tudo: lojas de rua, restaurantes, clínicas, academias e serviços.",
       },
       {
+        slug: "prado-velho",
+        nome: "Prado Velho",
+        perfil: "central",
+        texto:
+          "O Prado Velho é o bairro do campus de uma das maiores universidades particulares do Paraná. Milhares de estudantes e funcionários passam por ali todos os dias, o que sustenta lanchonetes, restaurantes por quilo, copiadoras, bares e estacionamentos, em um bairro com menos de 5 mil moradores.",
+      },
+      {
         slug: "reboucas",
         nome: "Rebouças",
         perfil: "central",
         texto:
           "Antiga área industrial e ferroviária, o Rebouças mudou de perfil e hoje mistura prédios novos, universidade, o Shopping Estação e galpões transformados em bares e espaços de evento. O público é formado por estudantes, quem trabalha na região e frequentadores da vida noturna.",
+      },
+      {
+        slug: "riviera",
+        nome: "Riviera",
+        perfil: "residencial",
+        texto:
+          "A Riviera é o bairro menos populoso de Curitiba, com pouco mais de 400 moradores, na zona oeste. É uma área de chácaras e mata, praticamente sem comércio. Quem trabalha por conta própria ali costuma atender clientes em outros bairros.",
       },
       {
         slug: "santa-candida",
@@ -324,6 +422,48 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
           "A Santa Quitéria fica na zona oeste, entre o Portão e o Campo Comprido. É um bairro residencial de classe média, com comércio ao longo da Avenida Presidente Arthur Bernardes: mercados, padarias, farmácias e pequenos restaurantes.",
       },
       {
+        slug: "santo-inacio",
+        nome: "Santo Inácio",
+        perfil: "residencial",
+        texto:
+          "O Santo Inácio fica na zona oeste, ao lado do Parque Barigui e às margens da BR-277. É um bairro residencial de padrão médio e alto, com comércio concentrado perto da rodovia: restaurantes, mercados, lojas e serviços automotivos.",
+      },
+      {
+        slug: "sao-braz",
+        nome: "São Braz",
+        perfil: "residencial",
+        texto:
+          "O São Braz fica na zona oeste, vizinho de Santa Felicidade, e tem mais de 23 mil moradores. O comércio se distribui pelas ruas principais do bairro, com supermercados, padarias, farmácias, lojas e restaurantes, e atende principalmente quem mora ali.",
+      },
+      {
+        slug: "sao-francisco",
+        nome: "São Francisco",
+        perfil: "turistico",
+        texto:
+          "O São Francisco é o centro histórico de Curitiba. No Largo da Ordem e nas ruas de paralelepípedo ao redor ficam bares, restaurantes, antiquários e casas de cultura. Aos domingos, a feira de artesanato reúne centenas de expositores e milhares de visitantes, um público que compra por impulso e paga no cartão ou no Pix.",
+      },
+      {
+        slug: "sao-joao",
+        nome: "São João",
+        perfil: "residencial",
+        texto:
+          "O São João é um bairro pequeno e arborizado, entre a Cascatinha e Santa Felicidade. Tem pouco mais de 3 mil moradores, em casas e condomínios. O comércio é reduzido e formado por alguns restaurantes, mercados e serviços.",
+      },
+      {
+        slug: "sao-lourenco",
+        nome: "São Lourenço",
+        perfil: "residencial",
+        texto:
+          "O São Lourenço fica na zona norte e tem como referência o parque de mesmo nome, com seu lago e o Centro de Criatividade. O bairro é residencial, de padrão médio e alto, e o comércio se resume a padarias, mercados, restaurantes e serviços de vizinhança.",
+      },
+      {
+        slug: "sao-miguel",
+        nome: "São Miguel",
+        perfil: "residencial",
+        texto:
+          "O São Miguel fica no sudoeste de Curitiba, ao lado da Cidade Industrial. Tem perto de 7 mil moradores e ainda guarda áreas pouco ocupadas. O comércio é local e simples, com mercados, bares, materiais de construção e oficinas.",
+      },
+      {
         slug: "seminario",
         nome: "Seminário",
         perfil: "alto-padrao",
@@ -336,6 +476,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
         perfil: "populoso",
         texto:
           "O Sítio Cercado é o segundo bairro mais populoso de Curitiba, com mais de 100 mil moradores, na zona sul. O comércio de rua é um dos mais fortes da periferia: a Rua Izaac Ferreira da Cruz e as vias próximas têm lojas, supermercados, bancos e feiras que dispensam a ida ao Centro.",
+      },
+      {
+        slug: "taboao",
+        nome: "Taboão",
+        perfil: "residencial",
+        texto:
+          "O Taboão é um bairro pequeno da zona norte, vizinho do Abranches e do Pilarzinho, com cerca de 3.500 moradores. É residencial e tem poucas lojas; o comércio se limita a mercados, padarias e prestadores de serviço do próprio bairro.",
       },
       {
         slug: "taruma",
@@ -385,6 +532,13 @@ export const bairros: { slug: string; bairros: Bairro[] }[] = [
         perfil: "residencial",
         texto:
           "O Vista Alegre fica a noroeste do Centro e abriga o Bosque Alemão, um dos parques visitados por turistas. O bairro é residencial e de relevo acidentado, com comércio concentrado nas vias de ligação com as Mercês e o Pilarzinho.",
+      },
+      {
+        slug: "xaxim",
+        nome: "Xaxim",
+        perfil: "populoso",
+        texto:
+          "O Xaxim é um dos maiores bairros da zona sul, com quase 60 mil moradores. A Rua Francisco Derosso é o principal corredor comercial, com lojas de roupa e calçados, supermercados, bancos, clínicas e muita alimentação. É um comércio de rua forte, que atende também os bairros vizinhos.",
       },
     ],
   },
