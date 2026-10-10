@@ -32,3 +32,29 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.15;
 }
+
+/* Conteúdo das páginas de cidade */
+.cc { max-width: 900px; margin: 0 auto; padding: 20px 20px 40px; }
+.cc-sec { padding: 28px 0; }
+.cc-h2 { font-size: 26px; font-weight: 800; line-height: 1.25; color: #1a1a1a; margin: 0 0 16px; }
+.cc-h3 { font-size: 18px; font-weight: 700; color: #1a1a1a; margin: 0 0 6px; }
+.cc-p { color: #4a4a4a; line-height: 1.75; margin: 0 0 16px; }
+.cc-numeros { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 24px 0 0; }
+.cc-numero { background: #f4faf6; border: 1px solid #dcefe3; border-radius: 12px; padding: 14px 16px; }
+.cc-numero dt { font-size: 13px; color: #4a4a4a; margin-bottom: 4px; }
+.cc-numero dd { margin: 0; font-size: 18px; font-weight: 700; color: #1a1a1a; }
+.cc-modelos { list-style: none; counter-reset: modelo; padding: 0; margin: 0; display: grid; gap: 16px; }
+.cc-modelos li { counter-increment: modelo; border: 1px solid #e5e5e5; border-radius: 14px; padding: 18px 20px; }
+.cc-modelos .cc-h3::before { content: counter(modelo) ". "; color: #00702f; }
+.cc-modelos .cc-p { margin-bottom: 10px; }
+.cc-link { color: #00702f; font-weight: 600; text-decoration: none; display: inline-block; padding: 6px 0; }
+.cc-link:hover { text-decoration: underline; }
+.cc-cta { display: inline-block; background: #00702f; color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 999px; font-size: 16px; font-weight: 700; }
+.cc-faq { border-bottom: 1px solid #e5e5e5; }
+.cc-faq summary { cursor: pointer; padding: 16px 0; font-weight: 700; color: #1a1a1a; font-size: 17px; }
+.cc-faq p { color: #4a4a4a; line-height: 1.75; margin: 0 0 18px; }
+.cc-vizinhas { list-style: none; padding: 0; margin: 0 0 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 16px; }
+.cc-vizinhas a { color: #00702f; text-decoration: none; display: inline-block; padding: 10px 0; }
+.cc-vizinhas a:hover { text-decoration: underline; }
+.cc-vizinhas span { color: #555; font-size: 14px; }
+.cc-fonte { font-size: 13px; color: #555; line-height: 1.6; margin: 0; }

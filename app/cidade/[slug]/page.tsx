@@ -11,6 +11,7 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import cidades from "@/dados/cidades-pr.json"
 import { bairros } from "@/bairros"
 import Breadcrumb from "@/app/components/Breadcrumb"
+import CidadeConteudo from "@/app/components/CidadeConteudo"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 
 type Props = {
@@ -35,7 +36,7 @@ export async function generateMetadata({
   }
 
   const title = `Maquininhas Ton em ${cidade.nome} | Menores Taxas`
-  const description = `Compare taxas e escolha a melhor maquininha Ton em ${cidade.nome}. Pix, débito e crédito com taxas competitivas.`
+  const description = `Maquininha Ton em ${cidade.nome}: qual modelo combina com o comércio local, taxas, entrega com frete grátis e dados das ${cidade.empresas.toLocaleString("pt-BR")} empresas da cidade.`
   const url = `${CONFIG.dominio}/cidade/${slug}`
 
   return {
@@ -78,48 +79,9 @@ export default async function CidadePage({ params }: Props) {
 
       <Breadcrumb cidade={cidade.nome} cidadeSlug={slug} />
 
+      <CidadeConteudo cidade={cidade} />
+
       <TaxasDestaque />
-
-      <section
-        style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          padding: "60px 20px",
-        }}
-      >
-        <h2 style={{ fontSize: "28px", fontWeight: 900, marginBottom: "16px", color: "#1a1a1a" }}>
-          Maquininha Ton em {cidade.nome}
-        </h2>
-
-        <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "16px" }}>
-          {cidade.nome} faz parte da região de {cidade.regiao}, no Paraná, e possui aproximadamente {cidade.populacao} habitantes.
-          Empresários, comerciantes e prestadores de serviços de {cidade.nome} podem utilizar maquininhas Ton para receber
-          pagamentos por Pix, débito e crédito com as menores taxas do mercado.
-        </p>
-
-        <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "32px" }}>
-          Com a Ton, você recebe na hora, não paga aluguel e tem garantia vitalícia. O pedido é feito pelo site oficial
-          da Ton com o desconto de parceiro já aplicado.
-        </p>
-
-        <a
-          href={CONFIG.tonLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-block",
-            background: "#009641",
-            color: "#fff",
-            textDecoration: "none",
-            padding: "16px 32px",
-            borderRadius: "999px",
-            fontSize: "16px",
-            fontWeight: 700,
-          }}
-        >
-          Pedir Maquininha em {cidade.nome} →
-        </a>
-      </section>
 
       {bairrosDaCidade.length > 0 && (
         <section style={{ maxWidth: "900px", margin: "0 auto", padding: "0 20px 60px" }}>
