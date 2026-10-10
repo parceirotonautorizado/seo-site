@@ -82,8 +82,14 @@ export default function SimuladorTon() {
 
         <h2>O que o simulador não cobre</h2>
         <ul>
-          <li>Parcelas acima de 12 vezes. A T3 e a T3 Smart chegam a 21x, com taxas que ficam no aplicativo da Ton.</li>
-          <li>Vendas pelo TapTon e por link de pagamento, que têm taxas próprias.</li>
+          <li>
+            O limite de parcelas de cada modelo. O simulador mostra de 2x a 21x, mas só a T3 e a T3 Smart passam de 12
+            vezes. Na T1 e na T2 o máximo é 12x.
+          </li>
+          <li>
+            Vendas pelo TapTon e por link de pagamento, que têm taxas próprias. Elas estão na{" "}
+            <a href="/taxas-ton">tabela de taxas</a>.
+          </li>
           <li>
             Pix sem chave cadastrada. O simulador mostra 0%, que é o que vale para quem cadastra uma chave Pix na
             Conta Ton. Sem a chave, são 0,49% depois da promoção.

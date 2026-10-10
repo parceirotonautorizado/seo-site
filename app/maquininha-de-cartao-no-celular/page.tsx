@@ -71,8 +71,9 @@ export default function MaquininhaCelular() {
         <h2>As taxas não são as mesmas</h2>
         <p>
           Este é o detalhe que pega muita gente. Pelo regulamento da Ton, o TapTon e o link de pagamento têm taxas
-          próprias, diferentes das da maquininha. Elas ficam no aplicativo. A <a href="/taxas-ton">tabela de taxas</a>{" "}
-          deste site vale para a maquininha, incluindo a T1. Antes de escolher o TapTon só porque é grátis para
+          próprias, diferentes das da maquininha. A <a href="/taxas-ton">tabela de taxas</a> mostra as três lado a
+          lado. A T1 usa a tabela da maquininha. No link de pagamento, repare também no prazo: o dinheiro leva 14 ou
+          30 dias para cair. Antes de escolher o TapTon só porque é grátis para
           ativar, veja a taxa por venda.
         </p>
 

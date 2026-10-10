@@ -3,7 +3,16 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
-import { PLANS, VM, TAXAS_ULTIMA_VERIFICACAO, PIX_SEM_CHAVE, REGULAMENTO_DATA } from "@/lib/taxas"
+import {
+  PLANS,
+  VM,
+  TAPTON,
+  LINK_PAGAMENTO,
+  TAXAS_ULTIMA_VERIFICACAO,
+  TAXAS_ATUALIZADAS_PELA_TON,
+  PIX_SEM_CHAVE,
+  REGULAMENTO_DATA,
+} from "@/lib/taxas"
 
 const PATH = "/taxas-ton"
 const TITULO = "Taxas da Ton: tabela completa por faixa de vendas"
@@ -27,6 +36,8 @@ const LINHAS: { rotulo: string; valor: (p: any) => number }[] = [
   { rotulo: "Crédito 6x", valor: (p) => p.cre[6] },
   { rotulo: "Crédito 10x", valor: (p) => p.cre[10] },
   { rotulo: "Crédito 12x", valor: (p) => p.cre[12] },
+  { rotulo: "Crédito 18x", valor: (p) => p.cre[18] },
+  { rotulo: "Crédito 21x", valor: (p) => p.cre[21] },
 ]
 
 export default function TaxasTon() {
@@ -48,8 +59,9 @@ export default function TaxasTon() {
 
         <p>
           A taxa da Ton não é uma só. Ela muda conforme três coisas: quanto você vende por mês, a bandeira do cartão
-          e se você quer receber na hora ou em 1 dia útil. Abaixo está a tabela inteira do plano Mega+, conferida no
-          site da Ton em {TAXAS_ULTIMA_VERIFICACAO}.
+          e se você quer receber na hora ou em 1 dia útil. Abaixo está a tabela do plano Mega+, tirada da página
+          oficial de planos da Ton em {TAXAS_ULTIMA_VERIFICACAO}. A Ton atualizou esses valores pela última vez em{" "}
+          {TAXAS_ATUALIZADAS_PELA_TON}.
         </p>
 
         <h2>O período promocional</h2>
@@ -143,14 +155,71 @@ export default function TaxasTon() {
 
         <p className="nota">
           O Pix das tabelas considera a chave Pix cadastrada; sem chave, {pct(PIX_SEM_CHAVE)} depois da promoção. As
-          tabelas vão até 12 parcelas. A T3 e a T3 Smart parcelam em até 21 vezes para novos clientes, e as taxas
-          acima de 12x ficam no aplicativo da Ton. TapTon e link de pagamento têm taxas próprias, diferentes das da
-          maquininha.
+          parcelas de 13x a 21x valem para a T3 e a T3 Smart, para novos clientes. Na T1 e na T2 o limite é 12x. A
+          tabela mostra algumas parcelas; o <a href="/simulador-ton">simulador</a> tem todas, de 2x a 21x.
         </p>
 
+        <h2>Taxas do TapTon</h2>
+        <p>
+          Vender pelo celular, sem maquininha, tem taxa própria. Ela não muda com a faixa de vendas, só com o prazo
+          e a bandeira.
+        </p>
+        <div className="tab-wrap">
+          <table className="tab">
+            <caption>TapTon</caption>
+            <thead>
+              <tr>
+                <th scope="col">Venda</th>
+                <th scope="col">Visa e Master, 1 dia útil</th>
+                <th scope="col">Visa e Master, na hora</th>
+                <th scope="col">Elo e Amex, 1 dia útil</th>
+                <th scope="col">Elo e Amex, na hora</th>
+              </tr>
+            </thead>
+            <tbody>
+              {LINHAS.filter((l) => l.rotulo !== "Pix").map((l) => (
+                <tr key={l.rotulo}>
+                  <th scope="row">{l.rotulo}</th>
+                  <td>{pct(l.valor(TAPTON.d1.mv))}</td>
+                  <td>{pct(l.valor(TAPTON.d0.mv))}</td>
+                  <td>{pct(l.valor(TAPTON.d1.oa))}</td>
+                  <td>{pct(l.valor(TAPTON.d0.oa))}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Taxas do link de pagamento</h2>
+        <p>
+          No link de pagamento, o dinheiro demora mais: 14 ou 30 dias. As taxas são as mesmas para todas as bandeiras
+          e o parcelamento vai até 12 vezes.
+        </p>
+        <div className="tab-wrap">
+          <table className="tab">
+            <caption>Link de pagamento</caption>
+            <thead>
+              <tr>
+                <th scope="col">Venda</th>
+                <th scope="col">Receber em 30 dias</th>
+                <th scope="col">Receber em 14 dias</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[1, 2, 3, 6, 10, 12].map((n) => (
+                <tr key={n}>
+                  <th scope="row">{n === 1 ? "Crédito à vista" : `Crédito ${n}x`}</th>
+                  <td>{pct(LINK_PAGAMENTO.d30.mv.cre[n])}</td>
+                  <td>{pct(LINK_PAGAMENTO.d14.mv.cre[n])}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
         <p className="nota">
-          Taxas do plano Mega+ conferidas em {TAXAS_ULTIMA_VERIFICACAO}. A Ton pode alterar os valores, e o que vale é
-          o que aparece no site oficial na hora do pedido.
+          Taxas conferidas em {TAXAS_ULTIMA_VERIFICACAO}. A Ton pode alterar os valores, e o que vale é o que aparece
+          no site oficial na hora do pedido.
         </p>
 
         <h2>Na prática, quanto sobra de uma venda</h2>
@@ -178,9 +247,10 @@ export default function TaxasTon() {
         <h2>Fontes</h2>
         <ul className="fontes">
           <li>
-            Tabela de taxas do plano Mega+ em{" "}
-            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">ton.com.br</a>, conferida em{" "}
-            {TAXAS_ULTIMA_VERIFICACAO}.
+            <a href="https://www.ton.com.br/planos-e-taxas" target="_blank" rel="noopener noreferrer">
+              Planos e taxas
+            </a>
+            , site oficial da Ton, conferido em {TAXAS_ULTIMA_VERIFICACAO}.
           </li>
           <li>Regulamento do Plano Ton Mega+, versão de {REGULAMENTO_DATA}.</li>
           <li>

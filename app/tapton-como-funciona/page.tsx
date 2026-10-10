@@ -73,9 +73,9 @@ export default function TapTon() {
         <h2>Quanto custa</h2>
         <p>
           Nada para ativar e nada por mês. Você paga a taxa de cada venda, como em uma maquininha. Pode usar com CPF,
-          com CNPJ ou como MEI. Atenção a um detalhe do regulamento: as taxas do TapTon são próprias, diferentes das
-          da maquininha, e ficam no aplicativo da Ton. A <a href="/taxas-ton">tabela de taxas</a> deste site é a da
-          maquininha. As vendas pelo TapTon contam para a sua faixa de vendas do mês.
+          com CNPJ ou como MEI. As taxas do TapTon são próprias, diferentes das da maquininha, e não mudam com a faixa
+          de vendas. Estão na <a href="/taxas-ton">tabela de taxas</a>, junto com as da maquininha. As vendas pelo
+          TapTon contam para a sua faixa de vendas do mês.
         </p>
 
         <h2>TapTon ou maquininha?</h2>
