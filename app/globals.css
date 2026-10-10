@@ -104,3 +104,5 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Âncoras do menu: deixa espaço para o menu fixo no topo não cobrir o início da seção */
 section[id] { scroll-margin-top: 72px; }
+.guias-todos { margin: 16px 0 0; }
+.guias-todos a { color: #00702f; font-weight: 600; text-decoration: underline; display: inline-block; padding: 8px 0; }

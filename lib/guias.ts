@@ -1,5 +1,25 @@
 // Páginas de tema (sem cidade). Usadas no rodapé, no mapa do site, no sitemap e nos links internos.
 export const GUIAS = [
+  {
+    path: "/maquininha-de-cartao-de-credito",
+    titulo: "Maquininha de cartão de crédito",
+    resumo: "As quatro perguntas para escolher a sua.",
+  },
+  {
+    path: "/maquininha-de-cartao-com-menor-taxa",
+    titulo: "Maquininha com menor taxa",
+    resumo: "Como comparar sem cair na taxa do anúncio.",
+  },
+  {
+    path: "/maquininha-de-cartao-no-celular",
+    titulo: "Maquininha no celular",
+    resumo: "TapTon, T1 por Bluetooth ou link de pagamento.",
+  },
+  {
+    path: "/maquininha-de-cartao-para-pessoa-fisica",
+    titulo: "Maquininha para pessoa física",
+    resumo: "O que muda para quem vende só com CPF.",
+  },
   { path: "/taxas-ton", titulo: "Taxas da Ton", resumo: "A tabela completa, por faixa de vendas e prazo de recebimento." },
   { path: "/simulador-ton", titulo: "Simulador da Ton", resumo: "Veja em reais quanto sobra de cada venda." },
   { path: "/ton-t1", titulo: "Ton T1", resumo: "A mais barata, que funciona pelo Bluetooth do celular." },

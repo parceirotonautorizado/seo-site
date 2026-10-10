@@ -33,6 +33,10 @@ export default function Footer() {
           <div className="footer-col">
             <p className="footer-col-title">Informações</p>
             <ul>
+              <li><a href="/maquininha-de-cartao-de-credito">Como escolher a maquininha</a></li>
+              <li><a href="/maquininha-de-cartao-com-menor-taxa">Menor taxa: como comparar</a></li>
+              <li><a href="/maquininha-de-cartao-no-celular">Maquininha no celular</a></li>
+              <li><a href="/maquininha-de-cartao-para-pessoa-fisica">Para pessoa física</a></li>
               <li><a href="/taxas-ton">Tabela de taxas</a></li>
               <li><a href="/simulador-ton">Simulador</a></li>
               <li><a href="/ton-t1">Ton T1</a></li>
