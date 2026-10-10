@@ -34,6 +34,7 @@ export default function Footer() {
             <p className="footer-col-title">Informações</p>
             <ul>
               <li><a href="/taxas-ton">Tabela de taxas</a></li>
+              <li><a href="/simulador-ton">Simulador</a></li>
               <li><a href="/ton-t1">Ton T1</a></li>
               <li><a href="/ton-t2">Ton T2</a></li>
               <li><a href="/ton-t3">Ton T3</a></li>
@@ -42,6 +43,7 @@ export default function Footer() {
               <li><a href="/ton-cpf-cnpj-mei">CPF, CNPJ e MEI</a></li>
               <li><a href="/tapton-como-funciona">TapTon</a></li>
               <li><a href="/ton-e-confiavel">A Ton é confiável?</a></li>
+              <li><a href="/ton-whatsapp-telefone">WhatsApp e telefone da Ton</a></li>
               <li><a href="#faq">Perguntas Frequentes</a></li>
               <li><a href="#simulador">Simulador de Taxas</a></li>
               <li><a href="/cidades">Cidades atendidas</a></li>

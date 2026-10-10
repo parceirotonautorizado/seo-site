@@ -15,6 +15,8 @@ O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cad
 
 ## Guias
 
+- [Simulador da Ton](https://www.maquininhadecartoes.com.br/simulador-ton): calcula em reais quanto sobra de cada venda
+- [WhatsApp e telefone da Ton](https://www.maquininhadecartoes.com.br/ton-whatsapp-telefone): canais oficiais de suporte
 - [Taxas da Ton](https://www.maquininhadecartoes.com.br/taxas-ton): tabela completa do plano Mega+ por faixa de vendas, bandeira e prazo
 - [Ton T1](https://www.maquininhadecartoes.com.br/ton-t1): a mais barata, depende do Bluetooth do celular
 - [Ton T2](https://www.maquininhadecartoes.com.br/ton-t2): chip 3G próprio e Wi-Fi, cabe no bolso
