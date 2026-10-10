@@ -82,3 +82,22 @@ h1, h2, h3, h4, h5, h6 {
 .txt a { color: #00702f; text-decoration: underline; }
 .txt a.cc-cta { text-decoration: none; }
 .txt .cc-cta { color: #fff; margin-top: 8px; }
+
+/* Páginas de tema e bloco de guias */
+.guias { max-width: 900px; margin: 0 auto; padding: 8px 20px 48px; }
+.guias-lista { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.guias-lista li { border: 1px solid #e5e5e5; border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.guias-lista a { color: #00702f; font-weight: 700; text-decoration: none; padding: 4px 0; }
+.guias-lista a:hover { text-decoration: underline; }
+.guias-lista span { color: #4a4a4a; font-size: 14px; line-height: 1.5; }
+.txt h3 { font-size: 18px; font-weight: 700; color: #1a1a1a; margin: 24px 0 8px; }
+.txt ol { margin: 0 0 16px; padding-left: 22px; }
+.txt .fontes { font-size: 14px; }
+.txt .fontes li { line-height: 1.6; }
+.tab-wrap { overflow-x: auto; margin: 0 0 20px; border: 1px solid #e5e5e5; border-radius: 12px; }
+.tab { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 520px; }
+.tab caption { caption-side: top; text-align: left; padding: 12px 14px; font-weight: 700; color: #1a1a1a; background: #f4faf6; }
+.tab th, .tab td { padding: 9px 14px; text-align: right; border-top: 1px solid #ececec; color: #333; white-space: nowrap; }
+.tab th:first-child, .tab td:first-child { text-align: left; }
+.tab thead th { background: #fafafa; font-weight: 700; color: #1a1a1a; }
+.txt .nota { font-size: 14px; color: #4a4a4a; }

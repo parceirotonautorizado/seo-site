@@ -2,6 +2,7 @@ export const dynamic = "force-static"
 export const dynamicParams = false
 
 import type { Metadata } from "next"
+import Guias from "@/app/components/Guias"
 import { notFound } from "next/navigation"
 import cidades from "@/dados/cidades-pr.json"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
@@ -105,6 +106,8 @@ export default async function BairroPage({ params }: Props) {
       <Breadcrumb cidade={cidadeFormatada} cidadeSlug={slug} bairro={bairroFormatado} />
 
       <BairroConteudo bairro={nomes.dados} cidade={cidadeFormatada} cidadeSlug={slug} todos={nomes.todos} />
+
+      <Guias />
 
       <section id="simulador">
         <Simulador cidade={cidadeFormatada} bairro={bairroFormatado} />

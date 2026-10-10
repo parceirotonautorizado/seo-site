@@ -2,6 +2,7 @@ export const dynamic = "force-static"
 export const dynamicParams = false
 
 import type { Metadata } from "next"
+import Guias from "@/app/components/Guias"
 import { notFound } from "next/navigation"
 import Hero from "@/app/components/Hero"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
@@ -113,6 +114,8 @@ export default async function CidadePage({ params }: Props) {
           </ul>
         </section>
       )}
+
+      <Guias />
 
       <section id="simulador">
         <Simulador cidade={cidade.nome} bairro="Centro" />

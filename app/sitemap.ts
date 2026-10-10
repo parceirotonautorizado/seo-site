@@ -1,5 +1,6 @@
 import { bairros } from "@/bairros"
 import cidades from "@/dados/cidades-pr.json"
+import { GUIAS } from "@/lib/guias"
 
 export default function sitemap() {
   const baseUrl = "https://www.maquininhadecartoes.com.br"
@@ -24,6 +25,14 @@ export default function sitemap() {
     lastModified,
     priority: 0.5,
   })
+
+  for (const guia of GUIAS) {
+    urls.push({
+      url: `${baseUrl}${guia.path}`,
+      lastModified,
+      priority: 0.9,
+    })
+  }
 
   for (const pagina of ["sobre", "contato", "politica-de-privacidade"]) {
     urls.push({

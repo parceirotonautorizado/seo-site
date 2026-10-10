@@ -21,7 +21,7 @@ const PERGUNTAS = [
   },
   {
     q: "Aceita quais formas de pagamento?",
-    a: "A Ton aceita Pix, cartão de débito, crédito (à vista e parcelado em até 18x), além de vouchers como VR e VA. Mais de 50 bandeiras no total.",
+    a: "A Ton aceita Pix, cartão de débito e crédito (à vista e parcelado em até 18x), em mais de 50 bandeiras. Vale-refeição e vale-alimentação também passam, nos modelos T2, T3 e T3 Smart, para quem tem CNPJ do ramo de alimentação e faz o credenciamento com a bandeira do vale.",
   },
   {
     q: "Quanto tempo demora para receber a maquininha?",

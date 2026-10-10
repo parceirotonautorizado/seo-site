@@ -55,16 +55,18 @@ function motivo(b: Bairro, em: string, id: ModeloId): string {
   const onde = `${em} ${b.nome}`
 
   switch (id) {
-    case "t3smart":
+    case "t3smart": {
+      const vale = "Como a T2 e a T3, aceita vale-refeição e vale-alimentação para quem tem CNPJ do ramo de alimentação e faz o credenciamento com a bandeira."
       if (b.perfil === "gastronomico")
-        return `Aceita vale-refeição e vale-alimentação. Para restaurante ${onde}, isso decide a compra. Roda Android e tem visor sensível ao toque.`
+        return `Roda Android, tem visor sensível ao toque e imprime o comprovante. Para restaurante ${onde}, o que decide é o vale: ela aceita vale-refeição e vale-alimentação, assim como a T2 e a T3, desde que o CNPJ seja do ramo de alimentação e você peça o credenciamento a cada bandeira.`
       if (b.perfil === "industrial")
-        return `É a que aceita vale-refeição e vale-alimentação, benefício que muito trabalhador de fábrica recebe. Quem mais ganha com isso ${onde} é restaurante de almoço e mercado.`
+        return `Roda Android, tem visor sensível ao toque e imprime o comprovante. Muito trabalhador de fábrica recebe vale-refeição, e restaurante de almoço ${onde} sente isso no caixa. ${vale}`
       if (b.perfil === "alto-padrao")
-        return `Roda Android, tem visor sensível ao toque e aceita vale-refeição e vale-alimentação. Combina com restaurante, café e loja ${onde}, onde o cliente já chega com o cartão na mão para aproximar.`
+        return `Roda Android, tem visor sensível ao toque e imprime o comprovante. Combina com restaurante, café e loja ${onde}, onde o cliente já chega com o cartão na mão para aproximar. ${vale}`
       if (b.perfil === "central")
-        return `Aceita vale-refeição e vale-alimentação. Restaurante e lanchonete ${onde} vivem do almoço de quem trabalha por perto, e esse público paga com o vale.`
-      return `Aceita vale-refeição e vale-alimentação e tem visor sensível ao toque. ${cap(onde)}, faz sentido para mercado, padaria e restaurante que recebem esses benefícios.`
+        return `Roda Android, tem visor sensível ao toque e imprime o comprovante. Restaurante e lanchonete ${onde} vivem do almoço de quem trabalha por perto, e boa parte desse público paga com vale. ${vale}`
+      return `É a mais completa: roda Android, tem visor sensível ao toque e imprime o comprovante. ${vale}`
+    }
     case "t3":
       if (b.perfil === "central")
         return `Imprime o comprovante e tem chip 4G próprio. É a maquininha de balcão para loja ${onde}, onde o cliente está de passagem e o atendimento não pode demorar.`

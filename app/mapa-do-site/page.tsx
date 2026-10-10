@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import cidades from "@/dados/cidades-pr.json"
 import { bairros } from "@/bairros"
+import { GUIAS } from "@/lib/guias"
 import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 
@@ -70,6 +71,13 @@ export default function MapaDoSite() {
           <li><a href="/sobre" style={link}>Sobre o site</a></li>
           <li><a href="/contato" style={link}>Contato</a></li>
           <li><a href="/politica-de-privacidade" style={link}>Privacidade e cookies</a></li>
+        </ul>
+
+        <h2 style={h2}>Guias da Ton</h2>
+        <ul style={grade}>
+          {GUIAS.map((g) => (
+            <li key={g.path}><a href={g.path} style={link}>{g.titulo}</a></li>
+          ))}
         </ul>
 
         {bairros.map((c) => (

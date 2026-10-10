@@ -190,8 +190,8 @@ function motivoModelo(c: Cidade, id: ModeloId): { nome: string; texto: string } 
         nome: "T3 Smart",
         texto:
           alim != null && alim >= 5
-            ? `É a que aceita vale-refeição e vale-alimentação. Isso pesa para os ${n(alim)} negócios de alojamento e alimentação de ${c.nome}, e também para mercado, padaria e açougue. Roda Android e tem visor sensível ao toque.`
-            : `Aceita vale-refeição e vale-alimentação, roda Android e tem visor sensível ao toque. Em ${c.nome}, faz sentido para mercado, padaria e restaurante que recebem esses benefícios.`,
+            ? `É a mais completa: roda Android, tem visor sensível ao toque e imprime o comprovante. Para os ${n(alim)} negócios de alojamento e alimentação de ${c.nome}, vale saber que ela aceita vale-refeição e vale-alimentação, assim como a T2 e a T3. A condição é ter CNPJ do ramo de alimentação e pedir o credenciamento a cada bandeira.`
+            : `É a mais completa: roda Android, tem visor sensível ao toque e imprime o comprovante. Como a T2 e a T3, aceita vale-refeição e vale-alimentação para quem tem CNPJ do ramo de alimentação e faz o credenciamento com a bandeira.`,
       }
     case "t3":
       return {

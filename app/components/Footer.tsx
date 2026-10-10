@@ -35,7 +35,10 @@ export default function Footer() {
           <div className="footer-col">
             <p className="footer-col-title">Informações</p>
             <ul>
-              <li><a href="#taxas">Taxas e Planos</a></li>
+              <li><a href="/taxas-ton">Tabela de taxas</a></li>
+              <li><a href="/ton-t3-smart">Ton T3 Smart</a></li>
+              <li><a href="/ton-aceita-vale-alimentacao">Vale-alimentação</a></li>
+              <li><a href="/ton-cpf-cnpj-mei">CPF, CNPJ e MEI</a></li>
               <li><a href="#faq">Perguntas Frequentes</a></li>
               <li><a href="#simulador">Simulador de Taxas</a></li>
               <li><a href="/cidades">Cidades atendidas</a></li>
