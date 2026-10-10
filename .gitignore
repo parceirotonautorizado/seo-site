@@ -41,3 +41,8 @@ yarn-error.log*
 next-env.d.ts
 .env*.local
 saas-maquininha/frontend/
+
+# bibliotecas instaladas dos sistemas auxiliares
+server/node_modules/
+saas-maquininha/backend/node_modules/
+Sever/node_modules/

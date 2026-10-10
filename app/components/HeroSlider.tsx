@@ -508,7 +508,6 @@ export default function HeroSlider() {
           background: rgba(255,255,255,0.35);
           border: none;
           cursor: pointer;
-          padding: 0;
           transition: background 0.3s, transform 0.3s;
         }
 
