@@ -57,30 +57,30 @@ function motivo(b: Bairro, em: string, id: ModeloId): string {
   switch (id) {
     case "t3smart":
       if (b.perfil === "gastronomico")
-        return `Aceita vale-refeição e vale-alimentação, o que pesa para os restaurantes ${onde}, e roda Android com visor sensível ao toque.`
+        return `Aceita vale-refeição e vale-alimentação. Para restaurante ${onde}, isso decide a compra. Roda Android e tem visor sensível ao toque.`
       if (b.perfil === "industrial")
-        return `É o modelo que aceita vale-refeição e vale-alimentação, benefício comum entre os trabalhadores das fábricas. Restaurantes de almoço e mercados ${onde} são os que mais ganham com isso.`
+        return `É a que aceita vale-refeição e vale-alimentação, benefício que muito trabalhador de fábrica recebe. Quem mais ganha com isso ${onde} é restaurante de almoço e mercado.`
       if (b.perfil === "alto-padrao")
-        return `Roda Android, tem visor sensível ao toque e aceita vale-refeição e vale-alimentação. Combina com restaurantes, cafés e lojas ${onde}, onde o cliente espera pagar por aproximação.`
+        return `Roda Android, tem visor sensível ao toque e aceita vale-refeição e vale-alimentação. Combina com restaurante, café e loja ${onde}, onde o cliente já chega com o cartão na mão para aproximar.`
       if (b.perfil === "central")
-        return `Aceita vale-refeição e vale-alimentação. Para restaurantes e lanchonetes ${onde}, que vivem do almoço de quem trabalha por perto, costuma ser o modelo mais indicado.`
-      return `Aceita vale-refeição e vale-alimentação e tem visor sensível ao toque. ${cap(onde)}, serve a mercados, padarias e restaurantes que recebem esses benefícios.`
+        return `Aceita vale-refeição e vale-alimentação. Restaurante e lanchonete ${onde} vivem do almoço de quem trabalha por perto, e esse público paga com o vale.`
+      return `Aceita vale-refeição e vale-alimentação e tem visor sensível ao toque. ${cap(onde)}, faz sentido para mercado, padaria e restaurante que recebem esses benefícios.`
     case "t3":
       if (b.perfil === "central")
-        return `Imprime o comprovante e tem chip 4G próprio. É o modelo de balcão para lojas ${onde}, onde o atendimento precisa ser rápido porque o cliente está de passagem.`
+        return `Imprime o comprovante e tem chip 4G próprio. É a maquininha de balcão para loja ${onde}, onde o cliente está de passagem e o atendimento não pode demorar.`
       if (b.perfil === "populoso")
-        return `Imprime o comprovante e tem chip 4G próprio, sem depender do celular. Atende bem o comércio de rua ${onde}: lojas, farmácias, mercados e materiais de construção.`
-      return `Imprime o comprovante e tem chip 4G próprio. Serve ao comércio de balcão ${onde}, em que parte dos clientes ainda pede a via impressa.`
+        return `Imprime o comprovante e tem chip 4G próprio, então não depende do celular. Vai bem no comércio de rua ${onde}: loja, farmácia, mercado, material de construção.`
+      return `Imprime o comprovante e tem chip 4G próprio. Serve para o balcão ${onde}, onde ainda tem cliente que pede a via impressa.`
     case "t2":
       if (b.perfil === "turistico")
-        return `Tem bateria de longa duração, Wi-Fi e chip 4G. É a opção portátil para quem atende turistas ${onde}: ambulantes, guias, motoristas e bancas.`
+        return `Tem bateria de longa duração, Wi-Fi e chip 4G. É a portátil para quem vende a visitante ${onde}: ambulante, guia, motorista, banca.`
       if (b.perfil === "residencial")
-        return `Tem bateria de longa duração, Wi-Fi e chip 4G. Num bairro residencial como este, atende quem leva o serviço até o cliente: entregadores, diaristas, técnicos, manicures e personal trainers.`
-      return `Tem bateria de longa duração, Wi-Fi e chip 4G. É uma opção portátil para quem faz entregas ou atende em domicílio ${onde}.`
+        return `Tem bateria de longa duração, Wi-Fi e chip 4G. Em bairro residencial, muita venda acontece na porta do cliente. É a maquininha de quem faz entrega, da diarista, do técnico, da manicure, do personal.`
+      return `Tem bateria de longa duração, Wi-Fi e chip 4G. É a portátil para quem faz entrega ou atende na casa do cliente ${onde}.`
     default:
       return b.perfil === "populoso" || b.perfil === "turistico"
-        ? `É a mais barata e funciona conectada ao celular por Bluetooth. Resolve para ambulantes e para quem está começando a vender ${onde}.`
-        : `É a mais barata e funciona conectada ao celular por Bluetooth. Serve para quem vende pouco no cartão ou quer uma maquininha de reserva.`
+        ? `É a mais barata e funciona ligada ao celular por Bluetooth. Resolve para ambulante e para quem está começando a vender ${onde}.`
+        : `É a mais barata e funciona ligada ao celular por Bluetooth. Serve para quem vende pouco no cartão ou quer uma maquininha guardada para emergência.`
   }
 }
 
@@ -91,23 +91,23 @@ function cap(s: string) {
 function demografia(b: Bairro, em: string, c: Censo) {
   const total = dados.total_bairros
   const posicao =
-    c.ranking <= 3
-      ? `É o ${c.ranking === 1 ? "bairro mais populoso" : `${c.ranking}º bairro mais populoso`} de Curitiba`
-      : `Ocupa a ${c.ranking}ª posição em população entre os ${total} bairros de Curitiba`
+    c.ranking === 1
+      ? `É o bairro mais populoso de Curitiba`
+      : `É o ${c.ranking}º bairro mais populoso entre os ${total} de Curitiba`
 
   let lares: string
   if (c.populacao < 2000) {
     // bairro quase sem comércio: só o dado, sem tirar conclusão sobre vendas
     lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio.`
   } else if (c.media_moradores <= 2.2) {
-    lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, bem abaixo do comum na cidade: há muita gente morando sozinha ou em casal. Esse público compra em quantidades pequenas, com frequência, e pede muito por entrega.`
+    lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, bem abaixo do comum na cidade. Tem muita gente morando sozinha ou em casal. É um público que compra pouco de cada vez, compra sempre e pede bastante por entrega.`
   } else if (c.media_moradores >= 2.8) {
-    lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, acima do comum na cidade, o que indica famílias maiores. Mercados, açougues, lojas de roupa infantil e de material escolar tendem a vender mais por compra.`
+    lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, acima do comum na cidade. São famílias maiores, e isso aparece no caixa: mercado, açougue e loja de roupa infantil tendem a vender mais em cada compra.`
   } else {
     lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, perto do padrão da cidade.`
   }
 
-  return `O Censo 2022 contou ${n(c.populacao)} moradores ${em} ${b.nome}, em ${n(c.domicilios)} domicílios. ${posicao} e concentra ${c.percentual_cidade < 0.1 ? "menos de 0,1" : c.percentual_cidade.toLocaleString("pt-BR")}% dos habitantes do município. ${lares}`
+  return `O Censo 2022 contou ${n(c.populacao)} moradores ${em} ${b.nome}, em ${n(c.domicilios)} domicílios. ${posicao}, com ${c.percentual_cidade < 0.1 ? "menos de 0,1" : c.percentual_cidade.toLocaleString("pt-BR")}% dos moradores da cidade. ${lares}`
 }
 
 export function conteudoBairro(b: Bairro, cidade: string, todos: Bairro[]) {
@@ -137,15 +137,15 @@ export function conteudoBairro(b: Bairro, cidade: string, todos: Bairro[]) {
       { rotulo: "Moradores por domicílio", valor: c.media_moradores.toLocaleString("pt-BR") },
     ],
     modelos,
-    entrega: `A Ton entrega ${em} ${b.nome} e em todos os bairros de ${cidade} com frete grátis. O pedido é feito pelo site oficial e a maquininha é enviada para o endereço informado, seja a loja ou a sua casa.`,
+    entrega: `A Ton entrega ${em} ${b.nome} e em todos os bairros de ${cidade}, com frete grátis. Você pede pelo site oficial e recebe no endereço que informar, seja a loja ou a sua casa.`,
     faq: [
       {
         q: `A Ton entrega maquininha ${em} ${b.nome}?`,
-        a: `Sim. A entrega cobre ${b.nome} e todos os outros bairros de ${cidade}, com frete grátis. O prazo costuma ser de 2 a 5 dias úteis, conforme o CEP.`,
+        a: `Entrega. Vale para ${b.nome} e para todos os outros bairros de ${cidade}, com frete grátis. O prazo costuma ficar entre 2 e 5 dias úteis, conforme o CEP.`,
       },
       {
         q: `Qual a melhor maquininha Ton para quem vende ${em} ${b.nome}?`,
-        a: `Pelo tipo de comércio do bairro, os modelos que mais fazem sentido são a ${modelos[0].nome} e a ${modelos[1].nome}. ${modelos[0].texto}`,
+        a: `Olhando o tipo de comércio do bairro, as duas que mais fazem sentido são a ${modelos[0].nome} e a ${modelos[1].nome}. ${modelos[0].texto}`,
       },
       {
         q: `Quantas pessoas moram ${em} ${b.nome}?`,
@@ -153,7 +153,7 @@ export function conteudoBairro(b: Bairro, cidade: string, todos: Bairro[]) {
       },
       {
         q: `Preciso ter CNPJ para pedir a maquininha?`,
-        a: `Não. A Ton vende para CPF e para CNPJ. Autônomos e ambulantes ${em} ${b.nome} podem pedir só com o CPF.`,
+        a: `Não precisa. A Ton vende para CPF e para CNPJ. Autônomo ou ambulante ${em} ${b.nome} pede só com o CPF.`,
       },
     ],
     outros,
