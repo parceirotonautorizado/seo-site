@@ -13,7 +13,7 @@ export default function ModelosCarousel() {
             <span>o seu negócio</span>
           </h2>
           <p className="mc-sub">
-            Todas com PIX 0%, sem aluguel e garantia vitalícia. Desconto de parceiro já aplicado. T2, T3 e T3 Smart
+            Todas com Pix 0% (com chave Pix cadastrada), sem aluguel e com garantia vitalícia. Desconto de parceiro já aplicado. T2, T3 e T3 Smart
             aceitam vale-refeição e vale-alimentação para CNPJ do ramo de alimentação.
           </p>
         </div>

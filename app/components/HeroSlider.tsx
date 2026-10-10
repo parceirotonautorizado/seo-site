@@ -7,9 +7,9 @@ const SLIDES = [
   {
     id: 1,
     bg: "#003d1f",
-    label: "Promoção exclusiva",
+    label: "Taxa promocional",
     titulo: "Taxa de 0,57%\nno débito e crédito",
-    subtitulo: "PIX 0% de verdade. Sem aluguel. Garantia vitalícia. Para CPF e CNPJ.",
+    subtitulo: "Nos primeiros 30 dias ou até R$ 5 mil em vendas. Pix 0%, sem aluguel, para CPF e CNPJ.",
     cta: "Pedir com Desconto",
     ctaLink: CONFIG.tonLink,
     ctaSecundario: "Simular Taxas",
@@ -21,9 +21,9 @@ const SLIDES = [
   {
     id: 2,
     bg: "#001a0d",
-    label: "PIX 0% de verdade",
+    label: "Pix 0% na maquininha",
     titulo: "Receba PIX\nsem pagar nada",
-    subtitulo: "PIX 0% no período promocional. Débito 0,57%. Receba na mesma hora.",
+    subtitulo: "Grátis nos primeiros 30 dias. Depois, continua 0% com uma chave Pix cadastrada na Conta Ton.",
     cta: "Pedir Maquininha",
     ctaLink: CONFIG.tonLink,
     ctaSecundario: "Ver Taxas",
@@ -50,11 +50,11 @@ const SLIDES = [
 
 const TICKER_ITEMS = [
   { type: "badge", text: "Novidade" },
-  { type: "text",  text: "PIX 0% de verdade" },
+  { type: "text",  text: "Pix 0% com chave cadastrada" },
   { type: "img",   src: "/mini-t3-smart.webp" },
   { type: "sep" },
   { type: "badge", text: "Promoção" },
-  { type: "text",  text: "Taxa 0,57% no débito" },
+  { type: "text",  text: "Débito a partir de 0,57%" },
   { type: "img",   src: "/mini-t3.webp" },
   { type: "sep" },
   { type: "badge", text: "Exclusivo" },

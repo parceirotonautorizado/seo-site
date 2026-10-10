@@ -15,10 +15,10 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
     : "Maquininha Ton no Paraná"
 
   const descricao = bairro
-    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. Veja qual modelo combina com quem vende ${em} ${bairro}, em ${cidade}.`
+    ? `Débito a partir de 0,57%, Pix a 0% e sem aluguel. Veja qual modelo combina com quem vende ${em} ${bairro}, em ${cidade}.`
     : cidade
-    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. Ideal para autônomos e empresas em ${cidade}.`
-    : "Taxa de 0,57% no débito, PIX grátis e sem aluguel. Aceita mais de 50 bandeiras. Para CPF e CNPJ."
+    ? `Débito a partir de 0,57%, Pix a 0% e sem aluguel. Ideal para autônomos e empresas em ${cidade}.`
+    : "Débito a partir de 0,57%, Pix a 0% e sem aluguel. Aceita mais de 50 bandeiras. Para CPF e CNPJ."
 
   return (
     <section className="s-hero hero">
@@ -45,8 +45,8 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
           <p className="hero-desc">{descricao}</p>
 
           <div className="hero-pills">
-            <span className="pill">0,57% Débito</span>
-            <span className="pill">PIX Grátis</span>
+            <span className="pill">Débito a partir de 0,57%</span>
+            <span className="pill">Pix 0%</span>
             <span className="pill">Sem Aluguel</span>
             <span className="pill">Garantia Vitalícia</span>
           </div>

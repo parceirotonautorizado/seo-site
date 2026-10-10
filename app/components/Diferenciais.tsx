@@ -21,7 +21,7 @@ const ITEMS = [
     icone: "🛡️",
     titulo: "Garantia vitalícia",
     texto:
-      "Troca gratuita em caso de problemas técnicos. Sem custo adicional, para sempre.",
+      "Troca gratuita em caso de problemas técnicos, sem custo adicional, enquanto você for cliente da Ton.",
   },
   {
     icone: "📦",

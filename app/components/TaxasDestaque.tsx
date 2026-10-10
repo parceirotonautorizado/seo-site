@@ -16,7 +16,7 @@ export default function TaxasDestaque() {
           <div className="taxa-card destaque">
             <div className="taxa-tipo">PIX</div>
             <div className="taxa-valor">0%</div>
-            <div className="taxa-label">Grátis no período promo</div>
+            <div className="taxa-label">Depois, com chave Pix cadastrada</div>
           </div>
           <div className="taxa-card">
             <div className="taxa-tipo">Débito</div>
