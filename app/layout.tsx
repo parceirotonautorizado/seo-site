@@ -107,11 +107,21 @@ export default function RootLayout({
                 j.src='https://www.googletagmanager.com/gtm.js?id='+i;
                 d.head.appendChild(j);
               }
-              function go(){ if(!recusou()) carregar(); }
+              function escolheu(){ try { return !!localStorage.getItem('consentimento-cookies'); } catch(e){ return true; } }
+              function go(e){
+                if(recusou()) return;
+                // enquanto o aviso está na tela, não conta o movimento do mouse nem o toque no próprio aviso,
+                // para dar tempo de quem quer desativar clicar antes de a medição carregar
+                if(e && !escolheu()){
+                  if(e.type==='mousemove') return;
+                  if(e.target && e.target.closest && e.target.closest('.ck')) return;
+                }
+                carregar();
+              }
               w.__carregarMedicao=carregar;
-              ev.forEach(function(e){ w.addEventListener(e,go,{once:true,passive:true}); });
-              if(d.readyState==='complete') setTimeout(go,8000);
-              else w.addEventListener('load',function(){ setTimeout(go,8000); });
+              ev.forEach(function(e){ w.addEventListener(e,go,{passive:true}); });
+              if(d.readyState==='complete') setTimeout(function(){ go(); },8000);
+              else w.addEventListener('load',function(){ setTimeout(function(){ go(); },8000); });
             })(window,document,'GTM-WZRS8XND');
           `}
         </Script>
