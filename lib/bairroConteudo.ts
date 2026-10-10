@@ -96,7 +96,10 @@ function demografia(b: Bairro, em: string, c: Censo) {
       : `Ocupa a ${c.ranking}ª posição em população entre os ${total} bairros de Curitiba`
 
   let lares: string
-  if (c.media_moradores <= 2.2) {
+  if (c.populacao < 2000) {
+    // bairro quase sem comércio: só o dado, sem tirar conclusão sobre vendas
+    lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio.`
+  } else if (c.media_moradores <= 2.2) {
     lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, bem abaixo do comum na cidade: há muita gente morando sozinha ou em casal. Esse público compra em quantidades pequenas, com frequência, e pede muito por entrega.`
   } else if (c.media_moradores >= 2.8) {
     lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, acima do comum na cidade, o que indica famílias maiores. Mercados, açougues, lojas de roupa infantil e de material escolar tendem a vender mais por compra.`
@@ -104,7 +107,7 @@ function demografia(b: Bairro, em: string, c: Censo) {
     lares = `A média é de ${c.media_moradores.toLocaleString("pt-BR")} moradores por domicílio, perto do padrão da cidade.`
   }
 
-  return `O Censo 2022 contou ${n(c.populacao)} moradores ${em} ${b.nome}, em ${n(c.domicilios)} domicílios. ${posicao} e concentra ${c.percentual_cidade.toLocaleString("pt-BR")}% dos habitantes do município. ${lares}`
+  return `O Censo 2022 contou ${n(c.populacao)} moradores ${em} ${b.nome}, em ${n(c.domicilios)} domicílios. ${posicao} e concentra ${c.percentual_cidade < 0.1 ? "menos de 0,1" : c.percentual_cidade.toLocaleString("pt-BR")}% dos habitantes do município. ${lares}`
 }
 
 export function conteudoBairro(b: Bairro, cidade: string, todos: Bairro[]) {
