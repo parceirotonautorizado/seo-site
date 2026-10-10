@@ -1,0 +1,531 @@
+{
+  "total_bairros": 75,
+  "populacao_cidade": 1773718,
+  "bairros": {
+    "cidade-industrial": {
+      "populacao": 172510,
+      "ranking": 1,
+      "percentual_cidade": 9.7,
+      "domicilios": 62775,
+      "media_moradores": 2.73
+    },
+    "sitio-cercado": {
+      "populacao": 102293,
+      "ranking": 2,
+      "percentual_cidade": 5.8,
+      "domicilios": 36176,
+      "media_moradores": 2.83
+    },
+    "cajuru": {
+      "populacao": 90002,
+      "ranking": 3,
+      "percentual_cidade": 5.1,
+      "domicilios": 32904,
+      "media_moradores": 2.73
+    },
+    "uberaba": {
+      "populacao": 73241,
+      "ranking": 4,
+      "percentual_cidade": 4.1,
+      "domicilios": 26233,
+      "media_moradores": 2.79
+    },
+    "boqueirao": {
+      "populacao": 65618,
+      "ranking": 5,
+      "percentual_cidade": 3.7,
+      "domicilios": 24024,
+      "media_moradores": 2.7
+    },
+    "xaxim": {
+      "populacao": 58124,
+      "ranking": 6,
+      "percentual_cidade": 3.3,
+      "domicilios": 20881,
+      "media_moradores": 2.77
+    },
+    "pinheirinho": {
+      "populacao": 56440,
+      "ranking": 7,
+      "percentual_cidade": 3.2,
+      "domicilios": 21397,
+      "media_moradores": 2.63
+    },
+    "tatuquara": {
+      "populacao": 56054,
+      "ranking": 8,
+      "percentual_cidade": 3.2,
+      "domicilios": 19550,
+      "media_moradores": 2.86
+    },
+    "alto-boqueirao": {
+      "populacao": 51178,
+      "ranking": 9,
+      "percentual_cidade": 2.9,
+      "domicilios": 18440,
+      "media_moradores": 2.77
+    },
+    "agua-verde": {
+      "populacao": 49573,
+      "ranking": 10,
+      "percentual_cidade": 2.8,
+      "domicilios": 21971,
+      "media_moradores": 2.24
+    },
+    "portao": {
+      "populacao": 49180,
+      "ranking": 11,
+      "percentual_cidade": 2.8,
+      "domicilios": 20679,
+      "media_moradores": 2.37
+    },
+    "bairro-alto": {
+      "populacao": 42767,
+      "ranking": 12,
+      "percentual_cidade": 2.4,
+      "domicilios": 15998,
+      "media_moradores": 2.67
+    },
+    "novo-mundo": {
+      "populacao": 42073,
+      "ranking": 13,
+      "percentual_cidade": 2.4,
+      "domicilios": 16914,
+      "media_moradores": 2.48
+    },
+    "santa-candida": {
+      "populacao": 40966,
+      "ranking": 14,
+      "percentual_cidade": 2.3,
+      "domicilios": 15647,
+      "media_moradores": 2.62
+    },
+    "campo-de-santana": {
+      "populacao": 40633,
+      "ranking": 15,
+      "percentual_cidade": 2.3,
+      "domicilios": 14082,
+      "media_moradores": 2.88
+    },
+    "centro": {
+      "populacao": 38671,
+      "ranking": 16,
+      "percentual_cidade": 2.2,
+      "domicilios": 22215,
+      "media_moradores": 1.71
+    },
+    "capao-raso": {
+      "populacao": 37852,
+      "ranking": 17,
+      "percentual_cidade": 2.1,
+      "domicilios": 15079,
+      "media_moradores": 2.5
+    },
+    "santa-felicidade": {
+      "populacao": 32414,
+      "ranking": 18,
+      "percentual_cidade": 1.8,
+      "domicilios": 11762,
+      "media_moradores": 2.75
+    },
+    "campo-comprido": {
+      "populacao": 32395,
+      "ranking": 19,
+      "percentual_cidade": 1.8,
+      "domicilios": 12506,
+      "media_moradores": 2.56
+    },
+    "boa-vista": {
+      "populacao": 31983,
+      "ranking": 20,
+      "percentual_cidade": 1.8,
+      "domicilios": 13126,
+      "media_moradores": 2.43
+    },
+    "pilarzinho": {
+      "populacao": 27044,
+      "ranking": 21,
+      "percentual_cidade": 1.5,
+      "domicilios": 10045,
+      "media_moradores": 2.68
+    },
+    "bigorrilho": {
+      "populacao": 25590,
+      "ranking": 22,
+      "percentual_cidade": 1.4,
+      "domicilios": 12722,
+      "media_moradores": 2.01
+    },
+    "fazendinha": {
+      "populacao": 25380,
+      "ranking": 23,
+      "percentual_cidade": 1.4,
+      "domicilios": 9433,
+      "media_moradores": 2.69
+    },
+    "bacacheri": {
+      "populacao": 23989,
+      "ranking": 24,
+      "percentual_cidade": 1.4,
+      "domicilios": 9878,
+      "media_moradores": 2.41
+    },
+    "sao-braz": {
+      "populacao": 23547,
+      "ranking": 25,
+      "percentual_cidade": 1.3,
+      "domicilios": 8375,
+      "media_moradores": 2.8
+    },
+    "umbara": {
+      "populacao": 21969,
+      "ranking": 26,
+      "percentual_cidade": 1.2,
+      "domicilios": 7657,
+      "media_moradores": 2.87
+    },
+    "atuba": {
+      "populacao": 19958,
+      "ranking": 27,
+      "percentual_cidade": 1.1,
+      "domicilios": 7282,
+      "media_moradores": 2.74
+    },
+    "ganchinho": {
+      "populacao": 19045,
+      "ranking": 28,
+      "percentual_cidade": 1.1,
+      "domicilios": 6603,
+      "media_moradores": 2.88
+    },
+    "capao-da-imbuia": {
+      "populacao": 18147,
+      "ranking": 29,
+      "percentual_cidade": 1.0,
+      "domicilios": 7041,
+      "media_moradores": 2.57
+    },
+    "cristo-rei": {
+      "populacao": 17604,
+      "ranking": 30,
+      "percentual_cidade": 1.0,
+      "domicilios": 8585,
+      "media_moradores": 2.03
+    },
+    "barreirinha": {
+      "populacao": 15986,
+      "ranking": 31,
+      "percentual_cidade": 0.9,
+      "domicilios": 6069,
+      "media_moradores": 2.63
+    },
+    "jardim-das-americas": {
+      "populacao": 15059,
+      "ranking": 32,
+      "percentual_cidade": 0.8,
+      "domicilios": 5456,
+      "media_moradores": 2.75
+    },
+    "guaira": {
+      "populacao": 14791,
+      "ranking": 33,
+      "percentual_cidade": 0.8,
+      "domicilios": 5575,
+      "media_moradores": 2.64
+    },
+    "abranches": {
+      "populacao": 13991,
+      "ranking": 34,
+      "percentual_cidade": 0.8,
+      "domicilios": 5076,
+      "media_moradores": 2.75
+    },
+    "reboucas": {
+      "populacao": 13799,
+      "ranking": 35,
+      "percentual_cidade": 0.8,
+      "domicilios": 6917,
+      "media_moradores": 1.99
+    },
+    "cabral": {
+      "populacao": 13723,
+      "ranking": 36,
+      "percentual_cidade": 0.8,
+      "domicilios": 6329,
+      "media_moradores": 2.16
+    },
+    "botiatuvinha": {
+      "populacao": 13501,
+      "ranking": 37,
+      "percentual_cidade": 0.8,
+      "domicilios": 4770,
+      "media_moradores": 2.81
+    },
+    "vila-izabel": {
+      "populacao": 12859,
+      "ranking": 38,
+      "percentual_cidade": 0.7,
+      "domicilios": 6071,
+      "media_moradores": 2.11
+    },
+    "merces": {
+      "populacao": 12290,
+      "ranking": 39,
+      "percentual_cidade": 0.7,
+      "domicilios": 5365,
+      "media_moradores": 2.28
+    },
+    "mossungue": {
+      "populacao": 12246,
+      "ranking": 40,
+      "percentual_cidade": 0.7,
+      "domicilios": 4608,
+      "media_moradores": 2.64
+    },
+    "tingui": {
+      "populacao": 12203,
+      "ranking": 41,
+      "percentual_cidade": 0.7,
+      "domicilios": 4874,
+      "media_moradores": 2.5
+    },
+    "juveve": {
+      "populacao": 12001,
+      "ranking": 42,
+      "percentual_cidade": 0.7,
+      "domicilios": 5587,
+      "media_moradores": 2.12
+    },
+    "ahu": {
+      "populacao": 11859,
+      "ranking": 43,
+      "percentual_cidade": 0.7,
+      "domicilios": 4858,
+      "media_moradores": 2.42
+    },
+    "hauer": {
+      "populacao": 11846,
+      "ranking": 44,
+      "percentual_cidade": 0.7,
+      "domicilios": 4732,
+      "media_moradores": 2.47
+    },
+    "cachoeira": {
+      "populacao": 11462,
+      "ranking": 45,
+      "percentual_cidade": 0.6,
+      "domicilios": 4276,
+      "media_moradores": 2.68
+    },
+    "santa-quiteria": {
+      "populacao": 10970,
+      "ranking": 46,
+      "percentual_cidade": 0.6,
+      "domicilios": 4175,
+      "media_moradores": 2.62
+    },
+    "vista-alegre": {
+      "populacao": 10790,
+      "ranking": 47,
+      "percentual_cidade": 0.6,
+      "domicilios": 4006,
+      "media_moradores": 2.68
+    },
+    "guabirotuba": {
+      "populacao": 10650,
+      "ranking": 48,
+      "percentual_cidade": 0.6,
+      "domicilios": 3989,
+      "media_moradores": 2.65
+    },
+    "parolin": {
+      "populacao": 9925,
+      "ranking": 49,
+      "percentual_cidade": 0.6,
+      "domicilios": 3498,
+      "media_moradores": 2.8
+    },
+    "batel": {
+      "populacao": 9913,
+      "ranking": 50,
+      "percentual_cidade": 0.6,
+      "domicilios": 4576,
+      "media_moradores": 2.15
+    },
+    "fanny": {
+      "populacao": 8397,
+      "ranking": 51,
+      "percentual_cidade": 0.5,
+      "domicilios": 3259,
+      "media_moradores": 2.58
+    },
+    "lindoia": {
+      "populacao": 8336,
+      "ranking": 52,
+      "percentual_cidade": 0.5,
+      "domicilios": 3287,
+      "media_moradores": 2.54
+    },
+    "orleans": {
+      "populacao": 8261,
+      "ranking": 53,
+      "percentual_cidade": 0.5,
+      "domicilios": 3002,
+      "media_moradores": 2.75
+    },
+    "alto-da-xv": {
+      "populacao": 8102,
+      "ranking": 54,
+      "percentual_cidade": 0.5,
+      "domicilios": 3858,
+      "media_moradores": 2.08
+    },
+    "augusta": {
+      "populacao": 7399,
+      "ranking": 55,
+      "percentual_cidade": 0.4,
+      "domicilios": 2602,
+      "media_moradores": 2.84
+    },
+    "caximba": {
+      "populacao": 7288,
+      "ranking": 56,
+      "percentual_cidade": 0.4,
+      "domicilios": 2506,
+      "media_moradores": 2.89
+    },
+    "taruma": {
+      "populacao": 7073,
+      "ranking": 57,
+      "percentual_cidade": 0.4,
+      "domicilios": 2640,
+      "media_moradores": 2.64
+    },
+    "campina-do-siqueira": {
+      "populacao": 6887,
+      "ranking": 58,
+      "percentual_cidade": 0.4,
+      "domicilios": 2981,
+      "media_moradores": 2.29
+    },
+    "santo-inacio": {
+      "populacao": 6781,
+      "ranking": 59,
+      "percentual_cidade": 0.4,
+      "domicilios": 2479,
+      "media_moradores": 2.73
+    },
+    "sao-miguel": {
+      "populacao": 6689,
+      "ranking": 60,
+      "percentual_cidade": 0.4,
+      "domicilios": 2317,
+      "media_moradores": 2.88
+    },
+    "alto-da-gloria": {
+      "populacao": 6242,
+      "ranking": 61,
+      "percentual_cidade": 0.4,
+      "domicilios": 3159,
+      "media_moradores": 1.98
+    },
+    "sao-lourenco": {
+      "populacao": 6034,
+      "ranking": 62,
+      "percentual_cidade": 0.3,
+      "domicilios": 2228,
+      "media_moradores": 2.69
+    },
+    "seminario": {
+      "populacao": 5720,
+      "ranking": 63,
+      "percentual_cidade": 0.3,
+      "domicilios": 2369,
+      "media_moradores": 2.4
+    },
+    "jardim-botanico": {
+      "populacao": 5442,
+      "ranking": 64,
+      "percentual_cidade": 0.3,
+      "domicilios": 2307,
+      "media_moradores": 2.3
+    },
+    "sao-francisco": {
+      "populacao": 5008,
+      "ranking": 65,
+      "percentual_cidade": 0.3,
+      "domicilios": 2394,
+      "media_moradores": 2.05
+    },
+    "bom-retiro": {
+      "populacao": 5001,
+      "ranking": 66,
+      "percentual_cidade": 0.3,
+      "domicilios": 1967,
+      "media_moradores": 2.46
+    },
+    "prado-velho": {
+      "populacao": 4907,
+      "ranking": 67,
+      "percentual_cidade": 0.3,
+      "domicilios": 2080,
+      "media_moradores": 2.34
+    },
+    "jardim-social": {
+      "populacao": 4902,
+      "ranking": 68,
+      "percentual_cidade": 0.3,
+      "domicilios": 1780,
+      "media_moradores": 2.73
+    },
+    "centro-civico": {
+      "populacao": 4473,
+      "ranking": 69,
+      "percentual_cidade": 0.3,
+      "domicilios": 2348,
+      "media_moradores": 1.9
+    },
+    "hugo-lange": {
+      "populacao": 4177,
+      "ranking": 70,
+      "percentual_cidade": 0.2,
+      "domicilios": 1678,
+      "media_moradores": 2.45
+    },
+    "taboao": {
+      "populacao": 3470,
+      "ranking": 71,
+      "percentual_cidade": 0.2,
+      "domicilios": 1269,
+      "media_moradores": 2.71
+    },
+    "sao-joao": {
+      "populacao": 3277,
+      "ranking": 72,
+      "percentual_cidade": 0.2,
+      "domicilios": 1204,
+      "media_moradores": 2.72
+    },
+    "cascatinha": {
+      "populacao": 2160,
+      "ranking": 73,
+      "percentual_cidade": 0.1,
+      "domicilios": 804,
+      "media_moradores": 2.69
+    },
+    "lamenha-pequena": {
+      "populacao": 1146,
+      "ranking": 74,
+      "percentual_cidade": 0.1,
+      "domicilios": 421,
+      "media_moradores": 2.72
+    },
+    "riviera": {
+      "populacao": 442,
+      "ranking": 75,
+      "percentual_cidade": 0.0,
+      "domicilios": 148,
+      "media_moradores": 2.99
+    }
+  }
+}

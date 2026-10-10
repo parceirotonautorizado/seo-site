@@ -5,17 +5,19 @@ import { CONFIG } from "@/lib/config"
 type Props = {
   cidade?: string
   bairro?: string
+  // preposição antes do nome do bairro: "no", "na", "nas" ou "em"
+  em?: string
 }
 
-export default function Hero({ cidade, bairro }: Props) {
+export default function Hero({ cidade, bairro, em = "no" }: Props) {
   const titulo = bairro
-    ? `Maquininha Ton no ${bairro}, ${cidade}`
+    ? `Maquininha Ton ${em} ${bairro}, ${cidade}`
     : cidade
     ? `Maquininha Ton em ${cidade}`
     : "Maquininha Ton | Menores taxas do Paraná"
 
   const descricao = bairro
-    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. A melhor maquininha para negócios no ${bairro}, em ${cidade}.`
+    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. A melhor maquininha para negócios ${em} ${bairro}, em ${cidade}.`
     : cidade
     ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. Ideal para autônomos e empresas em ${cidade}.`
     : "Taxa de 0,57% no débito, PIX grátis e sem aluguel. Aceita mais de 50 bandeiras. Para CPF e CNPJ."
