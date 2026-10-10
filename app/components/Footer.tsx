@@ -79,7 +79,7 @@ export default function Footer() {
             © {ano} Parceiro Ton. Todos os direitos reservados.
           </p>
           <p className="footer-disclaimer">
-            Este site é mantido por um participante do programa Renda Extra da Ton. Não somos a empresa Ton nem fazemos parte do Grupo StoneCo. O Ton é operado pela Stone Instituição de Pagamento S.A. (CNPJ 16.501.555/0001-57), conforme o site oficial. Todas as transações são realizadas diretamente em ton.com.br.
+            Este site é mantido por um participante do programa Renda Extra da Ton. Não somos a empresa Ton nem fazemos parte do Grupo StoneCo. Ton® é marca do Pagar.me S.A. (CNPJ 18.727.053/0001-74), empresa do grupo Stone. Todas as transações são realizadas diretamente em ton.com.br.
           </p>
         </div>
       </div>

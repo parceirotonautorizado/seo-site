@@ -614,6 +614,8 @@ if (typeof window !== "undefined") {
 
               <p className="calc-note">
                 Taxas verificadas em {TAXAS_ULTIMA_VERIFICACAO} · Válidas para Visa, Mastercard, Elo e Amex.
+                Pix na maquininha: 0% no período promocional e, depois, 0% com chave Pix cadastrada na Conta Ton
+                (0,49% sem chave). Parcelas acima de 12x, TapTon e link de pagamento têm taxas próprias.
                 Valores sujeitos a alteração pela Ton.
                 Confirme as taxas atuais em{" "}
                 <a href="https://ton.com.br" target="_blank" rel="noopener noreferrer" className="calc-note-link">

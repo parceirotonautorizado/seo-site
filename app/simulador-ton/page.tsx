@@ -71,10 +71,24 @@ export default function SimuladorTon() {
 
         <h2>Período promocional não é para sempre</h2>
         <p>
-          A primeira opção de faixa é o período promocional: 30 dias ou R$ 5.000 em vendas, com taxa de 0,57% e Pix
-          grátis. Simule também a faixa em que você vai cair depois. É ela que vale no resto do ano. A{" "}
-          <a href="/taxas-ton">tabela completa de taxas</a> mostra todas as faixas lado a lado.
+          A primeira opção de faixa é o período promocional: 30 dias a partir da chegada da maquininha ou R$ 5.000 em
+          vendas, o que vier antes. Simule também a faixa em que você vai cair depois. É ela que vale no resto do ano.
         </p>
+        <p>
+          A faixa não é fixa. No começo de cada mês, a Ton olha quanto você vendeu no mês anterior e ajusta a taxa,
+          para cima ou para baixo. Se as suas vendas variam muito, simule o mês bom e o mês ruim. A{" "}
+          <a href="/taxas-ton">tabela completa de taxas</a> explica a regra e mostra todas as faixas lado a lado.
+        </p>
+
+        <h2>O que o simulador não cobre</h2>
+        <ul>
+          <li>Parcelas acima de 12 vezes. A T3 e a T3 Smart chegam a 21x, com taxas que ficam no aplicativo da Ton.</li>
+          <li>Vendas pelo TapTon e por link de pagamento, que têm taxas próprias.</li>
+          <li>
+            Pix sem chave cadastrada. O simulador mostra 0%, que é o que vale para quem cadastra uma chave Pix na
+            Conta Ton. Sem a chave, são 0,49% depois da promoção.
+          </li>
+        </ul>
 
         <p className="nota">
           O simulador usa as taxas publicadas pela Ton na data indicada. Antes de fechar, confirme os valores no site

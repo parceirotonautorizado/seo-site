@@ -3,7 +3,7 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
-import { PLANS, VM, TAXAS_ULTIMA_VERIFICACAO } from "@/lib/taxas"
+import { PLANS, VM, TAXAS_ULTIMA_VERIFICACAO, PIX_SEM_CHAVE, REGULAMENTO_DATA } from "@/lib/taxas"
 
 const PATH = "/taxas-ton"
 const TITULO = "Taxas da Ton: tabela completa por faixa de vendas"
@@ -56,18 +56,56 @@ export default function TaxasTon() {
         <p>
           Quem ativa a maquininha começa pagando {pct(promo.deb)} no débito e {pct(promo.cre[1])} no crédito à vista
           em Visa e Mastercard, com Pix a {pct(promo.pix)}. Isso vale pelos primeiros 30 dias ou até R$ 5.000 em
-          vendas, o que acabar primeiro. É a taxa que aparece nos anúncios, e ela é real. Só não é para sempre.
+          vendas, o que acabar primeiro. O prazo conta a partir do dia em que a maquininha chega. É a taxa que aparece
+          nos anúncios, e ela é real. Só não é para sempre.
         </p>
 
         <h2>Depois da promoção</h2>
         <p>
           Passado esse período, entra a taxa da sua faixa de vendas. Quanto mais você vende, menos paga. No débito
           Visa e Mastercard, recebendo em 1 dia útil, a taxa vai de {pct(menor.deb)} para quem vende até R$ 3 mil por
-          mês a {pct(maior.deb)} para quem passa de R$ 30 mil. O Pix deixa de ser grátis e passa a {pct(menor.pix)}.
+          mês a {pct(maior.deb)} para quem passa de R$ 30 mil.
         </p>
         <p>
           Dois detalhes pesam mais do que parecem. Receber na hora custa um pouco mais do que receber em 1 dia útil.
           E Elo e Amex têm taxa maior do que Visa e Mastercard em todas as faixas.
+        </p>
+
+        <h2>E o Pix na maquininha?</h2>
+        <p>
+          Aqui tem uma regra que pouca gente conhece. No período promocional, o Pix por QR Code na maquininha é
+          grátis para todo mundo. Depois, ele continua grátis se você cadastrar uma chave Pix na sua Conta Ton. Pode
+          ser CPF, CNPJ ou telefone. Quem não cadastra passa a pagar {pct(PIX_SEM_CHAVE)} por venda.
+        </p>
+        <p>
+          É um cadastro de um minuto que evita uma taxa para sempre. Faça no dia em que a maquininha chegar. As
+          tabelas abaixo mostram o Pix já com a chave cadastrada.
+        </p>
+
+        <h2>Como a Ton define a sua faixa</h2>
+        <p>
+          A regra está no regulamento do plano, de {REGULAMENTO_DATA}. Resumindo o que interessa:
+        </p>
+        <ul>
+          <li>
+            Se você vender R$ 5.000 antes de completar 30 dias, sai da promoção na hora e fica provisoriamente na
+            faixa de R$ 6 mil a R$ 10 mil até fechar os 30 dias.
+          </li>
+          <li>
+            Ao fim dos 30 dias, a Ton soma tudo o que você vendeu no período e coloca você na faixa correspondente.
+          </li>
+          <li>
+            Dali em diante a conta é mensal. No começo de cada mês, vale o total vendido no mês anterior. A faixa
+            pode melhorar ou piorar de um mês para o outro.
+          </li>
+          <li>
+            Entram na soma as vendas no cartão, o Pix na maquininha, o TapTon e o link de pagamento. Venda estornada
+            ou cancelada não conta.
+          </li>
+        </ul>
+        <p>
+          Na prática: um mês fraco derruba a sua faixa no mês seguinte, e a taxa sobe justo quando você menos pode.
+          Vale saber disso antes de planejar o caixa.
         </p>
 
         <h2>Tabela por faixa de vendas mensais</h2>
@@ -104,6 +142,13 @@ export default function TaxasTon() {
         })}
 
         <p className="nota">
+          O Pix das tabelas considera a chave Pix cadastrada; sem chave, {pct(PIX_SEM_CHAVE)} depois da promoção. As
+          tabelas vão até 12 parcelas. A T3 e a T3 Smart parcelam em até 21 vezes para novos clientes, e as taxas
+          acima de 12x ficam no aplicativo da Ton. TapTon e link de pagamento têm taxas próprias, diferentes das da
+          maquininha.
+        </p>
+
+        <p className="nota">
           Taxas do plano Mega+ conferidas em {TAXAS_ULTIMA_VERIFICACAO}. A Ton pode alterar os valores, e o que vale é
           o que aparece no site oficial na hora do pedido.
         </p>
@@ -123,7 +168,7 @@ export default function TaxasTon() {
 
         <h2>O que a Ton não cobra</h2>
         <p>
-          Não tem aluguel nem mensalidade. A maquininha é comprada uma vez e fica sua. O frete também é grátis.
+          Não tem aluguel nem mensalidade. Você paga uma taxa de adesão única pela maquininha, à vista ou em até 12 vezes, e não há cobrança fixa depois. O frete também é grátis.
         </p>
 
         <a className="cc-cta" href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">
@@ -136,6 +181,12 @@ export default function TaxasTon() {
             Tabela de taxas do plano Mega+ em{" "}
             <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">ton.com.br</a>, conferida em{" "}
             {TAXAS_ULTIMA_VERIFICACAO}.
+          </li>
+          <li>Regulamento do Plano Ton Mega+, versão de {REGULAMENTO_DATA}.</li>
+          <li>
+            Perguntas frequentes em{" "}
+            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">ton.com.br</a>, sobre Pix na
+            maquininha e parcelamento em até 21x.
           </li>
         </ul>
       </article>

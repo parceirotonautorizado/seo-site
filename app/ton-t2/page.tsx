@@ -41,6 +41,7 @@ export default function TonT2() {
           <li>Cartão por aproximação.</li>
           <li>Comprovante por SMS. Ela não imprime.</li>
           <li>Leve e compacta, cabe no bolso.</li>
+          <li>Parcelamento em até 12 vezes.</li>
         </ul>
 
         <h2>Para quem a T2 costuma ser a melhor escolha</h2>

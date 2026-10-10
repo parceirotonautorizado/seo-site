@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import { CONFIG } from '@/lib/config'
 
 function getPageUrl(pathname: string): string {
@@ -59,6 +59,57 @@ const RING_STYLE = `
     flex-shrink: 0;
   }
 
+  .wha-caixa {
+    position: fixed;
+    bottom: 84px;
+    right: 24px;
+    z-index: 9999;
+    width: 300px;
+    max-width: calc(100vw - 32px);
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+    box-shadow: 0 10px 34px rgba(0,0,0,.22);
+    padding: 16px;
+    font-family: inherit;
+  }
+
+  .wha-titulo {
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .wha-opcao {
+    display: block;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .wha-opcao small {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 500;
+    margin-top: 3px;
+  }
+
+  .wha-comprar { background: #00D648; color: #0a2200; }
+  .wha-comprar small { color: #0a2200; }
+  .wha-suporte { background: #f2f2f2; color: #1a1a1a; border: 1px solid #d9d9d9; }
+  .wha-suporte small { color: #4a4a4a; }
+
+  .wha-btn { border: none; cursor: pointer; }
+
+  @media (max-width: 480px) {
+    .wha-caixa { right: 16px; bottom: 72px; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .wha-btn { animation: none; }
   }
@@ -86,54 +137,56 @@ const WaIcon = () => (
   </svg>
 )
 
+function Triagem({ comprarHref }: { comprarHref: string }) {
+  const [aberto, setAberto] = useState(false)
+
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: RING_STYLE }} />
+
+      {aberto && (
+        <div className="wha-caixa" role="dialog" aria-label="Como podemos ajudar">
+          <p className="wha-titulo">Como podemos ajudar?</p>
+
+          <a href={comprarHref} target="_blank" rel="noopener noreferrer" className="wha-opcao wha-comprar">
+            Quero comprar minha maquininha
+            <small>Fale com o parceiro no WhatsApp</small>
+          </a>
+
+          <a href="/ton-whatsapp-telefone" className="wha-opcao wha-suporte">
+            Já tenho maquininha e preciso de ajuda
+            <small>Veja os canais de suporte da Ton</small>
+          </a>
+        </div>
+      )}
+
+      <button
+        type="button"
+        className="wha-btn"
+        aria-expanded={aberto}
+        aria-label="Abrir opções de atendimento"
+        onClick={() => setAberto(!aberto)}
+      >
+        <WaIcon />
+        {aberto ? "Fechar" : "Peça no WhatsApp"}
+      </button>
+    </>
+  )
+}
+
 function WhatsAppButtonInner() {
   const pathname = usePathname()
   const pageUrl = getPageUrl(pathname)
-  const mensagem = encodeURIComponent(
-    `Olá! Tenho interesse em maquininha Ton. Vi pelo site: ${pageUrl}`
-  )
-  const href = `https://wa.me/${CONFIG.whatsapp}?text=${mensagem}`
+  const mensagem = encodeURIComponent(`Olá! Quero comprar uma maquininha Ton. Vi pelo site: ${pageUrl}`)
 
-  return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: RING_STYLE }} />
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="wha-btn"
-        aria-label="Falar no WhatsApp"
-      >
-        <WaIcon />
-        Peça no WhatsApp
-      </a>
-    </>
-  )
-}
-
-// Fallback sem pathname (SSR de páginas estáticas com generateStaticParams)
-function WhatsAppFallback() {
-  const href = `https://wa.me/${CONFIG.whatsapp}`
-  return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: RING_STYLE }} />
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="wha-btn"
-        aria-label="Falar no WhatsApp"
-      >
-        <WaIcon />
-        Peça no WhatsApp
-      </a>
-    </>
-  )
+  return <Triagem comprarHref={`https://wa.me/${CONFIG.whatsapp}?text=${mensagem}`} />
 }
 
 export default function WhatsAppButton() {
+  const mensagem = encodeURIComponent("Olá! Quero comprar uma maquininha Ton.")
+
   return (
-    <Suspense fallback={<WhatsAppFallback />}>
+    <Suspense fallback={<Triagem comprarHref={`https://wa.me/${CONFIG.whatsapp}?text=${mensagem}`} />}>
       <WhatsAppButtonInner />
     </Suspense>
   )

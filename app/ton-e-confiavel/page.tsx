@@ -36,13 +36,14 @@ export default function TonConfiavel() {
 
         <h2>Quem está por trás</h2>
         <p>
-          A Ton é uma marca do grupo Stone, o mesmo das maquininhas verdes que você vê em loja grande. No rodapé do
-          site oficial, a empresa responsável aparece como Stone Instituição de Pagamento S.A., CNPJ
-          16.501.555/0001-57, com sede em São Paulo.
+          A Ton é uma marca do grupo Stone, o mesmo das maquininhas verdes que você vê em loja grande. O regulamento
+          do plano, de 21/09/2026, identifica o Pagar.me S.A., CNPJ 18.727.053/0001-74, como desenvolvedor da
+          plataforma e dono da marca Ton. No rodapé do site oficial aparece também a Stone Instituição de Pagamento
+          S.A., CNPJ 16.501.555/0001-57, com sede em São Paulo. As duas são empresas do mesmo grupo.
         </p>
         <p>
-          A Stone é voltada a empresas maiores. A Ton é a linha feita para autônomo, MEI e negócio pequeno, com
-          maquininha comprada em vez de alugada.
+          A Stone é voltada a empresas maiores. A Ton é a linha feita para autônomo, MEI e negócio pequeno, sem
+          aluguel: você paga uma taxa de adesão única pela maquininha.
         </p>
 
         <h2>O que diz o Banco Central</h2>
@@ -71,8 +72,8 @@ export default function TonConfiavel() {
         <h2>Onde as pessoas mais se frustram</h2>
         <p>
           Na taxa. O anúncio fala em 0,57% e Pix grátis, e isso é verdade nos primeiros 30 dias ou até R$ 5.000 em
-          vendas. Depois entra a taxa da sua faixa de vendas, que é mais alta, e o Pix na maquininha passa a ser
-          cobrado. Não é golpe, está escrito. Mas muita gente só descobre no segundo mês. A{" "}
+          vendas. Depois entra a taxa da sua faixa de vendas, que é mais alta. O Pix na maquininha continua grátis
+          só para quem cadastra uma chave Pix na Conta Ton; sem a chave, passa a 0,49%. Não é golpe, está escrito. Mas muita gente só descobre no segundo mês. A{" "}
           <a href="/taxas-ton">tabela completa de taxas</a> mostra o antes e o depois.
         </p>
         <p>

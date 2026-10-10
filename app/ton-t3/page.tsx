@@ -40,6 +40,7 @@ export default function TonT3() {
           <li>Pix por QR Code ou por aproximação, direto na máquina.</li>
           <li>Cartão por aproximação.</li>
           <li>Teclado físico, que muita gente acha mais rápido que tela de toque.</li>
+          <li>Parcelamento em até 21 vezes para novos clientes. Na T1 e na T2 o limite é 12.</li>
         </ul>
 
         <h2>Onde a T3 faz sentido</h2>

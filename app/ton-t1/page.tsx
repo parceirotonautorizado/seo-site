@@ -44,6 +44,7 @@ export default function TonT1() {
           <li>Comprovante enviado por SMS, sem impressão.</li>
           <li>Leve e compacta, feita para andar com você.</li>
           <li>Garantia da Ton, com troca grátis.</li>
+          <li>Parcelamento em até 12 vezes.</li>
         </ul>
 
         <h2>Para quem a T1 resolve</h2>

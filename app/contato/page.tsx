@@ -27,22 +27,26 @@ export default function Contato() {
       <article className="txt">
         <h1>Contato</h1>
 
+        <p>Escolha o seu caso. São dois caminhos diferentes, e o certo resolve mais rápido.</p>
+
+        <h2>Quero comprar minha maquininha</h2>
         <p>
-          O atendimento é pelo WhatsApp. Pode perguntar o que quiser antes de comprar: qual modelo serve para o seu
+          Fale com a gente pelo WhatsApp. Pode perguntar o que quiser antes de pedir: qual modelo serve para o seu
           negócio, como ficam as taxas no seu volume de vendas, como funciona o pedido.
         </p>
-
-        <a className="cc-cta" href={whatsapp} target="_blank" rel="noopener noreferrer">
-          Chamar no WhatsApp
+        <a className="cc-cta" href={`${whatsapp}?text=${encodeURIComponent("Olá! Quero comprar uma maquininha Ton.")}`} target="_blank" rel="noopener noreferrer">
+          Quero comprar: chamar no WhatsApp
         </a>
 
-        <h2>Já comprou e precisa de suporte?</h2>
+        <h2>Já tenho maquininha e preciso de ajuda</h2>
         <p>
           Aí é com a Ton. Entrega atrasada, troca de aparelho, problema na conta ou no recebimento são resolvidos pelos
-          canais oficiais deles, no aplicativo ou em{" "}
-          <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">ton.com.br</a>. A gente não tem
-          acesso ao seu pedido nem à sua conta.
+          canais oficiais deles. A gente não tem acesso ao seu pedido nem à sua conta, então chamar aqui só atrasa a
+          solução.
         </p>
+        <a className="cc-cta" href="/ton-whatsapp-telefone" style={{ background: "#333" }}>
+          Preciso de suporte: ver canais da Ton
+        </a>
 
         <h2>Encontrou algo errado no site?</h2>
         <p>

@@ -9,7 +9,7 @@ const PERGUNTAS = [
   },
   {
     q: "A maquininha tem aluguel ou mensalidade?",
-    a: "De jeito nenhum. Você paga uma única vez (parcelado em até 12x) e a maquininha é sua para sempre. Zero aluguel, zero mensalidade.",
+    a: "De jeito nenhum. Você paga uma taxa de adesão única, à vista ou em até 12x, e não há cobrança fixa depois. Zero aluguel, zero mensalidade, e a garantia vale enquanto você for cliente.",
   },
   {
     q: "Como eu recebo o dinheiro das vendas?",
@@ -21,7 +21,7 @@ const PERGUNTAS = [
   },
   {
     q: "Aceita quais formas de pagamento?",
-    a: "A Ton aceita Pix, cartão de débito e crédito (à vista e parcelado em até 18x), em mais de 50 bandeiras. Vale-refeição e vale-alimentação também passam, nos modelos T2, T3 e T3 Smart, para quem tem CNPJ do ramo de alimentação e faz o credenciamento com a bandeira do vale.",
+    a: "A Ton aceita Pix, cartão de débito e crédito (à vista ou parcelado em até 12x na T1 e na T2, e em até 21x na T3 e na T3 Smart), em mais de 50 bandeiras. Vale-refeição e vale-alimentação também passam, nos modelos T2, T3 e T3 Smart, para quem tem CNPJ do ramo de alimentação e faz o credenciamento com a bandeira do vale.",
   },
   {
     q: "Quanto tempo demora para receber a maquininha?",

@@ -15,7 +15,7 @@ const ITEMS = [
     icone: "💳",
     titulo: "Zero aluguel",
     texto:
-      "A maquininha é 100% sua. Pague uma vez (em até 12x) e esqueça taxas fixas, mensalidades e metas abusivas.",
+      "Sem aluguel e sem mensalidade. Você paga a adesão uma vez (em até 12x) e esquece taxas fixas e metas abusivas.",
   },
   {
     icone: "🛡️",

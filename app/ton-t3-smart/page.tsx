@@ -41,6 +41,7 @@ export default function TonT3Smart() {
           <li>Pix por QR Code direto na tela da máquina.</li>
           <li>Pagamento por aproximação.</li>
           <li>Bateria de longa duração, segundo a Ton.</li>
+          <li>Parcelamento em até 21 vezes para novos clientes. Na T1 e na T2 o limite é 12.</li>
         </ul>
         <p>
           As taxas não mudam por causa do modelo. Elas dependem da sua faixa de vendas e do prazo de recebimento, e
