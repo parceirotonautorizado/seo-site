@@ -10,7 +10,7 @@ export default function TaxasDestaque() {
           <span className="taxas-badge">Plano Ton Mega+</span>
           <h2 className="taxas-title">As menores taxas do mercado</h2>
           <p className="taxas-sub">
-            Liberad para CPF e CNPJ. Receba na hora ou em 1 dia útil.
+            Liberado para CPF e CNPJ. Receba na hora ou em 1 dia útil.
           </p>
         </div>
 

@@ -77,11 +77,11 @@ export default async function CidadePage({ params }: Props) {
 
       <Hero cidade={cidade.nome} />
 
+      <TaxasDestaque />
+
       <Breadcrumb cidade={cidade.nome} cidadeSlug={slug} />
 
       <CidadeConteudo cidade={cidade} />
-
-      <TaxasDestaque />
 
       {bairrosDaCidade.length > 0 && (
         <section style={{ maxWidth: "900px", margin: "0 auto", padding: "0 20px 60px" }}>

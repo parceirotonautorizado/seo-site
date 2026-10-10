@@ -99,11 +99,11 @@ export default async function BairroPage({ params }: Props) {
 
       <Hero cidade={cidadeFormatada} bairro={bairroFormatado} em={nomes.em} />
 
+      <TaxasDestaque />
+
       <Breadcrumb cidade={cidadeFormatada} cidadeSlug={slug} bairro={bairroFormatado} />
 
       <BairroConteudo bairro={nomes.dados} cidade={cidadeFormatada} cidadeSlug={slug} todos={nomes.todos} />
-
-      <TaxasDestaque />
 
       <section id="simulador">
         <Simulador cidade={cidadeFormatada} bairro={bairroFormatado} />
