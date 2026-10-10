@@ -34,17 +34,19 @@ export default function Privacidade() {
 
         <h2>Cookies de medição</h2>
         <p>
-          Usamos o Google Tag Manager para carregar ferramentas de medição de audiência do Google. Elas mostram quais
-          páginas são visitadas, de que tipo de aparelho e por onde as pessoas chegaram. Não vemos seu nome nem seu
-          telefone por esse caminho.
+          Usamos o Google Tag Manager para carregar duas ferramentas de medição: o Google Analytics e o Microsoft
+          Clarity. O Analytics mostra quais páginas são visitadas, de que tipo de aparelho e por onde as pessoas
+          chegaram. O Clarity registra como a página é usada, por exemplo onde se clica e até onde se rola, para a
+          gente achar o que está confuso. Nenhuma das duas nos mostra seu nome ou seu telefone.
         </p>
         <p>
-          Essas ferramentas só são carregadas se você clicar em Aceitar no aviso de cookies. Se recusar, nada de
-          medição é carregado e o site funciona do mesmo jeito.
+          Essa medição fica ligada por padrão, porque é o que nos permite melhorar o site. Se você não quiser, clique
+          em Desativar no aviso de cookies. A partir daí nada de medição é carregado nas suas visitas, e o site
+          funciona do mesmo jeito.
         </p>
         <p>
-          Mudou de ideia? Apague os dados deste site nas configurações do navegador e o aviso aparece de novo na
-          próxima visita.
+          Já fechou o aviso e quer mudar a escolha? Apague os dados deste site nas configurações do navegador e o
+          aviso aparece de novo na próxima visita.
         </p>
 
         <h2>O simulador</h2>

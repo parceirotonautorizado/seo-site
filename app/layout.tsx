@@ -93,12 +93,12 @@ export default function RootLayout({
     >
       <head>
 
-        {/* Tag Manager: só carrega se o visitante aceitou os cookies, e então na primeira interação ou após 8 s */}
+        {/* Tag Manager: carrega na primeira interação ou após 8 s, a não ser que o visitante tenha recusado a medição */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,i){
               var ok=false, ev=['scroll','mousemove','touchstart','keydown','click'];
-              function aceitou(){ try { return localStorage.getItem('consentimento-cookies')==='aceito'; } catch(e){ return false; } }
+              function recusou(){ try { return localStorage.getItem('consentimento-cookies')==='recusado'; } catch(e){ return false; } }
               function carregar(){
                 if(ok) return; ok=true;
                 w.dataLayer=w.dataLayer||[];
@@ -107,7 +107,7 @@ export default function RootLayout({
                 j.src='https://www.googletagmanager.com/gtm.js?id='+i;
                 d.head.appendChild(j);
               }
-              function go(){ if(aceitou()) carregar(); }
+              function go(){ if(!recusou()) carregar(); }
               w.__carregarMedicao=carregar;
               ev.forEach(function(e){ w.addEventListener(e,go,{once:true,passive:true}); });
               if(d.readyState==='complete') setTimeout(go,8000);
