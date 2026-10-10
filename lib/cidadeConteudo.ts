@@ -278,6 +278,6 @@ export function conteudoCidade(c: Cidade) {
     entrega: entrega(c),
     faq: faq(c),
     vizinhas: c.vizinhas,
-    fonte: `Fontes: IBGE — Censo ${fontes.censo}, PIB dos Municípios ${fontes.pib} e Cadastro Central de Empresas ${fontes.empresas_por_atividade} e ${fontes.empresas}. Distâncias calculadas em linha reta entre as sedes dos municípios.`,
+    fonte: `Fontes: IBGE, Censo ${fontes.censo}, PIB dos Municípios ${fontes.pib} e Cadastro Central de Empresas ${fontes.empresas_por_atividade} e ${fontes.empresas}. Distâncias calculadas em linha reta entre as sedes dos municípios.`,
   }
 }

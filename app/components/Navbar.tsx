@@ -87,7 +87,7 @@ export default function Navbar() {
         .logo-ton {
           font-size: 22px;
           font-weight: 900;
-          color: #009641;
+          color: #007a34;
           letter-spacing: -0.5px;
         }
 
@@ -112,11 +112,11 @@ export default function Navbar() {
         }
 
         .navbar-links a:hover {
-          color: #009641;
+          color: #007a34;
         }
 
         .navbar-cta {
-          background: #009641;
+          background: #007a34;
           color: #fff;
           text-decoration: none;
           padding: 10px 20px;
@@ -129,7 +129,7 @@ export default function Navbar() {
         }
 
         .navbar-cta:hover {
-          background: #007a34;
+          background: #006a2d;
         }
 
         .hamburger {
@@ -170,7 +170,7 @@ export default function Navbar() {
         }
 
         .mobile-cta {
-          color: #009641 !important;
+          color: #007a34 !important;
           font-size: 16px;
           font-weight: 700 !important;
           padding: 14px 0 !important;

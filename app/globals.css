@@ -58,3 +58,27 @@ h1, h2, h3, h4, h5, h6 {
 .cc-vizinhas a:hover { text-decoration: underline; }
 .cc-vizinhas span { color: #555; font-size: 14px; }
 .cc-fonte { font-size: 13px; color: #555; line-height: 1.6; margin: 0; }
+
+/* Aviso de cookies */
+.ck { position: fixed; left: 16px; bottom: 16px; z-index: 10000; max-width: 380px; background: #fff; border: 1px solid #d9d9d9; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.18); padding: 14px 16px; }
+.ck-texto { font-size: 13px; line-height: 1.5; color: #333; margin: 0 0 10px; }
+.ck-texto a { color: #00702f; text-decoration: underline; }
+.ck-botoes { display: flex; gap: 8px; justify-content: flex-end; }
+.ck-btn { font: inherit; font-size: 14px; font-weight: 700; border-radius: 999px; padding: 9px 18px; cursor: pointer; min-height: 40px; }
+.ck-recusar { background: #fff; color: #333; border: 1px solid #bbb; }
+.ck-aceitar { background: #00702f; color: #fff; border: 1px solid #00702f; }
+@media (max-width: 600px) { .ck { left: 8px; right: 8px; bottom: 8px; max-width: none; } }
+
+/* Faixa de aviso de parceiro, logo abaixo do menu */
+.aviso-parceiro { background: #f4faf6; border-bottom: 1px solid #dcefe3; color: #333; font-size: 13px; line-height: 1.4; text-align: center; padding: 8px 16px; margin: 0; }
+
+/* Páginas de texto (Sobre, Contato, Privacidade) */
+.txt { max-width: 780px; margin: 0 auto; padding: 56px 20px 72px; }
+.txt h1 { font-size: 32px; font-weight: 900; color: #1a1a1a; margin: 0 0 20px; line-height: 1.2; }
+.txt h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin: 36px 0 12px; }
+.txt p, .txt li { color: #4a4a4a; line-height: 1.75; }
+.txt p { margin: 0 0 16px; }
+.txt ul { margin: 0 0 16px; padding-left: 22px; }
+.txt a { color: #00702f; text-decoration: underline; }
+.txt a.cc-cta { text-decoration: none; }
+.txt .cc-cta { color: #fff; margin-top: 8px; }

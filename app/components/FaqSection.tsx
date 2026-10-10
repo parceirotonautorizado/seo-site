@@ -118,7 +118,7 @@ export default function FaqSection() {
         }
 
         .faq-aberto {
-          border-color: #009641;
+          border-color: #007a34;
         }
 
         .faq-pergunta {
@@ -139,7 +139,7 @@ export default function FaqSection() {
 
         .faq-seta {
           font-size: 24px;
-          color: #009641;
+          color: #007a34;
           font-weight: 300;
           flex-shrink: 0;
           line-height: 1;

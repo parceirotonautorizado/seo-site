@@ -293,6 +293,7 @@ if (typeof window !== "undefined") {
   </div>
 
   <select
+    aria-label="Vendas Mensais"
     className="select"
 
     value={tier}
@@ -339,6 +340,7 @@ if (typeof window !== "undefined") {
   </div>
 
   <select
+    aria-label="Recebimento"
     className="select"
 
     value={recv}
@@ -385,6 +387,7 @@ if (typeof window !== "undefined") {
   </div>
 
   <select
+    aria-label="Bandeiras"
     className="select"
 
     value={band}
@@ -441,6 +444,7 @@ if (typeof window !== "undefined") {
                 <div className="slider-wrap">
                   <input
                     type="range"
+                    aria-label="Valor da venda"
                     min="1"
                     max="100000"
                     value={amount}
@@ -795,12 +799,12 @@ if (typeof window !== "undefined") {
         }
 
         .amount-input:hover {
-          border-color: #009641;
+          border-color: #007a34;
         }
 
         .amount-edit-icon {
           font-size: 20px;
-          color: #009641;
+          color: #007a34;
           opacity: 0.7;
           flex-shrink: 0;
         }
@@ -910,7 +914,7 @@ if (typeof window !== "undefined") {
         }
 
         .pad-confirm {
-          background: #009641;
+          background: #007a34;
           color: #fff;
           border: none;
           border-radius: 18px;
@@ -923,7 +927,7 @@ if (typeof window !== "undefined") {
         }
 
         .pad-confirm:hover {
-          background: #007a34;
+          background: #006a2d;
         }
 
         .slider-wrap {
@@ -1011,14 +1015,14 @@ if (typeof window !== "undefined") {
 
         .calc-note {
           font-size: 12px;
-          color: #777;
+          color: #5f5f5f;
           margin-top: 14px;
           text-align: center;
           line-height: 1.6;
         }
 
         .calc-note-link {
-          color: #009641;
+          color: #007a34;
           text-decoration: underline;
         }
 

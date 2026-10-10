@@ -59,7 +59,8 @@ export async function generateMetadata({
 
   const nomes = buscar(slug, bairro)
   const url = `${CONFIG.dominio}/cidade/${slug}/${bairro}`
-  const title = `Maquininha Ton ${nomes.em} ${nomes.bairro}, ${nomes.cidade} | Menores Taxas`
+  const base = `Maquininha Ton ${nomes.em} ${nomes.bairro}, ${nomes.cidade}`
+  const title = base.length <= 41 ? `${base} | Taxas e Modelos` : `${base} | Taxas`
   const description = `Maquininha Ton ${nomes.em} ${nomes.bairro}, em ${nomes.cidade}: como é o comércio do bairro, qual modelo combina, taxas e entrega com frete grátis.`
 
   return {

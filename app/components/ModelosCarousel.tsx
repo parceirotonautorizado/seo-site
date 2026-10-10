@@ -255,7 +255,7 @@ export default function ModelosCarousel() {
           top: 0;
           left: 0;
           right: 0;
-          background: #009641;
+          background: #007a34;
           color: #fff;
           text-align: center;
           font-size: 11px;
@@ -293,7 +293,7 @@ export default function ModelosCarousel() {
         .mc-badge {
           display: inline-block;
           background: #e8f5ec;
-          color: #007a34;
+          color: #006a2d;
           font-size: 11px;
           font-weight: 700;
           padding: 3px 10px;
@@ -304,7 +304,7 @@ export default function ModelosCarousel() {
         }
 
         .mc-card-destaque .mc-badge {
-          background: #009641;
+          background: #007a34;
           color: #fff;
         }
 
@@ -318,7 +318,7 @@ export default function ModelosCarousel() {
 
         .mc-sub-text {
           font-size: 13px;
-          color: #777;
+          color: #5f5f5f;
           margin: 0;
           line-height: 1.5;
         }
@@ -331,20 +331,20 @@ export default function ModelosCarousel() {
         .mc-preco {
           font-size: 28px;
           font-weight: 900;
-          color: #009641;
+          color: #007a34;
           margin: 0;
           line-height: 1;
         }
 
         .mc-parcela {
           font-size: 12px;
-          color: #999;
+          color: #5f5f5f;
           margin: 4px 0 0;
         }
 
         .mc-cta {
           display: block;
-          background: #009641;
+          background: #007a34;
           color: #fff;
           text-decoration: none;
           text-align: center;
@@ -361,7 +361,7 @@ export default function ModelosCarousel() {
         }
 
         .mc-cta:hover {
-          background: #007a34;
+          background: #006a2d;
         }
 
         .mc-card-destaque .mc-cta:hover {

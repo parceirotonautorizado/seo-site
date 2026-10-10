@@ -14,17 +14,27 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
     ? `Maquininha Ton ${em} ${bairro}, ${cidade}`
     : cidade
     ? `Maquininha Ton em ${cidade}`
-    : "Maquininha Ton | Menores taxas do Paraná"
+    : "Maquininha Ton no Paraná"
 
   const descricao = bairro
-    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. A melhor maquininha para negócios ${em} ${bairro}, em ${cidade}.`
+    ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. Veja qual modelo combina com quem vende ${em} ${bairro}, em ${cidade}.`
     : cidade
     ? `Taxa de 0,57% no débito, PIX grátis e sem aluguel. Ideal para autônomos e empresas em ${cidade}.`
     : "Taxa de 0,57% no débito, PIX grátis e sem aluguel. Aceita mais de 50 bandeiras. Para CPF e CNPJ."
 
   return (
     <section className="hero">
-      <img src="/hero.webp" className="hero-bg" alt="" aria-hidden="true" width={1320} height={1000} fetchPriority="high" />
+      <img
+        src="/hero.webp"
+        srcSet="/hero-640.webp 640w, /hero.webp 1320w"
+        sizes="100vw"
+        className="hero-bg"
+        alt=""
+        aria-hidden="true"
+        width={1320}
+        height={1000}
+        fetchPriority="high"
+      />
       <div className="hero-overlay" />
 
       <div className="hero-inner">
@@ -66,6 +76,7 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
           <img
             src="/maquininhas-todas.webp"
             alt="Maquininhas Ton T1, T2, T3 e T3 Smart"
+            loading="lazy"
             width={476}
             height={476}
             className="hero-img"

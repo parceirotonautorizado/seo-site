@@ -26,7 +26,7 @@ const MODELOS = [
     nome: "T3",
     subtitulo: "Com bobina e impressão",
     badge: "CUSTO-BENEFÍCIO",
-    badgeColor: "#009641",
+    badgeColor: "#007a34",
     imagem: "/m-t3.webp",
     preco: "R$ 81,00",
     parcela: "12x de R$ 6,75",
@@ -212,7 +212,7 @@ export default function ModelosSection() {
         }
 
         .modelo-destaque {
-          border-color: #009641;
+          border-color: #007a34;
           transform: scale(1.02);
         }
 
@@ -221,7 +221,7 @@ export default function ModelosSection() {
           top: 0;
           left: 0;
           right: 0;
-          background: #009641;
+          background: #007a34;
           color: #fff;
           text-align: center;
           font-size: 12px;
@@ -267,7 +267,7 @@ export default function ModelosSection() {
         .modelo-preco {
           font-size: 30px;
           font-weight: 900;
-          color: #009641;
+          color: #007a34;
           line-height: 1;
         }
 
@@ -296,7 +296,7 @@ export default function ModelosSection() {
         }
 
         .check {
-          color: #009641;
+          color: #007a34;
           font-weight: 700;
           flex-shrink: 0;
         }

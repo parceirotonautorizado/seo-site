@@ -15,7 +15,7 @@ const SLIDES = [
     ctaSecundario: "Simular Taxas",
     ctaSecLink: "#simulador",
     imgDireita: "/promo-t3smart.webp",
-    imgAlt: "Promoção Ton T3 Smart — menor taxa do mercado",
+    imgAlt: "Promoção da Ton T3 Smart, com taxa a partir de 0,57%",
     bgImg: null as string | null,
   },
   {
@@ -43,7 +43,7 @@ const SLIDES = [
     ctaSecundario: "Simular Taxas",
     ctaSecLink: "#simulador",
     imgDireita: "/maquininhas-todas.webp",
-    imgAlt: "T1, T2, T3 e T3 Smart — todos os modelos Ton",
+    imgAlt: "Os quatro modelos da Ton: T1, T2, T3 e T3 Smart",
     bgImg: null as string | null,
   },
 ]
@@ -498,6 +498,9 @@ export default function HeroSlider() {
         }
 
         .hs-dot {
+          box-sizing: content-box;
+          background-clip: content-box !important;
+          padding: 8px;
           width: 9px;
           height: 9px;
           border-radius: 50%;

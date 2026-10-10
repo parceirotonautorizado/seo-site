@@ -8,7 +8,7 @@ export default function TaxasDestaque() {
       <div className="taxas-container">
         <div className="taxas-header">
           <span className="taxas-badge">Plano Ton Mega+</span>
-          <h2 className="taxas-title">As menores taxas do mercado</h2>
+          <h2 className="taxas-title">Taxas a partir de 0,57%</h2>
           <p className="taxas-sub">
             Liberado para CPF e CNPJ. Receba na hora ou em 1 dia útil.
           </p>
@@ -73,7 +73,7 @@ export default function TaxasDestaque() {
         .taxas-badge {
           display: inline-block;
           background: #e8f5ec;
-          color: #009641;
+          color: #007a34;
           font-size: 13px;
           font-weight: 700;
           padding: 6px 16px;
@@ -113,13 +113,13 @@ export default function TaxasDestaque() {
 
         .taxa-card.destaque {
           background: #e8f5ec;
-          border-color: #009641;
+          border-color: #007a34;
         }
 
         .taxa-tipo {
           font-size: 14px;
           font-weight: 600;
-          color: #888;
+          color: #5f5f5f;
           margin-bottom: 10px;
           text-transform: uppercase;
           letter-spacing: 0.5px;
@@ -128,26 +128,26 @@ export default function TaxasDestaque() {
         .taxa-valor {
           font-size: 42px;
           font-weight: 900;
-          color: #009641;
+          color: #007a34;
           line-height: 1;
           margin-bottom: 8px;
         }
 
         .taxa-label {
           font-size: 12px;
-          color: #999;
+          color: #5f5f5f;
         }
 
         .taxas-nota {
           font-size: 12px;
-          color: #aaa;
+          color: #5f5f5f;
           text-align: center;
           max-width: 600px;
         }
 
         .taxas-cta {
           display: inline-block;
-          background: #009641;
+          background: #007a34;
           color: #fff;
           text-decoration: none;
           padding: 16px 36px;
@@ -158,7 +158,7 @@ export default function TaxasDestaque() {
         }
 
         .taxas-cta:hover {
-          background: #007a34;
+          background: #006a2d;
         }
 
         @media (max-width: 768px) {

@@ -25,6 +25,14 @@ export default function sitemap() {
     priority: 0.5,
   })
 
+  for (const pagina of ["sobre", "contato", "politica-de-privacidade"]) {
+    urls.push({
+      url: `${baseUrl}/${pagina}`,
+      lastModified,
+      priority: 0.4,
+    })
+  }
+
   for (const cidade of cidades) {
     urls.push({
       url: `${baseUrl}/cidade/${cidade.slug}`,

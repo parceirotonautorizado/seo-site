@@ -67,6 +67,9 @@ export default function MapaDoSite() {
           <li><a href="/#simulador" style={link}>Simulador de taxas</a></li>
           <li><a href="/#faq" style={link}>Dúvidas frequentes</a></li>
           <li><a href="/cidades" style={link}>Cidades atendidas</a></li>
+          <li><a href="/sobre" style={link}>Sobre o site</a></li>
+          <li><a href="/contato" style={link}>Contato</a></li>
+          <li><a href="/politica-de-privacidade" style={link}>Privacidade e cookies</a></li>
         </ul>
 
         {bairros.map((c) => (

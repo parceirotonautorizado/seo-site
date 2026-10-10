@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4 className="footer-col-title">Maquininhas</h4>
+            <p className="footer-col-title">Maquininhas</p>
             <ul>
               <li><a href={CONFIG.tonModelos.t3smart} target="_blank" rel="noopener noreferrer">T3 Smart Mega+</a></li>
               <li><a href={CONFIG.tonModelos.t3} target="_blank" rel="noopener noreferrer">T3 Mega+</a></li>
@@ -33,18 +33,21 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4 className="footer-col-title">Informações</h4>
+            <p className="footer-col-title">Informações</p>
             <ul>
               <li><a href="#taxas">Taxas e Planos</a></li>
               <li><a href="#faq">Perguntas Frequentes</a></li>
               <li><a href="#simulador">Simulador de Taxas</a></li>
               <li><a href="/cidades">Cidades atendidas</a></li>
+              <li><a href="/sobre">Sobre o site</a></li>
+              <li><a href="/contato">Contato</a></li>
+              <li><a href="/politica-de-privacidade">Privacidade e cookies</a></li>
               <li><a href="/mapa-do-site">Mapa do site</a></li>
             </ul>
           </div>
 
           <div className="footer-col">
-            <h4 className="footer-col-title">Atendimento</h4>
+            <p className="footer-col-title">Atendimento</p>
             <ul>
               <li>
                 <a
@@ -138,6 +141,7 @@ export default function Footer() {
           margin: 0 0 16px;
           text-transform: uppercase;
           letter-spacing: 0.5px;
+                  margin-top: 0;
         }
 
         .footer-col ul {
@@ -166,7 +170,7 @@ export default function Footer() {
           flex-direction: column;
           gap: 6px;
           font-size: 12px;
-          color: #666;
+          color: #a3a3a3;
         }
 
         .footer-bottom {
@@ -179,13 +183,13 @@ export default function Footer() {
 
         .footer-copy {
           font-size: 13px;
-          color: #666;
+          color: #a3a3a3;
           margin: 0;
         }
 
         .footer-disclaimer {
           font-size: 11px;
-          color: #555;
+          color: #a3a3a3;
           line-height: 1.6;
           margin: 0;
         }

@@ -35,7 +35,8 @@ export async function generateMetadata({
     notFound()
   }
 
-  const title = `Maquininhas Ton em ${cidade.nome} | Menores Taxas`
+  const base = `Maquininha Ton em ${cidade.nome}`
+  const title = base.length <= 41 ? `${base} | Taxas e Modelos` : `${base} | Taxas`
   const description = `Maquininha Ton em ${cidade.nome}: qual modelo combina com o comércio local, taxas, entrega com frete grátis e dados das ${cidade.empresas.toLocaleString("pt-BR")} empresas da cidade.`
   const url = `${CONFIG.dominio}/cidade/${slug}`
 

@@ -1,0 +1,25 @@
+# Maquininhas Ton Paraná
+
+> Site de um parceiro autorizado Ton (programa Renda Extra). Explica as maquininhas de cartão da Ton, mostra as taxas e indica a compra no site oficial. Não é o site da Ton.
+
+O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cada página de cidade traz dados do IBGE (Censo 2022, PIB dos Municípios 2021 e Cadastro Central de Empresas) e uma sugestão de modelo conforme o perfil do comércio local.
+
+## Páginas principais
+
+- [Página inicial](https://www.maquininhadecartoes.com.br/): taxas, modelos e simulador
+- [Cidades atendidas](https://www.maquininhadecartoes.com.br/cidades): lista das 399 cidades por região
+- [Mapa do site](https://www.maquininhadecartoes.com.br/mapa-do-site): todas as páginas, incluindo os bairros de Curitiba
+- [Sobre o site](https://www.maquininhadecartoes.com.br/sobre): quem mantém, como o site ganha dinheiro e de onde vêm os dados
+- [Contato](https://www.maquininhadecartoes.com.br/contato)
+- [Privacidade e cookies](https://www.maquininhadecartoes.com.br/politica-de-privacidade)
+
+## Padrão dos endereços
+
+- Cidade: https://www.maquininhadecartoes.com.br/cidade/{cidade}
+- Bairro de Curitiba: https://www.maquininhadecartoes.com.br/cidade/curitiba/{bairro}
+
+## Avisos
+
+- As taxas são da Ton e podem mudar. O valor válido é o do site oficial, ton.com.br, na hora do pedido.
+- Venda, entrega, conta e suporte são feitos pela Ton, não por este site.
+- Ton é marca registrada de Pagar.me Instituição de Pagamento S.A.

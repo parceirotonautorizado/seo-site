@@ -7,6 +7,7 @@ import "./globals.css"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import WhatsAppButton from "@/app/components/WhatsAppButton"
+import CookieBanner from "@/app/components/CookieBanner"
 import StyledJsxRegistry from "@/app/registry"
 import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd } from "@/lib/jsonld"
@@ -25,9 +26,9 @@ const poppins = Poppins({
   display: "swap",
 })
 
-const TITULO = "Maquininhas Ton Paraná | Menores Taxas"
+const TITULO = "Maquininhas Ton no Paraná | Taxas, Modelos e Simulador"
 const DESCRICAO =
-  "Compare taxas, simule economia e encontre a melhor maquininha Ton para sua cidade no Paraná."
+  "Compare as taxas da Ton, simule quanto você recebe por venda e veja qual maquininha combina com a sua cidade no Paraná."
 
 export const metadata: Metadata = {
   metadataBase: new URL(CONFIG.dominio),
@@ -92,12 +93,13 @@ export default function RootLayout({
     >
       <head>
 
-        {/* Tag Manager: carrega na primeira interação do visitante ou 8 s após o carregamento */}
+        {/* Tag Manager: só carrega se o visitante aceitou os cookies, e então na primeira interação ou após 8 s */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,i){
               var ok=false, ev=['scroll','mousemove','touchstart','keydown','click'];
-              function go(){
+              function aceitou(){ try { return localStorage.getItem('consentimento-cookies')==='aceito'; } catch(e){ return false; } }
+              function carregar(){
                 if(ok) return; ok=true;
                 w.dataLayer=w.dataLayer||[];
                 w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
@@ -105,6 +107,8 @@ export default function RootLayout({
                 j.src='https://www.googletagmanager.com/gtm.js?id='+i;
                 d.head.appendChild(j);
               }
+              function go(){ if(aceitou()) carregar(); }
+              w.__carregarMedicao=carregar;
               ev.forEach(function(e){ w.addEventListener(e,go,{once:true,passive:true}); });
               if(d.readyState==='complete') setTimeout(go,8000);
               else w.addEventListener('load',function(){ setTimeout(go,8000); });
@@ -116,30 +120,20 @@ export default function RootLayout({
 
       <body className="min-h-full flex flex-col">
 
-        <noscript>
-
-          <iframe
-            
-src="https://www.googletagmanager.com/ns.html?id=GTM-WZRS8XND"
-            height="0"
-            width="0"
-            style={{
-              display: "none",
-              visibility: "hidden",
-            }}
-          />
-
-        </noscript>
 
         <JsonLd data={siteLd} />
 
         <StyledJsxRegistry>
           <Navbar />
+          <p className="aviso-parceiro">
+            Site de um parceiro autorizado Ton. A compra é feita no site oficial da Ton, com o desconto de parceiro.
+          </p>
           <main>
             {children}
           </main>
           <Footer />
           <WhatsAppButton />
+          <CookieBanner />
         </StyledJsxRegistry>
 
       </body>
