@@ -1,6 +1,8 @@
 import { CONFIG } from "@/lib/config"
 
 // Menu do topo. O menu do celular abre e fecha com uma caixa de seleção escondida, sem JavaScript.
+// Cada link aponta para uma página real; se a página atual já tiver aquela seção (data-secao),
+// um script do layout rola até ela em vez de trocar de página.
 export default function Navbar() {
   return (
     <header className="s-nav navbar-header">
@@ -13,10 +15,10 @@ export default function Navbar() {
         </a>
 
         <nav className="navbar-links">
-          <a href="#taxas">Taxas</a>
-          <a href="#modelos">Modelos</a>
-          <a href="#simulador">Simulador</a>
-          <a href="#faq">Dúvidas</a>
+          <a href="/taxas-ton" data-secao="taxas">Taxas</a>
+          <a href="/#modelos" data-secao="modelos">Modelos</a>
+          <a href="/simulador-ton" data-secao="simulador">Simulador</a>
+          <a href="/#faq" data-secao="faq">Dúvidas</a>
         </nav>
 
         <a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer" className="navbar-cta">
@@ -29,10 +31,10 @@ export default function Navbar() {
       </div>
 
       <div className="mobile-menu">
-        <a href="#taxas">Taxas</a>
-        <a href="#modelos">Modelos</a>
-        <a href="#simulador">Simulador</a>
-        <a href="#faq">Dúvidas</a>
+        <a href="/taxas-ton" data-secao="taxas">Taxas</a>
+        <a href="/#modelos" data-secao="modelos">Modelos</a>
+        <a href="/simulador-ton" data-secao="simulador">Simulador</a>
+        <a href="/#faq" data-secao="faq">Dúvidas</a>
         <a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer" className="mobile-cta">
           Pedir com Desconto →
         </a>

@@ -122,7 +122,11 @@ export default function RootLayout({
               w.__carregarMedicao=carregar;
               // fecha o menu do celular depois de tocar em um link dele
               d.addEventListener('click',function(e){
-                var t=e.target; if(t && t.closest && t.closest('.mobile-menu a')){ var c=d.getElementById('nav-toggle'); if(c) c.checked=false; }
+                var t=e.target; if(!t || !t.closest) return;
+                if(t.closest('.mobile-menu a')){ var c=d.getElementById('nav-toggle'); if(c) c.checked=false; }
+                // link de menu para uma seção que já existe nesta página: rola até ela em vez de sair da página
+                var a=t.closest('a[data-secao]');
+                if(a && d.getElementById(a.getAttribute('data-secao'))){ e.preventDefault(); w.location.hash=a.getAttribute('data-secao'); }
               });
               ev.forEach(function(e){ w.addEventListener(e,go,{passive:true}); });
               if(d.readyState==='complete') setTimeout(function(){ go(); },8000);

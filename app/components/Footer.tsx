@@ -44,8 +44,7 @@ export default function Footer() {
               <li><a href="/tapton-como-funciona">TapTon</a></li>
               <li><a href="/ton-e-confiavel">A Ton é confiável?</a></li>
               <li><a href="/ton-whatsapp-telefone">WhatsApp e telefone da Ton</a></li>
-              <li><a href="#faq">Perguntas Frequentes</a></li>
-              <li><a href="#simulador">Simulador de Taxas</a></li>
+              <li><a href="/#faq" data-secao="faq">Perguntas Frequentes</a></li>
               <li><a href="/cidades">Cidades atendidas</a></li>
               <li><a href="/sobre">Sobre o site</a></li>
               <li><a href="/contato">Contato</a></li>

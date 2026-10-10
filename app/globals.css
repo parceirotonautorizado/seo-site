@@ -101,3 +101,6 @@ h1, h2, h3, h4, h5, h6 {
 .tab th:first-child, .tab td:first-child { text-align: left; }
 .tab thead th { background: #fafafa; font-weight: 700; color: #1a1a1a; }
 .txt .nota { font-size: 14px; color: #4a4a4a; }
+
+/* Âncoras do menu: deixa espaço para o menu fixo no topo não cobrir o início da seção */
+section[id] { scroll-margin-top: 72px; }
