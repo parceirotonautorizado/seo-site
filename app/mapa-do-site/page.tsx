@@ -27,7 +27,7 @@ const grade = {
   gap: "2px 16px",
 } as const
 
-const link = { color: "#00702f", textDecoration: "none", display: "inline-block", padding: "9px 0" } as const
+const link = { color: "#006e00", textDecoration: "none", display: "inline-block", padding: "9px 0" } as const
 const h2 = { fontSize: "24px", fontWeight: 800, margin: "40px 0 12px", color: "#1a1a1a" } as const
 const h3 = { fontSize: "17px", fontWeight: 700, margin: "24px 0 8px", color: "#1a1a1a" } as const
 

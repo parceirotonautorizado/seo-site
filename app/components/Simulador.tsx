@@ -801,12 +801,12 @@ if (typeof window !== "undefined") {
         }
 
         .amount-input:hover {
-          border-color: #007a34;
+          border-color: #006e00;
         }
 
         .amount-edit-icon {
           font-size: 20px;
-          color: #007a34;
+          color: #006e00;
           opacity: 0.7;
           flex-shrink: 0;
         }
@@ -916,7 +916,7 @@ if (typeof window !== "undefined") {
         }
 
         .pad-confirm {
-          background: #007a34;
+          background: #006e00;
           color: #fff;
           border: none;
           border-radius: 18px;
@@ -929,7 +929,7 @@ if (typeof window !== "undefined") {
         }
 
         .pad-confirm:hover {
-          background: #006a2d;
+          background: #003c00;
         }
 
         .slider-wrap {
@@ -1024,7 +1024,7 @@ if (typeof window !== "undefined") {
         }
 
         .calc-note-link {
-          color: #007a34;
+          color: #006e00;
           text-decoration: underline;
         }
 

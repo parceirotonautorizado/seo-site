@@ -28,7 +28,7 @@ const RING_STYLE = `
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #00D648;
+    background: #00D700;
     color: #0a2200;
     font-family: inherit;
     font-weight: 700;
@@ -49,7 +49,7 @@ const RING_STYLE = `
   }
 
   .wha-btn:focus-visible {
-    outline: 3px solid #00D648;
+    outline: 3px solid #00D700;
     outline-offset: 3px;
   }
 
@@ -99,7 +99,7 @@ const RING_STYLE = `
     margin-top: 3px;
   }
 
-  .wha-comprar { background: #00D648; color: #0a2200; }
+  .wha-comprar { background: #00D700; color: #0a2200; }
   .wha-comprar small { color: #0a2200; }
   .wha-suporte { background: #f2f2f2; color: #1a1a1a; border: 1px solid #d9d9d9; }
   .wha-suporte small { color: #4a4a4a; }

@@ -10,8 +10,7 @@ export default function Navbar() {
 
       <div className="navbar-container">
         <a href="/" className="navbar-logo">
-          <span className="logo-ton">TON</span>
-          <span className="logo-sub"> Maquininha</span>
+          <img src="/parceiro-ton.png" alt="Parceiro Ton" width={136} height={48} className="logo-img" />
         </a>
 
         <nav className="navbar-links">

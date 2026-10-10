@@ -5,7 +5,7 @@ type Props = {
 }
 
 export default function Breadcrumb({ cidade, cidadeSlug, bairro }: Props) {
-  const link = { textDecoration: "none", color: "#00702f" }
+  const link = { textDecoration: "none", color: "#006e00" }
 
   return (
     <nav

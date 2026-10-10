@@ -9,8 +9,7 @@ export default function Footer() {
         <div className="footer-cols">
           <div className="footer-col footer-sobre">
             <div className="footer-logo">
-              <span className="logo-ton">TON</span>
-              <span className="logo-sub"> Maquininha</span>
+              <img src="/parceiro-ton-branco.png" alt="Parceiro Ton" width={66} height={64} loading="lazy" />
             </div>
             <p className="footer-desc">
               Somos um <strong>Parceiro Autorizado Ton</strong> (programa Renda Extra / Renda Ton).

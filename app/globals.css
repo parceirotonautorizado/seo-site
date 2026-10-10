@@ -45,16 +45,16 @@ h1, h2, h3, h4, h5, h6 {
 .cc-numero dd { margin: 0; font-size: 18px; font-weight: 700; color: #1a1a1a; }
 .cc-modelos { list-style: none; counter-reset: modelo; padding: 0; margin: 0; display: grid; gap: 16px; }
 .cc-modelos li { counter-increment: modelo; border: 1px solid #e5e5e5; border-radius: 14px; padding: 18px 20px; }
-.cc-modelos .cc-h3::before { content: counter(modelo) ". "; color: #00702f; }
+.cc-modelos .cc-h3::before { content: counter(modelo) ". "; color: #006e00; }
 .cc-modelos .cc-p { margin-bottom: 10px; }
-.cc-link { color: #00702f; font-weight: 600; text-decoration: none; display: inline-block; padding: 6px 0; }
+.cc-link { color: #006e00; font-weight: 600; text-decoration: none; display: inline-block; padding: 6px 0; }
 .cc-link:hover { text-decoration: underline; }
-.cc-cta { display: inline-block; background: #00702f; color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 999px; font-size: 16px; font-weight: 700; }
+.cc-cta { display: inline-block; background: #006e00; color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 999px; font-size: 16px; font-weight: 700; }
 .cc-faq { border-bottom: 1px solid #e5e5e5; }
 .cc-faq summary { cursor: pointer; padding: 16px 0; font-weight: 700; color: #1a1a1a; font-size: 17px; }
 .cc-faq p { color: #4a4a4a; line-height: 1.75; margin: 0 0 18px; }
 .cc-vizinhas { list-style: none; padding: 0; margin: 0 0 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 16px; }
-.cc-vizinhas a { color: #00702f; text-decoration: none; display: inline-block; padding: 10px 0; }
+.cc-vizinhas a { color: #006e00; text-decoration: none; display: inline-block; padding: 10px 0; }
 .cc-vizinhas a:hover { text-decoration: underline; }
 .cc-vizinhas span { color: #555; font-size: 14px; }
 .cc-fonte { font-size: 13px; color: #555; line-height: 1.6; margin: 0; }
@@ -62,11 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Aviso de cookies */
 .ck { position: fixed; left: 16px; bottom: 16px; z-index: 10000; max-width: 380px; background: #fff; border: 1px solid #d9d9d9; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.18); padding: 14px 16px; }
 .ck-texto { font-size: 13px; line-height: 1.5; color: #333; margin: 0 0 10px; }
-.ck-texto a { color: #00702f; text-decoration: underline; }
+.ck-texto a { color: #006e00; text-decoration: underline; }
 .ck-botoes { display: flex; gap: 8px; justify-content: flex-end; }
 .ck-btn { font: inherit; font-size: 14px; font-weight: 700; border-radius: 999px; padding: 9px 18px; cursor: pointer; min-height: 40px; }
 .ck-recusar { background: #fff; color: #333; border: 1px solid #bbb; }
-.ck-aceitar { background: #00702f; color: #fff; border: 1px solid #00702f; }
+.ck-aceitar { background: #006e00; color: #fff; border: 1px solid #006e00; }
 @media (max-width: 600px) { .ck { left: 8px; right: 8px; bottom: 8px; max-width: none; } }
 
 /* Faixa de aviso de parceiro, logo abaixo do menu */
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 .txt p, .txt li { color: #4a4a4a; line-height: 1.75; }
 .txt p { margin: 0 0 16px; }
 .txt ul { margin: 0 0 16px; padding-left: 22px; }
-.txt a { color: #00702f; text-decoration: underline; }
+.txt a { color: #006e00; text-decoration: underline; }
 .txt a.cc-cta { text-decoration: none; }
 .txt .cc-cta { color: #fff; margin-top: 8px; }
 
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 .guias { max-width: 900px; margin: 0 auto; padding: 8px 20px 48px; }
 .guias-lista { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
 .guias-lista li { border: 1px solid #e5e5e5; border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
-.guias-lista a { color: #00702f; font-weight: 700; text-decoration: none; padding: 4px 0; }
+.guias-lista a { color: #006e00; font-weight: 700; text-decoration: none; padding: 4px 0; }
 .guias-lista a:hover { text-decoration: underline; }
 .guias-lista span { color: #4a4a4a; font-size: 14px; line-height: 1.5; }
 .txt h3 { font-size: 18px; font-weight: 700; color: #1a1a1a; margin: 24px 0 8px; }
@@ -105,4 +105,4 @@ h1, h2, h3, h4, h5, h6 {
 /* Âncoras do menu: deixa espaço para o menu fixo no topo não cobrir o início da seção */
 section[id] { scroll-margin-top: 72px; }
 .guias-todos { margin: 16px 0 0; }
-.guias-todos a { color: #00702f; font-weight: 600; text-decoration: underline; display: inline-block; padding: 8px 0; }
+.guias-todos a { color: #006e00; font-weight: 600; text-decoration: underline; display: inline-block; padding: 8px 0; }

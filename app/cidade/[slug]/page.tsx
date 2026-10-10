@@ -108,7 +108,7 @@ export default async function CidadePage({ params }: Props) {
               <li key={b.slug}>
                 <a
                   href={`/cidade/${slug}/${b.slug}`}
-                  style={{ color: "#00702f", textDecoration: "none", display: "inline-block", padding: "10px 0" }}
+                  style={{ color: "#006e00", textDecoration: "none", display: "inline-block", padding: "10px 0" }}
                 >
                   {b.nome}
                 </a>
