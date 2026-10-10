@@ -614,7 +614,7 @@ if (typeof window !== "undefined") {
 
               <p className="calc-note">
                 Taxas verificadas em {TAXAS_ULTIMA_VERIFICACAO} · Válidas para Visa, Mastercard, Elo e Amex.
-                Valores sujeitos a alteração pela Ton/Pagar.me.
+                Valores sujeitos a alteração pela Ton.
                 Confirme as taxas atuais em{" "}
                 <a href="https://ton.com.br" target="_blank" rel="noopener noreferrer" className="calc-note-link">
                   ton.com.br

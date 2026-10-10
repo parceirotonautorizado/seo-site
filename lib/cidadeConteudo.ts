@@ -198,16 +198,16 @@ function motivoModelo(c: Cidade, id: ModeloId): { nome: string; texto: string } 
         nome: "T3",
         texto:
           tipo === "industria" || tipo === "servicos"
-            ? `Imprime o comprovante na hora e tem chip 4G próprio. É a maquininha de balcão para loja de ${c.nome} com movimento constante, onde ainda tem cliente que pede a via impressa.`
-            : `Imprime comprovante e tem chip 4G próprio, então não depende do celular. Funciona bem no balcão: loja, farmácia, material de construção e casa agropecuária de ${c.nome}.`,
+            ? `Imprime o comprovante na hora e tem chip 3G próprio. É a maquininha de balcão para loja de ${c.nome} com movimento constante, onde ainda tem cliente que pede a via impressa.`
+            : `Imprime comprovante e tem chip 3G próprio, então não depende do celular. Funciona bem no balcão: loja, farmácia, material de construção e casa agropecuária de ${c.nome}.`,
       }
     case "t2":
       return {
         nome: "T2",
         texto:
           tipo === "agro"
-            ? `Tem bateria de longa duração, Wi-Fi e chip 4G. ${c.nome} tem base rural, e muita venda acontece fora do balcão: na entrega, na feira, na propriedade do cliente. É para isso que ela serve.`
-            : `Tem bateria de longa duração, Wi-Fi e chip 4G. É portátil e custa menos, boa para quem atende na rua ou na casa do cliente em ${c.nome}: entregador, autônomo, profissional liberal.`,
+            ? `É compacta, tem chip 3G próprio e Wi-Fi. ${c.nome} tem base rural, e muita venda acontece fora do balcão: na entrega, na feira, na propriedade do cliente. É para isso que ela serve.`
+            : `É compacta, tem chip 3G próprio e Wi-Fi. É portátil e custa menos, boa para quem atende na rua ou na casa do cliente em ${c.nome}: entregador, autônomo, profissional liberal.`,
       }
     default:
       return {

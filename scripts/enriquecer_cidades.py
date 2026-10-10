@@ -68,7 +68,7 @@ def main():
             "populacao": pop,
             "area_km2": round(censo["6318"][k], 1),
             "densidade": round(censo["614"][k], 1),
-            "regiao": m["regiao-imediata"]["nome"],
+            "regiao": m["regiao-imediata"]["nome"].replace(" ¿ ", " - "),
             "regiao_intermediaria": m["regiao-imediata"]["regiao-intermediaria"]["nome"],
             "mesorregiao": m["microrregiao"]["mesorregiao"]["nome"].replace(" Paranaense", ""),
             "ddd": g["ddd"],

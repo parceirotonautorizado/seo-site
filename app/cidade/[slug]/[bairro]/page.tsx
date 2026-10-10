@@ -12,6 +12,7 @@ import BairroConteudo from "@/app/components/BairroConteudo"
 import { preposicao } from "@/lib/bairroConteudo"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
+import ModelosCarousel from "@/app/components/ModelosCarousel"
 import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
 import { CONFIG, OG_BASE } from "@/lib/config"
@@ -102,6 +103,8 @@ export default async function BairroPage({ params }: Props) {
       <Hero cidade={cidadeFormatada} bairro={bairroFormatado} em={nomes.em} />
 
       <TaxasDestaque />
+
+      <ModelosCarousel />
 
       <Breadcrumb cidade={cidadeFormatada} cidadeSlug={slug} bairro={bairroFormatado} />
 

@@ -16,9 +16,15 @@ O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cad
 ## Guias
 
 - [Taxas da Ton](https://www.maquininhadecartoes.com.br/taxas-ton): tabela completa do plano Mega+ por faixa de vendas, bandeira e prazo
+- [Ton T1](https://www.maquininhadecartoes.com.br/ton-t1): a mais barata, depende do Bluetooth do celular
+- [Ton T2](https://www.maquininhadecartoes.com.br/ton-t2): chip 3G próprio e Wi-Fi, cabe no bolso
+- [Ton T3](https://www.maquininhadecartoes.com.br/ton-t3): imprime o comprovante, para balcão
 - [Ton T3 Smart](https://www.maquininhadecartoes.com.br/ton-t3-smart): recursos e para quem compensa
 - [A Ton aceita vale-alimentação?](https://www.maquininhadecartoes.com.br/ton-aceita-vale-alimentacao): modelos, exigência de CNPJ e credenciamento
 - [Ton para CPF, CNPJ e MEI](https://www.maquininhadecartoes.com.br/ton-cpf-cnpj-mei): o que muda em cada cadastro
+
+- [TapTon: como funciona](https://www.maquininhadecartoes.com.br/tapton-como-funciona): o celular como maquininha, requisitos e limitações
+- [A Ton é confiável?](https://www.maquininhadecartoes.com.br/ton-e-confiavel): empresa responsável, Banco Central, reclamações e golpes
 
 ## Padrão dos endereços
 
@@ -29,4 +35,4 @@ O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cad
 
 - As taxas são da Ton e podem mudar. O valor válido é o do site oficial, ton.com.br, na hora do pedido.
 - Venda, entrega, conta e suporte são feitos pela Ton, não por este site.
-- Ton é marca registrada de Pagar.me Instituição de Pagamento S.A.
+- O Ton é operado pela Stone Instituição de Pagamento S.A., segundo o site oficial.

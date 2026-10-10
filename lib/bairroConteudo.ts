@@ -69,16 +69,16 @@ function motivo(b: Bairro, em: string, id: ModeloId): string {
     }
     case "t3":
       if (b.perfil === "central")
-        return `Imprime o comprovante e tem chip 4G próprio. É a maquininha de balcão para loja ${onde}, onde o cliente está de passagem e o atendimento não pode demorar.`
+        return `Imprime o comprovante e tem chip 3G próprio. É a maquininha de balcão para loja ${onde}, onde o cliente está de passagem e o atendimento não pode demorar.`
       if (b.perfil === "populoso")
-        return `Imprime o comprovante e tem chip 4G próprio, então não depende do celular. Vai bem no comércio de rua ${onde}: loja, farmácia, mercado, material de construção.`
-      return `Imprime o comprovante e tem chip 4G próprio. Serve para o balcão ${onde}, onde ainda tem cliente que pede a via impressa.`
+        return `Imprime o comprovante e tem chip 3G próprio, então não depende do celular. Vai bem no comércio de rua ${onde}: loja, farmácia, mercado, material de construção.`
+      return `Imprime o comprovante e tem chip 3G próprio. Serve para o balcão ${onde}, onde ainda tem cliente que pede a via impressa.`
     case "t2":
       if (b.perfil === "turistico")
-        return `Tem bateria de longa duração, Wi-Fi e chip 4G. É a portátil para quem vende a visitante ${onde}: ambulante, guia, motorista, banca.`
+        return `É compacta, tem chip 3G próprio e Wi-Fi. É a portátil para quem vende a visitante ${onde}: ambulante, guia, motorista, banca.`
       if (b.perfil === "residencial")
-        return `Tem bateria de longa duração, Wi-Fi e chip 4G. Em bairro residencial, muita venda acontece na porta do cliente. É a maquininha de quem faz entrega, da diarista, do técnico, da manicure, do personal.`
-      return `Tem bateria de longa duração, Wi-Fi e chip 4G. É a portátil para quem faz entrega ou atende na casa do cliente ${onde}.`
+        return `É compacta, tem chip 3G próprio e Wi-Fi. Em bairro residencial, muita venda acontece na porta do cliente. É a maquininha de quem faz entrega, da diarista, do técnico, da manicure, do personal.`
+      return `É compacta, tem chip 3G próprio e Wi-Fi. É a portátil para quem faz entrega ou atende na casa do cliente ${onde}.`
     default:
       return b.perfil === "populoso" || b.perfil === "turistico"
         ? `É a mais barata e funciona ligada ao celular por Bluetooth. Resolve para ambulante e para quem está começando a vender ${onde}.`

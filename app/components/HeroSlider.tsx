@@ -51,23 +51,23 @@ const SLIDES = [
 const TICKER_ITEMS = [
   { type: "badge", text: "Novidade" },
   { type: "text",  text: "PIX 0% de verdade" },
-  { type: "img",   src: "/m-t3-smart.webp" },
+  { type: "img",   src: "/mini-t3-smart.webp" },
   { type: "sep" },
   { type: "badge", text: "Promoção" },
   { type: "text",  text: "Taxa 0,57% no débito" },
-  { type: "img",   src: "/m-t3.webp" },
+  { type: "img",   src: "/mini-t3.webp" },
   { type: "sep" },
   { type: "badge", text: "Exclusivo" },
   { type: "text",  text: "Sem aluguel mensal" },
-  { type: "img",   src: "/m-t2.webp" },
+  { type: "img",   src: "/mini-t2.webp" },
   { type: "sep" },
   { type: "badge", text: "Garantia" },
   { type: "text",  text: "Vitalícia em todos os modelos" },
-  { type: "img",   src: "/m-t1.webp" },
+  { type: "img",   src: "/mini-t1.webp" },
   { type: "sep" },
   { type: "badge", text: "Parceiro" },
   { type: "text",  text: "Desconto exclusivo no link" },
-  { type: "img",   src: "/m-t3-smart.webp" },
+  { type: "img",   src: "/mini-t3-smart.webp" },
   { type: "sep" },
 ] as const
 
@@ -121,6 +121,7 @@ export default function HeroSlider() {
             src={s.imgDireita}
             alt={s.imgAlt}
             className="hs-img"
+            fetchPriority={atual === 0 ? "high" : "auto"}
           />
         </div>
       )}
@@ -200,7 +201,7 @@ export default function HeroSlider() {
                     <span className="hs-ticker-text">{item.text}</span>
                   )}
                   {item.type === "img" && (
-                    <img src={item.src} alt="" width={32} height={32} className="hs-ticker-img" />
+                    <img src={item.src} alt="" width={32} height={32} className="hs-ticker-img" loading="lazy" decoding="async" />
                   )}
                   {item.type === "sep" && (
                     <span className="hs-ticker-sep">✦</span>

@@ -53,7 +53,7 @@ export default function TonT3Smart() {
           teclado físico e uma tela simples. A T3 Smart tem tela grande de toque e roda Android.
         </p>
         <p>
-          Se o seu balcão só precisa passar cartão e imprimir a via, a T3 resolve e custa menos. A T3 Smart faz mais
+          Se o seu balcão só precisa passar cartão e imprimir a via, a <a href="/ton-t3">T3</a> resolve e custa menos. A T3 Smart faz mais
           sentido quando a operação é mais corrida e a tela ajuda: digitar valor, escolher parcelas e mostrar o QR
           Code do Pix ficam mais rápidos.
         </p>
@@ -66,7 +66,7 @@ export default function TonT3Smart() {
         </ul>
         <p>
           E para quem não compensa? Quem vende pouco no cartão, quem atende na rua e quer algo leve no bolso, quem
-          está começando. Nesses casos a T1 ou a T2 fazem o mesmo serviço por bem menos.
+          está começando. Nesses casos a <a href="/ton-t1">T1</a> ou a <a href="/ton-t2">T2</a> fazem o mesmo serviço por bem menos.
         </p>
 
         <h2>Ela aceita vale-refeição e vale-alimentação?</h2>

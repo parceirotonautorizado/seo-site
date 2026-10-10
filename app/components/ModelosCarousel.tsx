@@ -7,7 +7,7 @@ const MODELOS = [
   {
     id: "t3smart",
     nome: "T3 Smart",
-    subtitulo: "Android com visor touchscreen, aceita VR e VA",
+    subtitulo: "Android com visor touchscreen, chip 4G e comprovante impresso",
     badge: "Mais Vendida",
     imagem: "/m-t3-smart.webp",
     preco: "R$ 143,91",
@@ -18,7 +18,7 @@ const MODELOS = [
   {
     id: "t3",
     nome: "T3",
-    subtitulo: "Com bobina, impressão de comprovante e chip 4G",
+    subtitulo: "Com bobina para imprimir o comprovante, chip 3G e Wi-Fi",
     badge: "Custo-Benefício",
     imagem: "/m-t3.webp",
     preco: "R$ 81,00",
@@ -29,7 +29,7 @@ const MODELOS = [
   {
     id: "t2",
     nome: "T2",
-    subtitulo: "Bateria de longa duração, Wi-Fi e chip 4G",
+    subtitulo: "Compacta, com chip 3G e Wi-Fi, não depende do celular",
     badge: "Econômica",
     imagem: "/m-t2.webp",
     preco: "R$ 37,41",
@@ -87,7 +87,8 @@ export default function ModelosCarousel() {
             <span>o seu negócio</span>
           </h2>
           <p className="mc-sub">
-            Todas com PIX 0%, sem aluguel e garantia vitalícia. Desconto de parceiro já aplicado.
+            Todas com PIX 0%, sem aluguel e garantia vitalícia. Desconto de parceiro já aplicado. T2, T3 e T3 Smart
+            aceitam vale-refeição e vale-alimentação para CNPJ do ramo de alimentação.
           </p>
         </div>
       </div>
@@ -99,7 +100,7 @@ export default function ModelosCarousel() {
               {m.destaque && <div className="mc-card-top-badge">★ Mais Vendida</div>}
 
               <div className="mc-img-wrap">
-                <img src={m.imagem} alt={`Maquininha Ton ${m.nome}`} className="mc-img" />
+                <img src={m.imagem} alt={`Maquininha Ton ${m.nome}`} className="mc-img" width={480} height={720} loading="lazy" decoding="async" />
               </div>
 
               <div className="mc-card-body">
