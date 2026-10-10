@@ -39,6 +39,7 @@ export default function Footer() {
               <li><a href="#faq">Perguntas Frequentes</a></li>
               <li><a href="#simulador">Simulador de Taxas</a></li>
               <li><a href="/cidades">Cidades atendidas</a></li>
+              <li><a href="/mapa-do-site">Mapa do site</a></li>
             </ul>
           </div>
 
