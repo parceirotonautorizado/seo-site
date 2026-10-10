@@ -1,5 +1,3 @@
-"use client"
-
 const ITEMS = [
   {
     icone: "⚡",
@@ -41,7 +39,7 @@ const ITEMS = [
 
 export default function Diferenciais() {
   return (
-    <section className="dif-section">
+    <section className="s-dif dif-section">
       <div className="dif-container">
         <div className="dif-header">
           <h2 className="dif-title">Por que escolher a Ton?</h2>
@@ -62,88 +60,6 @@ export default function Diferenciais() {
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        .dif-section {
-          padding: 80px 20px;
-          background: #fff;
-        }
-
-        .dif-container {
-          max-width: 1100px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          gap: 48px;
-        }
-
-        .dif-header {
-          text-align: center;
-        }
-
-        .dif-title {
-          font-size: 36px;
-          font-weight: 900;
-          color: #1a1a1a;
-          margin: 0 0 12px;
-        }
-
-        .dif-sub {
-          color: #666;
-          font-size: 16px;
-          margin: 0;
-        }
-
-        .dif-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 24px;
-        }
-
-        .dif-card {
-          background: #f9fafb;
-          border-radius: 20px;
-          padding: 28px 24px;
-          display: flex;
-          flex-direction: column;
-          gap: 14px;
-        }
-
-        .dif-icone {
-          font-size: 36px;
-          line-height: 1;
-        }
-
-        .dif-card-title {
-          font-size: 18px;
-          font-weight: 800;
-          color: #1a1a1a;
-          margin: 0 0 8px;
-        }
-
-        .dif-card-text {
-          font-size: 14px;
-          color: #666;
-          line-height: 1.6;
-          margin: 0;
-        }
-
-        @media (max-width: 900px) {
-          .dif-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-
-          .dif-title {
-            font-size: 28px;
-          }
-        }
-
-        @media (max-width: 520px) {
-          .dif-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
     </section>
   )
 }

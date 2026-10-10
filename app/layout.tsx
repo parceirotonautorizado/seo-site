@@ -4,6 +4,7 @@ import Script from "next/script"
 import { Inter, Poppins } from "next/font/google"
 
 import "./globals.css"
+import "./componentes.css"
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import WhatsAppButton from "@/app/components/WhatsAppButton"
@@ -119,6 +120,10 @@ export default function RootLayout({
                 carregar();
               }
               w.__carregarMedicao=carregar;
+              // fecha o menu do celular depois de tocar em um link dele
+              d.addEventListener('click',function(e){
+                var t=e.target; if(t && t.closest && t.closest('.mobile-menu a')){ var c=d.getElementById('nav-toggle'); if(c) c.checked=false; }
+              });
               ev.forEach(function(e){ w.addEventListener(e,go,{passive:true}); });
               if(d.readyState==='complete') setTimeout(function(){ go(); },8000);
               else w.addEventListener('load',function(){ setTimeout(function(){ go(); },8000); });
