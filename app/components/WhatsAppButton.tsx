@@ -34,7 +34,7 @@ const RING_STYLE = `
     font-weight: 700;
     font-size: 15px;
     padding: 13px 22px 13px 18px;
-    border-radius: 999px;
+    border-radius: 6px;
     text-decoration: none;
     box-shadow: 0 4px 18px rgba(0,215,0,.40), 0 2px 6px rgba(0,0,0,.12);
     animation: wha-ring 2s ease-in-out infinite;

@@ -15,6 +15,8 @@ export const MODELOS = [
     cta: "Pedir T3 Smart",
     destaque: true,
     link: CONFIG.tonModelos.t3smart,
+    para: "Para balcão com fila e para quem quer tudo em uma máquina só.",
+    pagina: "/ton-t3-smart",
   },
   {
     id: "t3",
@@ -27,6 +29,8 @@ export const MODELOS = [
     cta: "Pedir T3",
     destaque: false,
     link: CONFIG.tonModelos.t3,
+    para: "Para o balcão em que o cliente ainda pede o comprovante impresso.",
+    pagina: "/ton-t3",
   },
   {
     id: "t2",
@@ -39,6 +43,8 @@ export const MODELOS = [
     cta: "Pedir T2",
     destaque: false,
     link: CONFIG.tonModelos.t2,
+    para: "Para quem vende na rua, em entrega ou na casa do cliente.",
+    pagina: "/ton-t2",
   },
   {
     id: "t1",
@@ -51,5 +57,7 @@ export const MODELOS = [
     cta: "Pedir T1",
     destaque: false,
     link: CONFIG.tonModelos.t1,
+    para: "Para quem está começando e anda sempre com o celular.",
+    pagina: "/ton-t1",
   },
 ]

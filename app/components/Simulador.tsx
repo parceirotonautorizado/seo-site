@@ -684,7 +684,7 @@ if (typeof window !== "undefined") {
 
         .tabs-inner {
           background: #eef1f0;
-          border-radius: 999px;
+          border-radius: 6px;
           padding: 8px;
           display: flex;
           gap: 8px;
@@ -694,7 +694,7 @@ if (typeof window !== "undefined") {
           border: none;
           background: transparent;
           padding: 14px 24px;
-          border-radius: 999px;
+          border-radius: 6px;
           font-weight: 700;
           cursor: pointer;
         }
@@ -992,7 +992,7 @@ if (typeof window !== "undefined") {
         .parc-pill {
           border: none;
           padding: 10px 14px;
-          border-radius: 999px;
+          border-radius: 6px;
           background: white;
           font-weight: 700;
           cursor: pointer;
@@ -1008,7 +1008,7 @@ if (typeof window !== "undefined") {
           background: #20252a;
           color: white;
           border: none;
-          border-radius: 999px;
+          border-radius: 6px;
           padding: 18px;
           font-size: 16px;
           font-weight: 800;

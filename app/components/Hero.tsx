@@ -15,61 +15,37 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
     : "Maquininha Ton no Paraná"
 
   const descricao = bairro
-    ? `Débito a partir de 0,57%, Pix a 0% e sem aluguel. Veja qual modelo combina com quem vende ${em} ${bairro}, em ${cidade}.`
+    ? `Como é o comércio do bairro, qual modelo combina com quem vende ${em} ${bairro} e quanto custa cada venda.`
     : cidade
-    ? `Débito a partir de 0,57%, Pix a 0% e sem aluguel. Ideal para autônomos e empresas em ${cidade}.`
-    : "Débito a partir de 0,57%, Pix a 0% e sem aluguel. Aceita mais de 50 bandeiras. Para CPF e CNPJ."
+    ? `Como é o comércio de ${cidade}, qual modelo combina com quem vende aí e quanto custa cada venda.`
+    : "Taxas, modelos e simulador da maquininha Ton para quem vende no Paraná."
 
   return (
-    <section className="s-hero hero">
-      <div className="hero-overlay" />
+    <section className="s-capa">
+      <div className="cp-container">
+        <div className="cp-texto">
+          <p className="cp-sobre">Parceiro Ton · Paraná</p>
 
-      <div className="hero-inner">
-        <div className="hero-layout">
-        <div className="hero-content">
-          <span className="hero-badge">🏆 Parceiro Ton</span>
+          <h1 className="cp-h1">{titulo}</h1>
 
-          <h1 className="hero-h1">{titulo}</h1>
+          <p className="cp-desc">{descricao}</p>
 
-          <p className="hero-desc">{descricao}</p>
-
-          <div className="hero-pills">
-            <span className="pill">Débito a partir de 0,57%</span>
-            <span className="pill">Pix 0%</span>
-            <span className="pill">Sem Aluguel</span>
-            <span className="pill">Garantia Vitalícia</span>
-          </div>
-
-          <div className="hero-ctas">
-            <a
-              href={CONFIG.tonLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-primary"
-            >
-              Pedir com Desconto →
+          <div className="cp-botoes">
+            <a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer" className="cp-botao">
+              Pedir com desconto
             </a>
-            <a href="#simulador" className="cta-secondary">
-              Simular Taxas
+            <a href="/simulador-ton" data-secao="simulador" className="cp-botao cp-botao-claro">
+              Simular taxas
             </a>
           </div>
-
-          <p className="hero-nota">
-            Frete grátis · Entrega rápida · Compra no site da Ton
-          </p>
         </div>
 
-        <div className="hero-img-wrap">
-          <img
-            src="/maquininhas-todas.webp"
-            alt="Maquininhas Ton T1, T2, T3 e T3 Smart"
-            fetchPriority="high"
-            width={476}
-            height={476}
-            className="hero-img"
-          />
-        </div>
-        </div>
+        <ul className="cp-ficha">
+          <li><strong>0,57%</strong><span>no débito e no crédito à vista, no período promocional</span></li>
+          <li><strong>0%</strong><span>no Pix da maquininha, com chave Pix cadastrada</span></li>
+          <li><strong>R$ 0</strong><span>de aluguel e de mensalidade</span></li>
+          <li><strong>Grátis</strong><span>o frete para todo o Paraná</span></li>
+        </ul>
       </div>
     </section>
   )

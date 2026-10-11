@@ -4,7 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-body: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
-  --font-heading: var(--font-poppins), "Poppins", system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-titulo), "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
 }
 
 @theme inline {
@@ -30,7 +30,8 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
 }
 
 /* Conteúdo das páginas de cidade */
@@ -49,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 .cc-modelos .cc-p { margin-bottom: 10px; }
 .cc-link { color: #006e00; font-weight: 600; text-decoration: none; display: inline-block; padding: 6px 0; }
 .cc-link:hover { text-decoration: underline; }
-.cc-cta { display: inline-block; background: #006e00; color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 999px; font-size: 16px; font-weight: 700; }
+.cc-cta { display: inline-block; background: #006e00; color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 6px; font-size: 16px; font-weight: 700; }
 .cc-faq { border-bottom: 1px solid #e5e5e5; }
 .cc-faq summary { cursor: pointer; padding: 16px 0; font-weight: 700; color: #1a1a1a; font-size: 17px; }
 .cc-faq p { color: #4a4a4a; line-height: 1.75; margin: 0 0 18px; }
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .ck-texto { font-size: 13px; line-height: 1.5; color: #333; margin: 0 0 10px; }
 .ck-texto a { color: #006e00; text-decoration: underline; }
 .ck-botoes { display: flex; gap: 8px; justify-content: flex-end; }
-.ck-btn { font: inherit; font-size: 14px; font-weight: 700; border-radius: 999px; padding: 9px 18px; cursor: pointer; min-height: 40px; }
+.ck-btn { font: inherit; font-size: 14px; font-weight: 700; border-radius: 6px; padding: 9px 18px; cursor: pointer; min-height: 40px; }
 .ck-recusar { background: #fff; color: #333; border: 1px solid #bbb; }
 .ck-aceitar { background: #006e00; color: #fff; border: 1px solid #006e00; }
 @media (max-width: 600px) { .ck { left: 8px; right: 8px; bottom: 8px; max-width: none; } }

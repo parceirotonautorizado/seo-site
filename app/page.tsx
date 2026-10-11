@@ -1,7 +1,7 @@
 import Guias from "@/app/components/Guias"
-import HeroSlider from "./components/HeroSlider"
+import TopoInicial from "./components/TopoInicial"
 import TaxasDestaque from "./components/TaxasDestaque"
-import ModelosCarousel from "./components/ModelosCarousel"
+import Modelos from "./components/Modelos"
 import Diferenciais from "./components/Diferenciais"
 import Simulador from "./components/Simulador"
 import FaqSection from "./components/FaqSection"
@@ -9,9 +9,9 @@ import FaqSection from "./components/FaqSection"
 export default function Home() {
   return (
     <>
-      <HeroSlider />
+      <TopoInicial />
       <TaxasDestaque />
-      <ModelosCarousel />
+      <Modelos />
       <Diferenciais />
       <Guias />
 

@@ -6,7 +6,7 @@ import Guias from "@/app/components/Guias"
 import { notFound } from "next/navigation"
 import Hero from "@/app/components/Hero"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
-import ModelosCarousel from "@/app/components/ModelosCarousel"
+import Modelos from "@/app/components/Modelos"
 import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
 import { CONFIG, OG_BASE } from "@/lib/config"
@@ -82,7 +82,7 @@ export default async function CidadePage({ params }: Props) {
 
       <TaxasDestaque />
 
-      <ModelosCarousel />
+      <Modelos />
 
       <Breadcrumb cidade={cidade.nome} cidadeSlug={slug} />
 

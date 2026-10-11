@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Script from "next/script"
 
-import { Inter, Poppins } from "next/font/google"
+import { Inter, Barlow_Condensed } from "next/font/google"
 
 import "./globals.css"
 import "./componentes.css"
@@ -20,10 +20,11 @@ const inter = Inter({
   display: "swap",
 })
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+// Títulos na Barlow Condensed, a alternativa que o guia de marca do parceiro Ton indica para a Ton Condensed
+const titulo = Barlow_Condensed({
+  variable: "--font-titulo",
   subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
+  weight: ["600", "700", "800"],
   display: "swap",
 })
 
@@ -90,7 +91,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${poppins.variable} h-full antialiased`}
+      className={`${inter.variable} ${titulo.variable} h-full antialiased`}
     >
       <head>
 
