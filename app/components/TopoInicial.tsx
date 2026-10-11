@@ -20,6 +20,7 @@ export default function TopoInicial() {
           <BuscaCidade cidades={lista} />
 
           <p className="tp-links">
+            <a href="#qual-maquininha">Qual maquininha é a minha?</a>
             <a href="/taxas-ton">Tabela de taxas</a>
             <a href="/simulador-ton">Simulador</a>
             <a href="/cidades">Todas as cidades</a>

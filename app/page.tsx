@@ -2,6 +2,7 @@ import Guias from "@/app/components/Guias"
 import TopoInicial from "./components/TopoInicial"
 import TaxasDestaque from "./components/TaxasDestaque"
 import Modelos from "./components/Modelos"
+import RecomendadorSecao from "./components/RecomendadorSecao"
 import Diferenciais from "./components/Diferenciais"
 import Simulador from "./components/Simulador"
 import FaqSection from "./components/FaqSection"
@@ -12,6 +13,7 @@ export default function Home() {
       <TopoInicial />
       <TaxasDestaque />
       <Modelos />
+      <RecomendadorSecao />
       <Diferenciais />
       <Guias />
 

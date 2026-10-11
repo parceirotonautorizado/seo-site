@@ -7,6 +7,7 @@ import { notFound } from "next/navigation"
 import Hero from "@/app/components/Hero"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
 import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
 import { CONFIG, OG_BASE } from "@/lib/config"
@@ -83,6 +84,8 @@ export default async function CidadePage({ params }: Props) {
       <TaxasDestaque />
 
       <Modelos />
+
+      <RecomendadorSecao local={cidade.nome} />
 
       <Breadcrumb cidade={cidade.nome} cidadeSlug={slug} />
 

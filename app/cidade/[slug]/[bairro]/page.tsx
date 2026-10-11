@@ -13,6 +13,7 @@ import { preposicao } from "@/lib/bairroConteudo"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import TaxasDestaque from "@/app/components/TaxasDestaque"
 import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 import Simulador from "@/app/components/Simulador"
 import FaqSection from "@/app/components/FaqSection"
 import { CONFIG, OG_BASE } from "@/lib/config"
@@ -105,6 +106,8 @@ export default async function BairroPage({ params }: Props) {
       <TaxasDestaque />
 
       <Modelos />
+
+      <RecomendadorSecao local={`${bairroFormatado}, ${cidadeFormatada}`} />
 
       <Breadcrumb cidade={cidadeFormatada} cidadeSlug={slug} bairro={bairroFormatado} />
 

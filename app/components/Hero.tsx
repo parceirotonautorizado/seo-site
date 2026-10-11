@@ -34,8 +34,8 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
             <a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer" className="cp-botao">
               Pedir com desconto
             </a>
-            <a href="/simulador-ton" data-secao="simulador" className="cp-botao cp-botao-claro">
-              Simular taxas
+            <a href="#qual-maquininha" className="cp-botao cp-botao-claro">
+              Qual maquininha é a minha?
             </a>
           </div>
         </div>
