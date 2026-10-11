@@ -152,3 +152,8 @@ section[id] { scroll-margin-top: 72px; }
 .txt .foto-modelo figcaption { font-size: 13px; color: #4a4a4a; margin-top: 6px; }
 @media (max-width: 560px) { .txt .foto-modelo { float: none; width: 150px; margin: 0 auto 16px; } }
 .txt .tab-wrap, .txt .cc-cta { clear: both; }
+
+/* Foto de uso dentro do artigo */
+.txt .foto-uso { clear: both; margin: 28px 0 24px; }
+.txt .foto-uso img { width: 100%; height: auto; display: block; border-radius: 6px; }
+.txt .foto-uso figcaption { font-size: 13px; color: #4a4a4a; margin-top: 8px; line-height: 1.5; }

@@ -4,6 +4,7 @@ import { JsonLd, breadcrumbLd, produtoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import { MODELOS } from "@/lib/modelos"
 import Guias from "@/app/components/Guias"
+import FotoUso from "@/app/components/FotoUso"
 import Modelos from "@/app/components/Modelos"
 import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
@@ -60,6 +61,12 @@ export default function TonT1() {
           <li>Garantia da Ton, com troca grátis.</li>
           <li>Parcelamento em até 12 vezes.</li>
         </ul>
+
+        <FotoUso
+          arquivo="maquininha-ton-t1-barraca-de-lanches"
+          alt="Cliente aproxima o cartão de uma maquininha Ton T1 em uma barraca de lanches na rua"
+          legenda="A T1 em uma barraca de rua: cabe na mão e funciona pareada com o celular."
+        />
 
         <h2>Para quem a T1 resolve</h2>
         <p>

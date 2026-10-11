@@ -4,6 +4,7 @@ import { JsonLd, breadcrumbLd, produtoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import { MODELOS } from "@/lib/modelos"
 import Guias from "@/app/components/Guias"
+import FotoUso from "@/app/components/FotoUso"
 import Modelos from "@/app/components/Modelos"
 import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
@@ -57,6 +58,12 @@ export default function TonT2() {
           <li>Leve e compacta, cabe no bolso.</li>
           <li>Parcelamento em até 12 vezes.</li>
         </ul>
+
+        <FotoUso
+          arquivo="maquininha-ton-t2-pix-lanchonete"
+          alt="Cliente lê com o celular o QR Code do Pix na tela de uma maquininha Ton T2 em uma lanchonete"
+          legenda="A T2 no balcão de uma lanchonete, com o QR Code do Pix na tela."
+        />
 
         <h2>Para quem a T2 costuma ser a melhor escolha</h2>
         <p>

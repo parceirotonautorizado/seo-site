@@ -3,6 +3,7 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd, artigoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
+import FotoUso from "@/app/components/FotoUso"
 import Modelos from "@/app/components/Modelos"
 import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 import { PIX_SEM_CHAVE, REGULAMENTO_DATA } from "@/lib/taxas"
@@ -93,6 +94,12 @@ export default function PixMaquininhaTon() {
           <li>Escolha o tipo: celular, CPF, CNPJ ou aleatória.</li>
           <li>Reinicie a maquininha para ela reconhecer o Pix.</li>
         </ol>
+
+        <FotoUso
+          arquivo="maquininha-ton-t3-pix-feira"
+          alt="Feirante mostra o QR Code do Pix na maquininha Ton T3 e o cliente lê com a câmera do celular"
+          legenda="O cliente aponta a câmera do banco para o QR Code na tela da maquininha."
+        />
 
         <h2>Como vender</h2>
         <ol>

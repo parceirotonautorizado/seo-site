@@ -4,6 +4,7 @@ import { JsonLd, breadcrumbLd, produtoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import { MODELOS } from "@/lib/modelos"
 import Guias from "@/app/components/Guias"
+import FotoUso from "@/app/components/FotoUso"
 import Modelos from "@/app/components/Modelos"
 import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
@@ -56,6 +57,12 @@ export default function TonT3() {
           <li>Teclado físico, que muita gente acha mais rápido que tela de toque.</li>
           <li>Parcelamento em até 21 vezes para novos clientes. Na T1 e na T2 o limite é 12.</li>
         </ul>
+
+        <FotoUso
+          arquivo="maquininha-ton-t3-pix-cafeteria"
+          alt="Cliente lê com o celular o QR Code do Pix na tela de uma maquininha Ton T3 no balcão de uma cafeteria"
+          legenda="A T3 no balcão: tela grande para o QR Code e bobina para o comprovante."
+        />
 
         <h2>Onde a T3 faz sentido</h2>
         <p>
