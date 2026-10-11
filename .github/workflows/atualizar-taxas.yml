@@ -1,0 +1,41 @@
+name: Atualizar taxas da Ton
+
+# Confere as taxas na página de planos da Ton e atualiza lib/taxas.ts.
+# Roda no dia 1 de cada mês; também pode ser disparado à mão na aba Actions.
+on:
+  schedule:
+    - cron: "0 9 1 * *" # dia 1, 6h no horário de Brasília
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/atualizar-taxas.yml"
+      - "scripts/atualizar_taxas.py"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ler as taxas na página da Ton
+        run: python3 scripts/atualizar_taxas.py
+
+      - name: Registrar a atualização, se algo mudou
+        run: |
+          if git diff --quiet lib/taxas.ts; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          if git diff lib/taxas.ts | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -qv 'TAXAS_ULTIMA_VERIFICACAO'; then
+            MSG="Taxas da Ton atualizadas automaticamente"
+          else
+            MSG="Taxas da Ton conferidas automaticamente: sem mudança"
+          fi
+          git config user.name "offondigital"
+          git config user.email "258330189+offondigital@users.noreply.github.com"
+          git add lib/taxas.ts
+          git commit -m "$MSG"
+          git push

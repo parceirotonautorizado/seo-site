@@ -62,6 +62,14 @@ def main():
         elif p["type"] == "link":
             link = cond
     assert set(maquininha) == set(FAIXAS.values()), "faltou alguma faixa"
+    # travas de segurança: se a página mudar de formato, o script para em vez de publicar número errado
+    assert tapton and link, "faltaram as taxas do TapTon ou do link de pagamento"
+    for faixa, prazos in maquininha.items():
+        assert set(prazos) == {"d1", "d0"}, f"prazos inesperados em {faixa}"
+        for prazo in prazos.values():
+            for grupo in prazo.values():
+                assert len(grupo["cre"]) == 21, f"esperava 21 parcelas em {faixa}"
+                assert all(0 < v < 40 for v in [grupo["deb"], *grupo["cre"].values()]), f"taxa fora do intervalo em {faixa}"
 
     hoje = datetime.date.today()
     data_br = lambda iso: "/".join(reversed(iso.split("-")))
