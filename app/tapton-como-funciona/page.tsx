@@ -105,22 +105,13 @@ export default function TapTon() {
         <p className="nota">Informações conferidas no site, no blog e na Central de Ajuda da Ton em {GUIAS_CONFERIDO_EM}. Os requisitos de aparelho mudam com frequência.</p>
         <ul className="fontes">
           <li>
-            <a href="https://www.ton.com.br/tapton" target="_blank" rel="noopener noreferrer">
-              Maquininha no celular: TapTon
-            </a>
-            , site da Ton.
+            Maquininha no celular: TapTon, site da Ton.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/o-que-e-tapton/" target="_blank" rel="noopener noreferrer">
-              TapTon: tudo o que você precisa saber
-            </a>
-            , Blog do Ton.
+            TapTon: tudo o que você precisa saber, Blog do Ton.
           </li>
           <li>
-            <a href="https://ajuda.ton.com.br/pt_BR/tapton/o-que-e-e-como-usar" target="_blank" rel="noopener noreferrer">
-              TapTon: o que é e como usar
-            </a>
-            , Central de Ajuda Ton.
+            TapTon: o que é e como usar, Central de Ajuda Ton.
           </li>
         </ul>
       </article>

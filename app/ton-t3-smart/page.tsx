@@ -93,22 +93,13 @@ export default function TonT3Smart() {
         <p className="nota">Informações conferidas em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site da Ton.</p>
         <ul className="fontes">
           <li>
-            <a href="https://blog.ton.com.br/maquininha-ton-conheca-todos-os-modelos/" target="_blank" rel="noopener noreferrer">
-              Maquininha Ton: conheça todos os modelos
-            </a>
-            , Blog do Ton.
+            Maquininha Ton: conheça todos os modelos, Blog do Ton.
           </li>
           <li>
-            <a href="https://ajuda.ton.com.br/pt_BR/m%C3%A1quina/t3-smart" target="_blank" rel="noopener noreferrer">
-              Como ativar a maquininha T3 Smart
-            </a>
-            , Central de Ajuda Ton.
+            Como ativar a maquininha T3 Smart, Central de Ajuda Ton.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/bandeiras-de-cartao-maquininha-ton/" target="_blank" rel="noopener noreferrer">
-              Bandeiras aceitas na maquininha do Ton
-            </a>
-            , Blog do Ton.
+            Bandeiras aceitas na maquininha do Ton, Blog do Ton.
           </li>
         </ul>
       </article>

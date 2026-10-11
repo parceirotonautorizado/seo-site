@@ -98,8 +98,8 @@ export default function MaquininhaCelular() {
         <h2>Fontes</h2>
         <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores no site da Ton antes de pedir.</p>
         <ul className="fontes">
-          <li><a href="https://blog.ton.com.br/o-que-e-tapton/" target="_blank" rel="noopener noreferrer">TapTon: tudo o que você precisa saber</a>, Blog do Ton.</li>
-          <li><a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Site da Ton</a>, páginas dos modelos e perguntas frequentes.</li>
+          <li>TapTon: tudo o que você precisa saber, Blog do Ton.</li>
+          <li>Site da Ton, páginas dos modelos e perguntas frequentes.</li>
           <li>Regulamento do Plano Ton Mega+, versão de 21/09/2026.</li>
         </ul>
       </article>

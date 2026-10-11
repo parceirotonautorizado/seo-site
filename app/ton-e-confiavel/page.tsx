@@ -115,28 +115,16 @@ export default function TonConfiavel() {
         <p className="nota">Informações conferidas em {GUIAS_CONFERIDO_EM}. A nota no Reclame Aqui muda com o tempo.</p>
         <ul className="fontes">
           <li>
-            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">
-              Rodapé e página inicial
-            </a>
-            , site da Ton.
+            Rodapé e página inicial, site da Ton.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/ton-e-da-stone-tire-suas-dividas/" target="_blank" rel="noopener noreferrer">
-              Ton é da Stone?
-            </a>
-            , Blog do Ton.
+            Ton é da Stone?, Blog do Ton.
           </li>
           <li>
-            <a href="https://www.bcb.gov.br/estabilidadefinanceira/encontreinstituicao" target="_blank" rel="noopener noreferrer">
-              Encontre uma instituição
-            </a>
-            , Banco Central do Brasil.
+            Encontre uma instituição, Banco Central do Brasil.
           </li>
           <li>
-            <a href="https://www.reclameaqui.com.br/empresa/ton/" target="_blank" rel="noopener noreferrer">
-              Página da Ton
-            </a>
-            , Reclame Aqui.
+            Página da Ton, Reclame Aqui.
           </li>
         </ul>
       </article>

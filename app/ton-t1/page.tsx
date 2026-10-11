@@ -89,22 +89,13 @@ export default function TonT1() {
         <p className="nota">Informações conferidas no site e no blog da Ton em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site da Ton antes de pedir.</p>
         <ul className="fontes">
           <li>
-            <a href="https://www.ton.com.br/maquininha/t1" target="_blank" rel="noopener noreferrer">
-              Maquininha T1
-            </a>
-            , site da Ton.
+            Maquininha T1, site da Ton.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/t1-ton-e-t1-chip-tudo-sobre-as-maquininhas/" target="_blank" rel="noopener noreferrer">
-              T1 Ton e T1 Chip: tudo sobre as maquininhas
-            </a>
-            , Blog do Ton.
+            T1 Ton e T1 Chip: tudo sobre as maquininhas, Blog do Ton.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/bandeiras-de-cartao-maquininha-ton/" target="_blank" rel="noopener noreferrer">
-              Bandeiras aceitas na maquininha do Ton
-            </a>
-            , Blog do Ton.
+            Bandeiras aceitas na maquininha do Ton, Blog do Ton.
           </li>
         </ul>
       </article>

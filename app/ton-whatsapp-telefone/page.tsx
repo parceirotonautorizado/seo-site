@@ -106,7 +106,7 @@ export default function TonWhatsappTelefone() {
         </p>
         <ul className="fontes">
           <li>
-            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Rodapé do site da Ton</a>,
+            Rodapé do site da Ton,
             Ton.
           </li>
           <li>

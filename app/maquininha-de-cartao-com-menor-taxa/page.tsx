@@ -110,7 +110,7 @@ export default function MaquininhaMenorTaxa() {
         <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores em ton.com.br antes de pedir.</p>
         <ul className="fontes">
           <li>
-            <a href="https://www.ton.com.br/planos-e-taxas" target="_blank" rel="noopener noreferrer">Planos e taxas</a>,
+            Planos e taxas,
             site da Ton, conferido em {TAXAS_ULTIMA_VERIFICACAO}.
           </li>
           <li>Regulamento do Plano Ton Mega+, versão de 21/09/2026.</li>

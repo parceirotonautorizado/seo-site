@@ -92,28 +92,16 @@ export default function TonCpfCnpjMei() {
         <p className="nota">Informações conferidas em {GUIAS_CONFERIDO_EM}.</p>
         <ul className="fontes">
           <li>
-            <a href="https://blog.ton.com.br/maquina-de-cartao-para-pessoa-fisica/" target="_blank" rel="noopener noreferrer">
-              Máquina de cartão para pessoa física
-            </a>
-            , Blog do Ton, 23 de junho de 2026.
+            Máquina de cartão para pessoa física, Blog do Ton, 23 de junho de 2026.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/qual-a-diferenca-entre-mei-e-cnpj/" target="_blank" rel="noopener noreferrer">
-              Qual a diferença entre MEI e CNPJ?
-            </a>
-            , Blog do Ton.
+            Qual a diferença entre MEI e CNPJ?, Blog do Ton.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/mei-precisa-ter-conta-pj/" target="_blank" rel="noopener noreferrer">
-              MEI precisa ter conta PJ?
-            </a>
-            , Blog do Ton.
+            MEI precisa ter conta PJ?, Blog do Ton.
           </li>
           <li>
-            <a href="https://blog.ton.com.br/bandeiras-de-cartao-maquininha-ton/" target="_blank" rel="noopener noreferrer">
-              Bandeiras aceitas na maquininha do Ton
-            </a>
-            , Blog do Ton.
+            Bandeiras aceitas na maquininha do Ton, Blog do Ton.
           </li>
         </ul>
       </article>

@@ -618,7 +618,7 @@ if (typeof window !== "undefined") {
                 (0,49% sem chave). Parcelas de 13x a 21x valem só para T3 e T3 Smart. TapTon e link de pagamento têm taxas próprias.
                 Valores sujeitos a alteração pela Ton.
                 Confirme as taxas atuais em{" "}
-                <a href="https://ton.com.br" target="_blank" rel="noopener noreferrer" className="calc-note-link">
+                <a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer" className="calc-note-link">
                   ton.com.br
                 </a>
                 {" "}antes de contratar. Somos um Parceiro Ton, não a empresa Ton.

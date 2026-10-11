@@ -85,7 +85,7 @@ export default function Footer() {
           </p>
           <p className="footer-disclaimer">
             Não somos a empresa Ton. A compra, a entrega, a conta e o suporte são feitos diretamente pela Ton, em{" "}
-            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">www.ton.com.br</a>. Ton® é marca do Pagar.me S.A. (CNPJ 18.727.053/0001-74).{" "}
+            <a href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">www.ton.com.br</a>. Ton® é marca do Pagar.me S.A. (CNPJ 18.727.053/0001-74).{" "}
             <a href="#preferencias-de-cookies" data-cookies>Preferências de cookies</a>
           </p>
         </div>

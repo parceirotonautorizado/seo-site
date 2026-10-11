@@ -247,15 +247,12 @@ export default function TaxasTon() {
         <h2>Fontes</h2>
         <ul className="fontes">
           <li>
-            <a href="https://www.ton.com.br/planos-e-taxas" target="_blank" rel="noopener noreferrer">
-              Planos e taxas
-            </a>
-            , site da Ton, conferido em {TAXAS_ULTIMA_VERIFICACAO}.
+            Planos e taxas, site da Ton, conferido em {TAXAS_ULTIMA_VERIFICACAO}.
           </li>
           <li>Regulamento do Plano Ton Mega+, versão de {REGULAMENTO_DATA}.</li>
           <li>
             Perguntas frequentes em{" "}
-            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">ton.com.br</a>, sobre Pix na
+            ton.com.br, sobre Pix na
             maquininha e parcelamento em até 21x.
           </li>
         </ul>

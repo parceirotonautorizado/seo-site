@@ -101,10 +101,7 @@ export default function TonValeAlimentacao() {
         <p className="nota">Informações conferidas em {GUIAS_CONFERIDO_EM}. As regras das bandeiras podem mudar.</p>
         <ul className="fontes">
           <li>
-            <a href="https://blog.ton.com.br/bandeiras-de-cartao-maquininha-ton/" target="_blank" rel="noopener noreferrer">
-              Cartão diferente? Regional? Voucher? Na maquininha do Ton, passa!
-            </a>
-            , Blog do Ton, atualizado em 21 de janeiro de 2026.
+            Cartão diferente? Regional? Voucher? Na maquininha do Ton, passa!, Blog do Ton, atualizado em 21 de janeiro de 2026.
           </li>
         </ul>
       </article>
