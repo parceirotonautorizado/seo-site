@@ -1,6 +1,6 @@
-name: Atualizar taxas da Ton
+name: Atualizar taxas e preços da Ton
 
-# Confere as taxas na página de planos da Ton e atualiza lib/taxas.ts.
+# Confere as taxas e os preços no site da Ton e atualiza lib/taxas.ts e lib/precos.ts.
 # Roda no dia 1 de cada mês; também pode ser disparado à mão na aba Actions.
 on:
   schedule:
@@ -10,6 +10,7 @@ on:
     paths:
       - ".github/workflows/atualizar-taxas.yml"
       - "scripts/atualizar_taxas.py"
+      - "scripts/atualizar_precos.mjs"
 
 permissions:
   contents: write
@@ -23,19 +24,24 @@ jobs:
       - name: Ler as taxas na página da Ton
         run: python3 scripts/atualizar_taxas.py
 
+      - name: Ler os preços e o cupom de parceiro no catálogo da Ton
+        run: |
+          npm install --no-save --no-audit --no-fund puppeteer-core@24 || echo "sem navegador: o cupom fica como estava"
+          node scripts/atualizar_precos.mjs
+
       - name: Registrar a atualização, se algo mudou
         run: |
-          if git diff --quiet lib/taxas.ts; then
+          if git diff --quiet lib/taxas.ts lib/precos.ts; then
             echo "Nada mudou."
             exit 0
           fi
-          if git diff lib/taxas.ts | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -qv 'TAXAS_ULTIMA_VERIFICACAO'; then
-            MSG="Taxas da Ton atualizadas automaticamente"
+          if git diff lib/taxas.ts lib/precos.ts | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -qvE 'TAXAS_ULTIMA_VERIFICACAO|PRECOS_CONFERIDO_EM|CUPOM_CONFERIDO_EM|// DADOS'; then
+            MSG="Taxas e preços da Ton atualizados automaticamente"
           else
-            MSG="Taxas da Ton conferidas automaticamente: sem mudança"
+            MSG="Taxas e preços da Ton conferidos automaticamente: sem mudança"
           fi
           git config user.name "offondigital"
           git config user.email "258330189+offondigital@users.noreply.github.com"
-          git add lib/taxas.ts
+          git add lib/taxas.ts lib/precos.ts
           git commit -m "$MSG"
           git push

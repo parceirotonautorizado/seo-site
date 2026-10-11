@@ -1,7 +1,8 @@
-import { MODELOS, MODELOS_CONFERIDO_EM, CUPOM_PARCEIRO } from "@/lib/modelos"
+import { MODELOS, MODELOS_CONFERIDO_EM, CUPOM_PARCEIRO, CUPOM_CONFERIDO_EM } from "@/lib/modelos"
 
 // Os quatro modelos em lista, com a indicação de para quem cada um serve.
 export default function Modelos() {
+  const temCupom = MODELOS.some((m) => m.semCupom)
   return (
     <section id="modelos" className="s-modelos">
       <div className="mo-container">
@@ -39,9 +40,14 @@ export default function Modelos() {
           ))}
         </ul>
         <p className="mo-nota">
-          Preços conferidos no catálogo da Ton em {MODELOS_CONFERIDO_EM}. O cupom de {CUPOM_PARCEIRO} entra sozinho
-          quando você pede pelos botões desta página, e o valor riscado é o do catálogo sem o cupom. A T1 tem o mesmo
-          preço com ou sem cupom. A Ton pode mudar preços e cupons quando quiser.
+          Preços conferidos no catálogo da Ton em {MODELOS_CONFERIDO_EM}
+          {temCupom && (
+            <>
+              {" "}e cupom de {CUPOM_PARCEIRO} conferido em {CUPOM_CONFERIDO_EM}. O cupom entra sozinho quando você
+              pede pelos botões desta página, e o valor riscado é o do catálogo sem o cupom
+            </>
+          )}
+          . A Ton pode mudar preços e cupons quando quiser; vale o que aparecer no site da Ton na hora do pedido.
         </p>
       </div>
     </section>

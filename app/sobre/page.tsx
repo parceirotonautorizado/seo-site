@@ -37,7 +37,7 @@ export default function Sobre() {
         <h2>Como o site ganha dinheiro</h2>
         <p>
           Por indicação. Quando você clica em um botão de pedido aqui e fecha a compra no site da Ton, o parceiro
-          recebe uma comissão. Você não paga nada a mais por isso, e o cupom de parceiro já vai aplicado no link. No dia em que conferimos, ele dava 20% de desconto na adesão da T2, da T3 e da T3 Smart.
+          recebe uma comissão. Você não paga nada a mais por isso, e o cupom de parceiro já vai aplicado no link. O valor do desconto aparece na lista de modelos, com a data em que foi conferido.
         </p>
         <p>
           Dizemos isso logo de cara porque muda a forma de ler o site: quem escreve aqui tem interesse em que você
