@@ -29,9 +29,9 @@ export default function Sobre() {
         <h1>Sobre o site</h1>
 
         <p>
-          Este site não é da Ton. Ele é mantido por um parceiro autorizado, inscrito no programa Renda Extra, que é o
+          Este site não é da Ton. Ele é mantido por um parceiro Ton, inscrito no programa Renda Extra, que é o
           programa de indicação da própria Ton. A gente explica as maquininhas, mostra as taxas e manda você para o
-          site oficial quando quiser comprar.
+          site da Ton quando quiser comprar.
         </p>
 
         <h2>Como o site ganha dinheiro</h2>
@@ -70,7 +70,7 @@ export default function Sobre() {
         <h2>Sobre as taxas</h2>
         <p>
           As taxas publicadas foram conferidas no site da Ton em {TAXAS_ULTIMA_VERIFICACAO}. A Ton pode mudar os
-          valores quando quiser, e o que vale é sempre o que aparece no site oficial na hora do pedido.
+          valores quando quiser, e o que vale é sempre o que aparece no site da Ton na hora do pedido.
         </p>
 
         <h2>Achou um erro?</h2>

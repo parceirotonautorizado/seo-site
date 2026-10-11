@@ -99,7 +99,7 @@ export default function TapTon() {
         </p>
 
         <a className="cc-cta" href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">
-          Conhecer a Ton no site oficial
+          Conhecer a Ton no site da Ton
         </a>
         <h2>Fontes</h2>
         <p className="nota">Informações conferidas no site, no blog e na Central de Ajuda da Ton em {GUIAS_CONFERIDO_EM}. Os requisitos de aparelho mudam com frequência.</p>
@@ -108,7 +108,7 @@ export default function TapTon() {
             <a href="https://www.ton.com.br/tapton" target="_blank" rel="noopener noreferrer">
               Maquininha no celular: TapTon
             </a>
-            , site oficial da Ton.
+            , site da Ton.
           </li>
           <li>
             <a href="https://blog.ton.com.br/o-que-e-tapton/" target="_blank" rel="noopener noreferrer">

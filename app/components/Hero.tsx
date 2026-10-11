@@ -27,7 +27,7 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
       <div className="hero-inner">
         <div className="hero-layout">
         <div className="hero-content">
-          <span className="hero-badge">🏆 Parceiro Autorizado Ton</span>
+          <span className="hero-badge">🏆 Parceiro Ton</span>
 
           <h1 className="hero-h1">{titulo}</h1>
 
@@ -55,7 +55,7 @@ export default function Hero({ cidade, bairro, em = "no" }: Props) {
           </div>
 
           <p className="hero-nota">
-            Frete grátis · Entrega rápida · Compra no site oficial da Ton
+            Frete grátis · Entrega rápida · Compra no site da Ton
           </p>
         </div>
 

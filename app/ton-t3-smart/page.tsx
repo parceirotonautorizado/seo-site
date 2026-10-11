@@ -90,7 +90,7 @@ export default function TonT3Smart() {
         </a>
 
         <h2>Fontes</h2>
-        <p className="nota">Informações conferidas em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site oficial.</p>
+        <p className="nota">Informações conferidas em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site da Ton.</p>
         <ul className="fontes">
           <li>
             <a href="https://blog.ton.com.br/maquininha-ton-conheca-todos-os-modelos/" target="_blank" rel="noopener noreferrer">

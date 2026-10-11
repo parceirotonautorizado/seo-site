@@ -2,7 +2,7 @@ import cidades from "@/dados/cidades-pr.json"
 import fontes from "@/dados/fontes.json"
 import { DESTAQUES } from "@/dados/cidades-destaque"
 
-// Conteúdo das páginas de cidade montado a partir de dados oficiais (IBGE).
+// Conteúdo das páginas de cidade montado a partir de dados públicos (IBGE).
 // Cada frase depende de um dado real do município; nada aqui é sorteado.
 
 export type Cidade = (typeof cidades)[number]
@@ -226,7 +226,7 @@ function entrega(c: Cidade) {
       ? `${c.nome} é a capital do estado e usa o DDD ${c.ddd}.`
       : `${c.nome} fica a cerca de ${n(c.km_curitiba)} km de Curitiba em linha reta, na mesorregião ${c.mesorregiao} do Paraná, e usa o DDD ${c.ddd}.`
 
-  return `${distancia} Você compra pelo site oficial da Ton e a maquininha vai para o endereço que informar no pedido, com frete grátis. Não precisa ir a loja nenhuma, nem a outra cidade, para retirar.`
+  return `${distancia} Você compra pelo site da Ton e a maquininha vai para o endereço que informar no pedido, com frete grátis. Não precisa ir a loja nenhuma, nem a outra cidade, para retirar.`
 }
 
 function faq(c: Cidade) {
@@ -239,7 +239,7 @@ function faq(c: Cidade) {
   return [
     {
       q: `A Ton entrega maquininha em ${c.nome}?`,
-      a: `Entrega. A Ton manda para ${c.nome} e para todo o Paraná com frete grátis. Você pede pelo site oficial, e o prazo costuma ficar entre 2 e 5 dias úteis, conforme o CEP.`,
+      a: `Entrega. A Ton manda para ${c.nome} e para todo o Paraná com frete grátis. Você pede pelo site da Ton, e o prazo costuma ficar entre 2 e 5 dias úteis, conforme o CEP.`,
     },
     {
       q: `Qual a melhor maquininha Ton para quem vende em ${c.nome}?`,

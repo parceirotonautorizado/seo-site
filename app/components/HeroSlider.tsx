@@ -6,7 +6,7 @@ import { CONFIG } from "@/lib/config"
 const SLIDES = [
   {
     id: 1,
-    bg: "#003d1f",
+    bg: "#003c00",
     label: "Taxa promocional",
     titulo: "Taxa de 0,57%\nno débito e crédito",
     subtitulo: "Nos primeiros 30 dias ou até R$ 5 mil em vendas. Pix 0%, sem aluguel, para CPF e CNPJ.",
@@ -20,7 +20,7 @@ const SLIDES = [
   },
   {
     id: 2,
-    bg: "#001a0d",
+    bg: "#003c00",
     label: "Pix 0% na maquininha",
     titulo: "Receba PIX\nsem pagar nada",
     subtitulo: "Grátis nos primeiros 30 dias. Depois, continua 0% com uma chave Pix cadastrada na Conta Ton.",
@@ -34,7 +34,7 @@ const SLIDES = [
   },
   {
     id: 3,
-    bg: "#004d26",
+    bg: "#003c00",
     label: "4 modelos disponíveis",
     titulo: "Escolha a maquininha\ncerta para você",
     subtitulo: "T1, T2, T3 ou T3 Smart. Todos com desconto de parceiro.",
@@ -299,9 +299,9 @@ export default function HeroSlider() {
 
         .hs-label {
           display: inline-block;
-          background: rgba(136,255,0,0.18);
-          border: 1px solid rgba(136,255,0,0.4);
-          color: #88ff00;
+          background: rgba(0,215,0,0.18);
+          border: 1px solid rgba(0,215,0,0.4);
+          color: #00d700;
           font-size: 13px;
           font-weight: 700;
           padding: 5px 14px;
@@ -350,8 +350,8 @@ export default function HeroSlider() {
 
         .hs-btn-primary {
           display: inline-block;
-          background: #88ff00;
-          color: #0a2a10;
+          background: #00d700;
+          color: #003c00;
           text-decoration: none;
           padding: 15px 30px;
           border-radius: 999px;
@@ -362,7 +362,7 @@ export default function HeroSlider() {
         }
 
         .hs-btn-primary:hover {
-          background: #72dd00;
+          background: #00d700;
           transform: translateY(-2px);
         }
 
@@ -457,9 +457,9 @@ export default function HeroSlider() {
         }
 
         .hs-ticker-badge {
-          background: rgba(136,255,0,0.2);
-          border: 1px solid rgba(136,255,0,0.5);
-          color: #88ff00;
+          background: rgba(0,215,0,0.2);
+          border: 1px solid rgba(0,215,0,0.5);
+          color: #00d700;
           font-size: 11px;
           font-weight: 800;
           padding: 3px 10px;
@@ -483,7 +483,7 @@ export default function HeroSlider() {
         }
 
         .hs-ticker-sep {
-          color: rgba(136,255,0,0.5);
+          color: rgba(0,215,0,0.5);
           font-size: 10px;
         }
 
@@ -512,7 +512,7 @@ export default function HeroSlider() {
         }
 
         .hs-dot-on {
-          background: #88ff00;
+          background: #00d700;
           transform: scale(1.35);
         }
 

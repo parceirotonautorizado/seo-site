@@ -86,13 +86,13 @@ export default function TonT1() {
           Ver a T1 no site da Ton
         </a>
         <h2>Fontes</h2>
-        <p className="nota">Informações conferidas no site e no blog da Ton em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site oficial antes de pedir.</p>
+        <p className="nota">Informações conferidas no site e no blog da Ton em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site da Ton antes de pedir.</p>
         <ul className="fontes">
           <li>
             <a href="https://www.ton.com.br/maquininha/t1" target="_blank" rel="noopener noreferrer">
               Maquininha T1
             </a>
-            , site oficial da Ton.
+            , site da Ton.
           </li>
           <li>
             <a href="https://blog.ton.com.br/t1-ton-e-t1-chip-tudo-sobre-as-maquininhas/" target="_blank" rel="noopener noreferrer">

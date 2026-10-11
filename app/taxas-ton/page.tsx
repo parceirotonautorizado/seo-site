@@ -59,8 +59,8 @@ export default function TaxasTon() {
 
         <p>
           A taxa da Ton não é uma só. Ela muda conforme três coisas: quanto você vende por mês, a bandeira do cartão
-          e se você quer receber na hora ou em 1 dia útil. Abaixo está a tabela do plano Mega+, tirada da página
-          oficial de planos da Ton em {TAXAS_ULTIMA_VERIFICACAO}. A Ton atualizou esses valores pela última vez em{" "}
+          e se você quer receber na hora ou em 1 dia útil. Abaixo está a tabela do plano Mega+, tirada da página de
+          planos da Ton em {TAXAS_ULTIMA_VERIFICACAO}. A Ton atualizou esses valores pela última vez em{" "}
           {TAXAS_ATUALIZADAS_PELA_TON}.
         </p>
 
@@ -219,7 +219,7 @@ export default function TaxasTon() {
 
         <p className="nota">
           Taxas conferidas em {TAXAS_ULTIMA_VERIFICACAO}. A Ton pode alterar os valores, e o que vale é o que aparece
-          no site oficial na hora do pedido.
+          no site da Ton na hora do pedido.
         </p>
 
         <h2>Na prática, quanto sobra de uma venda</h2>
@@ -231,7 +231,7 @@ export default function TaxasTon() {
           {(100 - menor.cre[12]).toLocaleString("pt-BR", { minimumFractionDigits: 2 })} na sua conta.
         </p>
         <p>
-          Parcelado longo é caro em qualquer maquininha, não só na Ton. Se o seu cliente pede muito 10x ou 12x, faça a
+          Parcelado longo custa bem mais que venda à vista. Se o seu cliente pede muito 10x ou 12x, faça a
           conta antes de definir o preço. O <a href="/#simulador">simulador</a> mostra o valor exato para a sua faixa.
         </p>
 
@@ -250,7 +250,7 @@ export default function TaxasTon() {
             <a href="https://www.ton.com.br/planos-e-taxas" target="_blank" rel="noopener noreferrer">
               Planos e taxas
             </a>
-            , site oficial da Ton, conferido em {TAXAS_ULTIMA_VERIFICACAO}.
+            , site da Ton, conferido em {TAXAS_ULTIMA_VERIFICACAO}.
           </li>
           <li>Regulamento do Plano Ton Mega+, versão de {REGULAMENTO_DATA}.</li>
           <li>

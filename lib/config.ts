@@ -12,7 +12,7 @@ export const CONFIG = {
 
   dominio: "https://www.maquininhadecartoes.com.br",
 
-  // Catálogo oficial da Ton com o código de parceiro (botões genéricos)
+  // Catálogo da Ton com o código de parceiro (botões genéricos)
   tonLink: `https://www.ton.com.br/catalogo?referrer=${TON_REFERRER}&userAnticipation=0&utm_medium=invite_share&utm_source=revendedor`,
 
   // Carrinho por modelo (botões de cada maquininha)
@@ -26,7 +26,7 @@ export const CONFIG = {
 
 // Campos de compartilhamento comuns a todas as páginas (o Next não herda openGraph do layout quando a página define o seu)
 export const OG_BASE = {
-  siteName: "Maquininhas Ton Paraná",
+  siteName: "Parceiro Ton Paraná",
   locale: "pt_BR",
   type: "website" as const,
   images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Maquininhas Ton no Paraná" }],

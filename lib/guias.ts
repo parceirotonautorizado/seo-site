@@ -8,7 +8,7 @@ export const GUIAS = [
   {
     path: "/maquininha-de-cartao-com-menor-taxa",
     titulo: "Maquininha com menor taxa",
-    resumo: "Como comparar sem cair na taxa do anúncio.",
+    resumo: "Cinco jeitos de pagar menos em cada venda.",
   },
   {
     path: "/maquininha-de-cartao-no-celular",
@@ -37,7 +37,7 @@ export const GUIAS = [
   {
     path: "/ton-whatsapp-telefone",
     titulo: "WhatsApp e telefone da Ton",
-    resumo: "Os canais oficiais de suporte e quando usar cada um.",
+    resumo: "Os canais de atendimento da Ton de suporte e quando usar cada um.",
   },
 ]
 

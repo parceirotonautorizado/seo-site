@@ -33,8 +33,8 @@ export default function MaquininhaCredito() {
           quando o cliente pede para parcelar. Antes de olhar modelo e cor, vale responder quatro perguntas.
         </p>
         <p className="nota">
-          Este site é de um parceiro autorizado da Ton e fala só das maquininhas dela. Não comparamos preços de outras
-          marcas porque não teríamos como garantir que estão atualizados.
+          Este site é de um parceiro Ton e fala só das maquininhas da Ton. A compra é feita em ton.com.br, com o
+          desconto de parceiro.
         </p>
 
         <h2>1. Seu cliente parcela?</h2>
@@ -79,8 +79,8 @@ export default function MaquininhaCredito() {
 
         <h2>O que não entra na conta e deveria</h2>
         <p>
-          Aluguel e mensalidade. Maquininha com taxa baixa e aluguel alto sai cara para quem vende pouco. Na Ton não
-          há aluguel: você paga uma taxa de adesão única, à vista ou em até 12 vezes, e depois só a taxa de cada venda.
+          Aluguel e mensalidade. Para quem vende pouco, um custo fixo todo mês pesa mais que a taxa. Na Ton não há
+          aluguel: você paga uma taxa de adesão única, à vista ou em até 12 vezes, e depois só a taxa de cada venda.
         </p>
         <p>
           Vale-refeição é outro ponto. Se você tem restaurante ou mercado, veja antes se o modelo aceita. Explicamos em{" "}
@@ -99,9 +99,9 @@ export default function MaquininhaCredito() {
         </a>
 
         <h2>Fontes</h2>
-        <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores no site oficial antes de pedir.</p>
+        <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores no site da Ton antes de pedir.</p>
         <ul className="fontes">
-          <li><a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Site oficial da Ton</a>, páginas dos modelos e perguntas frequentes.</li>
+          <li><a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Site da Ton</a>, páginas dos modelos e perguntas frequentes.</li>
           <li>Regulamento do Plano Ton Mega+, versão de 21/09/2026.</li>
         </ul>
       </article>

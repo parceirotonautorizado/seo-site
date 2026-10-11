@@ -36,14 +36,14 @@ export default function TonConfiavel() {
 
         <h2>Quem está por trás</h2>
         <p>
-          A Ton é uma marca do grupo Stone, o mesmo das maquininhas verdes que você vê em loja grande. O regulamento
+          A Ton é uma marca do grupo Stone. O regulamento
           do plano, de 21/09/2026, identifica o Pagar.me S.A., CNPJ 18.727.053/0001-74, como desenvolvedor da
-          plataforma e dono da marca Ton. No rodapé do site oficial aparece também a Stone Instituição de Pagamento
+          plataforma e dono da marca Ton. No rodapé do site da Ton aparece também a Stone Instituição de Pagamento
           S.A., CNPJ 16.501.555/0001-57, com sede em São Paulo. As duas são empresas do mesmo grupo.
         </p>
         <p>
-          A Stone é voltada a empresas maiores. A Ton é a linha feita para autônomo, MEI e negócio pequeno, sem
-          aluguel: você paga uma taxa de adesão única pela maquininha.
+          A Ton é a linha do grupo feita para autônomo, MEI e negócio pequeno, sem aluguel: você paga uma taxa de
+          adesão única pela maquininha.
         </p>
 
         <h2>O que diz o Banco Central</h2>
@@ -64,9 +64,9 @@ export default function TonConfiavel() {
           a coisa costuma dar errado e se a empresa responde.
         </p>
         <p>
-          Toda empresa de maquininha tem reclamação. O que interessa é o tipo. As mais comuns nesse mercado são
-          atraso na entrega, conta bloqueada para análise e taxa diferente da esperada. Esta última quase sempre
-          nasce do mesmo engano, que vem a seguir.
+          Reclamação sempre existe, em qualquer serviço. O que interessa é o tipo. As mais comuns são atraso na
+          entrega, conta bloqueada para análise e taxa diferente da esperada. Esta última quase sempre nasce do
+          mesmo engano, que vem a seguir.
         </p>
 
         <h2>Onde as pessoas mais se frustram</h2>
@@ -96,7 +96,7 @@ export default function TonConfiavel() {
         <h2>E sites de parceiro, como este?</h2>
         <p>
           Existem e são permitidos. A Ton tem um programa de indicação, e o parceiro ganha comissão por venda. O que
-          separa um parceiro legítimo de um golpe é simples: o parceiro manda você para o site oficial e nunca recebe
+          separa um parceiro legítimo de um golpe é simples: o parceiro manda você para o site da Ton e nunca recebe
           o seu pagamento. É o que acontece aqui. Todos os nossos botões abrem ton.com.br, e a compra, a entrega e a
           conta ficam com a Ton. Mais sobre isso na página <a href="/sobre">Sobre o site</a>.
         </p>
@@ -109,7 +109,7 @@ export default function TonConfiavel() {
         </p>
 
         <a className="cc-cta" href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">
-          Ir para o site oficial da Ton
+          Ir para o site da Ton
         </a>
         <h2>Fontes</h2>
         <p className="nota">Informações conferidas em {GUIAS_CONFERIDO_EM}. A nota no Reclame Aqui muda com o tempo.</p>
@@ -118,7 +118,7 @@ export default function TonConfiavel() {
             <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">
               Rodapé e página inicial
             </a>
-            , site oficial da Ton.
+            , site da Ton.
           </li>
           <li>
             <a href="https://blog.ton.com.br/ton-e-da-stone-tire-suas-dividas/" target="_blank" rel="noopener noreferrer">

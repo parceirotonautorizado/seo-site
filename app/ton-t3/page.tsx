@@ -87,13 +87,13 @@ export default function TonT3() {
           Ver a T3 no site da Ton
         </a>
         <h2>Fontes</h2>
-        <p className="nota">Informações conferidas no site e no blog da Ton em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site oficial antes de pedir.</p>
+        <p className="nota">Informações conferidas no site e no blog da Ton em {GUIAS_CONFERIDO_EM}. Preço e condições mudam; confira no site da Ton antes de pedir.</p>
         <ul className="fontes">
           <li>
             <a href="https://www.ton.com.br/maquininha/t3" target="_blank" rel="noopener noreferrer">
               Maquininha T3
             </a>
-            , site oficial da Ton.
+            , site da Ton.
           </li>
           <li>
             <a href="https://blog.ton.com.br/maquininha-ton-conheca-todos-os-modelos/" target="_blank" rel="noopener noreferrer">

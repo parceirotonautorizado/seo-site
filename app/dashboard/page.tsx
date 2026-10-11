@@ -99,7 +99,7 @@ export default function Dashboard() {
                   fontWeight: "900",
                   marginBottom:
                     "18px",
-                  color: "#05751a",
+                  color: "#006e00",
                 }}
               >
                 🟢 Nova Simulação

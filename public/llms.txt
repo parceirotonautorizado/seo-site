@@ -1,6 +1,6 @@
 # Maquininhas Ton Paraná
 
-> Site de um parceiro autorizado Ton (programa Renda Extra). Explica as maquininhas de cartão da Ton, mostra as taxas e indica a compra no site oficial. Não é o site da Ton.
+> Site de um parceiro Ton (programa Renda Extra). Explica as maquininhas de cartão da Ton, mostra as taxas e indica a compra no site da Ton. Não é o site da Ton.
 
 O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cada página de cidade traz dados do IBGE (Censo 2022, PIB dos Municípios 2021 e Cadastro Central de Empresas) e uma sugestão de modelo conforme o perfil do comércio local.
 
@@ -16,11 +16,11 @@ O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cad
 ## Guias
 
 - [Maquininha de cartão de crédito](https://www.maquininhadecartoes.com.br/maquininha-de-cartao-de-credito): como escolher
-- [Maquininha com menor taxa](https://www.maquininhadecartoes.com.br/maquininha-de-cartao-com-menor-taxa): como comparar taxas
+- [Maquininha com menor taxa](https://www.maquininhadecartoes.com.br/maquininha-de-cartao-com-menor-taxa): como pagar a menor taxa em cada venda
 - [Maquininha no celular](https://www.maquininhadecartoes.com.br/maquininha-de-cartao-no-celular): TapTon, T1 e link de pagamento
 - [Maquininha para pessoa física](https://www.maquininhadecartoes.com.br/maquininha-de-cartao-para-pessoa-fisica): vender só com CPF
 - [Simulador da Ton](https://www.maquininhadecartoes.com.br/simulador-ton): calcula em reais quanto sobra de cada venda
-- [WhatsApp e telefone da Ton](https://www.maquininhadecartoes.com.br/ton-whatsapp-telefone): canais oficiais de suporte
+- [WhatsApp e telefone da Ton](https://www.maquininhadecartoes.com.br/ton-whatsapp-telefone): canais de atendimento da Ton de suporte
 - [Taxas da Ton](https://www.maquininhadecartoes.com.br/taxas-ton): tabela completa do plano Mega+ por faixa de vendas, bandeira e prazo
 - [Ton T1](https://www.maquininhadecartoes.com.br/ton-t1): a mais barata, depende do Bluetooth do celular
 - [Ton T2](https://www.maquininhadecartoes.com.br/ton-t2): chip 3G próprio e Wi-Fi, cabe no bolso
@@ -39,6 +39,6 @@ O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cad
 
 ## Avisos
 
-- As taxas são da Ton e podem mudar. O valor válido é o do site oficial, ton.com.br, na hora do pedido.
+- As taxas são da Ton e podem mudar. O valor válido é o do site da Ton, ton.com.br, na hora do pedido.
 - Venda, entrega, conta e suporte são feitos pela Ton, não por este site.
 - Ton é marca do Pagar.me S.A., empresa do grupo Stone, segundo o regulamento do plano.

@@ -621,7 +621,7 @@ if (typeof window !== "undefined") {
                 <a href="https://ton.com.br" target="_blank" rel="noopener noreferrer" className="calc-note-link">
                   ton.com.br
                 </a>
-                {" "}antes de contratar. Somos um Parceiro Autorizado Ton, não a empresa Ton.
+                {" "}antes de contratar. Somos um Parceiro Ton, não a empresa Ton.
               </p>
 
             </div>
@@ -701,13 +701,13 @@ if (typeof window !== "undefined") {
 
         .tab-btn.active {
           background: white;
-          color: #05751a;
+          color: #006e00;
         }
 
         .main-card {
           width: 100%;
           max-width: 1100px;
-          background: #88ff00;
+          background: #00d700;
           border-radius: 40px;
           padding: 6px;
         }
@@ -721,7 +721,7 @@ if (typeof window !== "undefined") {
 
         .mascot-wrap {
           width: 250px;
-          background: #88ff00;
+          background: #00d700;
           display: flex;
           align-items: flex-end;
           justify-content: center;
@@ -752,7 +752,7 @@ if (typeof window !== "undefined") {
         .panel-title {
           font-size: 34px;
           font-weight: 900;
-          color: #05751a;
+          color: #006e00;
           margin-bottom: 30px;
           font-style: italic;
         }
@@ -959,7 +959,7 @@ if (typeof window !== "undefined") {
         .res-rate {
           font-size: 28px;
           font-weight: 900;
-          color: #05751a;
+          color: #006e00;
         }
 
         .res-right {
@@ -999,7 +999,7 @@ if (typeof window !== "undefined") {
         }
 
         .parc-pill.active {
-          background: #05751a;
+          background: #006e00;
           color: white;
         }
 

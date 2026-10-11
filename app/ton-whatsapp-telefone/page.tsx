@@ -5,7 +5,7 @@ import { TON_SUPORTE } from "@/lib/ton-contatos"
 import Guias from "@/app/components/Guias"
 
 const PATH = "/ton-whatsapp-telefone"
-const TITULO = "WhatsApp e telefone da Ton: os canais oficiais"
+const TITULO = "WhatsApp e telefone da Ton: os canais de atendimento"
 const DESCRICAO =
   "O WhatsApp de atendimento da Ton, os telefones para quem já é cliente, a Central de Ajuda e quando usar cada canal. Com os cuidados contra golpe."
 
@@ -30,11 +30,11 @@ export default function TonWhatsappTelefone() {
       />
 
       <article className="txt">
-        <h1>WhatsApp e telefone da Ton: os canais oficiais</h1>
+        <h1>WhatsApp e telefone da Ton: os canais de atendimento</h1>
 
         <p>
           Se você já tem maquininha e precisa de suporte, quem resolve é a Ton, não este site. Abaixo estão os canais
-          oficiais, copiados do site e da Central de Ajuda da Ton em {TON_SUPORTE.conferidoEm}.
+          de atendimento, copiados do site e da Central de Ajuda da Ton em {TON_SUPORTE.conferidoEm}.
         </p>
 
         <h2>Já sou cliente e preciso de ajuda</h2>
@@ -77,8 +77,8 @@ export default function TonWhatsappTelefone() {
 
         <h2>Ainda não comprou?</h2>
         <p>
-          Aí o caminho é outro. Este site é de um parceiro autorizado, e a gente ajuda a escolher o modelo e tira
-          dúvida antes do pedido. A compra em si acontece no site oficial da Ton, com o desconto de parceiro.
+          Aí o caminho é outro. Este site é de um parceiro Ton, e a gente ajuda a escolher o modelo e tira
+          dúvida antes do pedido. A compra em si acontece no site da Ton, com o desconto de parceiro.
         </p>
         <a className="cc-cta" href={parceiroWa} target="_blank" rel="noopener noreferrer">
           Quero comprar: falar com o parceiro
@@ -89,10 +89,10 @@ export default function TonWhatsappTelefone() {
           Golpista adora se passar por atendimento de maquininha. Alguns sinais de que o contato não é da Ton:
         </p>
         <ul>
-          <li>O número chegou por mensagem, anúncio ou rede social, e não está no site oficial.</li>
+          <li>O número chegou por mensagem, anúncio ou rede social, e não está no site da Ton.</li>
           <li>Pedem senha, código que chegou por SMS ou foto do cartão.</li>
           <li>Pedem Pix ou boleto para liberar, desbloquear ou trocar a maquininha.</li>
-          <li>Mandam link para instalar aplicativo fora da loja oficial do celular.</li>
+          <li>Mandam link para instalar aplicativo fora da loja de aplicativos do celular.</li>
         </ul>
         <p>
           Na dúvida, não responda. Abra o aplicativo da Ton ou digite ton.com.br no navegador e pegue o contato por lá.
@@ -102,11 +102,11 @@ export default function TonWhatsappTelefone() {
         <h2>Fontes</h2>
         <p className="nota">
           Contatos conferidos em {TON_SUPORTE.conferidoEm}. A Ton pode mudar números e horários; o que vale é o que
-          está no site oficial.
+          está no site da Ton.
         </p>
         <ul className="fontes">
           <li>
-            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Rodapé do site oficial</a>,
+            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Rodapé do site da Ton</a>,
             Ton.
           </li>
           <li>

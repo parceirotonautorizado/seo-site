@@ -12,11 +12,11 @@ export default function Footer() {
               <img src="/parceiro-ton-branco.png" alt="Parceiro Ton" width={66} height={64} loading="lazy" />
             </div>
             <p className="footer-desc">
-              Somos um <strong>Parceiro Autorizado Ton</strong> (programa Renda Extra / Renda Ton).
-              Divulgamos as maquininhas e indicamos você para compra no site oficial com desconto de parceiro.
+              Somos um <strong>Parceiro Ton</strong> (programa Renda Extra / Renda Ton).
+              Divulgamos as maquininhas e indicamos você para compra no site da Ton com desconto de parceiro.
               A venda, entrega, conta e pagamento são feitos diretamente pela Ton.
             </p>
-            <div className="footer-badge">✓ Parceiro Autorizado Ton</div>
+            <div className="footer-badge">✓ Parceiro Ton</div>
           </div>
 
           <div className="footer-col">
@@ -33,7 +33,7 @@ export default function Footer() {
             <p className="footer-col-title">Informações</p>
             <ul>
               <li><a href="/maquininha-de-cartao-de-credito">Como escolher a maquininha</a></li>
-              <li><a href="/maquininha-de-cartao-com-menor-taxa">Menor taxa: como comparar</a></li>
+              <li><a href="/maquininha-de-cartao-com-menor-taxa">Menor taxa: como pagar menos</a></li>
               <li><a href="/maquininha-de-cartao-no-celular">Maquininha no celular</a></li>
               <li><a href="/maquininha-de-cartao-para-pessoa-fisica">Para pessoa física</a></li>
               <li><a href="/taxas-ton">Tabela de taxas</a></li>
@@ -81,7 +81,12 @@ export default function Footer() {
             © {ano} Parceiro Ton. Todos os direitos reservados.
           </p>
           <p className="footer-disclaimer">
-            Este site é mantido por um participante do programa Renda Extra da Ton. Não somos a empresa Ton nem fazemos parte do Grupo StoneCo. Ton® é marca do Pagar.me S.A. (CNPJ 18.727.053/0001-74), empresa do grupo Stone. Todas as transações são realizadas diretamente em ton.com.br.
+            Declaramos, para todos os fins, que este canal é de titularidade de um Parceiro Renda Ton/Renda Extra, que oferece descontos para aquisição dos produtos e serviços do Ton. Este ambiente não se confunde com os canais oficiais do Ton.
+          </p>
+          <p className="footer-disclaimer">
+            Não somos a empresa Ton. A compra, a entrega, a conta e o suporte são feitos diretamente pela Ton, em{" "}
+            <a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">www.ton.com.br</a>. Ton® é marca do Pagar.me S.A. (CNPJ 18.727.053/0001-74).{" "}
+            <a href="#preferencias-de-cookies" data-cookies>Preferências de cookies</a>
           </p>
         </div>
       </div>

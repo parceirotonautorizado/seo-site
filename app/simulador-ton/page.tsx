@@ -97,8 +97,8 @@ export default function SimuladorTon() {
         </ul>
 
         <p className="nota">
-          O simulador usa as taxas publicadas pela Ton na data indicada. Antes de fechar, confirme os valores no site
-          oficial.
+          O simulador usa as taxas publicadas pela Ton na data indicada. Antes de fechar, confirme os valores em
+          ton.com.br.
         </p>
       </article>
 

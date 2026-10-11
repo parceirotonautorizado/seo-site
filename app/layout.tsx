@@ -59,10 +59,10 @@ const siteLd = {
     {
       "@type": "Organization",
       "@id": `${CONFIG.dominio}/#organization`,
-      name: "Maquininhas Ton Paraná",
+      name: "Parceiro Ton Paraná",
       url: `${CONFIG.dominio}/`,
       description:
-        "Parceiro autorizado Ton (programa Renda Extra). Divulga as maquininhas Ton no Paraná e indica para compra no site oficial.",
+        "Parceiro Ton (programa Renda Extra). Divulga as maquininhas Ton no Paraná e indica para compra no site da Ton.",
       areaServed: { "@type": "State", name: "Paraná" },
       contactPoint: {
         "@type": "ContactPoint",
@@ -75,7 +75,7 @@ const siteLd = {
       "@type": "WebSite",
       "@id": `${CONFIG.dominio}/#website`,
       url: `${CONFIG.dominio}/`,
-      name: "Maquininhas Ton Paraná",
+      name: "Parceiro Ton Paraná",
       inLanguage: "pt-BR",
       publisher: { "@id": `${CONFIG.dominio}/#organization` },
     },
@@ -94,12 +94,11 @@ export default function RootLayout({
     >
       <head>
 
-        {/* Tag Manager: carrega na primeira interação ou após 8 s, a não ser que o visitante tenha recusado a medição */}
+        {/* Tag Manager: só carrega se o visitante permitiu a medição no banner de cookies (diretriz da Ton e ANPD) */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,i){
               var ok=false, ev=['scroll','mousemove','touchstart','keydown','click'];
-              function recusou(){ try { return localStorage.getItem('consentimento-cookies')==='recusado'; } catch(e){ return false; } }
               function carregar(){
                 if(ok) return; ok=true;
                 w.dataLayer=w.dataLayer||[];
@@ -108,17 +107,8 @@ export default function RootLayout({
                 j.src='https://www.googletagmanager.com/gtm.js?id='+i;
                 d.head.appendChild(j);
               }
-              function escolheu(){ try { return !!localStorage.getItem('consentimento-cookies'); } catch(e){ return true; } }
-              function go(e){
-                if(recusou()) return;
-                // enquanto o aviso está na tela, não conta o movimento do mouse nem o toque no próprio aviso,
-                // para dar tempo de quem quer desativar clicar antes de a medição carregar
-                if(e && !escolheu()){
-                  if(e.type==='mousemove') return;
-                  if(e.target && e.target.closest && e.target.closest('.ck')) return;
-                }
-                carregar();
-              }
+              function aceitou(){ try { return localStorage.getItem('consentimento-cookies')==='aceito'; } catch(e){ return false; } }
+              function go(){ if(aceitou()) carregar(); }
               w.__carregarMedicao=carregar;
               // fecha o menu do celular depois de tocar em um link dele
               d.addEventListener('click',function(e){
@@ -145,7 +135,7 @@ export default function RootLayout({
         <StyledJsxRegistry>
           <Navbar />
           <p className="aviso-parceiro">
-            Site de um parceiro autorizado Ton. A compra é feita no site oficial da Ton, com o desconto de parceiro.
+            Site de um parceiro Ton. A compra é feita no site da Ton, com o desconto de parceiro.
           </p>
           <main>
             {children}

@@ -40,13 +40,12 @@ export default function Privacidade() {
           gente achar o que está confuso. Nenhuma das duas nos mostra seu nome ou seu telefone.
         </p>
         <p>
-          Essa medição fica ligada por padrão, porque é o que nos permite melhorar o site. Se você não quiser, clique
-          em Desativar no aviso de cookies. A partir daí nada de medição é carregado nas suas visitas, e o site
-          funciona do mesmo jeito.
+          Essa medição vem desligada. Ela só é carregada se você marcar a opção de medição no aviso de cookies ou
+          clicar em Aceitar todos. Se recusar, nada de medição é carregado e o site funciona do mesmo jeito.
         </p>
         <p>
-          Já fechou o aviso e quer mudar a escolha? Apague os dados deste site nas configurações do navegador e o
-          aviso aparece de novo na próxima visita.
+          O único dado que o site guarda sem pedir é a sua resposta ao aviso, para não perguntar de novo a cada
+          página. Para mudar a escolha, use o link Preferências de cookies no rodapé.
         </p>
 
         <h2>O simulador</h2>
@@ -65,7 +64,7 @@ export default function Privacidade() {
 
         <h2>Compra no site da Ton</h2>
         <p>
-          Os botões de pedido levam ao site oficial da Ton com um código que identifica a indicação. Cadastro,
+          Os botões de pedido levam ao site da Ton com um código que identifica a indicação. Cadastro,
           pagamento e todos os dados da compra ficam com a Ton, sob a política de privacidade dela. Nada disso passa
           por este site.
         </p>

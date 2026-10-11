@@ -139,7 +139,7 @@ export function conteudoBairro(b: Bairro, cidade: string, todos: Bairro[]) {
       { rotulo: "Moradores por domicílio", valor: c.media_moradores.toLocaleString("pt-BR") },
     ],
     modelos,
-    entrega: `A Ton entrega ${em} ${b.nome} e em todos os bairros de ${cidade}, com frete grátis. Você pede pelo site oficial e recebe no endereço que informar, seja a loja ou a sua casa.`,
+    entrega: `A Ton entrega ${em} ${b.nome} e em todos os bairros de ${cidade}, com frete grátis. Você pede pelo site da Ton e recebe no endereço que informar, seja a loja ou a sua casa.`,
     faq: [
       {
         q: `A Ton entrega maquininha ${em} ${b.nome}?`,

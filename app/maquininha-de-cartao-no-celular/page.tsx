@@ -34,8 +34,8 @@ export default function MaquininhaCelular() {
           uma resolve um problema.
         </p>
         <p className="nota">
-          Este site é de um parceiro autorizado da Ton e fala só das maquininhas dela. Não comparamos preços de outras
-          marcas porque não teríamos como garantir que estão atualizados.
+          Este site é de um parceiro Ton e fala só das maquininhas da Ton. A compra é feita em ton.com.br, com o
+          desconto de parceiro.
         </p>
 
         <h2>1. O celular como maquininha (TapTon)</h2>
@@ -96,10 +96,10 @@ export default function MaquininhaCelular() {
         </a>
 
         <h2>Fontes</h2>
-        <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores no site oficial antes de pedir.</p>
+        <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores no site da Ton antes de pedir.</p>
         <ul className="fontes">
           <li><a href="https://blog.ton.com.br/o-que-e-tapton/" target="_blank" rel="noopener noreferrer">TapTon: tudo o que você precisa saber</a>, Blog do Ton.</li>
-          <li><a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Site oficial da Ton</a>, páginas dos modelos e perguntas frequentes.</li>
+          <li><a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Site da Ton</a>, páginas dos modelos e perguntas frequentes.</li>
           <li>Regulamento do Plano Ton Mega+, versão de 21/09/2026.</li>
         </ul>
       </article>

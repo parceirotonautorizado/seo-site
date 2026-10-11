@@ -41,7 +41,7 @@ export default function Contato() {
         <h2>Já tenho maquininha e preciso de ajuda</h2>
         <p>
           Aí é com a Ton. Entrega atrasada, troca de aparelho, problema na conta ou no recebimento são resolvidos pelos
-          canais oficiais deles. A gente não tem acesso ao seu pedido nem à sua conta, então chamar aqui só atrasa a
+          canais de atendimento deles. A gente não tem acesso ao seu pedido nem à sua conta, então chamar aqui só atrasa a
           solução.
         </p>
         <a className="cc-cta" href="/ton-whatsapp-telefone" style={{ background: "#333" }}>

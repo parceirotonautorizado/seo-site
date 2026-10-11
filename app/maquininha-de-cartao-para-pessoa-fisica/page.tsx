@@ -33,8 +33,8 @@ export default function MaquininhaPessoaFisica() {
           pode aceitar débito, crédito e Pix usando só o CPF. Abaixo está o que muda para quem vende assim.
         </p>
         <p className="nota">
-          Este site é de um parceiro autorizado da Ton e fala só das maquininhas dela. Não comparamos preços de outras
-          marcas porque não teríamos como garantir que estão atualizados.
+          Este site é de um parceiro Ton e fala só das maquininhas da Ton. A compra é feita em ton.com.br, com o
+          desconto de parceiro.
         </p>
 
         <h2>Quem pode pedir</h2>
@@ -93,7 +93,7 @@ export default function MaquininhaPessoaFisica() {
         <h2>Posso mudar para CNPJ depois?</h2>
         <p>
           Pode abrir o MEI quando quiser. Como a troca de cadastro é feita dentro da Ton, o caminho certo é falar com
-          o atendimento deles pelos <a href="/ton-whatsapp-telefone">canais oficiais</a>.
+          o atendimento deles pelos <a href="/ton-whatsapp-telefone">canais de atendimento da Ton</a>.
         </p>
 
         <a className="cc-cta" href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">
@@ -101,10 +101,10 @@ export default function MaquininhaPessoaFisica() {
         </a>
 
         <h2>Fontes</h2>
-        <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores no site oficial antes de pedir.</p>
+        <p className="nota">Informações da Ton conferidas em {GUIAS_CONFERIDO_EM}. Confirme valores no site da Ton antes de pedir.</p>
         <ul className="fontes">
           <li><a href="https://blog.ton.com.br/maquina-de-cartao-para-pessoa-fisica/" target="_blank" rel="noopener noreferrer">Máquina de cartão para pessoa física</a>, Blog do Ton.</li>
-          <li><a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Site oficial da Ton</a>, páginas dos modelos e perguntas frequentes.</li>
+          <li><a href="https://www.ton.com.br" target="_blank" rel="noopener noreferrer">Site da Ton</a>, páginas dos modelos e perguntas frequentes.</li>
           <li>Regulamento do Plano Ton Mega+, versão de 21/09/2026.</li>
         </ul>
       </article>
