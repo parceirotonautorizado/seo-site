@@ -218,3 +218,38 @@
   .s-rc .rc-resultado { grid-column: 1; grid-row: auto; min-height: 0; position: static; }
   .s-rc .rc-opcao { flex: 1 1 100%; }
 }
+
+/* Resultado do teste em janela (popup) */
+.s-rc .rc-caixa { display: block; max-width: 760px; }
+.s-rc .rc-rodape { margin-top: 4px; }
+.s-rc .rc-rodape .rc-botao { display: inline-block; }
+.rc-fundo { position: fixed; inset: 0; z-index: 10001; background: rgba(0, 30, 0, 0.72); display: flex; align-items: center; justify-content: center; padding: 16px; animation: rc-surgir 0.18s ease-out; }
+.rc-janela { position: relative; width: 100%; max-width: 480px; max-height: calc(100vh - 32px); overflow-y: auto; background: #fff; border: 3px solid #003c00; border-radius: 8px; padding: 26px 24px 20px; box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45); animation: rc-subir 0.22s ease-out; }
+.rc-janela .rc-fechar { position: absolute; top: 6px; right: 6px; width: 44px; height: 44px; border: 0; background: transparent; font-size: 30px; line-height: 1; color: #003c00; cursor: pointer; border-radius: 6px; }
+.rc-janela .rc-fechar:hover, .rc-janela .rc-fechar:focus-visible { background: #c8ffc8; outline: none; }
+.rc-janela .rc-rotulo { font-family: var(--font-heading); font-size: 17px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #006e00; margin: 0 40px 2px 0; }
+.rc-janela .rc-modelo { font-size: 52px; font-weight: 800; text-transform: uppercase; color: #003c00; margin: 0 0 8px; line-height: 1; }
+.rc-janela .rc-motivo { color: #2a2a2a; line-height: 1.55; margin: 0 0 14px; }
+.rc-janela .rc-aviso { background: #f3fff3; border-left: 4px solid #006e00; padding: 10px 12px; font-size: 14px; line-height: 1.5; color: #2a2a2a; margin: 0 0 14px; }
+.rc-janela .rc-tabela { width: 100%; border-collapse: collapse; margin: 0 0 12px; }
+.rc-janela .rc-tabela caption { caption-side: top; text-align: left; font-weight: 700; color: #003c00; font-size: 14px; padding: 0 0 6px; }
+.rc-janela .rc-tabela th, .rc-janela .rc-tabela td { padding: 7px 0; border-top: 1px solid #dfe9df; text-align: left; font-weight: 400; color: #2a2a2a; }
+.rc-janela .rc-tabela tr:first-child th, .rc-janela .rc-tabela tr:first-child td { border-top: 2px solid #003c00; }
+.rc-janela .rc-tabela td { text-align: right; font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: #006e00; white-space: nowrap; }
+.rc-janela .rc-ajustes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 14px; }
+.rc-janela .rc-grupo { border: 0; padding: 0; margin: 0; min-width: 0; grid-column: auto; }
+.rc-janela .rc-grupo legend { font-size: 13px; font-weight: 700; color: #003c00; margin-bottom: 5px; padding: 0; }
+.rc-janela .rc-opcoes { display: flex; flex-direction: column; gap: 5px; }
+.rc-janela .rc-opcao { font: inherit; font-size: 13px; font-weight: 600; text-align: left; padding: 6px 10px; min-height: 34px; flex: none; border: 2px solid #9fc79f; border-radius: 6px; background: #fff; color: #1a1a1a; cursor: pointer; }
+.rc-janela .rc-ativa { background: #006e00; border-color: #006e00; color: #fff; }
+.rc-janela .rc-botao { display: block; width: 100%; font: inherit; font-size: 16px; font-weight: 700; text-align: center; text-decoration: none; padding: 13px 18px; border-radius: 6px; border: 2px solid #006e00; background: #006e00; color: #fff; cursor: pointer; margin: 0 0 8px; }
+.rc-janela .rc-botao-grande { font-size: 19px; padding: 17px 18px; }
+.rc-janela .rc-botao:hover { background: #003c00; border-color: #003c00; }
+.rc-janela .rc-botao-claro { background: #fff; color: #003c00; border-color: #003c00; }
+.rc-janela .rc-botao-claro:hover { background: #c8ffc8; }
+.rc-janela .rc-nota { font-size: 12.5px; line-height: 1.5; color: #4a4a4a; margin: 6px 0 0; }
+.rc-janela a:not(.rc-botao) { color: #006e00; text-decoration: underline; text-underline-offset: 3px; }
+@keyframes rc-surgir { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rc-subir { from { opacity: 0; transform: translateY(18px) scale(0.97); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .rc-fundo, .rc-janela { animation: none; } }
+@media (max-width: 480px) { .rc-janela { padding: 22px 16px 16px; } .rc-janela .rc-modelo { font-size: 42px; } }

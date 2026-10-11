@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 type Taxas = { deb: number; cre1: number; cre12: number }
 type Faixa = { id: string; label: string; taxas: Record<"d1" | "d0", Record<"mv" | "oa", Taxas>> }
@@ -101,6 +101,30 @@ function indicar(faixa: string, onde: string, extra: string): { id: string; moti
       }
 }
 
+type GrupoProps = { titulo: string; opcoes: { id: string; label: string }[]; valor: string; mudar: (v: string) => void; compacto?: boolean }
+
+function Grupo({ titulo, opcoes, valor, mudar, compacto }: GrupoProps) {
+  return (
+    <fieldset className={`rc-grupo${compacto ? " rc-grupo-compacto" : ""}`}>
+      <legend>{titulo}</legend>
+      <div className="rc-opcoes">
+        {opcoes.map((o) => (
+          <button
+            key={o.id}
+            type="button"
+            className={`rc-opcao${valor === o.id ? " rc-ativa" : ""}`}
+            aria-pressed={valor === o.id}
+            onClick={() => mudar(o.id)}
+          >
+            {o.label}
+          </button>
+        ))}
+      </div>
+    </fieldset>
+  )
+}
+
+
 export default function Recomendador({ faixas, modelos, promo, whatsapp, local }: Props) {
   const [faixa, setFaixa] = useState("")
   const [onde, setOnde] = useState("")
@@ -108,6 +132,8 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
   // bandeira e prazo já vêm com a opção mais comum marcada; mudam só a taxa mostrada, não o modelo
   const [bandeira, setBandeira] = useState<"mv" | "oa">("mv")
   const [prazo, setPrazo] = useState<"d1" | "d0">("d1")
+  const [aberto, setAberto] = useState(false)
+  const fechar = useRef<HTMLButtonElement>(null)
 
   const pronto = faixa && onde && extra
   const resultado = pronto ? indicar(faixa, onde, extra) : null
@@ -115,6 +141,27 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
   const faixaAtual = faixas.find((f) => f.id === faixa)
   const taxas = faixaAtual?.taxas[prazo][bandeira]
   const querVale = extra === "vale" || extra === "ambos"
+
+  // abre o resultado em janela assim que as três perguntas estiverem respondidas (e de novo a cada mudança)
+  useEffect(() => {
+    if (faixa && onde && extra) setAberto(true)
+  }, [faixa, onde, extra])
+
+  // com a janela aberta: trava a rolagem do fundo, fecha no Esc e leva o foco para o botão de fechar
+  useEffect(() => {
+    if (!aberto) return
+    const anterior = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    fechar.current?.focus()
+    const tecla = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setAberto(false)
+    }
+    window.addEventListener("keydown", tecla)
+    return () => {
+      document.body.style.overflow = anterior
+      window.removeEventListener("keydown", tecla)
+    }
+  }, [aberto])
 
   function zap() {
     const linhas = [
@@ -131,42 +178,37 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
     window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(linhas.join("\n"))}`, "_blank", "noopener")
   }
 
-  function Grupo({ titulo, opcoes, valor, mudar }: { titulo: string; opcoes: { id: string; label: string }[]; valor: string; mudar: (v: string) => void }) {
-    return (
-      <fieldset className="rc-grupo">
-        <legend>{titulo}</legend>
-        <div className="rc-opcoes">
-          {opcoes.map((o) => (
-            <button
-              key={o.id}
-              type="button"
-              className={`rc-opcao${valor === o.id ? " rc-ativa" : ""}`}
-              aria-pressed={valor === o.id}
-              onClick={() => mudar(o.id)}
-            >
-              {o.label}
-            </button>
-          ))}
-        </div>
-      </fieldset>
-    )
-  }
-
   return (
     <div className="rc-caixa">
       <Grupo titulo="1. Quanto você vende por mês?" opcoes={faixas} valor={faixa} mudar={setFaixa} />
       <Grupo titulo="2. Onde você vende?" opcoes={ONDE} valor={onde} mudar={setOnde} />
       <Grupo titulo="3. O seu cliente..." opcoes={EXTRA} valor={extra} mudar={setExtra} />
-      <Grupo titulo="4. Qual bandeira ele mais usa?" opcoes={BANDEIRA} valor={bandeira} mudar={(v) => setBandeira(v as "mv" | "oa")} />
-      <Grupo titulo="5. Quando você quer receber?" opcoes={PRAZO} valor={prazo} mudar={(v) => setPrazo(v as "d1" | "d0")} />
 
-      <div className="rc-resultado" aria-live="polite">
-        {!pronto && <p className="rc-espera">Responda as três primeiras perguntas para ver a indicação.</p>}
+      <div className="rc-rodape">
+        {pronto ? (
+          <button type="button" className="rc-botao" onClick={() => setAberto(true)}>
+            Ver minha indicação
+          </button>
+        ) : (
+          <p className="rc-espera">Responda as três perguntas e a indicação aparece na hora.</p>
+        )}
+      </div>
 
-        {pronto && modelo && taxas && resultado && (
-          <>
-            <p className="rc-rotulo">Modelo indicado para você</p>
-            <h3 className="rc-modelo">Ton {modelo.nome}</h3>
+      {aberto && modelo && taxas && resultado && (
+        <div className="rc-fundo" onClick={() => setAberto(false)}>
+          <div
+            className="rc-janela"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="rc-janela-titulo"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button type="button" className="rc-fechar" aria-label="Fechar" onClick={() => setAberto(false)} ref={fechar}>
+              ×
+            </button>
+
+            <p className="rc-rotulo">A maquininha indicada para você</p>
+            <h3 className="rc-modelo" id="rc-janela-titulo">Ton {modelo.nome}</h3>
             <p className="rc-motivo">{resultado.motivo}</p>
 
             {querVale && (
@@ -176,44 +218,53 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
               </p>
             )}
 
-            <dl className="rc-taxas">
-              <div>
-                <dt>Débito</dt>
-                <dd>{pct(taxas.deb)}</dd>
-              </div>
-              <div>
-                <dt>Crédito à vista</dt>
-                <dd>{pct(taxas.cre1)}</dd>
-              </div>
-              <div>
-                <dt>Crédito 12x</dt>
-                <dd>{pct(taxas.cre12)}</dd>
-              </div>
-            </dl>
+            <table className="rc-tabela">
+              <caption>Suas taxas na faixa: {faixaAtual?.label}</caption>
+              <tbody>
+                <tr>
+                  <th scope="row">Débito</th>
+                  <td>{pct(taxas.deb)}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Crédito à vista</th>
+                  <td>{pct(taxas.cre1)}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Crédito em 12x</th>
+                  <td>{pct(taxas.cre12)}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Adesão da {modelo.nome}</th>
+                  <td>{modelo.preco}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div className="rc-ajustes">
+              <Grupo titulo="Bandeira" opcoes={BANDEIRA} valor={bandeira} mudar={(v) => setBandeira(v as "mv" | "oa")} compacto />
+              <Grupo titulo="Receber" opcoes={PRAZO} valor={prazo} mudar={(v) => setPrazo(v as "d1" | "d0")} compacto />
+            </div>
+
+            <a href={modelo.link} target="_blank" rel="noopener noreferrer" className="rc-botao rc-botao-grande">
+              Pedir a {modelo.nome} agora
+            </a>
+            <button type="button" className="rc-botao rc-botao-claro" onClick={zap}>
+              Tirar dúvida no WhatsApp
+            </button>
+
             <p className="rc-nota">
-              Taxas da sua faixa em {BANDEIRA.find((x) => x.id === bandeira)?.label}, recebendo{" "}
+              Taxas em {BANDEIRA.find((x) => x.id === bandeira)?.label}, recebendo{" "}
               {prazo === "d1" ? "em 1 dia útil" : "na hora"}. Nos primeiros 30 dias ou até R$ 5.000 em vendas, vale a
               taxa promocional:{" "}
               {bandeira === "mv"
                 ? `${pct(promo.mv)} no débito e no crédito à vista`
                 : `${pct(promo.oa)} no débito e ${pct(promo.oaCre1)} no crédito à vista`}
-              . <a href="/taxas-ton">Tabela completa</a>.
+              . {modelo.parcela.replace("ou ", "Adesão também em ")}. <a href={modelo.pagina}>Detalhes da {modelo.nome}</a>{" "}
+              · <a href="/taxas-ton">Tabela completa</a>
             </p>
-
-            <div className="rc-botoes">
-              <a href={modelo.link} target="_blank" rel="noopener noreferrer" className="rc-botao">
-                Pedir a {modelo.nome} por {modelo.preco}
-              </a>
-              <button type="button" className="rc-botao rc-botao-claro" onClick={zap}>
-                Tirar dúvida no WhatsApp
-              </button>
-            </div>
-            <p className="rc-nota">
-              <a href={modelo.pagina}>Ver detalhes da {modelo.nome}</a>
-            </p>
-          </>
-        )}
-      </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
