@@ -10,7 +10,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Dia em que este arquivo foi conferido no site da Ton
-export const TAXAS_ULTIMA_VERIFICACAO = "11/10/2026"
+export const TAXAS_ULTIMA_VERIFICACAO = "10/10/2026"
 
 // Dia em que a própria Ton atualizou as taxas pela última vez
 export const TAXAS_ATUALIZADAS_PELA_TON = "01/10/2026"

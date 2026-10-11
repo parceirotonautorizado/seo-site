@@ -1,4 +1,4 @@
-import { CONFIG } from "@/lib/config"
+import { CONFIG, OG_BASE } from "@/lib/config"
 
 type Crumb = { nome: string; path: string }
 
@@ -32,6 +32,25 @@ export function produtoLd(m: { nome: string; subtitulo: string; imagem: string; 
       url: `${CONFIG.dominio}${m.pagina}`,
       seller: { "@type": "Organization", name: "Ton" },
     },
+  }
+}
+
+// Artigo de guia. Datas no formato dd/mm/aaaa, como nas constantes de conferência.
+export function artigoLd(a: { titulo: string; descricao: string; path: string; publicado: string; modificado: string; imagem?: string }) {
+  const iso = (d: string) => d.split("/").reverse().join("-")
+  const org = { "@type": "Organization", name: OG_BASE.siteName, url: CONFIG.dominio }
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: a.titulo,
+    description: a.descricao,
+    inLanguage: "pt-BR",
+    mainEntityOfPage: `${CONFIG.dominio}${a.path}`,
+    image: `${CONFIG.dominio}${a.imagem ?? "/og.jpg"}`,
+    datePublished: iso(a.publicado),
+    dateModified: iso(a.modificado),
+    author: org,
+    publisher: org,
   }
 }
 

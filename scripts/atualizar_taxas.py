@@ -71,7 +71,8 @@ def main():
                 assert len(grupo["cre"]) == 21, f"esperava 21 parcelas em {faixa}"
                 assert all(0 < v < 40 for v in [grupo["deb"], *grupo["cre"].values()]), f"taxa fora do intervalo em {faixa}"
 
-    hoje = datetime.date.today()
+    # Data no horário de Brasília (o servidor do GitHub roda em UTC e adiantava o dia à noite)
+    hoje = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3))).date()
     data_br = lambda iso: "/".join(reversed(iso.split("-")))
     out = f'''// ─────────────────────────────────────────────────────────────────────────────
 // TAXAS TON · arquivo central de taxas

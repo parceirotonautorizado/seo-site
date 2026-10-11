@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import { CONFIG, OG_BASE } from "@/lib/config"
-import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
+import { JsonLd, breadcrumbLd, artigoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
-import { MODELOS } from "@/lib/modelos"
+import { MODELOS, MODELOS_CONFERIDO_EM } from "@/lib/modelos"
 import { PLANS, PIX_SEM_CHAVE, TAXAS_ULTIMA_VERIFICACAO } from "@/lib/taxas"
 
 const PATH = "/maquininha-ton-vale-a-pena"
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: TITULO,
   description: DESCRICAO,
   alternates: { canonical: `${CONFIG.dominio}${PATH}` },
-  openGraph: { ...OG_BASE, title: TITULO, description: DESCRICAO, url: `${CONFIG.dominio}${PATH}` },
+  openGraph: { ...OG_BASE, type: "article", title: TITULO, description: DESCRICAO, url: `${CONFIG.dominio}${PATH}` },
 }
 
 const pct = (v: number) => `${v.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`
@@ -36,6 +36,8 @@ export default function TonValeAPena() {
         ])}
       />
 
+      <JsonLd data={artigoLd({ titulo: TITULO, descricao: DESCRICAO, path: PATH, publicado: "10/10/2026", modificado: GUIAS_CONFERIDO_EM })} />
+
       <article className="txt">
         <h1>Maquininha Ton vale a pena?</h1>
 
@@ -43,6 +45,10 @@ export default function TonValeAPena() {
           Para a maioria de quem vende pouco ou está começando, vale. Para alguns perfis, não. E quem escreve aqui
           ganha comissão quando você compra, então esta página mostra os dois lados com os números na mão. A decisão
           fica com você.
+        </p>
+
+        <p className="nota">
+          Escrito por um parceiro Ton do Paraná. Atualizado em <time dateTime={GUIAS_CONFERIDO_EM.split("/").reverse().join("-")}>{GUIAS_CONFERIDO_EM}</time>.
         </p>
 
         <h2>A resposta em 30 segundos</h2>
@@ -190,6 +196,23 @@ export default function TonValeAPena() {
           <li>Quem precisa de vale-refeição e não tem CNPJ de alimentação.</li>
           <li>Quem faz questão de atendimento presencial.</li>
         </ul>
+
+        <h2>Os quatro modelos e o preço de cada um</h2>
+        <ul className="fila-modelos">
+          {MODELOS.map((m) => (
+            <li key={m.id}>
+              <a href={m.pagina}>
+                <img src={m.imagem} alt={`Maquininha Ton ${m.nome}`} width={480} height={720} loading="lazy" decoding="async" />
+                <strong>Ton {m.nome}</strong>
+                <span>{m.preco}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p className="nota">
+          Taxa de adesão conferida no catálogo da Ton em {MODELOS_CONFERIDO_EM}, já com o cupom de parceiro quando ele
+          se aplica. Toque no modelo para ver os detalhes.
+        </p>
 
         <h2>Como decidir sem chute</h2>
         <ol>
