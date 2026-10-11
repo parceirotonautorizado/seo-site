@@ -61,6 +61,10 @@ export default function Privacidade() {
           Se você nos chama no WhatsApp, passamos a ter o seu número e o que você escrever, como em qualquer conversa.
           Usamos só para responder. O WhatsApp tem a política de privacidade dele.
         </p>
+        <p>
+          Não enviamos mensagens em massa nem usamos envio automático. Se você pedir para não receber mais contato,
+          paramos na hora e removemos o seu número da nossa lista.
+        </p>
 
         <h2>Compra no site da Ton</h2>
         <p>
