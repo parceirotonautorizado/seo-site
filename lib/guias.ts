@@ -38,6 +38,10 @@ export const GUIAS = [
   },
   { path: "/ton-cpf-cnpj-mei", titulo: "Ton para CPF, CNPJ e MEI", resumo: "O que muda em cada cadastro na hora de pedir." },
   { path: "/tapton-como-funciona", titulo: "TapTon: como funciona", resumo: "O celular como maquininha: o que aceita e o que não faz." },
+  { path: "/como-pedir-maquininha-ton", titulo: "Como pedir a maquininha Ton", resumo: "Do pedido à primeira venda, passo a passo." },
+  { path: "/cupom-desconto-maquininha-ton", titulo: "Cupom de desconto Ton", resumo: "O desconto de parceiro e quanto fica cada modelo." },
+  { path: "/maquininha-ton-tem-mensalidade", titulo: "A Ton tem mensalidade?", resumo: "O que você paga de verdade, e quando." },
+  { path: "/prazo-de-recebimento-ton", titulo: "Prazo de recebimento da Ton", resumo: "Em quanto tempo o dinheiro cai e quanto cada prazo custa." },
   {
     path: "/maquininha-ton-vale-a-pena",
     titulo: "Maquininha Ton vale a pena?",
