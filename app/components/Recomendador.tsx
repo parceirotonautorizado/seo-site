@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 
 type Taxas = { deb: number; cre1: number; cre12: number }
 type Faixa = { id: string; label: string; taxas: Record<"d1" | "d0", Record<"mv" | "oa", Taxas>> }
-type Modelo = { id: string; nome: string; preco: string; parcela: string; link: string; pagina: string; imagem: string }
+type Modelo = { id: string; nome: string; preco: string; parcela: string; link: string; pagina: string; imagem: string; alt: string }
 
 type Props = {
   faixas: Faixa[]
@@ -228,7 +228,7 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
             </button>
 
             <div className="rc-topo">
-              <img src={modelo.imagem} alt={`Maquininha Ton ${modelo.nome}`} width={480} height={720} className="rc-foto" />
+              <img src={modelo.imagem} alt={modelo.alt} width={240} height={360} className="rc-foto" />
               <div>
                 <p className="rc-rotulo">A maquininha indicada para você</p>
                 <h3 className="rc-modelo" id="rc-janela-titulo">Ton {modelo.nome}</h3>

@@ -15,7 +15,7 @@ export default function RecomendadorSecao({ local }: { local?: string }) {
       d0: { mv: resumo(PLANS[f.id].d0.mv), oa: resumo(PLANS[f.id].d0.oa) },
     },
   }))
-  const modelos = MODELOS.map((m) => ({ id: m.id, nome: m.nome, preco: m.preco, parcela: m.parcela, link: m.link, pagina: m.pagina, imagem: m.imagem }))
+  const modelos = MODELOS.map((m) => ({ id: m.id, nome: m.nome, preco: m.preco, parcela: m.parcela, link: m.link, pagina: m.pagina, imagem: m.imagemPequena, alt: m.alt }))
   const promo = { mv: PLANS.promo.d1.mv.deb, oa: PLANS.promo.d1.oa.deb, oaCre1: PLANS.promo.d1.oa.cre[1] }
 
   return (

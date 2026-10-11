@@ -145,3 +145,10 @@ section[id] { scroll-margin-top: 72px; }
   .tab.tab-livre tbody th { font-size: 16px; color: #003c00; }
   .tab.tab-livre td[data-rotulo]::before { content: attr(data-rotulo) ": "; font-weight: 700; color: #1a1a1a; }
 }
+
+/* Foto do modelo no topo das páginas T1, T2, T3 e T3 Smart */
+.txt .foto-modelo { float: right; width: 200px; margin: 4px 0 16px 28px; text-align: center; }
+.txt .foto-modelo img { width: 100%; height: auto; display: block; }
+.txt .foto-modelo figcaption { font-size: 13px; color: #4a4a4a; margin-top: 6px; }
+@media (max-width: 560px) { .txt .foto-modelo { float: none; width: 150px; margin: 0 auto 16px; } }
+.txt .tab-wrap, .txt .cc-cta { clear: both; }

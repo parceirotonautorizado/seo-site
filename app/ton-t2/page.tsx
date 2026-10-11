@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   openGraph: { ...OG_BASE, title: TITULO, description: DESCRICAO, url: `${CONFIG.dominio}${PATH}` },
 }
 
+const MODELO = MODELOS.find((m) => m.id === "t2")!
+
 export default function TonT2() {
   return (
     <>
@@ -28,10 +30,17 @@ export default function TonT2() {
         ])}
       />
 
-      <JsonLd data={produtoLd(MODELOS.find((m) => m.id === "t2")!)} />
+      <JsonLd data={produtoLd(MODELO)} />
 
       <article className="txt">
         <h1>Ton T2: chip próprio, tamanho de bolso</h1>
+
+        <figure className="foto-modelo">
+          <img src={MODELO.imagem} alt={MODELO.alt} width={480} height={720} fetchPriority="high" decoding="async" />
+          <figcaption>
+            Ton {MODELO.nome}: adesão de {MODELO.preco}
+          </figcaption>
+        </figure>
 
         <p>
           A T2 é a maquininha do meio, e para muita gente é a conta certa. Ela resolve o maior defeito da T1, que é

@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   openGraph: { ...OG_BASE, title: TITULO, description: DESCRICAO, url: `${CONFIG.dominio}${PATH}` },
 }
 
+const MODELO = MODELOS.find((m) => m.id === "t3")!
+
 export default function TonT3() {
   return (
     <>
@@ -28,10 +30,17 @@ export default function TonT3() {
         ])}
       />
 
-      <JsonLd data={produtoLd(MODELOS.find((m) => m.id === "t3")!)} />
+      <JsonLd data={produtoLd(MODELO)} />
 
       <article className="txt">
         <h1>Ton T3: a que imprime o comprovante</h1>
+
+        <figure className="foto-modelo">
+          <img src={MODELO.imagem} alt={MODELO.alt} width={480} height={720} fetchPriority="high" decoding="async" />
+          <figcaption>
+            Ton {MODELO.nome}: adesão de {MODELO.preco}
+          </figcaption>
+        </figure>
 
         <p>
           A T3 existe por um motivo bem concreto: tem cliente que só sai tranquilo com o papelzinho na mão. Se o seu

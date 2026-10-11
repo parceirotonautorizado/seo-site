@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   openGraph: { ...OG_BASE, title: TITULO, description: DESCRICAO, url: `${CONFIG.dominio}${PATH}` },
 }
 
+const MODELO = MODELOS.find((m) => m.id === "t1")!
+
 export default function TonT1() {
   return (
     <>
@@ -28,10 +30,17 @@ export default function TonT1() {
         ])}
       />
 
-      <JsonLd data={produtoLd(MODELOS.find((m) => m.id === "t1")!)} />
+      <JsonLd data={produtoLd(MODELO)} />
 
       <article className="txt">
         <h1>Ton T1: a mais barata, e o que você abre mão por isso</h1>
+
+        <figure className="foto-modelo">
+          <img src={MODELO.imagem} alt={MODELO.alt} width={480} height={720} fetchPriority="high" decoding="async" />
+          <figcaption>
+            Ton {MODELO.nome}: adesão de {MODELO.preco}
+          </figcaption>
+        </figure>
 
         <p>
           A T1 é a porta de entrada da Ton. Custa menos que as outras três e cabe no bolso. Em troca, ela depende do

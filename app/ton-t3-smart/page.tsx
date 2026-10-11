@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   openGraph: { ...OG_BASE, title: TITULO, description: DESCRICAO, url: `${CONFIG.dominio}${PATH}` },
 }
 
+const MODELO = MODELOS.find((m) => m.id === "t3smart")!
+
 export default function TonT3Smart() {
   return (
     <>
@@ -28,10 +30,17 @@ export default function TonT3Smart() {
         ])}
       />
 
-      <JsonLd data={produtoLd(MODELOS.find((m) => m.id === "t3smart")!)} />
+      <JsonLd data={produtoLd(MODELO)} />
 
       <article className="txt">
         <h1>Ton T3 Smart: o que ela tem e para quem compensa</h1>
+
+        <figure className="foto-modelo">
+          <img src={MODELO.imagem} alt={MODELO.alt} width={480} height={720} fetchPriority="high" decoding="async" />
+          <figcaption>
+            Ton {MODELO.nome}: adesão de {MODELO.preco}
+          </figcaption>
+        </figure>
 
         <p>
           A T3 Smart é a maquininha mais completa da Ton. É também a mais cara das quatro. A pergunta que importa,

@@ -22,6 +22,8 @@ const nextConfig: NextConfig = {
       { source: "/cidade/curitiba/abatia", destination: "/cidade/abatia", permanent: true },
       // "Cristal" não é um bairro de Curitiba
       { source: "/cidade/curitiba/cristal", destination: "/cidade/curitiba", permanent: true },
+      // Fotos dos modelos ganharam nome descritivo
+      { source: "/m-:modelo(t1|t2|t3|t3-smart).webp", destination: "/maquininha-ton-:modelo.webp", permanent: true },
     ]
   },
 };

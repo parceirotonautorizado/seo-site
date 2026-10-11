@@ -15,7 +15,7 @@ export default function Modelos() {
         <ul className="mo-lista">
           {MODELOS.map((m) => (
             <li key={m.id} className="mo-item">
-              <img src={m.imagem} alt={`Maquininha Ton ${m.nome}`} width={480} height={720} loading="lazy" decoding="async" className="mo-img" />
+              <img src={m.imagemPequena} alt={m.alt} width={240} height={360} loading="lazy" decoding="async" className="mo-img" />
 
               <div className="mo-texto">
                 <h3 className="mo-nome">Ton {m.nome}</h3>
