@@ -171,6 +171,9 @@
 .s-modelos .mo-compra { text-align: right; min-width: 170px; }
 .s-modelos .mo-preco { font-family: var(--font-heading); font-size: 34px; font-weight: 700; line-height: 1; color: #006e00; margin: 0; }
 .s-modelos .mo-parcela { font-size: 13px; color: #4a4a4a; margin: 4px 0 12px; }
+.s-modelos .mo-cupom { font-size: 13px; font-weight: 700; color: #003c00; margin: 0 0 6px; }
+.s-modelos .mo-cupom s { font-weight: 400; color: #4a4a4a; margin-right: 4px; }
+.s-modelos .mo-nota { font-size: 13px; color: #4a4a4a; line-height: 1.6; margin: 16px 0 0; max-width: 720px; }
 .s-modelos .mo-botao { display: inline-block; background: #006e00; color: #fff; text-decoration: none; padding: 12px 20px; border-radius: 6px; font-weight: 700; font-size: 15px; }
 .s-modelos .mo-botao:hover { background: #003c00; }
 @media (max-width: 700px) {
@@ -180,6 +183,7 @@
   .s-modelos .mo-img { width: 64px; height: 96px; }
   .s-modelos .mo-compra { grid-column: 1 / -1; text-align: left; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; min-width: 0; }
   .s-modelos .mo-parcela { margin: 0; }
+  .s-modelos .mo-cupom { flex-basis: 100%; margin: 0; }
   .s-modelos .mo-botao { margin-left: auto; }
 }
 

@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { CONFIG, OG_BASE } from "@/lib/config"
-import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
+import { JsonLd, breadcrumbLd, produtoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
+import { MODELOS } from "@/lib/modelos"
 import Guias from "@/app/components/Guias"
 
 const PATH = "/ton-t3-smart"
@@ -24,6 +25,8 @@ export default function TonT3Smart() {
           { nome: "Ton T3 Smart", path: PATH },
         ])}
       />
+
+      <JsonLd data={produtoLd(MODELOS.find((m) => m.id === "t3smart")!)} />
 
       <article className="txt">
         <h1>Ton T3 Smart: o que ela tem e para quem compensa</h1>

@@ -38,6 +38,11 @@ export const GUIAS = [
   },
   { path: "/ton-cpf-cnpj-mei", titulo: "Ton para CPF, CNPJ e MEI", resumo: "O que muda em cada cadastro na hora de pedir." },
   { path: "/tapton-como-funciona", titulo: "TapTon: como funciona", resumo: "O celular como maquininha: o que aceita e o que não faz." },
+  {
+    path: "/maquininha-ton-vale-a-pena",
+    titulo: "Maquininha Ton vale a pena?",
+    resumo: "Prós, contras e para quem ela não compensa.",
+  },
   { path: "/ton-e-confiavel", titulo: "A Ton é confiável?", resumo: "Quem está por trás, o que conferir e como evitar golpe." },
   {
     path: "/ton-whatsapp-telefone",

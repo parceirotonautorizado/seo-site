@@ -1,7 +1,9 @@
 import { CONFIG } from "@/lib/config"
 
-// Preços conferidos no catálogo da Ton em 10/10/2026 (valor à vista e em 12x, antes de cupom)
+// Preços conferidos no catálogo da Ton em 10/10/2026, abrindo com e sem o link de parceiro.
+// `preco` é o valor com o cupom de parceiro (entra sozinho pelo link); `semCupom` é o valor do catálogo sem o link.
 export const MODELOS_CONFERIDO_EM = "10/10/2026"
+export const CUPOM_PARCEIRO = "20%"
 
 export const MODELOS = [
   {
@@ -11,6 +13,7 @@ export const MODELOS = [
     badge: "Mais Vendida",
     imagem: "/m-t3-smart.webp",
     preco: "R$ 153,50",
+    semCupom: "R$ 191,88",
     parcela: "ou 12x de R$ 12,79",
     cta: "Pedir T3 Smart",
     destaque: true,
@@ -25,6 +28,7 @@ export const MODELOS = [
     badge: "Custo-Benefício",
     imagem: "/m-t3.webp",
     preco: "R$ 86,40",
+    semCupom: "R$ 108,00",
     parcela: "ou 12x de R$ 7,20",
     cta: "Pedir T3",
     destaque: false,
@@ -39,6 +43,7 @@ export const MODELOS = [
     badge: "Econômica",
     imagem: "/m-t2.webp",
     preco: "R$ 39,90",
+    semCupom: "R$ 49,88",
     parcela: "ou 12x de R$ 3,33",
     cta: "Pedir T2",
     destaque: false,
@@ -53,6 +58,7 @@ export const MODELOS = [
     badge: "Entrada",
     imagem: "/m-t1.webp",
     preco: "R$ 16,80",
+    semCupom: "",
     parcela: "ou 12x de R$ 1,40",
     cta: "Pedir T1",
     destaque: false,

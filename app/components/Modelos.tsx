@@ -1,4 +1,4 @@
-import { MODELOS } from "@/lib/modelos"
+import { MODELOS, MODELOS_CONFERIDO_EM, CUPOM_PARCEIRO } from "@/lib/modelos"
 
 // Os quatro modelos em lista, com a indicação de para quem cada um serve.
 export default function Modelos() {
@@ -24,6 +24,11 @@ export default function Modelos() {
               </div>
 
               <div className="mo-compra">
+                {m.semCupom && (
+                  <p className="mo-cupom">
+                    <s>{m.semCupom}</s> {CUPOM_PARCEIRO} de desconto pelo nosso link
+                  </p>
+                )}
                 <p className="mo-preco">{m.preco}</p>
                 <p className="mo-parcela">{m.parcela}</p>
                 <a href={m.link} target="_blank" rel="noopener noreferrer" className="mo-botao">
@@ -33,6 +38,11 @@ export default function Modelos() {
             </li>
           ))}
         </ul>
+        <p className="mo-nota">
+          Preços conferidos no catálogo da Ton em {MODELOS_CONFERIDO_EM}. O cupom de {CUPOM_PARCEIRO} entra sozinho
+          quando você pede pelos botões desta página, e o valor riscado é o do catálogo sem o cupom. A T1 tem o mesmo
+          preço com ou sem cupom. A Ton pode mudar preços e cupons quando quiser.
+        </p>
       </div>
     </section>
   )

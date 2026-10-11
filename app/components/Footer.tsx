@@ -46,6 +46,7 @@ export default function Footer() {
               <li><a href="/bandeiras-aceitas-ton">Bandeiras aceitas</a></li>
               <li><a href="/ton-cpf-cnpj-mei">CPF, CNPJ e MEI</a></li>
               <li><a href="/tapton-como-funciona">TapTon</a></li>
+              <li><a href="/maquininha-ton-vale-a-pena">Vale a pena?</a></li>
               <li><a href="/ton-e-confiavel">A Ton é confiável?</a></li>
               <li><a href="/ton-whatsapp-telefone">WhatsApp e telefone da Ton</a></li>
               <li><a href="/#faq" data-secao="faq">Perguntas Frequentes</a></li>

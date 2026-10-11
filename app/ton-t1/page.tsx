@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { CONFIG, OG_BASE } from "@/lib/config"
-import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
+import { JsonLd, breadcrumbLd, produtoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
+import { MODELOS } from "@/lib/modelos"
 import Guias from "@/app/components/Guias"
 
 const PATH = "/ton-t1"
@@ -24,6 +25,8 @@ export default function TonT1() {
           { nome: "Ton T1", path: PATH },
         ])}
       />
+
+      <JsonLd data={produtoLd(MODELOS.find((m) => m.id === "t1")!)} />
 
       <article className="txt">
         <h1>Ton T1: a mais barata, e o que você abre mão por isso</h1>
