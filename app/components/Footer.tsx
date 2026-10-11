@@ -49,6 +49,9 @@ export default function Footer() {
               <li><a href="/como-pedir-maquininha-ton">Como pedir</a></li>
               <li><a href="/cupom-desconto-maquininha-ton">Cupom de desconto</a></li>
               <li><a href="/maquininha-ton-tem-mensalidade">Tem mensalidade?</a></li>
+              <li><a href="/pix-na-maquininha-ton">Pix na maquininha</a></li>
+              <li><a href="/parcelamento-maquininha-ton">Parcelamento</a></li>
+              <li><a href="/link-de-pagamento-ton">Link de pagamento</a></li>
               <li><a href="/prazo-de-recebimento-ton">Prazo de recebimento</a></li>
               <li><a href="/maquininha-ton-vale-a-pena">Vale a pena?</a></li>
               <li><a href="/ton-e-confiavel">A Ton é confiável?</a></li>

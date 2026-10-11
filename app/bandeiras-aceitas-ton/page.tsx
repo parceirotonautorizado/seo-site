@@ -61,7 +61,8 @@ export default function BandeirasAceitasTon() {
           nada. A maquininha chega aceitando as quatro.
         </p>
         <p>
-          Pix também entra, pelo QR Code na tela. E as páginas da Ton mostram Apple Pay, Google Pay e Samsung Pay na
+          O <a href="/pix-na-maquininha-ton">Pix na maquininha</a>, pelo QR Code na tela, a Ton cita para a T2, a T3 e
+          a T3 Smart. E as páginas da Ton mostram Apple Pay, Google Pay e Samsung Pay na
           T1 e no TapTon, para quem paga encostando o celular ou o relógio.
         </p>
 
@@ -155,7 +156,7 @@ export default function BandeirasAceitasTon() {
         <h2>Qual modelo pegar, olhando só para bandeira</h2>
         <ul>
           <li>
-            Só cartão comum e Pix: qualquer uma serve. A <a href="/ton-t1">T1</a> é a mais barata.
+            Só cartão comum: qualquer uma serve. A <a href="/ton-t1">T1</a> é a mais barata.
           </li>
           <li>
             Precisa de vale ou de bandeira regional: <a href="/ton-t2">T2</a>, <a href="/ton-t3">T3</a> ou{" "}

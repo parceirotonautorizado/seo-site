@@ -129,6 +129,25 @@ export default function RootLayout({
                   }
                 }
               });
+              // tabela mais larga que a tela: mostra o aviso "arraste para o lado" e tira a borda esmaecida no fim
+              function tabelas(){
+                var ws=d.querySelectorAll('.tab-wrap');
+                for(var k=0;k<ws.length;k++){ (function(x){
+                  var larga=x.scrollWidth>x.clientWidth+4, dica=x.previousElementSibling;
+                  if(!dica || !dica.classList || !dica.classList.contains('tab-dica')){
+                    dica=d.createElement('p'); dica.className='tab-dica'; dica.textContent='Arraste a tabela para o lado';
+                    x.parentNode.insertBefore(dica,x);
+                    x.addEventListener('scroll',function(){
+                      if(x.scrollLeft>8) dica.classList.add('usada');
+                      x.classList.toggle('fim', x.scrollLeft+x.clientWidth>=x.scrollWidth-4);
+                    },{passive:true});
+                  }
+                  x.classList.toggle('rola',larga); dica.classList.toggle('ativa',larga);
+                  if(larga){ x.tabIndex=0; x.setAttribute('role','region'); x.setAttribute('aria-label','Tabela: arraste para o lado para ver todas as colunas'); }
+                })(ws[k]); }
+              }
+              if(d.readyState==='loading') d.addEventListener('DOMContentLoaded',tabelas); else tabelas();
+              w.addEventListener('resize',tabelas,{passive:true});
               ev.forEach(function(e){ w.addEventListener(e,go,{passive:true}); });
               if(d.readyState==='complete') setTimeout(function(){ go(); },8000);
               else w.addEventListener('load',function(){ setTimeout(function(){ go(); },8000); });

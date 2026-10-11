@@ -41,6 +41,9 @@ export const GUIAS = [
   { path: "/como-pedir-maquininha-ton", titulo: "Como pedir a maquininha Ton", resumo: "Do pedido à primeira venda, passo a passo." },
   { path: "/cupom-desconto-maquininha-ton", titulo: "Cupom de desconto Ton", resumo: "O desconto de parceiro e quanto fica cada modelo." },
   { path: "/maquininha-ton-tem-mensalidade", titulo: "A Ton tem mensalidade?", resumo: "O que você paga de verdade, e quando." },
+  { path: "/pix-na-maquininha-ton", titulo: "Pix na maquininha Ton", resumo: "Quando sai sem taxa, em quais modelos e como ativar." },
+  { path: "/parcelamento-maquininha-ton", titulo: "Parcelamento na Ton", resumo: "Até quantas vezes, quanto custa e como repassar a taxa." },
+  { path: "/link-de-pagamento-ton", titulo: "Link de pagamento da Ton", resumo: "Cobrança à distância: como criar, taxas e prazos." },
   { path: "/prazo-de-recebimento-ton", titulo: "Prazo de recebimento da Ton", resumo: "Em quanto tempo o dinheiro cai e quanto cada prazo custa." },
   {
     path: "/maquininha-ton-vale-a-pena",

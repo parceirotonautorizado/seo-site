@@ -121,3 +121,27 @@ section[id] { scroll-margin-top: 72px; }
 .txt .fila-modelos strong { display: block; font-size: 15px; }
 .txt .fila-modelos span { display: block; color: #006e00; font-weight: 700; font-size: 15px; }
 @media (max-width: 560px) { .txt .fila-modelos { grid-template-columns: repeat(2, 1fr); } }
+
+/* Tabela larga no celular: aviso de que dá para arrastar, borda direita esmaecida e primeira coluna fixa */
+.tab-dica { display: none; }
+.tab-dica.ativa { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: #003c00; margin: 0 0 6px; }
+.tab-dica.ativa::after { content: "→"; font-size: 16px; animation: tab-seta 1.2s ease-in-out infinite; }
+.tab-dica.usada { opacity: .45; }
+.tab-dica.usada::after { animation: none; }
+@keyframes tab-seta { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .tab-dica.ativa::after { animation: none; } }
+.tab-wrap.rola { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); }
+.tab-wrap.rola.fim { -webkit-mask-image: none; mask-image: none; }
+.tab-wrap.rola .tab tbody th:first-child, .tab-wrap.rola .tab thead th:first-child { position: sticky; left: 0; z-index: 1; background: #fff; box-shadow: 1px 0 0 #ececec; }
+.tab-wrap.rola .tab thead th:first-child { background: #fafafa; }
+/* Tabela de texto (poucas colunas, frases longas): quebra a linha em vez de rolar */
+.tab.tab-livre { min-width: 0; }
+.tab.tab-livre th, .tab.tab-livre td { white-space: normal; text-align: left; vertical-align: top; }
+@media (max-width: 560px) {
+  .tab.tab-livre thead { display: none; }
+  .tab.tab-livre tr { display: block; padding: 10px 14px; border-top: 1px solid #ececec; }
+  .tab.tab-livre tr:first-child { border-top: 0; }
+  .tab.tab-livre th, .tab.tab-livre td { display: block; padding: 2px 0; border: 0; }
+  .tab.tab-livre tbody th { font-size: 16px; color: #003c00; }
+  .tab.tab-livre td[data-rotulo]::before { content: attr(data-rotulo) ": "; font-weight: 700; color: #1a1a1a; }
+}

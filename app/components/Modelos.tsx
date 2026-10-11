@@ -8,7 +8,7 @@ export default function Modelos() {
       <div className="mo-container">
         <h2 className="mo-titulo">Os quatro modelos, lado a lado</h2>
         <p className="mo-sub">
-          Todos sem aluguel e com Pix a 0% para quem cadastra uma chave Pix. T2, T3 e T3 Smart aceitam vale-refeição
+          Todos sem aluguel. O Pix na maquininha sai a 0% para quem cadastra uma chave Pix. T2, T3 e T3 Smart aceitam vale-refeição
           e vale-alimentação para CNPJ do ramo de alimentação.
         </p>
 

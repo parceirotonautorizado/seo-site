@@ -40,7 +40,7 @@ export default function TonMensalidade() {
 
         <h2>O que você paga, e quando</h2>
         <div className="tab-wrap">
-          <table className="tab">
+          <table className="tab tab-livre">
             <thead>
               <tr>
                 <th scope="col">Custo</th>
@@ -51,28 +51,28 @@ export default function TonMensalidade() {
             <tbody>
               <tr>
                 <th scope="row">Adesão</th>
-                <td>Uma vez, no pedido</td>
-                <td>
+                <td data-rotulo="Quando">Uma vez, no pedido</td>
+                <td data-rotulo="Quanto">
                   De {MODELOS[MODELOS.length - 1].preco} a {MODELOS[0].preco}, conforme o modelo
                 </td>
               </tr>
               <tr>
                 <th scope="row">Taxa por venda</th>
-                <td>Só quando você vende</td>
-                <td>
+                <td data-rotulo="Quando">Só quando você vende</td>
+                <td data-rotulo="Quanto">
                   Débito a partir de {pct(PLANS.promo.d1.mv.deb)} na promoção e {pct(PLANS.ate3.d1.mv.deb)} depois,
                   para quem vende até R$ 3 mil
                 </td>
               </tr>
               <tr>
                 <th scope="row">Pix na maquininha</th>
-                <td>Só quando você vende</td>
-                <td>0% com chave Pix cadastrada na Conta Ton; {pct(PIX_SEM_CHAVE)} sem a chave, depois da promoção</td>
+                <td data-rotulo="Quando">Só quando você vende</td>
+                <td data-rotulo="Quanto">0% com chave Pix cadastrada na Conta Ton; {pct(PIX_SEM_CHAVE)} sem a chave, depois da promoção</td>
               </tr>
               <tr>
                 <th scope="row">Mensalidade ou aluguel</th>
-                <td>Nunca</td>
-                <td>R$ 0</td>
+                <td data-rotulo="Quando">Nunca</td>
+                <td data-rotulo="Quanto">R$ 0</td>
               </tr>
             </tbody>
           </table>
