@@ -118,6 +118,16 @@ export default function RootLayout({
                 // link de menu para uma seção que já existe nesta página: rola até ela em vez de sair da página
                 var a=t.closest('a[data-secao]');
                 if(a && d.getElementById(a.getAttribute('data-secao'))){ e.preventDefault(); w.location.hash=a.getAttribute('data-secao'); }
+                // medição (só com consentimento): clique em botão de pedido com o link de parceiro e clique no WhatsApp
+                var l=t.closest('a[href]');
+                if(l && aceitou()){
+                  var h=l.getAttribute('href')||'';
+                  var tipo=h.indexOf('referrer=')>-1 ? 'clique_pedido' : (h.indexOf('wa.me/')>-1 ? 'clique_whatsapp' : '');
+                  if(tipo){
+                    w.dataLayer=w.dataLayer||[];
+                    w.dataLayer.push({event:tipo, destino:(h.match(/productId=([A-Z0-9_]+)/)||[])[1]||'catalogo', texto:(l.textContent||'').trim().slice(0,60), pagina:w.location.pathname});
+                  }
+                }
               });
               ev.forEach(function(e){ w.addEventListener(e,go,{passive:true}); });
               if(d.readyState==='complete') setTimeout(function(){ go(); },8000);
