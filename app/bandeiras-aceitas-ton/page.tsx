@@ -145,11 +145,11 @@ export default function BandeirasAceitasTon() {
           uma. Pergunte antes de habilitar.
         </p>
 
-        <h2>E Hipercard, Diners, Cabal?</h2>
+        <h2>E Hipercard, Diners e Cabal?</h2>
         <p>
-          Não encontrei essas bandeiras nas páginas da Ton que consultei. As quatro principais que aparecem lá são
-          Visa, Mastercard, Elo e Amex. Não vou dizer que passa nem que não passa. Se o seu cliente usa muito uma
-          delas, confirme com o atendimento da Ton antes de pedir a maquininha.
+          A Ton não lista essas bandeiras entre as aceitas. Nas páginas dos modelos aparecem Visa, Mastercard, Elo e
+          Amex, e na lista de regionais elas também não estão. Se boa parte dos seus clientes paga com uma delas,
+          confirme com o <a href="/ton-whatsapp-telefone">atendimento da Ton</a> antes de pedir a maquininha.
         </p>
 
         <h2>Qual modelo pegar, olhando só para bandeira</h2>
