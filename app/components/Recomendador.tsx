@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 
 type Taxas = { deb: number; cre1: number; cre12: number }
 type Faixa = { id: string; label: string; taxas: Record<"d1" | "d0", Record<"mv" | "oa", Taxas>> }
-type Modelo = { id: string; nome: string; preco: string; parcela: string; link: string; pagina: string }
+type Modelo = { id: string; nome: string; preco: string; parcela: string; link: string; pagina: string; imagem: string }
 
 type Props = {
   faixas: Faixa[]
@@ -134,6 +134,8 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
   const [prazo, setPrazo] = useState<"d1" | "d0">("d1")
   const [aberto, setAberto] = useState(false)
   const fechar = useRef<HTMLButtonElement>(null)
+  // a janela abre sozinha só na primeira vez; depois disso, quem decide é o botão "Ver minha indicação"
+  const jaAbriu = useRef(false)
 
   const pronto = faixa && onde && extra
   const resultado = pronto ? indicar(faixa, onde, extra) : null
@@ -142,10 +144,22 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
   const taxas = faixaAtual?.taxas[prazo][bandeira]
   const querVale = extra === "vale" || extra === "ambos"
 
-  // abre o resultado em janela assim que as três perguntas estiverem respondidas (e de novo a cada mudança)
+  // abre o resultado em janela na primeira vez em que as três perguntas ficam respondidas
   useEffect(() => {
-    if (faixa && onde && extra) setAberto(true)
+    if (faixa && onde && extra && !jaAbriu.current) {
+      jaAbriu.current = true
+      setAberto(true)
+    }
   }, [faixa, onde, extra])
+
+  function recomecar() {
+    setFaixa("")
+    setOnde("")
+    setExtra("")
+    setBandeira("mv")
+    setPrazo("d1")
+    jaAbriu.current = false
+  }
 
   // com a janela aberta: trava a rolagem do fundo, fecha no Esc e leva o foco para o botão de fechar
   useEffect(() => {
@@ -186,9 +200,15 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
 
       <div className="rc-rodape">
         {pronto ? (
-          <button type="button" className="rc-botao" onClick={() => setAberto(true)}>
-            Ver minha indicação
-          </button>
+          <>
+            <button type="button" className="rc-botao" onClick={() => setAberto(true)}>
+              Ver minha indicação
+            </button>
+            <button type="button" className="rc-recomecar" onClick={recomecar}>
+              Recomeçar
+            </button>
+            <p className="rc-espera">Mudou alguma resposta? Toque em Ver minha indicação para atualizar.</p>
+          </>
         ) : (
           <p className="rc-espera">Responda as três perguntas e a indicação aparece na hora.</p>
         )}
@@ -207,9 +227,14 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
               ×
             </button>
 
-            <p className="rc-rotulo">A maquininha indicada para você</p>
-            <h3 className="rc-modelo" id="rc-janela-titulo">Ton {modelo.nome}</h3>
-            <p className="rc-motivo">{resultado.motivo}</p>
+            <div className="rc-topo">
+              <img src={modelo.imagem} alt={`Maquininha Ton ${modelo.nome}`} width={480} height={720} className="rc-foto" />
+              <div>
+                <p className="rc-rotulo">A maquininha indicada para você</p>
+                <h3 className="rc-modelo" id="rc-janela-titulo">Ton {modelo.nome}</h3>
+                <p className="rc-motivo">{resultado.motivo}</p>
+              </div>
+            </div>
 
             {querVale && (
               <p className="rc-aviso">

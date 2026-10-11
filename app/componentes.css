@@ -253,3 +253,17 @@
 @keyframes rc-subir { from { opacity: 0; transform: translateY(18px) scale(0.97); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .rc-fundo, .rc-janela { animation: none; } }
 @media (max-width: 480px) { .rc-janela { padding: 22px 16px 16px; } .rc-janela .rc-modelo { font-size: 42px; } }
+
+/* Foto do modelo indicado na janela e botão de recomeçar */
+.rc-janela .rc-topo { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 16px; align-items: center; margin: 0 0 12px; }
+.rc-janela .rc-foto { width: 104px; height: 156px; object-fit: contain; }
+.rc-janela .rc-topo .rc-motivo { margin-bottom: 0; }
+.s-rc .rc-rodape { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.s-rc .rc-rodape .rc-espera { flex: 1 1 100%; margin: 0; font-size: 14px; }
+.s-rc .rc-recomecar { font: inherit; font-weight: 700; font-size: 15px; background: transparent; border: 0; color: #006e00; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 12px 6px; min-height: 44px; }
+@media (max-width: 480px) {
+  .rc-janela .rc-topo { grid-template-columns: 78px minmax(0, 1fr); gap: 12px; }
+  .rc-janela .rc-foto { width: 78px; height: 117px; }
+  .rc-janela .rc-modelo { font-size: 38px; }
+  .rc-janela .rc-motivo { font-size: 14.5px; }
+}
