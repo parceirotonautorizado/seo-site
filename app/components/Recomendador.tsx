@@ -2,13 +2,14 @@
 
 import { useState } from "react"
 
-type Faixa = { id: string; label: string; deb: number; cre1: number; cre12: number }
+type Taxas = { deb: number; cre1: number; cre12: number }
+type Faixa = { id: string; label: string; taxas: Record<"d1" | "d0", Record<"mv" | "oa", Taxas>> }
 type Modelo = { id: string; nome: string; preco: string; parcela: string; link: string; pagina: string }
 
 type Props = {
   faixas: Faixa[]
   modelos: Modelo[]
-  promo: { deb: number; cre1: number }
+  promo: { mv: number; oa: number; oaCre1: number }
   whatsapp: string
   local?: string
 }
@@ -24,6 +25,16 @@ const EXTRA = [
   { id: "vale", label: "Paga com vale-refeição ou alimentação" },
   { id: "ambos", label: "As duas coisas" },
   { id: "nenhum", label: "Nenhuma das duas" },
+]
+
+const BANDEIRA = [
+  { id: "mv", label: "Visa e Mastercard" },
+  { id: "oa", label: "Elo e Amex" },
+]
+
+const PRAZO = [
+  { id: "d1", label: "Em 1 dia útil" },
+  { id: "d0", label: "Na hora" },
 ]
 
 const pct = (v: number) => `${v.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`
@@ -94,17 +105,23 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
   const [faixa, setFaixa] = useState("")
   const [onde, setOnde] = useState("")
   const [extra, setExtra] = useState("")
+  // bandeira e prazo já vêm com a opção mais comum marcada; mudam só a taxa mostrada, não o modelo
+  const [bandeira, setBandeira] = useState<"mv" | "oa">("mv")
+  const [prazo, setPrazo] = useState<"d1" | "d0">("d1")
 
   const pronto = faixa && onde && extra
   const resultado = pronto ? indicar(faixa, onde, extra) : null
   const modelo = resultado ? modelos.find((m) => m.id === resultado.id) : null
-  const taxas = faixas.find((f) => f.id === faixa)
+  const faixaAtual = faixas.find((f) => f.id === faixa)
+  const taxas = faixaAtual?.taxas[prazo][bandeira]
   const querVale = extra === "vale" || extra === "ambos"
 
   function zap() {
     const linhas = [
       "Olá! Fiz o teste no site e quero comprar uma maquininha Ton.",
-      `Vendo por mês: ${taxas?.label}`,
+      `Vendo por mês: ${faixaAtual?.label}`,
+      `Bandeira mais usada: ${BANDEIRA.find((x) => x.id === bandeira)?.label}`,
+      `Quero receber: ${PRAZO.find((x) => x.id === prazo)?.label}`,
       `Onde vendo: ${ONDE.find((o) => o.id === onde)?.label}`,
       `Meu cliente: ${EXTRA.find((e) => e.id === extra)?.label}`,
       `Modelo indicado: Ton ${modelo?.nome}`,
@@ -140,9 +157,11 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
       <Grupo titulo="1. Quanto você vende por mês?" opcoes={faixas} valor={faixa} mudar={setFaixa} />
       <Grupo titulo="2. Onde você vende?" opcoes={ONDE} valor={onde} mudar={setOnde} />
       <Grupo titulo="3. O seu cliente..." opcoes={EXTRA} valor={extra} mudar={setExtra} />
+      <Grupo titulo="4. Qual bandeira ele mais usa?" opcoes={BANDEIRA} valor={bandeira} mudar={(v) => setBandeira(v as "mv" | "oa")} />
+      <Grupo titulo="5. Quando você quer receber?" opcoes={PRAZO} valor={prazo} mudar={(v) => setPrazo(v as "d1" | "d0")} />
 
       <div className="rc-resultado" aria-live="polite">
-        {!pronto && <p className="rc-espera">Responda as três perguntas para ver a indicação.</p>}
+        {!pronto && <p className="rc-espera">Responda as três primeiras perguntas para ver a indicação.</p>}
 
         {pronto && modelo && taxas && resultado && (
           <>
@@ -172,8 +191,13 @@ export default function Recomendador({ faixas, modelos, promo, whatsapp, local }
               </div>
             </dl>
             <p className="rc-nota">
-              Taxas da sua faixa em Visa e Mastercard, recebendo em 1 dia útil. Nos primeiros 30 dias ou até R$ 5.000 em
-              vendas, débito e crédito à vista saem por {pct(promo.deb)}. <a href="/taxas-ton">Tabela completa</a>.
+              Taxas da sua faixa em {BANDEIRA.find((x) => x.id === bandeira)?.label}, recebendo{" "}
+              {prazo === "d1" ? "em 1 dia útil" : "na hora"}. Nos primeiros 30 dias ou até R$ 5.000 em vendas, vale a
+              taxa promocional:{" "}
+              {bandeira === "mv"
+                ? `${pct(promo.mv)} no débito e no crédito à vista`
+                : `${pct(promo.oa)} no débito e ${pct(promo.oaCre1)} no crédito à vista`}
+              . <a href="/taxas-ton">Tabela completa</a>.
             </p>
 
             <div className="rc-botoes">

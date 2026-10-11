@@ -195,7 +195,7 @@
 .s-rc .rc-opcao { font: inherit; font-size: 15px; font-weight: 600; text-align: left; padding: 11px 14px; min-height: 44px; border: 2px solid #9fc79f; border-radius: 6px; background: #fff; color: #1a1a1a; cursor: pointer; }
 .s-rc .rc-opcao:hover { border-color: #006e00; }
 .s-rc .rc-ativa { background: #006e00; border-color: #006e00; color: #fff; }
-.s-rc .rc-resultado { grid-column: 2; grid-row: 1 / span 3; background: #fff; border: 2px solid #003c00; border-radius: 6px; padding: 22px; min-height: 240px; }
+.s-rc .rc-resultado { grid-column: 2; grid-row: 1 / span 5; position: sticky; top: 84px; background: #fff; border: 2px solid #003c00; border-radius: 6px; padding: 22px; min-height: 240px; }
 .s-rc .rc-espera { color: #4a4a4a; margin: 0; }
 .s-rc .rc-rotulo { font-family: var(--font-heading); font-size: 17px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #006e00; margin: 0 0 4px; }
 .s-rc .rc-modelo { font-size: 40px; font-weight: 800; text-transform: uppercase; color: #003c00; margin: 0 0 8px; }
@@ -215,6 +215,6 @@
   .s-rc { padding: 44px 20px; }
   .s-rc .rc-titulo { font-size: 34px; }
   .s-rc .rc-caixa { grid-template-columns: 1fr; }
-  .s-rc .rc-resultado { grid-column: 1; grid-row: auto; min-height: 0; }
+  .s-rc .rc-resultado { grid-column: 1; grid-row: auto; min-height: 0; position: static; }
   .s-rc .rc-opcao { flex: 1 1 100%; }
 }
