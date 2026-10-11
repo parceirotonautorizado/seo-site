@@ -31,6 +31,11 @@ export const GUIAS = [
     titulo: "A Ton aceita vale-alimentação?",
     resumo: "Quais modelos aceitam, quem pode usar e como pedir o credenciamento.",
   },
+  {
+    path: "/bandeiras-aceitas-ton",
+    titulo: "Bandeiras aceitas pela Ton",
+    resumo: "Cartões, vales e regionais: o que passa em cada modelo.",
+  },
   { path: "/ton-cpf-cnpj-mei", titulo: "Ton para CPF, CNPJ e MEI", resumo: "O que muda em cada cadastro na hora de pedir." },
   { path: "/tapton-como-funciona", titulo: "TapTon: como funciona", resumo: "O celular como maquininha: o que aceita e o que não faz." },
   { path: "/ton-e-confiavel", titulo: "A Ton é confiável?", resumo: "Quem está por trás, o que conferir e como evitar golpe." },

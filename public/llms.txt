@@ -27,6 +27,7 @@ O conteúdo cobre os 399 municípios do Paraná e os 75 bairros de Curitiba. Cad
 - [Ton T3](https://www.maquininhadecartoes.com.br/ton-t3): imprime o comprovante, para balcão
 - [Ton T3 Smart](https://www.maquininhadecartoes.com.br/ton-t3-smart): recursos e para quem compensa
 - [A Ton aceita vale-alimentação?](https://www.maquininhadecartoes.com.br/ton-aceita-vale-alimentacao): modelos, exigência de CNPJ e credenciamento
+- [Bandeiras aceitas pela Ton](https://www.maquininhadecartoes.com.br/bandeiras-aceitas-ton): cartões principais, vales e bandeiras regionais por modelo
 - [Ton para CPF, CNPJ e MEI](https://www.maquininhadecartoes.com.br/ton-cpf-cnpj-mei): o que muda em cada cadastro
 
 - [TapTon: como funciona](https://www.maquininhadecartoes.com.br/tapton-como-funciona): o celular como maquininha, requisitos e limitações

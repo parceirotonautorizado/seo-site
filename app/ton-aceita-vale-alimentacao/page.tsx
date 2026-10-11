@@ -89,8 +89,8 @@ export default function TonValeAlimentacao() {
         <h2>Outras bandeiras regionais</h2>
         <p>
           Além dos cinco vales, a Ton lista mais de 50 bandeiras, entre elas Banricompras, Goodcard, Senff, ValeCard e
-          VeroCard. Várias delas podem ser usadas por CPF ou por CNPJ. A lista completa e a regra de cada uma estão
-          no artigo da Ton, nas fontes abaixo.
+          VeroCard. Várias delas podem ser usadas por CPF ou por CNPJ. A lista está na página{" "}
+          <a href="/bandeiras-aceitas-ton">bandeiras aceitas pela Ton</a>.
         </p>
 
         <a className="cc-cta" href={CONFIG.tonLink} target="_blank" rel="noopener noreferrer">

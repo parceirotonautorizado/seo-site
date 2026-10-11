@@ -43,6 +43,7 @@ export default function Footer() {
               <li><a href="/ton-t3">Ton T3</a></li>
               <li><a href="/ton-t3-smart">Ton T3 Smart</a></li>
               <li><a href="/ton-aceita-vale-alimentacao">Vale-alimentação</a></li>
+              <li><a href="/bandeiras-aceitas-ton">Bandeiras aceitas</a></li>
               <li><a href="/ton-cpf-cnpj-mei">CPF, CNPJ e MEI</a></li>
               <li><a href="/tapton-como-funciona">TapTon</a></li>
               <li><a href="/ton-e-confiavel">A Ton é confiável?</a></li>
