@@ -3,6 +3,8 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
 const PATH = "/ton-e-confiavel"
 const TITULO = "A Ton é confiável? O que dá para conferir antes de comprar"
@@ -129,6 +131,8 @@ export default function TonConfiavel() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

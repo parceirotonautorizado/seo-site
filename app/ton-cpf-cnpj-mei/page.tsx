@@ -3,6 +3,8 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
 const PATH = "/ton-cpf-cnpj-mei"
 const TITULO = "Ton para CPF, CNPJ e MEI: o que muda no pedido"
@@ -106,6 +108,8 @@ export default function TonCpfCnpjMei() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

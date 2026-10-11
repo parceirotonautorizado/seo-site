@@ -4,6 +4,8 @@ import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { TAXAS_ULTIMA_VERIFICACAO } from "@/lib/taxas"
 import Simulador from "@/app/components/Simulador"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
 const PATH = "/simulador-ton"
 const TITULO = "Simulador da Ton: quanto você recebe em cada venda"
@@ -102,6 +104,8 @@ export default function SimuladorTon() {
         </p>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

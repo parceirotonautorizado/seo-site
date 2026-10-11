@@ -4,6 +4,8 @@ import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import { PLANS, TAXAS_ULTIMA_VERIFICACAO } from "@/lib/taxas"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
 const PATH = "/maquininha-de-cartao-com-menor-taxa"
 const TITULO = "Maquininha de cartão com menor taxa: como pagar menos"
@@ -117,6 +119,8 @@ export default function MaquininhaMenorTaxa() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

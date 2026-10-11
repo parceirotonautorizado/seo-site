@@ -4,6 +4,8 @@ import { JsonLd, breadcrumbLd, produtoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import { MODELOS } from "@/lib/modelos"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
 const PATH = "/ton-t1"
 const TITULO = "Ton T1: a maquininha mais barata e para quem ela serve"
@@ -103,6 +105,8 @@ export default function TonT1() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

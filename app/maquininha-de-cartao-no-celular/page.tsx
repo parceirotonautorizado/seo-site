@@ -3,6 +3,8 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 
 const PATH = "/maquininha-de-cartao-no-celular"
 const TITULO = "Maquininha de cartão no celular: três jeitos de vender"
@@ -104,6 +106,8 @@ export default function MaquininhaCelular() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

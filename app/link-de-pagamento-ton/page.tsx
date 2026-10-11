@@ -3,6 +3,8 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd, artigoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 import { LINK_PAGAMENTO, TAXAS_ULTIMA_VERIFICACAO } from "@/lib/taxas"
 
 const PATH = "/link-de-pagamento-ton"
@@ -138,6 +140,8 @@ export default function LinkPagamentoTon() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

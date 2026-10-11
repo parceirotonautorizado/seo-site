@@ -3,7 +3,9 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd, artigoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
-import { MODELOS, MODELOS_CONFERIDO_EM } from "@/lib/modelos"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
+import { MODELOS } from "@/lib/modelos"
 import { PLANS, PIX_SEM_CHAVE, TAXAS_ULTIMA_VERIFICACAO } from "@/lib/taxas"
 
 const PATH = "/maquininha-ton-vale-a-pena"
@@ -197,23 +199,6 @@ export default function TonValeAPena() {
           <li>Quem faz questão de atendimento presencial.</li>
         </ul>
 
-        <h2>Os quatro modelos e o preço de cada um</h2>
-        <ul className="fila-modelos">
-          {MODELOS.map((m) => (
-            <li key={m.id}>
-              <a href={m.pagina}>
-                <img src={m.imagem} alt={`Maquininha Ton ${m.nome}`} width={480} height={720} loading="lazy" decoding="async" />
-                <strong>Ton {m.nome}</strong>
-                <span>{m.preco}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-        <p className="nota">
-          Taxa de adesão conferida no catálogo da Ton em {MODELOS_CONFERIDO_EM}, já com o cupom de parceiro quando ele
-          se aplica. Toque no modelo para ver os detalhes.
-        </p>
-
         <h2>Como decidir sem chute</h2>
         <ol>
           <li>
@@ -224,8 +209,8 @@ export default function TonValeAPena() {
             Ele mostra em reais quanto sobra.
           </li>
           <li>
-            Faça o <a href="/#qual-maquininha">teste de três perguntas</a> para ver qual modelo combina com o seu
-            jeito de vender.
+            Faça o <a href="/#qual-maquininha" data-secao="qual-maquininha">teste de três perguntas</a>, logo abaixo, para ver qual modelo
+            combina com o seu jeito de vender.
           </li>
         </ol>
         <p>
@@ -246,6 +231,8 @@ export default function TonValeAPena() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

@@ -3,6 +3,8 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd, artigoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 import { MODELOS } from "@/lib/modelos"
 
 const PATH = "/como-pedir-maquininha-ton"
@@ -45,7 +47,7 @@ export default function ComoPedirTon() {
           ))}
         </ul>
         <p>
-          Se ficou em dúvida, o <a href="/#qual-maquininha">teste de três perguntas</a> indica um modelo pelo seu
+          Se ficou em dúvida, o <a href="/#qual-maquininha" data-secao="qual-maquininha">teste de três perguntas</a> indica um modelo pelo seu
           jeito de vender.
         </p>
 
@@ -129,6 +131,8 @@ export default function ComoPedirTon() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )

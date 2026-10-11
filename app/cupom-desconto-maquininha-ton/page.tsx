@@ -3,6 +3,8 @@ import { CONFIG, OG_BASE } from "@/lib/config"
 import { JsonLd, breadcrumbLd, artigoLd } from "@/lib/jsonld"
 import { GUIAS_CONFERIDO_EM } from "@/lib/guias"
 import Guias from "@/app/components/Guias"
+import Modelos from "@/app/components/Modelos"
+import RecomendadorSecao from "@/app/components/RecomendadorSecao"
 import { MODELOS, MODELOS_CONFERIDO_EM, CUPOM_PARCEIRO, CUPOM_CONFERIDO_EM } from "@/lib/modelos"
 
 const PATH = "/cupom-desconto-maquininha-ton"
@@ -104,7 +106,7 @@ export default function CupomTon() {
         <p>
           Não. O cupom mexe na adesão, que você paga uma vez. A taxa você paga em toda venda, todo mês. Economizar
           R$ 30 na máquina e escolher o modelo errado sai caro. Antes de pedir, veja a{" "}
-          <a href="/taxas-ton">tabela de taxas</a> e faça o <a href="/#qual-maquininha">teste de três perguntas</a>{" "}
+          <a href="/taxas-ton">tabela de taxas</a> e faça o <a href="/#qual-maquininha" data-secao="qual-maquininha">teste de três perguntas</a>{" "}
           para saber qual modelo combina com o seu jeito de vender.
         </p>
 
@@ -119,6 +121,8 @@ export default function CupomTon() {
         </ul>
       </article>
 
+      <Modelos />
+      <RecomendadorSecao />
       <Guias atual={PATH} titulo="Leia também" />
     </>
   )
